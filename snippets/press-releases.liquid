@@ -1,0 +1,8 @@
+<!-- Blog 1 -->
+{% if template == 'index' and handle == 'press-release' %}
+  {% assign posts = collections['press-release'].articles %}
+  {% for post in posts %}
+    <h2>{{ post.title }}</h2>
+    {{ post.content }}
+  {% endfor %}
+{% endif %}
