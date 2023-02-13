@@ -14,7 +14,7 @@
       "templates": [
         {
           "name": "Blog",
-          "template": "blog.liquid"
+          "template": "blog-custom.liquid"
         }
       ]
     }
