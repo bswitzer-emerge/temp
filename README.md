@@ -1,15 +1,31 @@
 # Currents Marketplace Liquid template
 
-The repository is connected to Current's shopify theme. Changes made within the Edit Code will be automatically committed into this repo
+The repository is connected to Current's shopify theme. As a development flow, any changes made within the CMS will create a git commit and commit it to this repo. Any commit made locally will be pushed up to the live sites.
 
+
+## Getting Started
 See:
 https://shopify.dev/docs/themes/best-practices/version-control
 
-Also, you'll need to install the CLI for 
+Also, you'll need to install the CLI for:
 https://shopify.dev/docs/themes/tools/cli/install
 
+From the root of the directory, to start theme development, run `shopify theme dev --store=currents-marketplace-dev` 
 
-# Dawn
+
+By default when you login if the store is password protected, you'll need to pull the password for the front end from admin login on the shopify hosted site
+
+Dev site example:
+
+PW: yeceit
+https://currents-marketplace-dev.myshopify.com/admin/online_store/preferences?tutorial=unlock
+
+
+
+
+# Generic Readme info
+
+## Dawn
 
 [![Build status](https://github.com/shopify/dawn/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Shopify/dawn/actions/workflows/ci.yml?query=branch%3Amain)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?color=informational)](/.github/CONTRIBUTING.md)
