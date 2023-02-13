@@ -1,0 +1,5 @@
+<div class="blog-post">
+  <h1>{{ article.title }}</h1>
+  <p>By {{ article.author }} on {{ article.published_at | date: "%B %d, %Y" }}</p>
+  {{ article.content }}
+</div>
