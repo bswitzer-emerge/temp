@@ -3,10 +3,10 @@
     "main": {
       "type": "main-article",
       "blocks": {
-        "title": {
+        "8f6a9936-240a-42fe-8ba3-195fcf17b149": {
           "type": "title",
           "settings": {
-            "blog_show_date": true,
+            "blog_show_date": false,
             "blog_show_author": false
           }
         },
@@ -16,12 +16,6 @@
             "image_height": "adapt"
           }
         },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
-        },
         "content": {
           "type": "content",
           "settings": {
@@ -29,9 +23,8 @@
         }
       },
       "block_order": [
-        "title",
+        "8f6a9936-240a-42fe-8ba3-195fcf17b149",
         "featured_image",
-        "share",
         "content"
       ],
       "settings": {
