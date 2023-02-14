@@ -13,12 +13,6 @@
         }
       }
     },
-    "templates": [
-      {
-        "name": "Blog",
-        "template": "blog-custom.liquid"
-      }
-    ],
     "order": [
       "main"
     ]
