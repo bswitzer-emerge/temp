@@ -1,6 +1,84 @@
-<div class="blog-post">
-  <p>test</p>
-  <h1>{{ article.title }}</h1>
-  <p>By {{ article.author }} on {{ article.published_at | date: "%B %d, %Y" }}</p>
-  {{ article.content }}
+<style>
+  .blog {
+
+  }
+  .blog__image {
+    border-bottom: 1px solid grey;
+    margin-bottom: 40px;
+  }
+  .blog__image img {
+    width: 100%;
+    height: auto;
+  }
+  .blog__article {
+    display: flex;
+  }
+  .blog__col_1, .blog__col_2 {
+
+  }
+  .blog__col_1 {
+    flex: 2;
+  }
+  .blog__col_1 p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+  }
+  .blog__col_2 {
+    flex: 8;
+    padding-left: 2em;
+  }
+  .blog__col_2 h1 {
+    margin-top: 0;
+  }
+  .blog__max-width {
+    max-width: 550px;
+  }
+</style>
+
+<div class="blog">
+  <div class="blog__image">
+    {%- if article.image -%}
+        <img
+          srcset="{% if article.image.width >= 350 %}{{ article.image | image_url: width: 350 }} 350w,{% endif %}
+            {% if article.image.width >= 750 %}{{ article.image | image_url: width: 750 }} 750w,{% endif %}
+            {% if article.image.width >= 1100 %}{{ article.image | image_url: width: 1100 }} 1100w,{% endif %}
+            {% if article.image.width >= 1500 %}{{ article.image | image_url: width: 1500 }} 1500w,{% endif %}
+            {% if article.image.width >= 2200 %}{{ article.image | image_url: width: 2200 }} 2200w,{% endif %}
+            {% if article.image.width >= 3000 %}{{ article.image | image_url: width: 3000 }} 3000w,{% endif %}
+            {{ article.image | image_url }} {{ article.image.width }}w"
+          sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 }}px, (min-width: 750px) calc(100vw - 10rem), 100vw"
+          src="{{ article.image | image_url: width: 1100 }}"
+          loading="eager"
+          width="{{ article.image.width }}"
+          height="{{ article.image.height }}"
+          alt="{{ article.image.alt | escape }}">
+  {%- endif -%}
+
+  </div>
+
+
+  <div class="page-width">
+    <div class="blog__article">
+      <div class="blog__col_1">
+        <p>By {{ article.author }} </p>
+        <p> {{ article.published_at | date: "%B %d, %Y" }}</p>
+
+      </div>
+      <div class="blog__col_2">
+        <div class="blog__max-width">
+        <h1>{{ article.title }}</h1>
+
+        {{ article.content }}
+      </div>
+      </div>
+    </div>
+   
+
+    <div>
+   
+    </div>
+  </div>
+  
+ 
 </div>
