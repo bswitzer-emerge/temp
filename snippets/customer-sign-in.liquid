@@ -1,0 +1,23 @@
+
+{% unless customer %}
+    <style>
+        .header__signin
+        #customer_login_link {
+            font-size: 13px;
+            background: #FC7238;
+            border-radius: 24px;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+    <div class="header__signin">
+        
+    <!-- https://shopify.dev/docs/api/liquid/filters 
+      {{  'Sign in' | customer_login_link }}
+      -->
+      <a href="/account/login" id="customer_login_link">Sign In</a>
+
+    </div>
+
+{% endunless %}

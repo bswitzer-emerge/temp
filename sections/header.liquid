@@ -517,6 +517,9 @@
     {%- endif -%}
 
     <div class="header__icons">
+
+      {% if customer %}
+
       <details-modal class="header__search">
         <details>
           <summary class="header__icon header__icon--search header__icon--summary link focus-inset modal__toggle" aria-haspopup="dialog" aria-label="{{ 'general.search.search' | t }}">
@@ -589,7 +592,12 @@
           </div>
         </details>
       </details-modal>
+    {% else %}
+       {% include 'customer-sign-in' %}
+    {% endif %}
 
+
+    
       {%- if shop.customer_accounts_enabled -%}
         <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}">
           {% render 'icon-account' %}
@@ -605,10 +613,13 @@
         </a>
       {%- endif -%}
 
+      {% if customer %}
+
       <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
         {%- liquid
           if cart == empty
-            render 'icon-cart-empty'
+              #  uncomment to show cart empty icon, temporary tweak
+                render 'icon-cart-empty' 
           else
             render 'icon-cart'
           endif
@@ -622,6 +633,8 @@
             <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
           </div>
         {%- endif -%}
+
+      {%- endif -%}  <!-- if customer -->
       </a>
     </div>
   </header>
