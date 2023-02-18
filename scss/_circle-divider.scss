@@ -1,0 +1,10 @@
+.circle-divider::after {
+    content: '\2022';
+    margin: 0 1.3rem 0 1.5rem;
+  }
+  
+  .circle-divider:last-of-type::after {
+    display: none;
+  }
+  
+  

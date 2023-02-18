@@ -21,6 +21,21 @@ PW: yeceit
 https://currents-marketplace-dev.myshopify.com/admin/online_store/preferences?tutorial=unlock
 
 
+## JSON vs Liquid
+
+> JSON templates provide more flexibility for merchants to add, remove, and reorder sections, including app sections. Additionally, they minimize the amount of data in settings_data.json. Instead, data is stored directly in the template, which improves the performance of the theme editor.
+
+
+https://shopify.dev/docs/themes/architecture/templates
+
+
+### Helpful Links
+
+List of the liquid filters
+https://shopify.dev/docs/api/liquid/filters
+
+
+
 
 
 # Generic Readme info
