@@ -1,0 +1,10 @@
+{% for blog in blogs %}
+    <h2>{{ blog.title }}</h2>
+    {% for post in blog.articles %}
+      <div>
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.excerpt }}</p>
+        <a href="{{ post.url }}">Read more</a>
+      </div>
+    {% endfor %}
+  {% endfor %}
