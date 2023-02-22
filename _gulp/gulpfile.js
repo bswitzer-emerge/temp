@@ -14,7 +14,6 @@ const log = require('gulplog');
 const uglify = require('gulp-uglify');
 
 
-
 const gulpif = require('gulp-if');
 const rename = require('gulp-rename');
 const { series, watch } = require("gulp");
@@ -24,21 +23,21 @@ const browsersync = require('browser-sync').create();
 //configurate
 let watchMe = false;
 const appDefaults = {
-        myProxy: "http://localhost:3000/",
-        stylesDir : "../scss/", // path to styles
-        stylesDirDest : "../../",
-        javascriptDir : "../js/",
-        dest : "../dist"
-    }
+    myProxy: "http://127.0.0.1:9292/",
+    stylesDir : "../scss/", // path to styles
+    stylesDirDest : "../assets/",
+    javascriptDir : "../js/",
+    dest : "../dist"
+}
 
 // Styles
 function sassCompile(done) {
     gulp.src(appDefaults.stylesDir+'**/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest(appDefaults.stylesDirDest))
-        .pipe(rename({ suffix: '.min' }))
-        .pipe(cleanCSS({debug: true, level: {1: {specialComments: 'all'}}}, (details) => {
-        }))
+        // .pipe(rename({ suffix: '.min' }))
+        // .pipe(cleanCSS({debug: true, level: {1: {specialComments: 'all'}}}, (details) => {
+       //  }))
         .pipe(gulp.dest(appDefaults.stylesDirDest))
         .pipe(gulpif(watchMe === true, browsersync.stream()));
     done();
@@ -94,11 +93,9 @@ function watchTask(){
     watch(['../../**/*.php', '../../**/*.js'], series(browsersyncReload));
     watch(['../**/*.svg','../**/*.jpg', '../**/*.png', '../**/*.gif'], series(browsersyncReload))
     watch(['../**/*.scss'], series( sassCompile, browsersyncNotify));
-    watch([appDefaults.javascriptDir+'/app.js'], series(javascriptCompile));
+    // watch([appDefaults.javascriptDir+'/app.js'], series(javascriptCompile));
 }
 // tasks run from terminal
 exports.watch = series(  sassCompile, browsersyncServe, watchTask);
 exports.default = series( sassCompile,javascriptCompile );
 exports.sass = series( sassCompile );
-
-

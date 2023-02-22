@@ -13,6 +13,7 @@
 @import "base-details-summary";
 @import "base-focus";
 
+
 // components
 @import "component-title";
 @import "component-grid";
@@ -27,5 +28,11 @@
 @import "section-announcement-bar";
 @import "section-header";
 @import "global-media";
-@import "_indows-high-contrast";
+@import "windows-high-contrast";
 @import "misc-gradients-icons";
+
+
+//Custom
+@import "article.blog-custom";
+@import "register-for-access-modal";
+@import "btn";
