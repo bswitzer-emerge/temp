@@ -29,6 +29,12 @@ https://currents-marketplace-dev.myshopify.com/admin/online_store/preferences?tu
 https://shopify.dev/docs/themes/architecture/templates
 
 
+## Compiling SCSS
+
+In the `/_gulp` dir, you'll need to install the node dependencies.
+
+Run `npm install` and then run `gulp watch`. 
+
 ### Helpful Links
 
 List of the liquid filters
