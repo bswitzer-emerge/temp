@@ -1,0 +1,45 @@
+
+  <!-- 
+{% for article in blogs.news.articles %}
+  {{- article.title | link_to: article.url }}
+  {{- article | inspect }}
+{% endfor %}
+
+{% for article in blogs.press-releases.articles %}
+  {{- article.title | link_to: article.url }}
+  
+{% endfor %}
+  <br>
+{{ blogs | inspect }}
+ <br>
+
+ <p>Blog test</p>
+ {% for article in blogs %}
+  <h2>{{ article | json }}</h2>
+  <h2>{{ article | inspect }}</h2>
+  <p>{{ blog.articles_count }} articles</p>
+{% endfor %}
+
+{% for article in blogs %}
+  {{- article.title | link_to: article.url }}
+{% endfor %}
+
+
+
+<h1>Test</h1>
+{% assign blog_handles = "news,jobs" | split: "," %}
+{% for handle in blog_handles %}
+  {% for article in blogs[handle].articles %}
+    <h2><a href="{{ article.url }}">{{ article.title }}</a></h2>
+  {% endfor %}
+{% endfor %}
+
+
+<h1>Test two</h1>
+{% for link in linklists.combined-blogs.links %}
+  {% assign blog = link.object %}
+  {% for article in blog.articles %}
+    <h2><a href="{{ article.url }}">{{ article.title }}</a></h2>
+  {% endfor %} 
+{% endfor %}
+-- >
