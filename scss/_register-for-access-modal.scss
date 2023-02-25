@@ -1,14 +1,93 @@
-//modal
-
 .register-for-access-modal {
-    background-color: #383838;
-    text-align: center;
-    padding-top: 5em;
-    padding-bottom: 6em;
-    p, h3 {
-        color: white;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left:0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: .3);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    .close-button {
+        cursor: pointer;
+        position: absolute;
+        right: 3em;
+        top: 3em;
     }
-    h3 {
-        font-size: 36px;
+    &.show {
+        display: flex;
+    }
+    h1 {
+        margin-top: 0em;
+    }
+    form {
+        background: #F5F5F5;
+        border-radius: 8px;
+        min-height: 40vh;
+        padding: 50px;
+        position: relative;
+        input[type="text"] {
+            box-sizing: border-box;
+            border-width: 1px;
+            border-radius: 29px;
+            
+        }
+        input[type="radio"]:checked + label {
+            background-color: #FC7238;
+        }
+        label {
+            display: flex;
+            flex-grow: 0;
+            padding: 40px;
+            background-color: #D8D8D8;
+            cursor: pointer;
+        }
+        input[type="radio"] {
+            /* Add if not using autoprefixer */
+            -webkit-appearance: none;
+            appearance: none;
+            /* For iOS < 15 to remove gradient background */
+            background-color: #fff;
+            /* Not removed via appearance */
+            margin: 0;
+           
+        }
+        .btn {
+            display: inline-flex;
+            //margin-top: 1em;
+        }
+    }
+    .radio-inputs {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        align-items: flex-start;
+        justify-content: space-around;
+        margin-bottom: 3em;
+    }
+    .text-inputs {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        align-items: flex-start;
+        justify-content: space-around;
+        div {
+            width: 40%;
+            display: flex;
+            
+        }
+        input {
+            flex-grow: 0;
+            flex-shrink: 0;
+            margin-bottom: 2em;;
+            padding: 13px 20px;
+            width: 100%;
+            
+            box-sizing: border-box;
+        }
     }
 }

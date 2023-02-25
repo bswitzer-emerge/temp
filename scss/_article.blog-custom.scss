@@ -4,6 +4,10 @@
 .blog__image {
   border-bottom: 1px solid grey;
   margin-bottom: 40px;
+  .blog_small_hero &  {
+    border-bottom: 0;
+  }
+  
 }
 .blog__image img {
   width: 100%;
@@ -32,19 +36,4 @@
 }
 .blog__max-width {
   max-width: 550px;
-}
-
-//modal
-
-.modal {
-    background-color: #383838;
-    text-align: center;
-    padding-top: 5em;
-    padding-bottom: 6em;
-    p, h3 {
-        color: white;
-    }
-    h3 {
-        font-size: 36px;
-    }
 }
