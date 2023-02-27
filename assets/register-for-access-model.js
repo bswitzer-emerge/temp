@@ -13,3 +13,4 @@ openButton.addEventListener("click", function(event) {
   closeButton.addEventListener("click", function() {
     modal.classList.remove("show");
   });
+  
