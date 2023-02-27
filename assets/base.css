@@ -2896,6 +2896,10 @@ details-disclosure > details {
 .hero-home h1, .hero-home h3, .hero-home h3, .hero-home h4, .hero-home h5, .hero-home h6, .hero-home p {
   color: white;
 }
+.hero-home h1 {
+  font-size: 50px;
+  font-weight: 500;
+}
 .hero-home h4 {
   font-size: 30px;
   font-weight: 100;
@@ -2904,6 +2908,9 @@ details-disclosure > details {
   margin-left: 0.5em;
   margin-right: 0.5em;
   display: inline-flex;
+}
+.hero-home .buttons {
+  margin-bottom: 5em;
 }
 .hero-home .secondary {
   background-color: white;
