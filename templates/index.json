@@ -9,20 +9,169 @@
         "padding_bottom": 52
       }
     },
+    "3c84d83d-a074-42fe-946a-d67f3945f89a": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--17947966701869__3c84d83d-a074-42fe-946a-d67f3945f89a-1677538970a88eb8d1-0": {
+          "type": "column",
+          "settings": {
+            "title": "Why We Exist",
+            "text": "<p>Everything we do is guided by achieving net zero carbon emissions by 2050. We believe energy storage, resource and energy independence, and supply chain innovation are cornerstones of decarbonization — these objectives are the fuel to our fire.<\/p>",
+            "link_label": "Test Link",
+            "link": ""
+          }
+        },
+        "template--17947966701869__3c84d83d-a074-42fe-946a-d67f3945f89a-1677538970a88eb8d1-1": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17947966701869__3c84d83d-a074-42fe-946a-d67f3945f89a-1677538970a88eb8d1-0",
+        "template--17947966701869__3c84d83d-a074-42fe-946a-d67f3945f89a-1677538970a88eb8d1-1"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "3881a41a-7704-4efc-8eae-a2a63b5a9fd9": {
+      "type": "multicolumn",
+      "blocks": {
+        "94c69ea8-d97d-40f8-ad01-0398771df660": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "26d55434-121e-40e3-bb2d-9fa09116a14b": {
+          "type": "column",
+          "settings": {
+            "title": "Mission Driven",
+            "text": "<p>A holistic solution to the climate crisis requires collaboration on a global scale. Our contribution is to create a platform that facilitates and optimizes the end-of-life EV lithium supply chain to ensure every battery is handled responsibly and maximize their lifecycle value.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "94c69ea8-d97d-40f8-ad01-0398771df660",
+        "26d55434-121e-40e3-bb2d-9fa09116a14b"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "712c1e1a-dc4b-49b1-8eb2-096da31cd708": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--17947966701869__712c1e1a-dc4b-49b1-8eb2-096da31cd708-1677538970a88eb8d1-0": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--17947966701869__712c1e1a-dc4b-49b1-8eb2-096da31cd708-1677538970a88eb8d1-1": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--17947966701869__712c1e1a-dc4b-49b1-8eb2-096da31cd708-1677538970a88eb8d1-2": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "aba588f6-885f-447b-9850-09472629508b": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17947966701869__712c1e1a-dc4b-49b1-8eb2-096da31cd708-1677538970a88eb8d1-0",
+        "template--17947966701869__712c1e1a-dc4b-49b1-8eb2-096da31cd708-1677538970a88eb8d1-1",
+        "template--17947966701869__712c1e1a-dc4b-49b1-8eb2-096da31cd708-1677538970a88eb8d1-2",
+        "aba588f6-885f-447b-9850-09472629508b"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "rich_text": {
       "type": "rich-text",
       "blocks": {
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "<p>This is a test<\/p>",
-            "heading_size": "h1"
+            "heading": "<p>What we do<\/p>",
+            "heading_size": "h2"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "text": "<p>Our first step is launching our B2B marketplace for second-life batteries intentionally designed for energy storage customers. We built and optimized our platform for trusted suppliers to provide approved buyers with the best available inventory, fair and transparent pricing, and a seamless shopping experience. We will continuously iterate to drive value and effeciency for both sides of the marketplace.<\/p>"
           }
         }
       },
@@ -73,58 +222,6 @@
         "color_scheme": "background-1",
         "padding_top": 40,
         "padding_bottom": 52
-      }
-    },
-    "collage": {
-      "type": "collage",
-      "blocks": {
-        "collection-0": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "product": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "second_image": false
-          }
-        },
-        "collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        }
-      },
-      "block_order": [
-        "collection-0",
-        "product",
-        "collection-1"
-      ],
-      "settings": {
-        "heading": "Multimedia collage",
-        "heading_size": "h2",
-        "desktop_layout": "left",
-        "mobile_layout": "collage",
-        "card_styles": "product-card-wrapper",
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "video": {
-      "type": "video",
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "722430fb-a8d5-4d0d-a2a2-f95a2af200a0": {
@@ -200,11 +297,12 @@
   },
   "order": [
     "d9a680e7-96ec-44b3-864d-e8bd7bb36fac",
+    "3c84d83d-a074-42fe-946a-d67f3945f89a",
+    "3881a41a-7704-4efc-8eae-a2a63b5a9fd9",
+    "712c1e1a-dc4b-49b1-8eb2-096da31cd708",
     "rich_text",
     "featured_collection",
     "7690af27-f9b0-4b44-8920-6ea2162b6ff9",
-    "collage",
-    "video",
     "722430fb-a8d5-4d0d-a2a2-f95a2af200a0",
     "multicolumn"
   ]
