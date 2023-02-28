@@ -2912,6 +2912,10 @@ details-disclosure > details {
 .hero-home .buttons {
   margin-bottom: 5em;
 }
+.hero-home .btn {
+  font-size: 16px;
+  padding: 10px 30px;
+}
 .hero-home .secondary {
   background-color: white;
   color: black;
@@ -3023,7 +3027,8 @@ details-disclosure > details {
 .btn {
   color: #222222;
   text-decoration: none;
-  padding: 14px 30px;
+  padding: 10px 30px;
   background-color: #FC7238;
   border-radius: 23px;
+  display: inline-flex;
 }
