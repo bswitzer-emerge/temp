@@ -154,7 +154,7 @@
         "image_ratio": "adapt",
         "columns_desktop": 4,
         "column_alignment": "left",
-        "background_style": "primary",
+        "background_style": "none",
         "button_label": "",
         "button_link": "",
         "color_scheme": "background-1",
@@ -232,6 +232,9 @@
         "template--17947966701869__4d66e566-c32d-4177-a910-5c7b233d204a-1677538970a88eb8d1-0",
         "template--17947966701869__4d66e566-c32d-4177-a910-5c7b233d204a-1677538970a88eb8d1-1"
       ],
+      "custom_css": [
+
+      ],
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -239,7 +242,7 @@
         "image_ratio": "adapt",
         "columns_desktop": 2,
         "column_alignment": "left",
-        "background_style": "primary",
+        "background_style": "none",
         "button_label": "Button label",
         "button_link": "",
         "color_scheme": "background-1",
