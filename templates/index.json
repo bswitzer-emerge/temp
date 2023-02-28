@@ -179,11 +179,23 @@
           "settings": {
             "text": "<p>Our first step is launching our B2B marketplace for second-life batteries intentionally designed for energy storage customers. We built and optimized our platform for trusted suppliers to provide approved buyers with the best available inventory, fair and transparent pricing, and a seamless shopping experience. We will continuously iterate to drive value and effeciency for both sides of the marketplace.<\/p>"
           }
+        },
+        "3fd598c0-ed1a-4d0b-b60f-4504ab3e948e": {
+          "type": "button",
+          "settings": {
+            "button_label": "Platform Overview",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
         }
       },
       "block_order": [
         "heading",
-        "text"
+        "text",
+        "3fd598c0-ed1a-4d0b-b60f-4504ab3e948e"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -194,30 +206,46 @@
         "padding_bottom": 0
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
+    "4d66e566-c32d-4177-a910-5c7b233d204a": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--17947966701869__4d66e566-c32d-4177-a910-5c7b233d204a-1677538970a88eb8d1-0": {
+          "type": "column",
+          "settings": {
+            "title": "Suppliers",
+            "text": "<p>We curate our suppliers and only work with sellers who align with our vision and mission. We are the exclusive marketplace for Nissan second-life batteries. Moving forward, we will only allow suppliers who support the second-life industry by providing fair, transparent pricing based on state-of-health.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--17947966701869__4d66e566-c32d-4177-a910-5c7b233d204a-1677538970a88eb8d1-1": {
+          "type": "column",
+          "settings": {
+            "title": "Buyers",
+            "text": "<p>We are a facilitation marketplace meaning we do not own the inventory. Therefore, we are not inflating prices. Buyers must provide their business credentials for access to the platform, then, once approved, can view and purchase Nissan’s best available inventory. Spend less time sourcing and more time scaling.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17947966701869__4d66e566-c32d-4177-a910-5c7b233d204a-1677538970a88eb8d1-0",
+        "template--17947966701869__4d66e566-c32d-4177-a910-5c7b233d204a-1677538970a88eb8d1-1"
+      ],
       "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "background-1",
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
         "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 28,
+        "padding_top": 36,
         "padding_bottom": 36
       }
     },
@@ -307,7 +335,7 @@
     "3881a41a-7704-4efc-8eae-a2a63b5a9fd9",
     "712c1e1a-dc4b-49b1-8eb2-096da31cd708",
     "rich_text",
-    "featured_collection",
+    "4d66e566-c32d-4177-a910-5c7b233d204a",
     "7690af27-f9b0-4b44-8920-6ea2162b6ff9",
     "722430fb-a8d5-4d0d-a2a2-f95a2af200a0",
     "multicolumn"
