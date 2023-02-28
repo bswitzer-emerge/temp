@@ -43,7 +43,7 @@
         "image_ratio": "adapt",
         "columns_desktop": 2,
         "column_alignment": "left",
-        "background_style": "primary",
+        "background_style": "none",
         "button_label": "",
         "button_link": "",
         "color_scheme": "background-1",
@@ -87,7 +87,7 @@
         "image_ratio": "adapt",
         "columns_desktop": 2,
         "column_alignment": "left",
-        "background_style": "primary",
+        "background_style": "none",
         "button_label": "",
         "button_link": "",
         "color_scheme": "background-1",
@@ -214,7 +214,7 @@
           "settings": {
             "title": "Suppliers",
             "text": "<p>We curate our suppliers and only work with sellers who align with our vision and mission. We are the exclusive marketplace for Nissan second-life batteries. Moving forward, we will only allow suppliers who support the second-life industry by providing fair, transparent pricing based on state-of-health.<\/p>",
-            "link_label": "",
+            "link_label": "Get In Touch",
             "link": ""
           }
         },
@@ -223,7 +223,7 @@
           "settings": {
             "title": "Buyers",
             "text": "<p>We are a facilitation marketplace meaning we do not own the inventory. Therefore, we are not inflating prices. Buyers must provide their business credentials for access to the platform, then, once approved, can view and purchase Nissan’s best available inventory. Spend less time sourcing and more time scaling.<\/p>",
-            "link_label": "",
+            "link_label": "Register for Access",
             "link": ""
           }
         }
@@ -243,7 +243,7 @@
         "columns_desktop": 2,
         "column_alignment": "left",
         "background_style": "none",
-        "button_label": "Button label",
+        "button_label": "",
         "button_link": "",
         "color_scheme": "background-1",
         "columns_mobile": "1",
