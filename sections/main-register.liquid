@@ -75,6 +75,52 @@
         {{ 'customer.register.last_name' | t }}
       </label>
     </div>
+    
+    <div>
+      <p>Please provide your company’s EIN or valid business license:</p>
+    </div>
+    <div class="field">
+      <label for="ein">EIN</label>
+      <input id="ein" type="text" name="customer[note][ein]" />
+    </div>
+    <div>
+      <p>Please provide your company website:</p>
+    </div>
+    <div class="field">
+      <label for="url">EIN</label>
+      <input id="url" type="text" name="customer[note][url]" />
+    </div>
+    <div>
+      <p>What size of systems are you interested in building?</p>
+    </div>
+    <div class="select">
+      <select name="customer[note][batterystorage]" id="batterystorage">
+        <option value="250kwh">< 250 kWh</option>
+        <option value="251-500kwh">251 - 500 kWh</option>
+        <option value="501-999kwh">501 - 999 kWh</option>
+        <option value="1mwh">>1 MWh</option>
+      </select>
+    </div>
+    <div>
+      <p>Please list the test methods your business uses:</p>
+    </div>
+    <div class="field">
+      <label for="uses">Uses</label>
+      <input id="uses" type="text" name="customer[note][uses]" />
+    </div>
+    <div>
+    <div>
+      <p>Please check which certifications your company currently holds:</p>
+    </div>
+    <div>
+      <input type="checkbox" id="ul1973" name="customer[note][certifications]">
+      <label for="ul1973">UL 1973</label>
+      <input type="checkbox" id="ul1974" name="customer[note][certifications]">
+      <label for="ul1974">UL 1974</label>
+      <input type="checkbox" id="ul9540a" name="customer[note][certifications]">
+      <label for="ul9540a">UL 9540A</label>
+      
+    </div>
     <div class="field">      
       <input
         type="email"
