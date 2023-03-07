@@ -3032,3 +3032,7 @@ details-disclosure > details {
   border-radius: 23px;
   display: inline-flex;
 }
+
+body.index {
+  background-color: #EFEDEA;
+}
