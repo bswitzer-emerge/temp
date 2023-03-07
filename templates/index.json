@@ -239,7 +239,7 @@
       ],
       "settings": {
         "title": "",
-        "heading_size": "h1",
+        "heading_size": "h0",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 2,
@@ -271,7 +271,7 @@
         "blog": "press-releases",
         "post_limit": 3,
         "columns_desktop": 3,
-        "color_scheme": "background-2",
+        "color_scheme": "inverse",
         "show_image": true,
         "show_date": true,
         "show_author": false,
