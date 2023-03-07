@@ -3036,3 +3036,13 @@ details-disclosure > details {
 body.index {
   background-color: #EFEDEA;
 }
+
+.blog.color-inverse {
+  background: none;
+}
+.blog.color-inverse li {
+  background-color: #2F2926;
+}
+.blog.color-inverse .card__inner {
+  background-color: #2F2926;
+}

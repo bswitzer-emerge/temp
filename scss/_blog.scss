@@ -1,3 +1,9 @@
-.blog.inverse {
-
+.blog.color-inverse {
+    background: none;
+    li {
+        background-color: #2F2926;
+    }
+    .card__inner {
+        background-color: #2F2926; 
+    }
 }
