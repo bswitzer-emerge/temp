@@ -2879,7 +2879,6 @@ details-disclosure > details {
 }
 
 .hero-home {
-  background-color: #121114;
   text-align: center;
   padding-top: 8em;
   padding-bottom: 8em;
@@ -2892,9 +2891,6 @@ details-disclosure > details {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 2em;
-}
-.hero-home h1, .hero-home h3, .hero-home h3, .hero-home h4, .hero-home h5, .hero-home h6, .hero-home p {
-  color: white;
 }
 .hero-home h1 {
   font-size: 50px;
