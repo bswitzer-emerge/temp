@@ -36,6 +36,9 @@
         "template--17947966701869__3c84d83d-a074-42fe-946a-d67f3945f89a-1677538970a88eb8d1-0",
         "template--17947966701869__3c84d83d-a074-42fe-946a-d67f3945f89a-1677538970a88eb8d1-1"
       ],
+      "custom_css": [
+        "h3 {font-size: 20px;}"
+      ],
       "settings": {
         "title": "",
         "heading_size": "h2",
@@ -79,6 +82,9 @@
       "block_order": [
         "94c69ea8-d97d-40f8-ad01-0398771df660",
         "26d55434-121e-40e3-bb2d-9fa09116a14b"
+      ],
+      "custom_css": [
+        "h3 {font-size: 20px;}"
       ],
       "settings": {
         "title": "",
