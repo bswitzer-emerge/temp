@@ -6,6 +6,7 @@
     background: none;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: greyscale;
+    background: var(--gradient-base-background-2);
     .grid {
         justify-content: space-between;
     }
@@ -30,10 +31,18 @@
     .card__information {
         
     }
+    .btn {
+        color: #222222;
+        background-color: #E2D7C9;
+        font-weight: 400;
+        padding: 10px 60px;
+
+    }
     .blog__posts .article-card .card__information {
         padding: 36px;
     }
     p {
+        color: white;
         //margin-bottom: 0;
     }
     .grid--2-col-desktop {

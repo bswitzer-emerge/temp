@@ -1,7 +1,5 @@
 body.index {
-    
-    //background: #EFEDEA;
     .header-wrapper, .announcement-bar, #shopify-section-footer, footer {
-        background-color: #EFEDEA;
+        background-color: var(--gradient-base-background-2);
     }
 }
