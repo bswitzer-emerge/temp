@@ -3066,9 +3066,6 @@ body.index {
 .blog.color-inverse .blog__posts .article-card .card__information {
   padding: 36px;
 }
-.blog.color-inverse p {
-  margin-bottom: 0;
-}
 .blog.color-inverse .grid--2-col-desktop .grid__item {
   width: calc(50% - 25px);
   max-width: calc(50% - 25px);
