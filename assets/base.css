@@ -2922,14 +2922,13 @@ details-disclosure > details {
 }
 
 .register-for-access-message {
-  background-color: #383838;
   text-align: center;
   padding-top: 5em;
   padding-bottom: 6em;
   margin-top: 5em;
 }
-.register-for-access-message p, .register-for-access-message h3 {
-  color: white;
+.register-for-access-message .message {
+  font-size: 24px;
 }
 .register-for-access-message h3 {
   font-size: 36px;
@@ -3033,7 +3032,7 @@ details-disclosure > details {
   display: inline-flex;
 }
 
-body.index {
+body.index .header-wrapper, body.index .announcement-bar, body.index #shopify-section-footer, body.index footer {
   background-color: #EFEDEA;
 }
 
