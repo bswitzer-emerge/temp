@@ -128,7 +128,7 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "Welcome to our store",
+              "text": "We just partnered with XYZ! Find out what this means",
               "text_alignment": "center",
               "color_scheme": "background-1",
               "link": ""
