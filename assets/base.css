@@ -3037,12 +3037,39 @@ body.index {
   background-color: #EFEDEA;
 }
 
+/*
+  Card content for blog posts feed on homepage when on the color inverse setting
+*/
 .blog.color-inverse {
   background: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: greyscale;
+}
+.blog.color-inverse .grid {
+  justify-content: space-between;
 }
 .blog.color-inverse li {
   background-color: #2F2926;
+  border-radius: 20px;
 }
 .blog.color-inverse .card__inner {
   background-color: #2F2926;
+  border-radius: 20px;
+}
+.blog.color-inverse .card.article-card {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.blog.color-inverse .article-card__image {
+  border-radius: 0 20px 20px 0;
+}
+.blog.color-inverse .blog__posts .article-card .card__information {
+  padding: 36px;
+}
+.blog.color-inverse p {
+  margin-bottom: 0;
+}
+.blog.color-inverse .grid--2-col-desktop .grid__item {
+  width: calc(50% - 25px);
+  max-width: calc(50% - 25px);
 }

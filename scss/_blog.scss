@@ -1,9 +1,45 @@
+/*
+  Card content for blog posts feed on homepage when on the color inverse setting
+*/
+
 .blog.color-inverse {
     background: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: greyscale;
+    .grid {
+        justify-content: space-between;
+    }
     li {
         background-color: #2F2926;
+        border-radius: 20px;
     }
     .card__inner {
         background-color: #2F2926; 
+        border-radius: 20px;
+    }
+    .card.article-card {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .article-card__image {
+        border-radius: 0 20px 20px 0;
+        img {
+
+        }
+    }
+    .card__information {
+        
+    }
+    .blog__posts .article-card .card__information {
+        padding: 36px;
+    }
+    p {
+        margin-bottom: 0;
+    }
+    .grid--2-col-desktop {
+        .grid__item {
+            width: calc(50% - 50px / 2);
+            max-width: calc(50% - 50px / 2);
+        }
     }
 }
