@@ -250,9 +250,10 @@
   padding: 62px;
 }
 .multicolumn.color-background-2  .multicolumn-card-spacing {
-  padding-top: 62px;
+  /* padding-top: 62px;
   margin-left: 62px;
   margin-right: 62px;
+  */
 }
 .multicolumn.color-background-2  .multicolumn-card__info h3 {
   font-size: 30px;
