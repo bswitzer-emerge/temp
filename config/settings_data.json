@@ -192,7 +192,7 @@
 
         ],
         "settings": {
-          "color_scheme": "background-1",
+          "color_scheme": "inverse",
           "newsletter_enable": true,
           "newsletter_heading": "Subscribe to our emails",
           "show_social": true,
