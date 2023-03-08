@@ -266,7 +266,7 @@
     "722430fb-a8d5-4d0d-a2a2-f95a2af200a0": {
       "type": "featured-blog",
       "custom_css": [
-        ".blog.color-inverse {background: rgb(var(--color-background))}"
+
       ],
       "settings": {
         "heading": "",
