@@ -268,7 +268,7 @@
       "settings": {
         "heading": "Blog posts",
         "heading_size": "h1",
-        "blog": "press-releases",
+        "blog": "news",
         "post_limit": 2,
         "columns_desktop": 2,
         "color_scheme": "inverse",
