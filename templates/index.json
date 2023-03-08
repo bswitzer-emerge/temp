@@ -235,6 +235,7 @@
         "template--17947966701869__4d66e566-c32d-4177-a910-5c7b233d204a-1677538970a88eb8d1-1"
       ],
       "custom_css": [
+        ".multicolumn-card.content-container .media {padding: 0 62px 62px 62px;}",
         ".multicolumn-card-spacing {padding-top: 62px; margin-left: 62px; margin-right: 62px;}"
       ],
       "settings": {
