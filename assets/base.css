@@ -3032,7 +3032,7 @@ details-disclosure > details {
   display: inline-flex;
 }
 
-body.index .header-wrapper, body.index .announcement-bar, body.index #shopify-section-footer, body.index footer {
+body.index .header-wrapper, body.index .announcement-bar, body.index #shopify-section-footer {
   background-color: var(--gradient-base-background-2);
 }
 
