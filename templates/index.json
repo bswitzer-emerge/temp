@@ -266,7 +266,7 @@
     "722430fb-a8d5-4d0d-a2a2-f95a2af200a0": {
       "type": "featured-blog",
       "settings": {
-        "heading": "Blog posts",
+        "heading": "",
         "heading_size": "h1",
         "blog": "news",
         "post_limit": 2,
