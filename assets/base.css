@@ -3073,3 +3073,9 @@ body.index {
   width: calc(50% - 25px);
   max-width: calc(50% - 25px);
 }
+.blog.color-inverse .card__inner {
+  flex: 2;
+}
+.blog.color-inverse .card__content {
+  flex: 3;
+}
