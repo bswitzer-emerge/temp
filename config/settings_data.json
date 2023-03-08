@@ -165,13 +165,13 @@
             "type": "link_list",
             "settings": {
               "heading": "",
-              "menu": "footer"
+              "menu": "footer-col-1"
             }
           },
           "footer-1": {
             "type": "link_list",
             "settings": {
-              "heading": "Info",
+              "heading": "",
               "menu": "footer"
             }
           }
