@@ -2,12 +2,10 @@
 #shopify-section-announcement-bar {
     z-index: 4;
   }
-  
-  .announcement-bar {
-    background-color: #E2D7C9;
+  .announcement-bar .page-width {
+    background-color: #e2d7c9;
     border-radius: 22px;
   }
-  
   .announcement-bar__link {
     display: block;
     width: 100%;
@@ -36,4 +34,5 @@
     padding: 1rem 0;
     margin: 0;
     letter-spacing: 0.1rem;
+    background-color: ;
   }
