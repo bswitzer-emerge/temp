@@ -2199,12 +2199,9 @@ input[type=checkbox] {
 }
 
 .announcement-bar {
-  color: rgb(var(--color-foreground));
-}
-.announcement-bar .page-width {
   background-color: #E2D7C9;
   border-radius: 22px;
-
+  color: rgb(var(--color-foreground));
 }
 
 .announcement-bar__link {
@@ -2882,7 +2879,20 @@ details-disclosure > details {
   max-width: 550px;
 }
 
+.hero-home-container {
+  position: relative;
+  overflow: hidden;
+}
+
+#svg-bg {
+  position: absolute;
+  top: -500px;
+  left: 0;
+}
+
 .hero-home {
+  position: relative;
+  z-index: 2;
   text-align: center;
   padding-top: 8em;
   padding-bottom: 8em;
@@ -2932,6 +2942,10 @@ details-disclosure > details {
 }
 .register-for-access-message h3 {
   font-size: 36px;
+}
+
+.index .register-for-access-message {
+  background-color: var(--gradient-base-background-2);
 }
 
 .register-for-access-modal {
@@ -3082,7 +3096,6 @@ body.index .header-wrapper, body.index .announcement-bar, body.index #shopify-se
 }
 .blog.color-inverse .blog__posts .article-card .card__information {
   padding: 36px;
-  
 }
 .card__flex {
   display: flex;
