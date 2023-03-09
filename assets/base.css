@@ -2202,7 +2202,7 @@ input[type=checkbox] {
   padding-bottom: 22px;
 }
 
-.announcement-bar .page-width {
+.announcement-bar p {
   background-color: #e2d7c9;
   border-radius: 22px;
 }
@@ -3049,8 +3049,8 @@ details-disclosure > details {
   display: inline-flex;
 }
 
-body.index .header-wrapper, body.index .announcement-bar, body.index #shopify-section-footer {
-  background-color: var(--gradient-base-background-2);
+body.index .header-wrapper, body.index .announcement-bar {
+  background-color: #efe7e0;
 }
 
 /*
@@ -3135,7 +3135,7 @@ body.index .header-wrapper, body.index .announcement-bar, body.index #shopify-se
   padding-bottom: 22px;
 }
 
-.announcement-bar .page-width {
+.announcement-bar p {
   background-color: #e2d7c9;
   border-radius: 22px;
 }
