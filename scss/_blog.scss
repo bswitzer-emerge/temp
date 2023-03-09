@@ -10,9 +10,23 @@
     .grid {
         justify-content: space-between;
     }
+    ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 50px 30px;
+    }
     li {
         background-color: #2F2926;
         border-radius: 20px;
+        width: 100%;
+        min-width: 100%;
+        grid-column: span 1;
+    }
+    li:first-child {
+        grid-column: 1 / -1;
+        .card__content {
+            flex: 2;
+        }
     }
     .card__inner {
         background-color: #2F2926; 
@@ -24,9 +38,6 @@
     }
     .article-card__image {
         border-radius: 0 20px 20px 0;
-        img {
-
-        }
     }
     .card__information {
         
@@ -40,6 +51,9 @@
     }
     .blog__posts .article-card .card__information {
         padding: 36px;
+    }
+    .blog__posts .article-card .card__information  .card__media + .card__content {
+        display: none;
     }
     p {
         color: white;
@@ -57,4 +71,10 @@
     .card__content {
         flex: 3
     }
+}
+
+.card__flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }

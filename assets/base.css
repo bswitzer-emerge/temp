@@ -3052,9 +3052,7 @@ details-disclosure > details {
 body.index .header-wrapper, body.index .announcement-bar, body.index #shopify-section-footer, body.index footer {
   background-color: var(--gradient-base-background-2);
 }
-body.index .header-wrapper, body.index .announcement-bar {
-  background-color: #efe7e0;
-}
+
 /*
   Card content for blog posts feed on homepage when on the color inverse setting
 */
@@ -3067,9 +3065,23 @@ body.index .header-wrapper, body.index .announcement-bar {
 .blog.color-inverse .grid {
   justify-content: space-between;
 }
+.blog.color-inverse ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px 30px;
+}
 .blog.color-inverse li {
   background-color: #2F2926;
   border-radius: 20px;
+  width: 100%;
+  min-width: 100%;
+  grid-column: span 1;
+}
+.blog.color-inverse li:first-child {
+  grid-column: 1/-1;
+}
+.blog.color-inverse li:first-child .card__content {
+  flex: 2;
 }
 .blog.color-inverse .card__inner {
   background-color: #2F2926;
@@ -3091,6 +3103,9 @@ body.index .header-wrapper, body.index .announcement-bar {
 .blog.color-inverse .blog__posts .article-card .card__information {
   padding: 36px;
 }
+.blog.color-inverse .blog__posts .article-card .card__information .card__media + .card__content {
+  display: none;
+}
 .blog.color-inverse p {
   color: white;
 }
@@ -3103,6 +3118,12 @@ body.index .header-wrapper, body.index .announcement-bar {
 }
 .blog.color-inverse .card__content {
   flex: 3;
+}
+
+.card__flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /* section-announcement-bar */
