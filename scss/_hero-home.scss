@@ -1,5 +1,16 @@
+.hero-home-container {
+    position: relative;
+    overflow: hidden;
+}
+#svg-bg {
+    position: absolute;
+    top: -500px;
+    left: 0
+}
 .hero-home {
     // background-color: #121114;
+    position: relative;
+    z-index: 2;
     text-align: center;
     padding-top: 8em;
     padding-bottom: 8em;
