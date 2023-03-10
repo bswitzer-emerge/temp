@@ -203,6 +203,9 @@
         "text",
         "3fd598c0-ed1a-4d0b-b60f-4504ab3e948e"
       ],
+      "custom_css": [
+        "p {font-size: 24px;}"
+      ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
