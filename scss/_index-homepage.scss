@@ -3,10 +3,14 @@ body.index {
         background-color: #efe7e0;
         // background-color: var(--gradient-base-background-2);
     }
+    section .page-width {
+        position: relative;
+        z-index: 2;
+    }
 }
 #bg-custom-homepage1 {
     position: absolute;
-    z-index: 0;
-    top: 100%;
+    z-index: 1;
+    top: 141%;
     right: -290px;
   }
