@@ -3063,6 +3063,11 @@ body.index section .page-width {
   right: -290px;
 }
 
+#bg-custom-homepage2 {
+  position: absolute;
+  z-index: 1;
+}
+
 /*
   Card content for blog posts feed on homepage when on the color inverse setting
 */
