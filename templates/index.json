@@ -170,6 +170,15 @@
         "padding_bottom": 100
       }
     },
+    "919791fe-f788-4a66-a0d1-721d19b0ba79": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div id=\"bg-custom-homepage1\"><svg height=\"1449\" viewBox=\"0 0 695 1449\" width=\"695\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"><g fill=\"none\" fill-rule=\"evenodd\" stroke=\"#fc7238\" stroke-width=\"2\" transform=\"translate(1.454978 1.057481)\"><path d=\"m-340.492987 755.928359c192.347976-109.119052 319.0181036-88.935703 380.010383 60.550048 91.488419 224.228623 293.057265 104.323721 585.840325 71.395538 292.783061-32.928183 345.461708-264.839921 407.221479-376.588244\" transform=\"matrix(-.190809 .98162718 -.98162718 -.190809 1129.00903 530.029761)\"\/><path d=\"m406.481368 0c77.860541 207.515658 38.020678 329.743267-119.519591 366.682828-236.3104034 55.40934-149.21854 273.74391-162.526994 568.735615-13.308454 294.991707 208.004106 383.499457 308.941847 462.156717\" opacity=\".350321\"\/><\/g><\/svg><\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "rich_text": {
       "type": "rich-text",
       "blocks": {
@@ -264,15 +273,6 @@
         "padding_bottom": 36
       }
     },
-    "7690af27-f9b0-4b44-8920-6ea2162b6ff9": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "{% for blog in blogs %}\n  <h2>{{ blog.title }}<\/h2>\n  {% for post in blog.articles %}\n    <div>\n      <h3>{{ post.title }}<\/h3>\n      <p>{{ post.excerpt }}<\/p>\n      <a href=\"{{ post.url }}\">Read more<\/a>\n    <\/div>\n  {% endfor %}\n{% endfor %}",
-        "color_scheme": "background-2",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "722430fb-a8d5-4d0d-a2a2-f95a2af200a0": {
       "type": "featured-blog",
       "custom_css": [
@@ -299,9 +299,9 @@
     "3c84d83d-a074-42fe-946a-d67f3945f89a",
     "3881a41a-7704-4efc-8eae-a2a63b5a9fd9",
     "712c1e1a-dc4b-49b1-8eb2-096da31cd708",
+    "919791fe-f788-4a66-a0d1-721d19b0ba79",
     "rich_text",
     "4d66e566-c32d-4177-a910-5c7b233d204a",
-    "7690af27-f9b0-4b44-8920-6ea2162b6ff9",
     "722430fb-a8d5-4d0d-a2a2-f95a2af200a0"
   ]
 }
