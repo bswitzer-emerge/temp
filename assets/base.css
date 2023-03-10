@@ -3052,6 +3052,13 @@ body.index .header-wrapper, body.index .announcement-bar {
   background-color: #efe7e0;
 }
 
+#bg-custom-homepage1 {
+  position: absolute;
+  z-index: 0;
+  top: 100%;
+  right: -290px;
+}
+
 /*
   Card content for blog posts feed on homepage when on the color inverse setting
 */
