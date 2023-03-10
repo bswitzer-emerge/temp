@@ -224,6 +224,15 @@
         "padding_bottom": 100
       }
     },
+    "5443d46e-38d2-45e9-a65c-0b1384acf72d": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div id=\"g-custom-homepage2\"><svg height=\"871\" viewBox=\"0 0 1280 871\" width=\"1280\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"><path d=\"m-75.0504904 3210.21492c239.5401824 51.15142 341.3453624 158.02034 305.4155394 320.60676-53.894734 243.87964 200.504837 293.06653 484.183368 476.80797 283.67853 183.74144 472.072283 37.11933 595.609643-7.45021\" fill=\"none\" opacity=\".346026\" stroke=\"#fc7238\" stroke-width=\"2\" transform=\"translate(0 -3228)\"\/><\/svg><\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "4d66e566-c32d-4177-a910-5c7b233d204a": {
       "type": "multicolumn",
       "blocks": {
@@ -301,6 +310,7 @@
     "712c1e1a-dc4b-49b1-8eb2-096da31cd708",
     "919791fe-f788-4a66-a0d1-721d19b0ba79",
     "rich_text",
+    "5443d46e-38d2-45e9-a65c-0b1384acf72d",
     "4d66e566-c32d-4177-a910-5c7b233d204a",
     "722430fb-a8d5-4d0d-a2a2-f95a2af200a0"
   ]
