@@ -29,7 +29,8 @@
         }
     }
     .card__inner {
-        background-color: #2F2926; 
+        //background-color: #2F2926; 
+        background-color: #1C1B19;
         border-radius: 20px;
     }
     .card.article-card {
@@ -43,8 +44,9 @@
         
     }
     .btn {
-        color: #222222;
-        background-color: #E2D7C9;
+        color: white;
+        background-color: #525351;
+        border: 1px solid #E2D7C9;
         font-weight: 400;
         padding: 10px 60px;
 

@@ -3083,7 +3083,7 @@ body.index .header-wrapper, body.index .announcement-bar {
   flex: 2;
 }
 .blog.color-inverse .card__inner {
-  background-color: #2F2926;
+  background-color: #1C1B19;
   border-radius: 20px;
 }
 .blog.color-inverse .card.article-card {
@@ -3094,8 +3094,9 @@ body.index .header-wrapper, body.index .announcement-bar {
   border-radius: 0 20px 20px 0;
 }
 .blog.color-inverse .btn {
-  color: #222222;
-  background-color: #E2D7C9;
+  color: white;
+  background-color: #525351;
+  border: 1px solid #E2D7C9;
   font-weight: 400;
   padding: 10px 60px;
 }
