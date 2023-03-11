@@ -228,8 +228,8 @@
       "settings": {
         "custom_liquid": "<div id=\"bg-custom-homepage2\"><svg height=\"871\" viewBox=\"0 0 1280 871\" width=\"1280\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"><path d=\"m-75.0504904 3210.21492c239.5401824 51.15142 341.3453624 158.02034 305.4155394 320.60676-53.894734 243.87964 200.504837 293.06653 484.183368 476.80797 283.67853 183.74144 472.072283 37.11933 595.609643-7.45021\" fill=\"none\" opacity=\".346026\" stroke=\"#fc7238\" stroke-width=\"2\" transform=\"translate(0 -3228)\"\/><\/svg><\/div>",
         "color_scheme": "background-1",
-        "padding_top": 40,
-        "padding_bottom": 52
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "4d66e566-c32d-4177-a910-5c7b233d204a": {
