@@ -7,6 +7,13 @@
     top: -500px;
     left: 0
 }
+#nissan-logo {
+    display: inline-block;
+    position: relative;
+    top: 25px;
+    width: 75px;
+    margin-left: 30px;
+}
 
 .hero-home {
     // background-color: #121114;
@@ -27,9 +34,14 @@
     h1,h3,h3,h4,h5,h6,p {
        //  color: white;
     }
+    p {
+        font-weight: 500;
+        font-size: 20px;
+    }
     h1 {
         font-size: 50px;
         font-weight: 500;
+        margin-top: 0;
     }
     h4 {
         font-size:30px;
@@ -43,7 +55,7 @@
 
     }
     .buttons {
-        margin-bottom: 5em;
+        margin-bottom: 2em;
     }
     .btn {
         font-size: 16px;
