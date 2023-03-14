@@ -182,7 +182,7 @@
     "ef7482f9-125c-425d-928c-2c4c644907ca": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div id=\"waves-bottom\" class=\"waves\"><img scr=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0719\/5269\/5597\/files\/waves_background_top.png?v=1678822543\"><\/div>",
+        "custom_liquid": "<div id=\"waves-bottom\" class=\"waves\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0719\/5269\/5597\/files\/waves_background_top.webp?v=1678821239\"><\/div>",
         "color_scheme": "background-1",
         "padding_top": 0,
         "padding_bottom": 0
