@@ -3081,6 +3081,10 @@ body.index section .page-width {
   z-index: 1;
 }
 
+#waves-top img, #waves-bottom img {
+  position: absolute;
+}
+
 /*
   Card content for blog posts feed on homepage when on the color inverse setting
 */

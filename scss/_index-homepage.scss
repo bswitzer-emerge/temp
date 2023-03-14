@@ -18,3 +18,9 @@ body.index {
     position: absolute;
     z-index: 1;
   }
+
+#waves-top, #waves-bottom {
+    img {
+        position: absolute
+    }
+}
