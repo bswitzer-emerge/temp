@@ -20,12 +20,19 @@
           "type": "content",
           "settings": {
           }
+        },
+        "858e5676-1ef5-4796-bcc8-8798c1c928b7": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
         }
       },
       "block_order": [
         "8f6a9936-240a-42fe-8ba3-195fcf17b149",
         "featured_image",
-        "content"
+        "content",
+        "858e5676-1ef5-4796-bcc8-8798c1c928b7"
       ],
       "settings": {
       }
