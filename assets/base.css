@@ -2861,6 +2861,11 @@ details-disclosure > details {
 .blog__article {
   display: flex;
 }
+.blog__article p {
+  font-size: 16px;
+  line-height: 2.4em;
+  margin-bottom: 2.5em;
+}
 
 .blog__col_1 {
   flex: 2;
@@ -2882,7 +2887,15 @@ details-disclosure > details {
 }
 
 .blog__max-width {
-  max-width: 550px;
+  max-width: 700px;
+}
+
+.blog__excerpt {
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 1.2em;
+  display: block;
+  margin-bottom: 1em;
 }
 
 .hero-home-container {

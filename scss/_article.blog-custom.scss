@@ -21,6 +21,11 @@
 }
 .blog__article {
   display: flex;
+  p {
+    font-size: 16px;
+    line-height: 2.4em;
+    margin-bottom: 2.5em;
+  }
 }
 .blog__col_1, .blog__col_2 {
 
@@ -41,5 +46,13 @@
   margin-top: 0;
 }
 .blog__max-width {
-  max-width: 550px;
+  max-width: 700px;
+}
+.blog__excerpt {
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 1.2em;
+  display: block;
+  margin-bottom: 1em;
+ 
 }
