@@ -1,6 +1,10 @@
 /* section-announcement-bar */
 #shopify-section-announcement-bar {
     z-index: 4;
+    display: none;
+    .index & {
+      display: block;
+    }
   }
   .announcement-bar {
     padding-bottom: 22px;
