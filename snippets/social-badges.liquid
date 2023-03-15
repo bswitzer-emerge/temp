@@ -1,16 +1,16 @@
 <div class="social-badges">
     <!-- LinkedIn Share Button -->
-    <a href="https://www.linkedin.com/shareArticle?url={{ article.url | absolute_url }}&title={{ article.title | url_encode }}" target="_blank" rel="noopener noreferrer" class="social-badge linkedin-badge">
+    <a href="https://www.linkedin.com/shareArticle?url={{shop.url}}{{ article.url | absolute_url }}&title={{ article.title | url_encode }}" target="_blank" rel="noopener noreferrer" class="social-badge linkedin-badge">
       <img src="{{ 'linked-in.svg' | asset_url }}" alt="share on LinkedIn">
     </a> 
 
      <!-- Twitter Share Button -->
-     <a href="https://twitter.com/intent/tweet?url={{ article.url | absolute_url }}&text={{ article.title | url_encode }}" target="_blank" rel="noopener noreferrer" class="social-badge twitter-badge">
+     <a href="https://twitter.com/intent/tweet?url={{shop.url}}{{ article.url | absolute_url }}&text={{ article.title | url_encode }}" target="_blank" rel="noopener noreferrer" class="social-badge twitter-badge">
       <img src="{{ 'twitter.svg' | asset_url }}" alt="share on Twitter">
     </a>
 
     <!-- Facebook Share Button -->
-    <a href="https://www.facebook.com/sharer/sharer.php?u={{ article.url | absolute_url }}" target="_blank" rel="noopener noreferrer" class="social-badge facebook-badge">
+    <a href="https://www.facebook.com/sharer/sharer.php?u={{shop.url}}{{ article.url | absolute_url }}" target="_blank" rel="noopener noreferrer" class="social-badge facebook-badge">
     <img src="{{ 'facebook.svg' | asset_url }}" alt="share on Facebook">
     </a>
       <div id="copied"><div>Link Copied!</div></div>
