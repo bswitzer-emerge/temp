@@ -1,0 +1,83 @@
+<div class="social-badges">
+    <!-- LinkedIn Share Button -->
+    <a href="https://www.linkedin.com/shareArticle?url={{ article.url | absolute_url }}&title={{ article.title | url_encode }}" target="_blank" rel="noopener noreferrer" class="social-badge linkedin-badge">
+      <img src="{{ 'linked-in.svg' | asset_url }}" alt="share on LinkedIn">
+    </a> 
+
+     <!-- Twitter Share Button -->
+     <a href="https://twitter.com/intent/tweet?url={{ article.url | absolute_url }}&text={{ article.title | url_encode }}" target="_blank" rel="noopener noreferrer" class="social-badge twitter-badge">
+      <img src="{{ 'twitter.svg' | asset_url }}" alt="share on Twitter">
+    </a>
+
+    <!-- Facebook Share Button -->
+    <a href="https://www.facebook.com/sharer/sharer.php?u={{ article.url | absolute_url }}" target="_blank" rel="noopener noreferrer" class="social-badge facebook-badge">
+    <img src="{{ 'facebook.svg' | asset_url }}" alt="share on Facebook">
+    </a>
+      <div id="copied"><div>URL copied to clipboard</div></div>
+      <a><img src="{{ 'link.svg' | asset_url }}" id="copyUrlImage"></a>
+    
+   
+  </div>
+
+
+
+
+
+
+  <script>
+    document.getElementById('copyUrlImage').addEventListener('click', function() {
+      const currentPageUrl = window.location.href;
+      const temporaryInput = document.createElement('input');
+
+      document.body.appendChild(temporaryInput);
+      temporaryInput.value = currentPageUrl;
+      temporaryInput.select();
+      document.execCommand('copy');
+      document.body.removeChild(temporaryInput);
+      //alert('URL copied to clipboard!');
+
+
+      const overlay = document.querySelector("#copied");
+
+      const fadeIn = (element, duration) => {
+        let start;
+        const tick = timestamp => {
+          if (!start) start = timestamp;
+          const progress = timestamp - start;
+          const opacity = progress / duration;
+          element.style.opacity = opacity;
+
+          if (progress < duration) {
+            window.requestAnimationFrame(tick);
+          } else {
+            element.style.opacity = 1;
+          }
+        };
+        element.style.display = "flex";
+        window.requestAnimationFrame(tick);
+      };
+
+      const fadeOut = (element, duration) => {
+        let start;
+        const tick = timestamp => {
+          if (!start) start = timestamp;
+          const progress = timestamp - start;
+          const opacity = 1 - progress / duration;
+          element.style.opacity = opacity;
+
+          if (progress < duration) {
+            window.requestAnimationFrame(tick);
+          } else {
+            element.style.opacity = 0;
+            element.style.display = "none";
+          }
+        };
+        window.requestAnimationFrame(tick);
+      };
+
+      fadeIn(overlay, 200);
+      setTimeout(() => {
+        fadeOut(overlay, 200);
+      }, 3000);
+    });
+  </script>

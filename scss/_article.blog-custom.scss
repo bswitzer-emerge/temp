@@ -2,8 +2,11 @@
 
 }
 .blog__image {
-  border-bottom: 1px solid grey;
+  //border-bottom: 1px solid grey;
   margin-bottom: 40px;
+  background-color: #EAE9E8;
+  border-radius: 10px;
+  
   .blog_small_hero &  {
     border-bottom: 0;
   }
@@ -12,6 +15,9 @@
 .blog__image img {
   width: 100%;
   height: auto;
+  display: block;
+  border-radius: 10px;
+  
 }
 .blog__article {
   display: flex;

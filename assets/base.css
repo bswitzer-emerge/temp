@@ -2843,8 +2843,9 @@ details-disclosure > details {
 }
 
 .blog__image {
-  border-bottom: 1px solid grey;
   margin-bottom: 40px;
+  background-color: #EAE9E8;
+  border-radius: 10px;
 }
 .blog_small_hero .blog__image {
   border-bottom: 0;
@@ -2853,6 +2854,8 @@ details-disclosure > details {
 .blog__image img {
   width: 100%;
   height: auto;
+  display: block;
+  border-radius: 10px;
 }
 
 .blog__article {
@@ -3059,6 +3062,20 @@ details-disclosure > details {
   background-color: #FC7238;
   border-radius: 23px;
   display: inline-flex;
+  justify-content: center;
+}
+
+.btn.grey {
+  background-color: #D8D8D8;
+}
+
+.btn.small {
+  padding: 2px 30px;
+  font-size: 15px;
+}
+
+.btn.back {
+  min-width: 130px;
 }
 
 body.index .header-wrapper, body.index .announcement-bar {
@@ -3201,4 +3218,36 @@ body.index section .page-width {
   padding: 1rem 0;
   margin: 0;
   letter-spacing: 0.1rem;
+}
+
+.tags {
+  margin-bottom: 3em;
+}
+
+.social-badges {
+  margin-top: 2em;
+}
+.social-badges a {
+  text-decoration: none;
+  display: block;
+  margin-bottom: 1em;
+  margin-left: 3em;
+}
+.social-badges #copied {
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 200;
+  background-color: rgba(0, 0, 0, 0.2);
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(10px);
+  justify-content: center;
+  align-items: center;
+}
+.social-badges #copied div {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 20px 40px;
 }

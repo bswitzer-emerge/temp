@@ -5,4 +5,16 @@
     background-color: #FC7238;
     border-radius: 23px;
     display: inline-flex;
+    justify-content: center;
+}
+.btn.grey {
+    background-color: #D8D8D8;
+}
+.btn.small {
+    padding: 2px 30px;
+    font-size: 15px;
+}
+.btn.back {
+    min-width: 130px;
+    
 }

@@ -31,8 +31,6 @@
             </div>
           </div>
         {%- endif -%}
-      {%- endcase -%}
-    {%- endfor -%}
         
         <div class="page-width">
         <div class="blog__article">
@@ -53,11 +51,8 @@
                 {{ 'blogs.article.back_to_blog' | t: title: blog.title }}
               </a>
             </div>
-          {%- endcase -%}
-        {%- endfor -%}
-        {%- for block in section.blocks -%}
-          {%- case block.type -%}
-            {%- when 'share' -%}
+
+            {% if settings.show_social_share_buttons %}
             <div class="article-template__social-sharing" {{ block.shopify_attributes }}>
               <share-button class="share-button" {{ block.shopify_attributes }}>
                 <button class="share-button__button hidden">
@@ -95,12 +90,9 @@
                 </details>
               </share-button>
               <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
-            {%- endcase -%}
-          {%- endfor -%}
+
           </div>
           <div class="blog__col_2">
-            {%- for block in section.blocks -%}
-              {%- case block.type -%}
             {%- when 'title'-%}
               <header class="page-width page-width--narrow" {{ block.shopify_attributes }}>
                 <h1 class="article-template__title" itemprop="headline">{{ article.title | escape }}</h1>
