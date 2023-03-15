@@ -13,7 +13,7 @@
     <a href="https://www.facebook.com/sharer/sharer.php?u={{ article.url | absolute_url }}" target="_blank" rel="noopener noreferrer" class="social-badge facebook-badge">
     <img src="{{ 'facebook.svg' | asset_url }}" alt="share on Facebook">
     </a>
-      <div id="copied"><div>URL copied to clipboard</div></div>
+      <div id="copied"><div>Link Copied!</div></div>
       <a id="copyUrlImage"><img src="{{ 'link.svg' | asset_url }}" ></a>
     
    
@@ -41,30 +41,36 @@
           if (!start) start = timestamp;
           const progress = timestamp - start;
           const opacity = progress / duration;
+          const translateY = 20 - (progress / duration) * 20;
           element.style.opacity = opacity;
-
+          element.style.transform = `translateY(${translateY}px)`;
+      
           if (progress < duration) {
             window.requestAnimationFrame(tick);
           } else {
             element.style.opacity = 1;
+            element.style.transform = 'translateY(0)';
           }
         };
         element.style.display = "flex";
         window.requestAnimationFrame(tick);
       };
-
+      
       const fadeOut = (element, duration) => {
         let start;
         const tick = timestamp => {
           if (!start) start = timestamp;
           const progress = timestamp - start;
           const opacity = 1 - progress / duration;
+          const translateY = (progress / duration) * 20;
           element.style.opacity = opacity;
-
+          element.style.transform = `translateY(${translateY}px)`;
+      
           if (progress < duration) {
             window.requestAnimationFrame(tick);
           } else {
             element.style.opacity = 0;
+            element.style.transform = 'translateY(20px)';
             element.style.display = "none";
           }
         };
@@ -74,6 +80,6 @@
       fadeIn(overlay, 200);
       setTimeout(() => {
         fadeOut(overlay, 200);
-      }, 3000);
+      }, 2000);
     });
   </script>

@@ -3239,6 +3239,7 @@ body.index section .page-width {
 
 .social-badges {
   margin-top: 2em;
+  position: relative;
 }
 .social-badges a {
   text-decoration: none;
@@ -3248,21 +3249,17 @@ body.index section .page-width {
 }
 .social-badges #copied {
   display: none;
-  position: fixed;
-  height: 100%;
-  width: 100%;
+  position: absolute;
   z-index: 200;
-  background-color: rgba(0, 0, 0, 0.2);
-  top: 0;
-  left: 0;
-  backdrop-filter: blur(10px);
   justify-content: center;
   align-items: center;
+  bottom: -60px;
 }
 .social-badges #copied div {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
-  padding: 20px 40px;
+  border-radius: 20px;
+  padding: 10px 20px;
 }
 .social-badges a {
   cursor: pointer;
