@@ -3264,3 +3264,10 @@ body.index section .page-width {
   color: white;
   padding: 20px 40px;
 }
+.social-badges a {
+  cursor: pointer;
+}
+
+#copyUrlImage {
+  cursor: pointer;
+}
