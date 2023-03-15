@@ -26,6 +26,18 @@
     a {
         cursor: pointer;
     }
+    .twitter-badge,.facebook-badge {
+        position: relative;
+        left: 3px;
+    }
+    .link-badge {
+        position: relative;
+        left: 5px;
+    }
+    .link-badge {
+
+    }
+
 }
 #copyUrlImage {
     cursor: pointer;;

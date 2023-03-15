@@ -3264,7 +3264,14 @@ body.index section .page-width {
 .social-badges a {
   cursor: pointer;
 }
-
+.social-badges .twitter-badge, .social-badges .facebook-badge {
+  position: relative;
+  left: 3px;
+}
+.social-badges .link-badge {
+  position: relative;
+  left: 5px;
+}
 #copyUrlImage {
   cursor: pointer;
 }
