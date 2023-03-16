@@ -101,12 +101,65 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "8b86537a-67c2-48db-b5d8-c4b83da65208": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width\">\n<hr>\n<\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    },
+    "7903bf5f-845a-4844-8bf5-dd325837d3b9": {
+      "type": "rich-text",
+      "blocks": {
+        "template--17947966341421__7903bf5f-845a-4844-8bf5-dd325837d3b9-16790045283338dfd4-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Careers<\/p>",
+            "heading_size": "h1"
+          }
+        },
+        "template--17947966341421__7903bf5f-845a-4844-8bf5-dd325837d3b9-16790045283338dfd4-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>"
+          }
+        },
+        "template--17947966341421__7903bf5f-845a-4844-8bf5-dd325837d3b9-16790045283338dfd4-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--17947966341421__7903bf5f-845a-4844-8bf5-dd325837d3b9-16790045283338dfd4-0",
+        "template--17947966341421__7903bf5f-845a-4844-8bf5-dd325837d3b9-16790045283338dfd4-1",
+        "template--17947966341421__7903bf5f-845a-4844-8bf5-dd325837d3b9-16790045283338dfd4-2"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "main",
     "64f2ca88-7d16-43f4-89df-f623035f1e72",
     "7cce4582-f982-4858-b777-604ebf3abb56",
-    "form"
+    "form",
+    "8b86537a-67c2-48db-b5d8-c4b83da65208",
+    "7903bf5f-845a-4844-8bf5-dd325837d3b9"
   ]
 }
