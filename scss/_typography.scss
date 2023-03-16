@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@100;300;400;500;700&display=swap');
 
 :root {
   --theme-font:  'Roboto', sans-serif;
@@ -41,7 +41,7 @@ body {
 
 .h0 {
   font-size: calc(var(--font-heading-scale) * 4rem);
-  font-weight: 500;
+  font-weight: 500q;
 }
 
 @media only screen and (min-width: 750px) {
@@ -170,4 +170,7 @@ blockquote {
 
 .font-body-bold {
   font-weight: var(--font-body-weight-bold);
+}
+.mono {
+  font-family: "Roboto Mono", monospace;
 }

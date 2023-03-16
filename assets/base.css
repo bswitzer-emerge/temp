@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* Color custom properties */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@100;300;400;500;700&display=swap");
 :root,
 .color-background-1 {
   --color-foreground: var(--color-base-text);
@@ -262,7 +262,7 @@ body {
 }
 .h0 {
   font-size: calc(var(--font-heading-scale) * 4rem);
-  font-weight: 500;
+  font-weight: 500q;
 }
 
 @media only screen and (min-width: 750px) {
@@ -385,6 +385,10 @@ blockquote {
 
 .font-body-bold {
   font-weight: var(--font-body-weight-bold);
+}
+
+.mono {
+  font-family: "Roboto Mono", monospace;
 }
 
 .no-js:not(html) {
@@ -2941,6 +2945,7 @@ details-disclosure > details {
 .hero-home p {
   font-weight: 500;
   font-size: 20px;
+  font-family: "Roboto Mono", monospace;
 }
 .hero-home h1 {
   font-size: 50px;
@@ -2978,6 +2983,10 @@ details-disclosure > details {
 }
 .register-for-access-message h3 {
   font-size: 36px;
+  margin-top: 0q;
+}
+.register-for-access-message .btn {
+  min-width: 280px;
 }
 
 .index .register-for-access-message {
