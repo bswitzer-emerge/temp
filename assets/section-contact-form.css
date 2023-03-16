@@ -12,8 +12,19 @@
 
 .contact .field {
   margin-bottom: 1.5rem;
+  
 }
-
+.contact .field input {
+  background-color: white;
+  
+}
+.contact .field:after {
+  border-radius: 10px;
+}
+.contact .field textarea {
+  background-color: white;
+  border-radius: 10px;
+}
 @media screen and (min-width: 750px) {
   .contact .field {
     margin-bottom: 2rem;
@@ -28,6 +39,15 @@
   .contact__button {
     margin-top: 4rem;
   }
+}
+#ContactForm {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 440px;
+}
+#ContactForm .btn {
+  width: 100%;
 }
 
 @media screen and (min-width: 750px) {

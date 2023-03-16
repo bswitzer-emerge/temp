@@ -6,6 +6,12 @@
     border-radius: 23px;
     display: inline-flex;
     justify-content: center;
+    border: none;
+        outline: none;
+}
+button.btn {
+    padding: 19px 30px;
+    font-size: 16px;
 }
 .btn.grey {
     background-color: #D8D8D8;

@@ -29,17 +29,20 @@
   .rich-text__wrapper--right {
     justify-content: flex-end;
   }
-
+  /*
   .rich-text__blocks {
     max-width: 50rem;
   }
+  */
 }
 
+/*
 @media screen and (min-width: 990px) {
   .rich-text__blocks {
     max-width: 78rem;
   }
 }
+*/
 
 .rich-text__blocks * {
   overflow-wrap: break-word;

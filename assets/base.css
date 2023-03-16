@@ -3090,6 +3090,13 @@ details-disclosure > details {
   border-radius: 23px;
   display: inline-flex;
   justify-content: center;
+  border: none;
+  outline: none;
+}
+
+button.btn {
+  padding: 19px 30px;
+  font-size: 16px;
 }
 
 .btn.grey {
@@ -3292,4 +3299,8 @@ body.index section .page-width {
 }
 #copyUrlImage {
   cursor: pointer;
+}
+
+.rich-text__text p {
+  font-size: 24px;
 }
