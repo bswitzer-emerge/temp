@@ -14,81 +14,199 @@
   }
 {%- endstyle -%}
 
-<div class="color-{{ section.settings.color_scheme }} gradient">
-  <div class="contact page-width page-width--narrow section-{{ section.id }}-padding">
-    {%- if section.settings.heading != blank -%}
-      <h2 class="title title-wrapper--no-top-margin {{ section.settings.heading_size }}">{{ section.settings.heading | escape }}</h2>
-    {%- else -%}
-      <h2 class="visually-hidden">{{ 'templates.contact.form.title' | t }}</h2>
-    {%- endif -%}
-    {%- form 'contact', id: 'ContactForm', class: 'isolate' -%}
-      {%- if form.posted_successfully? -%}
-        <h2 class="form-status form-status-list form__message" tabindex="-1" autofocus>{% render 'icon-success' %} {{ 'templates.contact.form.post_success' | t }}</h2>
-      {%- elsif form.errors -%}
-        <div class="form__message">
-          <h2 class="form-status caption-large text-body" role="alert" tabindex="-1" autofocus>{% render 'icon-error' %} {{ 'templates.contact.form.error_heading' | t }}</h2>
-        </div>
-        <ul class="form-status-list caption-large" role="list">
-          <li>
-            <a href="#ContactForm-email" class="link">
-              {{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}
-            </a>
-          </li>
-        </ul>
+<div class="page-width dummy-options">
+  <div class="radio-inputs">
+    <input type="radio" name="group" id="radio3" value="radio3" checked>
+    <label for="radio3" id="general-label">
+      <img src="https://cdn.shopify.com/s/files/1/0719/5269/5597/files/hands-without-plus.png?v=1679696990">
+      <span>General Inquiry</span> <br> I have batteries to supply</label>
+
+    <input type="radio" name="group" id="radio1" value="radio1">
+    <label for="radio1" id="buyer-label"><img src="https://cdn.shopify.com/s/files/1/0719/5269/5597/files/dude.png?v=1678492672">
+    <span>Buyer</span><br> I was to purchase batteries</label>
+
+    <input type="radio" name="group" id="radio2" value="radio2">
+    <label for="radio2" id="supplier-label">
+      <img src="https://cdn.shopify.com/s/files/1/0719/5269/5597/files/warehouse.png?v=1678492628">
+      <span>Supplier</span><br> I have a general inquiry</label>
+
+    
+</div>
+</div>
+
+
+
+<div id="buyer">
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfIAt5VGYicQOcQquLK-UE9LUfT7491AW5GwlgEbh3FEs4rtg/viewform?embedded=true" width="640" height="2521" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</div>
+
+<div id="supplier">
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfzM3IMWyUlBETn05SrchEHWbTAbGkjJHarjsq1tftEaCuZ2A/viewform?embedded=true" width="640" height="1070" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</div>
+
+<div id="generalc">
+  <div class="color-{{ section.settings.color_scheme }} gradient" >
+    <div class="contact page-width page-width--narrow section-{{ section.id }}-padding">
+      {%- if section.settings.heading != blank -%}
+        <h2 class="title title-wrapper--no-top-margin {{ section.settings.heading_size }}">{{ section.settings.heading | escape }}</h2>
+      {%- else -%}
+        <h2 class="visually-hidden">{{ 'templates.contact.form.title' | t }}</h2>
       {%- endif -%}
+      {%- form 'contact', id: 'ContactForm', class: 'isolate' -%}
+        {%- if form.posted_successfully? -%}
+          <h2 class="form-status form-status-list form__message" tabindex="-1" autofocus>{% render 'icon-success' %} {{ 'templates.contact.form.post_success' | t }}</h2>
+        {%- elsif form.errors -%}
+          <div class="form__message">
+            <h2 class="form-status caption-large text-body" role="alert" tabindex="-1" autofocus>{% render 'icon-error' %} {{ 'templates.contact.form.error_heading' | t }}</h2>
+          </div>
+          <ul class="form-status-list caption-large" role="list">
+            <li>
+              <a href="#ContactForm-email" class="link">
+                {{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}
+              </a>
+            </li>
+          </ul>
+        {%- endif -%}
+          <div class="field">
+            <input class="field__input" autocomplete="name" type="text" id="ContactForm-name" name="contact[{{ 'templates.contact.form.name' | t }}]" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}" placeholder="{{ 'templates.contact.form.name' | t }}">
+            <label class="field__label" for="ContactForm-name">{{ 'templates.contact.form.name' | t }}</label>
+          </div>
+          <div class="field field--with-error">
+            <input
+              autocomplete="email"
+              type="email"
+              id="ContactForm-email"
+              class="field__input"
+              name="contact[email]"
+              spellcheck="false"
+              autocapitalize="off"
+              value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+              aria-required="true"
+              {% if form.errors contains 'email' %}
+                aria-invalid="true"
+                aria-describedby="ContactForm-email-error"
+              {% endif %}
+              placeholder="{{ 'templates.contact.form.email' | t }}"
+            >
+            <label class="field__label" for="ContactForm-email">{{ 'templates.contact.form.email' | t }} <span aria-hidden="true">*</span></label>
+            {%- if form.errors contains 'email' -%}
+              <small class="contact__field-error" id="ContactForm-email-error">
+                <span class="visually-hidden">{{ 'accessibility.error' | t }}</span>
+                <span class="form__message">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</span>
+              </small>
+            {%- endif -%}
+          </div>
         <div class="field">
-          <input class="field__input" autocomplete="name" type="text" id="ContactForm-name" name="contact[{{ 'templates.contact.form.name' | t }}]" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}" placeholder="{{ 'templates.contact.form.name' | t }}">
-          <label class="field__label" for="ContactForm-name">{{ 'templates.contact.form.name' | t }}</label>
+          <input type="tel" id="ContactForm-phone" class="field__input" autocomplete="tel" name="contact[{{ 'templates.contact.form.phone' | t }}]" pattern="[0-9\-]*" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}" placeholder="{{ 'templates.contact.form.phone' | t }}">
+          <label class="field__label" for="ContactForm-phone">{{ 'templates.contact.form.phone' | t }}</label>
         </div>
-        <div class="field field--with-error">
-          <input
-            autocomplete="email"
-            type="email"
-            id="ContactForm-email"
-            class="field__input"
-            name="contact[email]"
-            spellcheck="false"
-            autocapitalize="off"
-            value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
-            aria-required="true"
-            {% if form.errors contains 'email' %}
-              aria-invalid="true"
-              aria-describedby="ContactForm-email-error"
-            {% endif %}
-            placeholder="{{ 'templates.contact.form.email' | t }}"
+        <div class="field">
+          <input type="text" id="ContactForm-company" class="field__input" autocomplete="tel" name="contact[{{ 'templates.contact.form.company' | t }}]" pattern="[0-9\-]*" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}" placeholder="{{ 'templates.contact.form.phone' | t }}">
+          <label class="field__label" for="ContactForm-phone">{{ 'templates.contact.form.phone' | t }}</label>
+        </div>
+        <div class="field">
+          <textarea
+            rows="10"
+            id="ContactForm-body"
+            class="text-area field__input"
+            name="contact[{{ 'templates.contact.form.comment' | t }}]"
+            placeholder="{{ 'templates.contact.form.comment' | t }}"
           >
-          <label class="field__label" for="ContactForm-email">{{ 'templates.contact.form.email' | t }} <span aria-hidden="true">*</span></label>
-          {%- if form.errors contains 'email' -%}
-            <small class="contact__field-error" id="ContactForm-email-error">
-              <span class="visually-hidden">{{ 'accessibility.error' | t }}</span>
-              <span class="form__message">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</span>
-            </small>
-          {%- endif -%}
+            {{- form.body -}}
+          </textarea>
+          <label class="form__label field__label" for="ContactForm-body">{{ 'templates.contact.form.comment' | t }}</label>
         </div>
-      <div class="field">
-        <input type="tel" id="ContactForm-phone" class="field__input" autocomplete="tel" name="contact[{{ 'templates.contact.form.phone' | t }}]" pattern="[0-9\-]*" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}" placeholder="{{ 'templates.contact.form.phone' | t }}">
-        <label class="field__label" for="ContactForm-phone">{{ 'templates.contact.form.phone' | t }}</label>
-      </div>
-      <div class="field">
-        <textarea
-          rows="10"
-          id="ContactForm-body"
-          class="text-area field__input"
-          name="contact[{{ 'templates.contact.form.comment' | t }}]"
-          placeholder="{{ 'templates.contact.form.comment' | t }}"
-        >
-          {{- form.body -}}
-        </textarea>
-        <label class="form__label field__label" for="ContactForm-body">{{ 'templates.contact.form.comment' | t }}</label>
-      </div>
-      <div class="contact__button">
-        <button type="submit" class="btn">
-          {{ 'templates.contact.form.send' | t }}
-        </button>
-      </div>
-    {%- endform -%}
+        <div class="contact__button">
+          <button type="submit" class="btn">
+            {{ 'templates.contact.form.send' | t }}
+          </button>
+        </div>
+      {%- endform -%}
+    </div>
   </div>
 </div>
+
+<script>
+  const buyerButton = document.querySelector('#buyer-label');
+  const buyer = document.querySelector('#buyer');
+
+  const supplierButton = document.querySelector('#supplier-label');
+  const supplier = document.querySelector('#supplier');
+
+  const generalButton = document.querySelector('#general-label');
+  const generalc = document.querySelector('#generalc');
+
+
+  const urlSearchParams = new URLSearchParams(window.location.search);
+ 
+
+  // Get the value of the 'name' parameter
+  const contact = urlSearchParams.get('contact');
+
+  console.log("contact:", contact);
+
+  if (contact) {
+    if (contact == "buyer" || contact == "supplier" || contact == "general") {
+      console.log("hit!")
+      showForm(contact);
+     // changeURL(urlSearchParams);
+    } else {
+      generalc.style.display = 'block';
+    }
+    
+  } else {
+    generalc.style.display = 'block';
+  }
+
+  buyerButton.addEventListener('click', () => {
+    showForm("buyer");
+    changeURL("buyer");
+  });
+  supplierButton.addEventListener('click', () => {
+    showForm("supplier");
+    changeURL("supplier");
+  });
+  generalButton.addEventListener('click', () => {
+    showForm("general");
+    changeURL("general");
+  });
+  
+  function showForm(val) {
+    buyer.style.display = 'none';
+    supplier.style.display = 'none';
+    generalc.style.display = 'none';
+    if (val == "buyer") {
+      buyer.style.display = 'block';
+    }
+    if (val == "supplier") {
+      supplier.style.display = 'block';
+    }
+    if (val == "general") {
+      generalc.style.display = 'block';
+    }
+  }
+
+
+  function changeURL(val) {
+    const getcurrentURL = window.location.href;
+    const url = new URL(getcurrentURL);
+    const search_params = url.searchParams;
+
+    search_params.set('contact', val);
+
+    url.search = search_params.toString();
+
+    const new_url = url.toString();
+
+    // output : http://demourl.com/path?id=101&topic=main
+    // console.log(new_url);
+    //window.location.href = new_url;
+    window.history.pushState({ path: new_url }, '', new_url);
+  }
+
+</script>
+
+
 
 {% schema %}
 {

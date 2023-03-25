@@ -3082,6 +3082,62 @@ details-disclosure > details {
   box-sizing: border-box;
 }
 
+#buyer, #supplier, #generalc {
+  display: none;
+  text-align: center;
+}
+
+.dummy-options .radio-inputs {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 3em;
+}
+.dummy-options .radio-inputs input[type=radio]:checked + label {
+  background-color: #FC7238;
+}
+.dummy-options .radio-inputs label {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  flex-grow: 0;
+  padding: 40px;
+  border: 1px solid #888888;
+  width: 222px;
+  height: 241px;
+  border-radius: 10px;
+  flex-direction: column;
+  cursor: pointer;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+.dummy-options .radio-inputs label img {
+  object-fit: contain;
+  height: 90px;
+  width: 105px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+}
+.dummy-options .radio-inputs label span {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+.dummy-options .radio-inputs input[type=radio] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: #fff;
+  /* Not removed via appearance */
+  margin: 0;
+}
+
 .btn {
   color: #222222;
   text-decoration: none;
