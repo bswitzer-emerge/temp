@@ -16,19 +16,19 @@
 
 <div class="page-width dummy-options">
   <div class="radio-inputs">
-    <input type="radio" name="group" id="radio3" value="radio3" checked>
-    <label for="radio3" id="general-label">
+    <input type="radio" name="group" id="general-radio" value="general-radio" checked>
+    <label for="general-radio" id="general-label">
       <img src="https://cdn.shopify.com/s/files/1/0719/5269/5597/files/hands-without-plus.png?v=1679696990">
-      <span>General Inquiry</span> <br> I have batteries to supply</label>
+      <span>General Inquiry</span> I have batteries to supply</label>
 
-    <input type="radio" name="group" id="radio1" value="radio1">
-    <label for="radio1" id="buyer-label"><img src="https://cdn.shopify.com/s/files/1/0719/5269/5597/files/dude.png?v=1678492672">
-    <span>Buyer</span><br> I was to purchase batteries</label>
+    <input type="radio" name="group" id="buyer-radio" value="buyer-radio">
+    <label for="buyer-radio" id="buyer-label"><img src="https://cdn.shopify.com/s/files/1/0719/5269/5597/files/dude.png?v=1678492672">
+    <span>Buyer</span> I was to purchase batteries</label>
 
-    <input type="radio" name="group" id="radio2" value="radio2">
-    <label for="radio2" id="supplier-label">
+    <input type="radio" name="group" id="supplier-radio" value="supplier-radio">
+    <label for="supplier-radio" id="supplier-label">
       <img src="https://cdn.shopify.com/s/files/1/0719/5269/5597/files/warehouse.png?v=1678492628">
-      <span>Supplier</span><br> I have a general inquiry</label>
+      <span>Supplier</span> I have a general inquiry</label>
 
     
 </div>
@@ -152,7 +152,7 @@
      // changeURL(urlSearchParams);
     } else {
       generalc.style.display = 'block';
-    }
+    } 
     
   } else {
     generalc.style.display = 'block';
@@ -177,12 +177,16 @@
     generalc.style.display = 'none';
     if (val == "buyer") {
       buyer.style.display = 'block';
+      document.getElementById('buyer-radio').checked = true;
+
     }
     if (val == "supplier") {
       supplier.style.display = 'block';
+      document.getElementById('supplier-radio').checked = true;
     }
     if (val == "general") {
       generalc.style.display = 'block';
+      document.getElementById('general-radio').checked = true;
     }
   }
 
