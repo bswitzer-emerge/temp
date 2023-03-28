@@ -905,6 +905,30 @@ summary::-webkit-details-marker {
   box-shadow: none;
 }
 
+.footer--info {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-weight: 600;
+  color: white;
+}
+.footer--info .row {
+  display: flex;
+}
+.footer--info a {
+  color: white;
+  text-decoration: none;
+}
+.footer--info .mail {
+  margin-bottom: 5px;
+}
+.footer--info .mail svg {
+  margin-right: 8px;
+}
+.footer--info .location svg {
+  margin-right: 14px;
+}
+
 /* component-title */
 .title,
 .title-wrapper-with-link {

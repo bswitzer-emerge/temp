@@ -1,0 +1,25 @@
+.footer--info {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-weight: 600;
+    color: white;
+    .row {
+        display: flex;
+    }
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    .mail {
+        margin-bottom: 5px;
+        svg {
+            margin-right: 8px;
+        }
+    }
+    .location {
+        svg {
+            margin-right: 14px;
+        }
+    }
+}
