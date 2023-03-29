@@ -130,69 +130,11 @@
         "padding_bottom": 0
       }
     },
-    "712c1e1a-dc4b-49b1-8eb2-096da31cd708": {
-      "type": "multicolumn",
-      "blocks": {
-        "template--17947966701869__712c1e1a-dc4b-49b1-8eb2-096da31cd708-1677538970a88eb8d1-0": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/car_10c852e8-4ca0-4c79-883f-f55a5272913c.png",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--17947966701869__712c1e1a-dc4b-49b1-8eb2-096da31cd708-1677538970a88eb8d1-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/warehouse.png",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--17947966701869__712c1e1a-dc4b-49b1-8eb2-096da31cd708-1677538970a88eb8d1-2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/platform.png",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "aba588f6-885f-447b-9850-09472629508b": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/dude.png",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--17947966701869__712c1e1a-dc4b-49b1-8eb2-096da31cd708-1677538970a88eb8d1-0",
-        "template--17947966701869__712c1e1a-dc4b-49b1-8eb2-096da31cd708-1677538970a88eb8d1-1",
-        "template--17947966701869__712c1e1a-dc4b-49b1-8eb2-096da31cd708-1677538970a88eb8d1-2",
-        "aba588f6-885f-447b-9850-09472629508b"
-      ],
+    "d43bafa2-8f8f-40f6-a5dc-daed56a7a39f": {
+      "type": "custom-liquid",
       "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 4,
-        "column_alignment": "left",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "background-2",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "custom_liquid": "<style>\n  #fourup {\n    background: var(--gradient-background);\n  }\n  #fourup img {\n    max-width: 100%;\n    max-height: 144px;\n    object-fit: contain;\n  }\n  #fourup li p, #fourup li {\n    text-align: center;\n    font-family: \"Roboto Mono\", monospace;\n  }\n  #fourup li {\n    padding-left: 40px;\n    padding-right: 40px;\n    display:  flex;\n    flex-direction: column;\n    justify-content: space-between;\n    align-items: center;\n    position: relative;\n    \n  }\n  #fourup li:after {\n    position: absolute;\n    top: 10px;\n    right: -21px;\n    content: \"\";\n    background-image: url(\"https:\/\/cdn.shopify.com\/s\/files\/1\/0719\/5269\/5597\/files\/arrow-right-sm.svg?v=1680125743\");\n    background-repeat: no-repeat;\n    background-position: center;\n    width: 39px;\n    height: 100%;\n    \n  }\n  #fourup li:last-of-type::after {\n    display: none;\n    background-image: none;\n  }\n<\/style>\n\n<div class=\"page-width\" id=\"fourup\">\n    <ul class=\"multicolumn-list contains-content-container grid grid--1-col-tablet-down grid--4-col-desktop\">\n      <li class=\"multicolumn-list__item grid__item\">\n          <p>car<\/p>\n          <img src=\"\/\/cdn.shopify.com\/s\/files\/1\/0719\/5269\/5597\/files\/car_10c852e8-4ca0-4c79-883f-f55a5272913c.png?v=1678492591&amp;width=1420\" alt=\"\" class=\"multicolumn-card__image\">\n      <\/li>\n      <li class=\"multicolumn-list__item grid__item\">\n       <p>warehouse<\/p>\n        <img src=\"\/\/cdn.shopify.com\/s\/files\/1\/0719\/5269\/5597\/files\/warehouse.png?v=1678492628&amp;width=1420\" alt=\"\"  class=\"multicolumn-card__image\">\n      <\/li>\n      <li class=\"multicolumn-list__item grid__item\">\n        <p>platform<\/p>\n        <img src=\"\/\/cdn.shopify.com\/s\/files\/1\/0719\/5269\/5597\/files\/platform.png?v=1678492644&amp;width=1420\" alt=\"\" class=\"multicolumn-card__image\">\n      <\/li>\n      <li class=\"multicolumn-list__item grid__item\">\n            <p>buyer<\/p>\n            <img src=\"\/\/cdn.shopify.com\/s\/files\/1\/0719\/5269\/5597\/files\/dude.png?v=1678492672&amp;width=1420\" alt=\"\" class=\"multicolumn-card__image\">\n      <\/li>\n    <\/ul>\n<\/div>",
+        "color_scheme": "background-1",
         "padding_top": 100,
         "padding_bottom": 100
       }
@@ -337,7 +279,7 @@
     "3c84d83d-a074-42fe-946a-d67f3945f89a",
     "3881a41a-7704-4efc-8eae-a2a63b5a9fd9",
     "ef7482f9-125c-425d-928c-2c4c644907ca",
-    "712c1e1a-dc4b-49b1-8eb2-096da31cd708",
+    "d43bafa2-8f8f-40f6-a5dc-daed56a7a39f",
     "919791fe-f788-4a66-a0d1-721d19b0ba79",
     "rich_text",
     "5443d46e-38d2-45e9-a65c-0b1384acf72d",
