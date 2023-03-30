@@ -107,6 +107,9 @@
     margin-bottom: 3em;
     input[type="radio"]:checked + label {
         background-color: #FC7238;
+        &:hover {
+            background-color: lighten(#FC7238, 25%)
+        }
     }
     label {
         margin-left: 10px;
@@ -124,6 +127,9 @@
         text-align: center;
         justify-content: center;
         align-content: center;
+        &:hover {
+            background-color: lighten(#f5f5f2, 25%)
+        }
         img {
             object-fit: contain;
             height: 90px;

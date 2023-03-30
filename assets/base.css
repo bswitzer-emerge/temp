@@ -3123,6 +3123,9 @@ details-disclosure > details {
 .dummy-options .radio-inputs input[type=radio]:checked + label {
   background-color: #FC7238;
 }
+.dummy-options .radio-inputs input[type=radio]:checked + label:hover {
+  background-color: #fecbb6;
+}
 .dummy-options .radio-inputs label {
   margin-left: 10px;
   margin-right: 10px;
@@ -3138,6 +3141,9 @@ details-disclosure > details {
   text-align: center;
   justify-content: center;
   align-content: center;
+}
+.dummy-options .radio-inputs label:hover {
+  background-color: white;
 }
 .dummy-options .radio-inputs label img {
   object-fit: contain;
