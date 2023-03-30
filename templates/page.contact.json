@@ -144,6 +144,9 @@
         "template--17947966341421__7903bf5f-845a-4844-8bf5-dd325837d3b9-16790045283338dfd4-1",
         "template--17947966341421__7903bf5f-845a-4844-8bf5-dd325837d3b9-16790045283338dfd4-2"
       ],
+      "custom_css": [
+        "p {font-size: 18px;}"
+      ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
