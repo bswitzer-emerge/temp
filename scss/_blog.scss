@@ -49,6 +49,9 @@
         border: 1px solid #E2D7C9;
         font-weight: 400;
         padding: 10px 60px;
+        &:hover {
+            background-color: lighten(#525351, 20%);
+        }
 
     }
     .blog__posts .article-card .card__information {

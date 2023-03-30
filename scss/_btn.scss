@@ -19,7 +19,7 @@ button.btn {
 .btn.grey {
     background-color: #D8D8D8;
     &:hover {
-        background-color: lighten(#D8D8D8, 25%)
+        background-color: lighten(#D8D8D8, 20%)
     }
 }
 .btn.small {
@@ -30,6 +30,6 @@ button.btn {
     min-width: 130px;
     
 }
-#customer_login_link:hover {
-    background-color: lighten(#FC7238, 25%)
+.header__signin #customer_login_link:hover {
+    background-color: lighten(#FC7238, 20%)
 }

@@ -3200,8 +3200,8 @@ button.btn {
   min-width: 130px;
 }
 
-#customer_login_link:hover {
-  background-color: #fecbb6;
+.header__signin #customer_login_link:hover {
+  background-color: #feb99c;
 }
 
 body.index .header-wrapper, body.index .announcement-bar {
@@ -3275,6 +3275,9 @@ body.index section .page-width {
   border: 1px solid #E2D7C9;
   font-weight: 400;
   padding: 10px 60px;
+}
+.blog.color-inverse .btn:hover {
+  background-color: #858684;
 }
 .blog.color-inverse .blog__posts .article-card .card__information {
   padding: 36px;
