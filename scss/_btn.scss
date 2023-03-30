@@ -2,14 +2,14 @@
     color: #222222;
     text-decoration: none;
     padding: 10px 30px;
-    background-color: #FC7238;
+    background-color: #FF730C;
     border-radius: 23px;
     display: inline-flex;
     justify-content: center;
     border: none;
     outline: none;
     &:hover {
-        background-color: lighten(#FC7238, 25%)
+        background-color: lighten(#FF730C, 25%)
     }
 }
 button.btn {
@@ -31,5 +31,5 @@ button.btn {
     
 }
 .header__signin #customer_login_link:hover {
-    background-color: lighten(#FC7238, 20%)
+    background-color: lighten(#FF730C, 20%)
 }

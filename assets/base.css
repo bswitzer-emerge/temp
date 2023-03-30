@@ -3055,7 +3055,7 @@ details-disclosure > details {
   border-radius: 29px;
 }
 .register-for-access-modal form input[type=radio]:checked + label {
-  background-color: #FC7238;
+  background-color: #FF730C;
 }
 .register-for-access-modal form label {
   display: flex;
@@ -3121,10 +3121,10 @@ details-disclosure > details {
   margin-bottom: 3em;
 }
 .dummy-options .radio-inputs input[type=radio]:checked + label {
-  background-color: #FC7238;
+  background-color: #FF730C;
 }
 .dummy-options .radio-inputs input[type=radio]:checked + label:hover {
-  background-color: #fecbb6;
+  background-color: #ffbc8c;
 }
 .dummy-options .radio-inputs label {
   margin-left: 10px;
@@ -3174,7 +3174,7 @@ details-disclosure > details {
   color: #222222;
   text-decoration: none;
   padding: 10px 30px;
-  background-color: #FC7238;
+  background-color: #FF730C;
   border-radius: 23px;
   display: inline-flex;
   justify-content: center;
@@ -3182,7 +3182,7 @@ details-disclosure > details {
   outline: none;
 }
 .btn:hover {
-  background-color: #fecbb6;
+  background-color: #ffbc8c;
 }
 
 button.btn {
@@ -3207,7 +3207,7 @@ button.btn {
 }
 
 .header__signin #customer_login_link:hover {
-  background-color: #feb99c;
+  background-color: #ffae72;
 }
 
 body.index .header-wrapper, body.index .announcement-bar {
