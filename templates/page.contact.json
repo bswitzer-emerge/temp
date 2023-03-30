@@ -157,7 +157,8 @@
       "type": "featured-blog",
       "custom_css": [
         ".card__inner,.article-card__excerpt,.article-card__footer {display: none;}",
-        "h3 {border: 1px solid #888888; border-radius: 30px; font-size: 18px; width: 100%; max-width: 560px; display: inline-flex; padding-left: 50px; padding-top: 12px; padding-bottom: 12px;}"
+        "h3 {border: 1px solid #888888; border-radius: 30px; font-size: 16px; width: 100%; max-width: 560px; display: inline-flex; padding-left: 50px; padding-top: 12px; padding-bottom: 12px; background-image: url(https:\/\/cdn.shopify.com\/s\/files\/1\/0719\/5269\/5597\/files\/arrow-right-sm.svg?v=1680125743); background-repeat: no-repeat; background-position: center right 25px;}",
+        ".card__information {padding-top: 0; padding-bottom: 0;}"
       ],
       "settings": {
         "heading": "",
