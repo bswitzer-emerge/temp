@@ -3237,6 +3237,9 @@ body.index section .page-width {
   -moz-osx-font-smoothing: greyscale;
   background: var(--gradient-base-background-2);
 }
+.blog.color-inverse .blog__post:hover .btn {
+  background-color: #858684;
+}
 .blog.color-inverse .grid {
   justify-content: space-between;
 }

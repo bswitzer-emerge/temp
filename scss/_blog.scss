@@ -7,6 +7,12 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: greyscale;
     background: var(--gradient-base-background-2);
+    .blog__post:hover {
+        .btn {
+            background-color: lighten(#525351, 20%);
+
+        }
+    }
     .grid {
         justify-content: space-between;
     }
