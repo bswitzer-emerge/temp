@@ -102,7 +102,8 @@
         "26d55434-121e-40e3-bb2d-9fa09116a14b"
       ],
       "custom_css": [
-        "h3 {font-size: 20px;}"
+        "h3 {font-size: 20px;}",
+        "div {mix-blend-mode: darken;}"
       ],
       "settings": {
         "title": "",
