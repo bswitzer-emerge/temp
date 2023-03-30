@@ -42,7 +42,7 @@
         "template--17947966341421__64f2ca88-7d16-43f4-89df-f623035f1e72-16790045283338dfd4-2"
       ],
       "custom_css": [
-        "h2 {font-family: roboto;}"
+        "h2 {font-family: roboto; font-weight: 500;}"
       ],
       "settings": {
         "desktop_content_position": "center",
