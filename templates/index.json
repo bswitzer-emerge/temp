@@ -167,7 +167,7 @@
         "3fd598c0-ed1a-4d0b-b60f-4504ab3e948e": {
           "type": "button",
           "settings": {
-            "button_label": "Platform Overview",
+            "button_label": "",
             "button_link": "",
             "button_style_secondary": false,
             "button_label_2": "",
