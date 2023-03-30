@@ -130,7 +130,7 @@
         "template--17947966341421__7903bf5f-845a-4844-8bf5-dd325837d3b9-16790045283338dfd4-2": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "",
             "button_link": "",
             "button_style_secondary": false,
             "button_label_2": "",
@@ -155,6 +155,10 @@
     },
     "42c0ef7c-d0ff-41c0-a8b7-1ac4345b56c6": {
       "type": "featured-blog",
+      "custom_css": [
+        ".card__inner,.article-card__excerpt,.article-card__footer {display: none;}",
+        "h3 {border: 1px solid #888888; border-radius: 30px; font-size: 18px; width: 100%; max-width: 560px; display: inline-flex; padding-left: 50px; padding-top: 12px; padding-bottom: 12px;}"
+      ],
       "settings": {
         "heading": "",
         "heading_size": "h1",
