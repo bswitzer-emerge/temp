@@ -3175,6 +3175,9 @@ details-disclosure > details {
   border: none;
   outline: none;
 }
+.btn:hover {
+  background-color: #fecbb6;
+}
 
 button.btn {
   padding: 19px 30px;
@@ -3183,6 +3186,9 @@ button.btn {
 
 .btn.grey {
   background-color: #D8D8D8;
+}
+.btn.grey:hover {
+  background-color: white;
 }
 
 .btn.small {
