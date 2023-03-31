@@ -3235,7 +3235,7 @@ body.index section .page-width {
 
 #waves-top img, #waves-bottom img {
   position: absolute;
-  width: 1280px;
+  width: 100%;
 }
 
 /*
