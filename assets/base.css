@@ -3210,6 +3210,9 @@ button.btn {
   background-color: #ffae72;
 }
 
+body.index {
+  overflow-x: hidden;
+}
 body.index .header-wrapper, body.index .announcement-bar {
   background-color: #efe7e0;
 }
