@@ -160,26 +160,6 @@
       },
       "footer": {
         "type": "footer",
-        "blocks": {
-          "footer-0": {
-            "type": "link_list",
-            "settings": {
-              "heading": "",
-              "menu": "footer-col-1"
-            }
-          },
-          "footer-1": {
-            "type": "link_list",
-            "settings": {
-              "heading": "",
-              "menu": "footer"
-            }
-          }
-        },
-        "block_order": [
-          "footer-0",
-          "footer-1"
-        ],
         "custom_css": [
 
         ],
