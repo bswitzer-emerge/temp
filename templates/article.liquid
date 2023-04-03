@@ -1,0 +1,72 @@
+
+<div class="blog">
+    <div class="page-width">
+      <div class="blog__image">
+      {%- if article.image -%}
+          <img
+            srcset="{% if article.image.width >= 350 %}{{ article.image | image_url: width: 350 }} 350w,{% endif %}
+              {% if article.image.width >= 750 %}{{ article.image | image_url: width: 750 }} 750w,{% endif %}
+              {% if article.image.width >= 1100 %}{{ article.image | image_url: width: 1100 }} 1100w,{% endif %}
+              {% if article.image.width >= 1500 %}{{ article.image | image_url: width: 1500 }} 1500w,{% endif %}
+              {% if article.image.width >= 2200 %}{{ article.image | image_url: width: 2200 }} 2200w,{% endif %}
+              {% if article.image.width >= 3000 %}{{ article.image | image_url: width: 3000 }} 3000w,{% endif %}
+              {{ article.image | image_url }} {{ article.image.width }}w"
+            sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 }}px, (min-width: 750px) calc(100vw - 10rem), 100vw"
+            src="{{ article.image | image_url: width: 1100 }}"
+            loading="eager"
+            width="{{ article.image.width }}"
+            height="{{ article.image.height }}"
+            alt="{{ article.image.alt | escape }}">
+      {%- endif -%}
+      </div>
+    </div>
+  
+    <div class="page-width">
+      <div class="blog__article">
+        <div class="blog__col_1">
+          <div class="">
+            <a href="{{ blog.url }}" class="btn grey back">Back</a>
+          </div>
+          {%- if block.settings.blog_show_author -%}
+          <p>By {{ article.author }} </p>
+           {%- endif -%}
+           {%- if block.settings.blog_show_date -%}
+          <p> {{ article.published_at | date: "%B %d, %Y" }}</p>
+         {%- endif -%}
+         {% include 'social-badges' %}
+        </div>
+        <div class="blog__col_2">
+          <div class="blog__max-width">
+            <div class="tags">
+              {% if article.tags.size > 0 %}
+                <div class="blog-post-tags">
+                  {% for tag in article.tags %}
+                    <a href="{{ blog.url }}/tagged/{{ tag | handleize }}" class="btn grey small">{{ tag }}</a>
+                    {% if forloop.last == false %} <!-- tag --> {% endif %}
+                  {% endfor %}
+                </div>
+              {% endif %}
+           </div>
+          <h1 class="h0">{{ article.title }}</h1>
+          <span class="blog__excerpt">{{ article.excerpt }}</span>
+  
+          {{ article.content }}
+  
+          
+        </div>
+        </div>
+      </div>
+     
+  
+      <div>
+     
+      </div>
+    </div>
+  
+  
+  
+    
+  </div>
+  
+  
+  
