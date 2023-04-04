@@ -52,7 +52,7 @@
     {%- endfor -%}
   </ul>
 
-  {% paginate collection.products by 20 %}
+{% paginate collection.products by 20 %}
   {% for product in collection.products %}
     <!-- product info -->
   {% endfor %}
