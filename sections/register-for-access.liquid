@@ -17,9 +17,13 @@
       <div class=" page-width">
         <p class="mono">{{ section.settings.sub_head }}</p>
         <h3 class="mono">{{ section.settings.head }}</h3>
-          <p class="message"{{ section.settings.message }}!</p>
-          <br>
-          <a href="/pages/contact?contact=buyer" class="btn register-for-access-button">Contact Us</a>
+          <p class="message">{{ section.settings.message }}</p>
+          
+          {% if section.settings.button_text  %}
+            <br>
+            <a href="{{ section.settings.button_url }}" class="btn register-for-access-button">{{ section.settings.button_text }}</a>s
+          {% endif %}
+          
       </div>
     </div>
   {% endunless %}
@@ -32,18 +36,33 @@
       {
         "type": "text",
         "id": "sub_head",
-        "label": "Above Header"
+        "label": "Above Header",
+        "default": "Above Header"
       }, 
       {
         "type": "text",
         "id": "head",
-        "label": "Header"
+        "label": "Header",
+        "default": "Header"
       }, 
       {
         "type": "textarea",
         "id": "message",
-        "label": "Content"
+        "label": "Content",
+        "default": "My message goes here"
       }, 
+      {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button Text",
+        "default": "Contact Us"
+      }, 
+      {
+        "type": "text",
+        "id": "button_url",
+        "label": "Button URL",
+        "default": "/pages/contact?contact=buyer"
+      },
       {
         "type": "color",
         "id": "background_color",
