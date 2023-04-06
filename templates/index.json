@@ -277,8 +277,10 @@
       "settings": {
         "sub_head": "Still Unsure",
         "head": "Contact Our Team",
-        "content": "We're here to help with any questions you may have. Connect with our team to learn more about how the platform works, how your business can benefit, and how we can work together toward the circular economy. Talk with you soon!",
-        "background_color": ""
+        "message": "We're here to help with any questions you may have. Connect with our team to learn more about how the platform works, how your business can benefit, and how we can work together toward the circular economy. Talk with you soon!",
+        "background_color": "",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
