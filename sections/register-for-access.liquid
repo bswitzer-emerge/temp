@@ -1,5 +1,19 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
 {% unless customer %}
-    <div class="register-for-access-message">
+    <div class="register-for-access-message section-{{ section.id }}-padding" >
       <div class=" page-width">
         <p class="mono">{{ section.settings.sub_head }}</p>
         <h3 class="mono">{{ section.settings.head }}</h3>
@@ -18,22 +32,42 @@
       {
         "type": "text",
         "id": "sub_head",
-        "label": "Subheader"
+        "label": "Above Header"
       }, 
       {
         "type": "text",
         "id": "head",
-        "label": "Subheader"
+        "label": "Header"
       }, 
       {
         "type": "textarea",
         "id": "content",
-        "label": "Subheader"
+        "label": "Content"
       }, 
       {
         "type": "color",
         "id": "background_color",
         "label": "Background color"
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 36
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 36
       }
      ],
      "presets": [
