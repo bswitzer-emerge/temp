@@ -14,7 +14,7 @@
         "products_per_page": 16,
         "columns_desktop": 4,
         "image_ratio": "square",
-        "list-display": "list-yes",
+        "list-display": "list-no",
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
