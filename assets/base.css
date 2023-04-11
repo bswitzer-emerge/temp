@@ -3475,3 +3475,7 @@ body.index section .page-width {
   padding-top: 0;
   padding-bottom: 0;
 }
+
+.card-product-list {
+  display: flex;
+}
