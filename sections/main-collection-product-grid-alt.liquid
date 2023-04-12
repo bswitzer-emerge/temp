@@ -25,12 +25,10 @@
     }
   }
 {%- endstyle -%}
-<h1>Hello World</h1>
 <div class="section-{{ section.id }}-padding">
   <div>
   {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
   {%- if section.settings.enable_sorting and section.settings.filter_type == 'vertical' -%}
-    <h1>test1</h1>
     <facet-filters-form class="facets facets-vertical-sort page-width small-hide no-js-hidden">
       <form class="facets-vertical-form" id="FacetSortForm">
         <div class="facet-filters sorting caption">
@@ -118,6 +116,31 @@
               grid--1-col-desktop">
             {% endif %}
 
+            {%- if section.settings.list_display == "list_yes" -%} 
+              <div class="card-product-list top">
+                <div class="card-product-list__col1">
+                   Products
+                </div>
+                <div class="card-product-list__col2">
+                    Price
+                </div>
+                <div class="card-product-list__col3">
+                  Icon
+                </div>
+                <div class="card-product-list__col4">
+                  Icon
+                </div>
+                <div class="card-product-list__col5">
+                  Icon
+                </div>
+                <div class="card-product-list__col6">
+                  Icon
+                </div>
+                <div class="card-product-list__col7">
+                  Icon
+                </div>
+              </div>
+          {%- endif -%}
 
               {%- for product in collection.products -%}
                 {% assign lazy_load = false %}
