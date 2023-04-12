@@ -47,7 +47,7 @@
           "settings": {
             "heading": "Product Description",
             "icon": "recycle",
-            "content": "",
+            "content": "<p>{{ product.title }}<\/p><p>{{ shop.brand.short_description }}<\/p><p><\/p>",
             "page": ""
           }
         },
