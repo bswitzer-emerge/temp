@@ -25,7 +25,7 @@
     }
   }
 {%- endstyle -%}
-<div class="section-{{ section.id }}-padding">
+<div class="section-{{ section.id }}-padding" >
   <div>
   {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
   {%- if section.settings.enable_sorting and section.settings.filter_type == 'vertical' -%}
@@ -102,7 +102,33 @@
         {%- else -%}
           <div class="collection{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}">
             <div class="loading-overlay gradient"></div>
-    
+            {%- if section.settings.list_display == "list_yes" -%} 
+            <div class="card-product-list top">
+              <div class="card-product-list__col1" id="title-sort">
+                 Title
+              </div>
+              <div class="card-product-list__col2" id="price-sort">
+                  Price
+              </div>
+              <div class="card-product-list__col3" id="soh-sort">
+                Icon
+              </div>
+              <div class="card-product-list__col4" id="makemodel-sort">
+                Icon
+              </div>
+              <div class="card-product-list__col5" id="battery_type-sort">
+                Icon
+              </div>
+              <div class="card-product-list__col6" id="location-sort">
+                Icon
+              </div>
+              <div class="card-product-list__col7">
+                Icon
+              </div>
+            </div>
+
+            
+        {%- endif -%}
             {% comment %}
               New code for switch for list view
             {% endcomment %}
@@ -116,31 +142,7 @@
               grid--1-col-desktop">
             {% endif %}
 
-            {%- if section.settings.list_display == "list_yes" -%} 
-              <div class="card-product-list top">
-                <div class="card-product-list__col1">
-                   Products
-                </div>
-                <div class="card-product-list__col2">
-                    Price
-                </div>
-                <div class="card-product-list__col3">
-                  Icon
-                </div>
-                <div class="card-product-list__col4">
-                  Icon
-                </div>
-                <div class="card-product-list__col5">
-                  Icon
-                </div>
-                <div class="card-product-list__col6">
-                  Icon
-                </div>
-                <div class="card-product-list__col7">
-                  Icon
-                </div>
-              </div>
-          {%- endif -%}
+         
 
               {%- for product in collection.products -%}
                 {% assign lazy_load = false %}
@@ -165,7 +167,15 @@
 
                   %} 
                   {%- else -%}
-                  <li class="grid__item">
+                  <li class="grid__item"
+                    data-title="{{product.title}}"
+                    data-makemodel="{{ product.metafields.custom.make.value }} {{ product.metafields.custom.model.value }}" 
+                    data-soh="{{ product.metafields.custom.soh.value }}"
+                    data-battery_type="{{ product.metafields.custom.battery_type.value }}"
+                    data-price="{{ product.price }}"
+                    data-location="{{ product.metafields.custom.location_state }} {{ product.metafields.custom.location_city }}"
+                  
+                  >
                     {% render 'card-product-list',
                       card_product: product,
                       media_aspect_ratio: section.settings.image_ratio,
@@ -190,6 +200,113 @@
     </div>
   </div>
 </div>
+
+<style>
+  .highlighted {
+    background-color: rgba(0,0,0,0.25);
+  }
+  [id$=sort]  {
+   cursor: pointer;
+  }
+</style>
+<script>
+
+  const ul = document.querySelector('#product-grid');
+  const lis = Array.from(ul.children);
+
+  const titleList = document.querySelector('#title-sort')
+  const priceList = document.querySelector('#price-sort')
+  const sohList = document.querySelector('#soh-sort'); 
+  const makemodel = document.querySelector('#makemodel-sort')
+  const batteryTypeList = document.querySelector('#battery_type-sort');
+  const locationList = document.querySelector('#location-sort');
+
+  let titleOrder = 'asc';
+  let priceOrder = 'asc';
+  let sohSortOrder = 'asc';
+  let makeModelOrder = 'asc';
+  let batteryTypeSortOrder = 'asc';
+  let locationOrder = 'asc';
+
+
+titleList.addEventListener('click', ()=>{
+  removeHighlighted();
+  titleList.classList.add("highlighted")
+  sortNumerical("titleOrder", "title");
+}); 
+  
+priceList.addEventListener('click', ()=>{
+  removeHighlighted();
+  priceList.classList.add("highlighted")
+  sortNumerical("priceOrder", "price");
+}); 
+
+sohList.addEventListener('click', ()=>{
+  removeHighlighted();
+  sohList.classList.add("highlighted")
+  sortNumerical("sohSortOrder", "soh");
+}); 
+
+makemodel.addEventListener('click', ()=> {
+  removeHighlighted();
+  makemodel.classList.add("highlighted")
+  sortAlphabetical("makeModelOrder", "makemodel");
+});
+
+batteryTypeList.addEventListener('click', ()=> {
+  removeHighlighted();
+  batteryTypeList.classList.add("highlighted")
+  sortAlphabetical("batteryTypeSortOrder", "battery_type");
+});
+
+locationList.addEventListener('click', ()=> {
+  removeHighlighted();
+  locationList.classList.add("highlighted")
+  sortAlphabetical("locationOrder", "location");
+});
+
+
+
+
+
+//Sorting
+function sortAlphabetical (sort, whichData) {
+  if (window[sort] === 'asc') {
+    lis.sort((a, b) => a.dataset[whichData].localeCompare(b.dataset[whichData]));
+    window[sort] = 'desc';
+  } else {
+    window[sort] = 'asc';
+    lis.sort((a, b) => b.dataset[whichData].localeCompare(a.dataset[whichData]));
+  }
+  console.log(window[sort], whichData);
+  lis.forEach(li => ul.appendChild(li));
+}
+
+
+function sortNumerical (sort, whichData) {
+  if (window[sort] === 'asc') {
+    lis.sort((a, b) => a.dataset.soh - b.dataset.soh);
+    window[sort] = 'desc';
+  } else {
+    lis.sort((a, b) => b.dataset.soh - a.dataset.soh);
+    window[sort] = 'asc';
+  }
+  console.log(window[sort], whichData);
+  lis.forEach(li => ul.appendChild(li));
+}
+
+  //remove classes
+  function removeHighlighted () {
+    const findClass = document.querySelectorAll(".highlighted")
+    findClass.forEach(el => {
+      el.classList.remove('highlighted');
+    });
+  }
+
+
+  
+
+</script>
 
 
 {% schema %}

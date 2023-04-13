@@ -32,7 +32,7 @@
         assign ratio = 1
       endif
     -%}
-    <div class="card-wrapper product-card-wrapper underline-links-hover">
+    <div class="card-wrapper product-card-wrapper underline-links-hover" data-price>
         <div class="card-product-list">
         <div class="card-product-list__col1">
             <h3  class="card__heading"  id="title-{{ section_id }}-{{ card_product.id }}" >
@@ -59,7 +59,7 @@
         </div>
 
         <div class="card-product-list__col6">
-            City, State
+            {{ card_product.metafields.custom.location_city }}, {{ card_product.metafields.custom.location_state }}
         </div>
         <div class="card-product-list__col7">
                 <div class="quick-add no-js-hidden">
