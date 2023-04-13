@@ -12,7 +12,7 @@
       "type": "main-collection-product-grid-alt",
       "settings": {
         "products_per_page": 50,
-        "columns_desktop": 4,
+        "columns_desktop": 5,
         "image_ratio": "square",
         "list_display": "list_yes",
         "show_secondary_image": false,
