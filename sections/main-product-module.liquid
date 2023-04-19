@@ -101,16 +101,7 @@
       
     </div>
 
-    <script>
-      var accordions = document.querySelectorAll('.product__accordion.accordion');
-      if (accordions.length >= {{ section.settings.accordionopen }}) {
-        var secondAccordion = accordions[1];
-        var button = secondAccordion.querySelector('[role="button"]');
-        if (button) {
-          button.click();
-        }
-      }
-    </script>
+    
     <!-- end grid -->
     <div class="product__info-wrapper grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}"> 
 
@@ -1158,6 +1149,22 @@
         hiddenInput.value = event.currentTarget.value;
       });
     });
+  </script>
+
+  <!-- accordion -->
+  <script>
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const accordions = document.querySelectorAll('.product__accordion.accordion');
+      if (accordions.length >= {{ section.settings.accordionopen }} ) {
+        const secondAccordion = accordions[1];
+        const button = secondAccordion.querySelector('[role="button"]');
+        if (button) {
+          button.click();
+        }
+      }
+    });
+    
   </script>
 
   {%- liquid
