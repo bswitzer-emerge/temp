@@ -103,7 +103,7 @@
 
     <script>
       var accordions = document.querySelectorAll('.product__accordion.accordion');
-      if (accordions.length >= 2) {
+      if (accordions.length >= {{ section.settings.accordionopen }}) {
         var secondAccordion = accordions[1];
         var button = secondAccordion.querySelector('[role="button"]');
         if (button) {
