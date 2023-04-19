@@ -56,8 +56,8 @@
           "settings": {
             "heading": "Storage condictions",
             "icon": "recycle",
-            "content": "<p>{{ product.title }}<\/p><p>{{ shop.brand.short_description }}<\/p><p><\/p>",
-            "page": ""
+            "content": "<p><\/p><p><\/p>",
+            "page": "specs-sheet"
           }
         }
       },
