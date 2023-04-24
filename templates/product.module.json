@@ -44,6 +44,13 @@
             "page": ""
           }
         },
+        "06439268-a282-48d3-9573-b32530903b81": {
+          "type": "text",
+          "settings": {
+            "text": "This is a test of test of test",
+            "text_style": "body"
+          }
+        },
         "collapsible-row-0": {
           "type": "collapsible_tab",
           "settings": {
@@ -62,6 +69,7 @@
         "buy_buttons",
         "description",
         "collapsible-row-1",
+        "06439268-a282-48d3-9573-b32530903b81",
         "collapsible-row-0"
       ],
       "settings": {
