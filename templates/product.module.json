@@ -3,6 +3,34 @@
     "main": {
       "type": "main-product-module",
       "blocks": {
+        "06439268-a282-48d3-9573-b32530903b81": {
+          "type": "text",
+          "settings": {
+            "text": "Battery: {{ product.metafields.custom.battery_type.value }}  Model: {{ product.metafields.custom.make.value }} {{ product.metafields.custom.model.value }}Type: {{ product.metafields.custom.modules_cells.value }}Reason for Retirement: {{ product.metafields.custom.reason_for_retirement.value }}Vendor: {{ product.vendor }}",
+            "text_style": "body"
+          }
+        },
+        "e24d0bca-0135-44d0-8215-125b16f2c7cf": {
+          "type": "text",
+          "settings": {
+            "text": "Capacity New: {{ product.metafields.custom.capacity_new.value }}",
+            "text_style": "body"
+          }
+        },
+        "70036002-ed19-4aa9-b970-cc09356536f3": {
+          "type": "text",
+          "settings": {
+            "text": "State of health: {{ product.metafields.custom.soh.value }}",
+            "text_style": "body"
+          }
+        },
+        "da759322-7cf1-4543-8dbd-69bd9533022d": {
+          "type": "text",
+          "settings": {
+            "text": "Model: {{ product.metafields.custom.make.value }} {{ product.metafields.custom.model.value }}",
+            "text_style": "body"
+          }
+        },
         "title": {
           "type": "title",
           "settings": {
@@ -44,13 +72,6 @@
             "page": ""
           }
         },
-        "06439268-a282-48d3-9573-b32530903b81": {
-          "type": "text",
-          "settings": {
-            "text": "This is a test of test of test",
-            "text_style": "body"
-          }
-        },
         "collapsible-row-0": {
           "type": "collapsible_tab",
           "settings": {
@@ -62,6 +83,10 @@
         }
       },
       "block_order": [
+        "06439268-a282-48d3-9573-b32530903b81",
+        "e24d0bca-0135-44d0-8215-125b16f2c7cf",
+        "70036002-ed19-4aa9-b970-cc09356536f3",
+        "da759322-7cf1-4543-8dbd-69bd9533022d",
         "title",
         "price",
         "variant_picker",
@@ -69,7 +94,6 @@
         "buy_buttons",
         "description",
         "collapsible-row-1",
-        "06439268-a282-48d3-9573-b32530903b81",
         "collapsible-row-0"
       ],
       "settings": {
