@@ -108,6 +108,32 @@
             "content": "<p><\/p><p><\/p>",
             "page": "specs-sheet"
           }
+        },
+        "e2a6a24a-0e00-4cf3-8d8f-55574af1d571": {
+          "type": "text",
+          "settings": {
+            "text": "Storage Conditions:",
+            "text_style": "subtitle"
+          }
+        },
+        "efae7a35-07e3-44ff-81b2-c51f9a58cb15": {
+          "type": "text",
+          "settings": {
+            "text": "Storage Conditions",
+            "text_style": "subtitle"
+          }
+        },
+        "f85544aa-6acb-4406-a758-31978cd6b8ff": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "test test test test test test test test test test test test test test test"
+          }
+        },
+        "3fec7898-7210-49ed-9742-96f89ba51281": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": ""
+          }
         }
       },
       "block_order": [
@@ -126,7 +152,11 @@
         "buy_buttons",
         "description",
         "collapsible-row-1",
-        "collapsible-row-0"
+        "collapsible-row-0",
+        "e2a6a24a-0e00-4cf3-8d8f-55574af1d571",
+        "efae7a35-07e3-44ff-81b2-c51f9a58cb15",
+        "f85544aa-6acb-4406-a758-31978cd6b8ff",
+        "3fec7898-7210-49ed-9742-96f89ba51281"
       ],
       "settings": {
         "enable_sticky_info": true,
