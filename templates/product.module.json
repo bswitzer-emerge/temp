@@ -3,10 +3,17 @@
     "main": {
       "type": "main-product-module",
       "blocks": {
+        "b4db8b18-279c-4523-a26d-29afd7611376": {
+          "type": "text",
+          "settings": {
+            "text": "Testing results",
+            "text_style": "subtitle"
+          }
+        },
         "06439268-a282-48d3-9573-b32530903b81": {
           "type": "text",
           "settings": {
-            "text": "Battery: {{ product.metafields.custom.battery_type.value }}   Reason for Retirement: {{ product.metafields.custom.reason_for_retirement.value }}Vendor: {{ product.vendor }}",
+            "text": "Battery: {{ product.metafields.custom.battery_type.value }}",
             "text_style": "body"
           }
         },
@@ -48,7 +55,7 @@
         "28e2a966-3890-4edb-92a0-9ac03fbf83b4": {
           "type": "text",
           "settings": {
-            "text": "Text block",
+            "text": "Vendor: {{ product.vendor }}",
             "text_style": "body"
           }
         },
@@ -104,6 +111,7 @@
         }
       },
       "block_order": [
+        "b4db8b18-279c-4523-a26d-29afd7611376",
         "06439268-a282-48d3-9573-b32530903b81",
         "e24d0bca-0135-44d0-8215-125b16f2c7cf",
         "70036002-ed19-4aa9-b970-cc09356536f3",
