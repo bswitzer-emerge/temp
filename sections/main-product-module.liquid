@@ -66,6 +66,8 @@
             >
               {{- block.settings.text -}}
             </p>
+            {%- when 'custom_liquid' -%}
+              {{ block.settings.custom_liquid }}
         {%- endcase -%}
       {%- endfor -%}
             
@@ -96,7 +98,7 @@
             {%- when 'description' -%}
               
             {%- when 'custom_liquid' -%}
-              {{ block.settings.custom_liquid }}
+              
             {%- when 'collapsible_tab' -%}
               <!-- Old accordion-->
             {%- when 'quantity_selector' -%}
