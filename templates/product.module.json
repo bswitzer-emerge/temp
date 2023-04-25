@@ -6,7 +6,7 @@
         "06439268-a282-48d3-9573-b32530903b81": {
           "type": "text",
           "settings": {
-            "text": "Battery: {{ product.metafields.custom.battery_type.value }}  Model: {{ product.metafields.custom.make.value }} {{ product.metafields.custom.model.value }}Type: {{ product.metafields.custom.modules_cells.value }}Reason for Retirement: {{ product.metafields.custom.reason_for_retirement.value }}Vendor: {{ product.vendor }}",
+            "text": "Battery: {{ product.metafields.custom.battery_type.value }}   Reason for Retirement: {{ product.metafields.custom.reason_for_retirement.value }}Vendor: {{ product.vendor }}",
             "text_style": "body"
           }
         },
@@ -28,6 +28,27 @@
           "type": "text",
           "settings": {
             "text": "Model: {{ product.metafields.custom.make.value }} {{ product.metafields.custom.model.value }}",
+            "text_style": "body"
+          }
+        },
+        "839894c7-b86c-436e-a6df-9e02e1d93406": {
+          "type": "text",
+          "settings": {
+            "text": "Type: {{ product.metafields.custom.modules_cells.value }}",
+            "text_style": "body"
+          }
+        },
+        "404b6c4c-6946-4125-8728-171dfd9bd1e0": {
+          "type": "text",
+          "settings": {
+            "text": "Reason for Retirement: {{ product.metafields.custom.reason_for_retirement.value }}",
+            "text_style": "body"
+          }
+        },
+        "28e2a966-3890-4edb-92a0-9ac03fbf83b4": {
+          "type": "text",
+          "settings": {
+            "text": "Text block",
             "text_style": "body"
           }
         },
@@ -87,6 +108,9 @@
         "e24d0bca-0135-44d0-8215-125b16f2c7cf",
         "70036002-ed19-4aa9-b970-cc09356536f3",
         "da759322-7cf1-4543-8dbd-69bd9533022d",
+        "839894c7-b86c-436e-a6df-9e02e1d93406",
+        "404b6c4c-6946-4125-8728-171dfd9bd1e0",
+        "28e2a966-3890-4edb-92a0-9ac03fbf83b4",
         "title",
         "price",
         "variant_picker",
