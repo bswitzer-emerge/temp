@@ -97,19 +97,10 @@
             "custom_liquid": "test\ntest test\ntsetsa dadfasfads"
           }
         },
-        "collapsible-row-1": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Testing Results",
-            "icon": "box",
-            "content": "<p><strong>Battery<\/strong>: {{ product.metafields.custom.battery_type.value }}<\/p><p><strong>Capacity New:<\/strong> {{ product.metafields.custom.capacity_new.value }}<\/p><p><strong>State of health<\/strong>: {{ product.metafields.custom.soh.value }}%<\/p><p><strong>Model<\/strong>: {{ product.metafields.custom.make.value }} {{ product.metafields.custom.model.value }}<\/p><p><strong>Type<\/strong>: {{ product.metafields.custom.modules_cells.value }}<\/p><p><strong>Reason for Retirement: <\/strong>{{ product.metafields.custom.reason_for_retirement.value }}<\/p><p><strong>Vendor<\/strong>: {{ product.vendor }}<\/p><p><\/p>",
-            "page": ""
-          }
-        },
         "collapsible-row-0": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Storage condictions",
+            "heading": "Optional Collapsible row",
             "icon": "recycle",
             "content": "<p><\/p><p><\/p>",
             "page": "specs-sheet"
@@ -145,7 +136,6 @@
         "buy_buttons",
         "description",
         "299affb9-22be-4c82-b628-bc52d1896a0d",
-        "collapsible-row-1",
         "collapsible-row-0",
         "e2a6a24a-0e00-4cf3-8d8f-55574af1d571",
         "f85544aa-6acb-4406-a758-31978cd6b8ff"
