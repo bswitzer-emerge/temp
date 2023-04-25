@@ -91,6 +91,12 @@
           "settings": {
           }
         },
+        "299affb9-22be-4c82-b628-bc52d1896a0d": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "test\ntest test\ntsetsa dadfasfads"
+          }
+        },
         "collapsible-row-1": {
           "type": "collapsible_tab",
           "settings": {
@@ -116,23 +122,10 @@
             "text_style": "subtitle"
           }
         },
-        "efae7a35-07e3-44ff-81b2-c51f9a58cb15": {
-          "type": "text",
-          "settings": {
-            "text": "Storage Conditions",
-            "text_style": "subtitle"
-          }
-        },
         "f85544aa-6acb-4406-a758-31978cd6b8ff": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "test test test test test test test test test test test test test test test"
-          }
-        },
-        "3fec7898-7210-49ed-9742-96f89ba51281": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": ""
+            "custom_liquid": "<div class=\"row\" id=\"stats\">\n   <div class=\"col\"> \n This battery was stored in a temperature controlled orem\nlosum.\n   <\/div>\n   <div class=\"col\"> \nThis battery was secured\nby lorem ipsum\n   <\/div>\n<\/div>\n\n<div class=\"row\">\n   <div class=\"col\"> \nThis battery has this criteria losum.\n   <\/div>\n   <div class=\"col\"> \nThis battery has this criteria by lorem ipsum\n   <\/div>\n<\/div>"
           }
         }
       },
@@ -151,12 +144,11 @@
         "quantity_selector",
         "buy_buttons",
         "description",
+        "299affb9-22be-4c82-b628-bc52d1896a0d",
         "collapsible-row-1",
         "collapsible-row-0",
         "e2a6a24a-0e00-4cf3-8d8f-55574af1d571",
-        "efae7a35-07e3-44ff-81b2-c51f9a58cb15",
-        "f85544aa-6acb-4406-a758-31978cd6b8ff",
-        "3fec7898-7210-49ed-9742-96f89ba51281"
+        "f85544aa-6acb-4406-a758-31978cd6b8ff"
       ],
       "settings": {
         "enable_sticky_info": true,
