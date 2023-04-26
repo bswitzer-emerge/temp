@@ -56,10 +56,130 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "78a0508e-6e5f-40e1-ba6f-65c16372c9e0": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--18857520202029__78a0508e-6e5f-40e1-ba6f-65c16372c9e0-1682545692c3d3c370-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/john-glushik.png",
+            "title": "John Glushik",
+            "text": "<p>John is the Managing Director of HG Ventures with over twenty years of experience as a venture investor where he values diverse and data-driven teams and helps these teams grow with their companies. Prior to starting and building HG Ventures, John served as a General Partner at Intersouth Partners and Managing Director of the Duke Angel Network covering all aspects of venture investment and portfolio management. Outside of work, John can be found staying active and traveling with his family.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--18857520202029__78a0508e-6e5f-40e1-ba6f-65c16372c9e0-1682545692c3d3c370-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/chris-cravens.png",
+            "title": "Chris Cravens",
+            "text": "<p>Chris is a proven technology executive, advisor, and investor with experience growing and scaling high-performing IT teams from the ground up for over twenty years. Chris has directly built IT teams at Uber, Zynga, and Splunk, and advised countless others driving billions in revenue for high-growth startups and mid to large enterprises. Outside of work, Chris can be found shredding face-melting guitar solos.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--18857520202029__78a0508e-6e5f-40e1-ba6f-65c16372c9e0-1682545692c3d3c370-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/anthony-garbarino.png",
+            "title": "Anthony Garbarino",
+            "text": "<p>Anthony is Currents’ Founder and CEO and is responsible for executing our vision of carbon neutrality and mission of enabling the closed loop economic model in the end-of-life EV battery supply chain. Anthony comes from the solid waste and recycling industry and obsesses over big picture bottlenecks and solutions. Outside of work, Anthony can be found tweaking synthesizers and guitars for that ever-fleeting perfect tone.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18857520202029__78a0508e-6e5f-40e1-ba6f-65c16372c9e0-1682545692c3d3c370-0",
+        "template--18857520202029__78a0508e-6e5f-40e1-ba6f-65c16372c9e0-1682545692c3d3c370-1",
+        "template--18857520202029__78a0508e-6e5f-40e1-ba6f-65c16372c9e0-1682545692c3d3c370-2"
+      ],
+      "custom_css": [
+        "p {font-size: 16px; line-height: 26px;}"
+      ],
+      "settings": {
+        "title": "Directors",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "f4514e01-ddf4-4147-a392-c5869d965f38": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--18857520202029__f4514e01-ddf4-4147-a392-c5869d965f38-1682545692c3d3c370-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/jonathon-hensley.png",
+            "title": "Jonathon Hensley",
+            "text": "<p>Jonathon is a digital product expert with over twenty years of experience transforming businesses of all sizes by turning strategy, user needs, and new technologies into valuable products and services. In addition, Jonathon authored Alignment to share powerful insights and illustrate the key facets of digital product success he has uncovered throughout his career. Outside of work, Jonathon can be found moving serious weight overhead in an olympic fashion.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--18857520202029__f4514e01-ddf4-4147-a392-c5869d965f38-1682545692c3d3c370-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/nick-herinckx.png",
+            "title": "Nick Herinckx",
+            "text": "<p>Nick has a track record of success as an entrepreneur, investor, and advisor. Nick successfully founded, scaled, and exited Obility, a digital marketing agency for B2B SaaS companies, without taking any outside investment. Nick currently provides critical insights and direction to founders looking to follow his successful path. Outside of work, Nick can also be found melting faces with his virtuosic guitar playing.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--18857520202029__f4514e01-ddf4-4147-a392-c5869d965f38-1682545692c3d3c370-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/hanjiro-ambrose.png",
+            "title": "Hanjiro Ambrose",
+            "text": "<p>With a PhD in Environmental Engineering and a masters in Transportation, Technology, and Policy, Hanjiro is a lithium-ion battery industry expert. Hanjiro is a researcher affiliated with the University of California Davis Institute of Transportation Studies and served as a lead technical advisor for California’s Lithium-ion Car Battery Recycling Advisory Group. Outside of work, Hanjiro can be found championing equitable access to low carbon energy and mobility.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18857520202029__f4514e01-ddf4-4147-a392-c5869d965f38-1682545692c3d3c370-0",
+        "template--18857520202029__f4514e01-ddf4-4147-a392-c5869d965f38-1682545692c3d3c370-1",
+        "template--18857520202029__f4514e01-ddf4-4147-a392-c5869d965f38-1682545692c3d3c370-2"
+      ],
+      "custom_css": [
+        "p {font-size: 16px; line-height: 26px;}"
+      ],
+      "settings": {
+        "title": "Advisors",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
-    "bb871c2f-8c8b-4ebf-b84d-556aad643dd1"
+    "bb871c2f-8c8b-4ebf-b84d-556aad643dd1",
+    "78a0508e-6e5f-40e1-ba6f-65c16372c9e0",
+    "f4514e01-ddf4-4147-a392-c5869d965f38"
   ]
 }
