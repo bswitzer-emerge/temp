@@ -19,108 +19,59 @@
 
 <div class="page-width section-{{ section.id }}-padding accordion">
     <div class="tag">
-        <h2 class="rich-text__heading rte mono {{ block.settings.heading_size }}">
-            {{ block.settings.heading | replace: 'p>', 'span>' }}
+        <h2 class="rich-text__heading rte mono">
+            {{ section.settings.custom_text_title  | replace: 'p>', 'span>'  }}
           </h2>
     </div>
-    <div class="content"> {{ block.settings.text }}</div>
+    <div class="content"> {{ section.settings.custom_text_body }} </div>
+</div>
+
+
+
+<div class="custom-text-section">
+  <h2> {{ section.settings.custom_text_title }} </h2>
+  <div>{{ section.settings.custom_text_body }}</div>
 </div>
 
 {% schema %}
-{
-  "name": "Accordion",
-  "tag": "section",
-  "class": "section",
-  "settings": [
-    {
-      "type": "header",
-      "content": "t:sections.accordion.padding.section_padding_heading"
-    },
-    {
-      "type": "range",
-      "id": "padding_top",
-      "min": 0,
-      "max": 100,
-      "step": 4,
-      "unit": "px",
-      "label": "t:sections.accordion.padding.padding_top",
-      "default": 40
-    },
-    {
-      "type": "range",
-      "id": "padding_bottom",
-      "min": 0,
-      "max": 100,
-      "step": 4,
-      "unit": "px",
-      "label": "t:sections.accordion.padding.padding_bottom",
-      "default": 52
-    }
-  ],
-  "blocks": [    
-    {
-        "type": "heading",
-        "name": "t:sections.rich-text.blocks.heading.name",
-        "limit": 3,
-        "settings": [
-          {
-            "type": "richtext",
-            "id": "heading",
-            "default": "<p>Talk about your brand</p>",
-            "label": "t:sections.rich-text.blocks.heading.settings.heading.label"
-          },
-          {
-            "type": "select",
-            "id": "heading_size",
-            "options": [
-              {
-                "value": "h2",
-                "label": "t:sections.all.heading_size.options__1.label"
-              },
-              {
-                "value": "h1",
-                "label": "t:sections.all.heading_size.options__2.label"
-              },
-              {
-                "value": "h0",
-                "label": "t:sections.all.heading_size.options__3.label"
-              },
-              {
-                "value": "hxl",
-                "label": "t:sections.all.heading_size.options__4.label"
-              }
-            ],
-            "default": "h1",
-            "label": "t:sections.all.heading_size.label"
-          }
-        ]
-    },
-    {
-      "type": "text",
-      "name": "t:sections.rich-text.blocks.text.name",
-      "limit": 3,
-      "settings": [
-        {
-          "type": "richtext",
-          "id": "text",
-          "default": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
-          "label": "t:sections.rich-text.blocks.text.settings.text.label"
-        }
-      ]
-    }
-  ],
-  "presets": [
-    {
-      "name": "t:sections.rich-text.presets.name",
-      "blocks": [
-        {
-          "type": "heading"
-        },
-        {
-          "type": "text"
-        }
-      ]
-    }
-  ]
-}
+  {
+    "name": "Accordion",
+    "settings": [
+      {
+        "id": "custom_text_title",
+        "type": "text",
+        "label": "Text box heading",
+        "default": "Title"
+      },
+      {
+        "id": "custom_text_body",
+        "type": "richtext",
+        "label": "Add custom text below",
+        "default": "<p>Add your text here</p>"
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.accordion.padding.padding_top",
+        "default": 40
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.accordion.padding.padding_bottom",
+        "default": 52
+      }
+    ]
+  }
 {% endschema %}
+
+
+
