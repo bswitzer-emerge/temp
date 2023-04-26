@@ -163,23 +163,27 @@
         "template--18857520202029__f4514e01-ddf4-4147-a392-c5869d965f38-1682545692c3d3c370-2"
       ],
       "custom_css": [
-        "p {font-size: 16px; line-height: 26px;}"
+        ".title {text-align: center !important; margin: auto; font-family: Roboto mono;}",
+        "p {font-size: 16px; line-height: 26px;}",
+        ".media {padding-bottom: 0 !important;}",
+        "img {max-width: 177px; max-height: 177px; position: relative;}",
+        ".multicolumn-card {background: none !important;}"
       ],
       "settings": {
         "title": "Advisors",
-        "heading_size": "h1",
+        "heading_size": "h2",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 3,
         "column_alignment": "left",
         "background_style": "primary",
-        "button_label": "Button label",
+        "button_label": "",
         "button_link": "",
         "color_scheme": "background-1",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 100
       }
     }
   },
