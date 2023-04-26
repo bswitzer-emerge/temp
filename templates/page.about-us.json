@@ -2,6 +2,9 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "custom_css": [
+
+      ],
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
@@ -97,7 +100,10 @@
         "template--18857520202029__78a0508e-6e5f-40e1-ba6f-65c16372c9e0-1682545692c3d3c370-2"
       ],
       "custom_css": [
-        "p {font-size: 16px; line-height: 26px;}"
+        "p {font-size: 16px; line-height: 26px;}",
+        ".media {padding-bottom: 0 !important;}",
+        "img {max-width: 177px; max-height: 177px; position: relative;}",
+        ".multicolumn-card {background: none !important;}"
       ],
       "settings": {
         "title": "Directors",
