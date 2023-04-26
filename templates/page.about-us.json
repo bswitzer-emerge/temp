@@ -100,7 +100,7 @@
         "template--18857520202029__78a0508e-6e5f-40e1-ba6f-65c16372c9e0-1682545692c3d3c370-2"
       ],
       "custom_css": [
-        ".title-wrapper--self-padded-mobile {text-align: center !important;}",
+        ".title {text-align: center !important; margin: auto; font-family: Roboto mono;}",
         "p {font-size: 16px; line-height: 26px;}",
         ".media {padding-bottom: 0 !important;}",
         "img {max-width: 177px; max-height: 177px; position: relative;}",
@@ -108,7 +108,7 @@
       ],
       "settings": {
         "title": "Directors",
-        "heading_size": "h1",
+        "heading_size": "h2",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 3,
