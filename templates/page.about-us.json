@@ -6,9 +6,60 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "bb871c2f-8c8b-4ebf-b84d-556aad643dd1": {
+      "type": "rich-text",
+      "blocks": {
+        "template--18857520202029__bb871c2f-8c8b-4ebf-b84d-556aad643dd1-16825389981c69ca4d-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Our mission<\/p>",
+            "heading_size": "h2"
+          }
+        },
+        "template--18857520202029__bb871c2f-8c8b-4ebf-b84d-556aad643dd1-16825389981c69ca4d-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>To achieve carbon neutrality, we must optimize, facilitate, and innovate the end-of-life lithium supply chain while maximizing the value of every battery to enable the closed loop economic model for all stakeholders.<\/p>"
+          }
+        },
+        "template--18857520202029__bb871c2f-8c8b-4ebf-b84d-556aad643dd1-16825389981c69ca4d-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        },
+        "ef1bb80f-db73-48d2-82fd-ebf76d0d2361": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Core Value<\/p>",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "template--18857520202029__bb871c2f-8c8b-4ebf-b84d-556aad643dd1-16825389981c69ca4d-0",
+        "template--18857520202029__bb871c2f-8c8b-4ebf-b84d-556aad643dd1-16825389981c69ca4d-1",
+        "template--18857520202029__bb871c2f-8c8b-4ebf-b84d-556aad643dd1-16825389981c69ca4d-2",
+        "ef1bb80f-db73-48d2-82fd-ebf76d0d2361"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "bb871c2f-8c8b-4ebf-b84d-556aad643dd1"
   ]
 }
