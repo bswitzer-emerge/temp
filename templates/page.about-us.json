@@ -60,6 +60,15 @@
         "padding_bottom": 52
       }
     },
+    "9c1fb4e6-52a8-487f-9f1f-f9b778c6662e": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"center\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0719\/5269\/5597\/files\/demo.png?v=1682615689\">\n<\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "78a0508e-6e5f-40e1-ba6f-65c16372c9e0": {
       "type": "multicolumn",
       "blocks": {
@@ -190,6 +199,7 @@
   "order": [
     "main",
     "bb871c2f-8c8b-4ebf-b84d-556aad643dd1",
+    "9c1fb4e6-52a8-487f-9f1f-f9b778c6662e",
     "78a0508e-6e5f-40e1-ba6f-65c16372c9e0",
     "f4514e01-ddf4-4147-a392-c5869d965f38"
   ]
