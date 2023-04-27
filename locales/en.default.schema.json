@@ -596,6 +596,12 @@
         "name": "Contact form"
       }
     },
+    "collapsible-single": {
+      "name": "collapsible-single",
+      "presets": {
+        "name": "collapsible-single"
+      }
+    },
     "custom-liquid": {
       "name": "Custom Liquid",
       "settings": {

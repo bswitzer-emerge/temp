@@ -1,5 +1,5 @@
 {%- style -%}
-    .accordion .tag {
+    .collapsible-single .tag {
         background-color: #EFE2D4;
         border-radius: 20px;
     }
@@ -17,7 +17,7 @@
 {%- endstyle -%}
 
 
-<div class="page-width section-{{ section.id }}-padding accordion">
+<div class="page-width section-{{ section.id }}-padding collapsible-single">
     <div class="tag">
         <h2 class="rich-text__heading rte mono">
           {{ section.settings.custom_text_title }}
@@ -28,7 +28,7 @@
 
 {% schema %}
   {
-    "name": "t:sections.accordion.name",
+    "name": "t:sections.collapsible-single.name",
     "tag": "section",
     "class": "section",
     "settings": [
@@ -66,8 +66,8 @@
       }
     ],
     "presets": [
-      {
-        "name": "t:sections.contact-form.presets.name"
+      { 
+        "name": "t:sections.collapsible-single.presets.name"
       }
     ]
   }
