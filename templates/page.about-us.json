@@ -114,6 +114,18 @@
         "padding_bottom": 52
       }
     },
+    "aa7154a3-ccdb-4a73-b192-b1e3b79532ad": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "img {text-align: center; margin-left: auto; margin-right: auto; max-width: 400px;}"
+      ],
+      "settings": {
+        "custom_liquid": "<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0719\/5269\/5597\/files\/demo-jobs.png?v=1682618675\">",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "4a18e7d5-4f7b-4eda-accd-5e76836409d1": {
       "type": "rich-text",
       "blocks": {
@@ -271,6 +283,7 @@
     "bb871c2f-8c8b-4ebf-b84d-556aad643dd1",
     "9c1fb4e6-52a8-487f-9f1f-f9b778c6662e",
     "0ab1e298-23ad-4203-86c4-8fa63be12411",
+    "aa7154a3-ccdb-4a73-b192-b1e3b79532ad",
     "4a18e7d5-4f7b-4eda-accd-5e76836409d1",
     "78a0508e-6e5f-40e1-ba6f-65c16372c9e0",
     "f4514e01-ddf4-4147-a392-c5869d965f38"
