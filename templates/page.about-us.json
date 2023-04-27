@@ -276,6 +276,150 @@
         "padding_top": 36,
         "padding_bottom": 100
       }
+    },
+    "aacbd611-376d-4a6f-b011-cd43660a4d56": {
+      "type": "collapsible-single",
+      "settings": {
+        "custom_text_title": "Title",
+        "custom_text_body": "<p>Add your text here<\/p>",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "6f301f5a-9f6b-47ae-b308-02990bf4680c": {
+      "type": "collapsible-single",
+      "settings": {
+        "custom_text_title": "Title",
+        "custom_text_body": "<p>Add your text here<\/p>",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "30457237-eeb6-415d-b4cc-0be0c9affc20": {
+      "type": "collapsible-single",
+      "settings": {
+        "custom_text_title": "Title",
+        "custom_text_body": "<p>Add your text here<\/p>",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "afb62b63-0fc2-4a1d-b86c-2c308124c11e": {
+      "type": "collapsible-single",
+      "settings": {
+        "custom_text_title": "Title",
+        "custom_text_body": "<p>Add your text here<\/p>",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "259880f0-3e87-4bd6-bc77-fd46423180ff": {
+      "type": "collapsible-single",
+      "settings": {
+        "custom_text_title": "Title",
+        "custom_text_body": "<p>Add your text here<\/p>",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1f8b5f7b-9b3a-471c-86b7-8db463d49ae7": {
+      "type": "collapsible-single",
+      "settings": {
+        "custom_text_title": "Title",
+        "custom_text_body": "<p>Add your text here<\/p>",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "9e1fb99e-f6eb-44e6-a336-8da024b77f20": {
+      "type": "collapsible-single",
+      "settings": {
+        "custom_text_title": "Title",
+        "custom_text_body": "<p>Add your text here<\/p>",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "0cb4e4e5-31ff-4303-b43c-07a14645c8bb": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--18857520202029__0cb4e4e5-31ff-4303-b43c-07a14645c8bb-1682638208d69dea93-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Innovation, curiosity, and a ruthless customer obsession",
+            "icon": "check_mark",
+            "row_content": "<p>We are solving an enormous problem. To succeed, we need to think on a global scale while<br\/>obsessing over our customers and their needs. We are curious about everything, and as we learn<br\/>more about the space, we act quickly to build innovative solutions that drive value for our<\/p>",
+            "page": ""
+          }
+        },
+        "template--18857520202029__0cb4e4e5-31ff-4303-b43c-07a14645c8bb-1682638208d69dea93-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Support, Trust, and Transparency",
+            "icon": "check_mark",
+            "row_content": "<p>Greatness is made in the agency of others. Our team needs to support one another, and that means leaving our egos at the door. Good ideas can come from anywhere. We are honest with ourselves, and transparent with others.<\/p>",
+            "page": ""
+          }
+        },
+        "template--18857520202029__0cb4e4e5-31ff-4303-b43c-07a14645c8bb-1682638208d69dea93-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Continuous Improvement",
+            "icon": "check_mark",
+            "row_content": "<p>Of our impact, platform, and self. We go to bed every night wiser than when we woke up.<\/p>",
+            "page": ""
+          }
+        },
+        "template--18857520202029__0cb4e4e5-31ff-4303-b43c-07a14645c8bb-1682638208d69dea93-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Respect",
+            "icon": "check_mark",
+            "row_content": "<p>This speaks for itself: respect for yourself, teammates, our customers, our planet - leave everything better than we found it.<\/p>",
+            "page": ""
+          }
+        },
+        "497a6f28-3bf2-476f-bb18-51e0419c7343": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Alignment",
+            "icon": "check_mark",
+            "row_content": "<p>We are a mission driven organization, and we all must be aligned on our<br\/>goals, objectives, and key results to succeed.<\/p>",
+            "page": ""
+          }
+        },
+        "09fbde24-8c58-4af9-a8a9-f6bd997d9afb": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Work hard, have fun, and make history",
+            "icon": "check_mark",
+            "row_content": "<p>Let's do this<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18857520202029__0cb4e4e5-31ff-4303-b43c-07a14645c8bb-1682638208d69dea93-0",
+        "template--18857520202029__0cb4e4e5-31ff-4303-b43c-07a14645c8bb-1682638208d69dea93-1",
+        "template--18857520202029__0cb4e4e5-31ff-4303-b43c-07a14645c8bb-1682638208d69dea93-2",
+        "template--18857520202029__0cb4e4e5-31ff-4303-b43c-07a14645c8bb-1682638208d69dea93-3",
+        "497a6f28-3bf2-476f-bb18-51e0419c7343",
+        "09fbde24-8c58-4af9-a8a9-f6bd997d9afb"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Core Values",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -286,6 +430,14 @@
     "aa7154a3-ccdb-4a73-b192-b1e3b79532ad",
     "4a18e7d5-4f7b-4eda-accd-5e76836409d1",
     "78a0508e-6e5f-40e1-ba6f-65c16372c9e0",
-    "f4514e01-ddf4-4147-a392-c5869d965f38"
+    "f4514e01-ddf4-4147-a392-c5869d965f38",
+    "aacbd611-376d-4a6f-b011-cd43660a4d56",
+    "6f301f5a-9f6b-47ae-b308-02990bf4680c",
+    "30457237-eeb6-415d-b4cc-0be0c9affc20",
+    "afb62b63-0fc2-4a1d-b86c-2c308124c11e",
+    "259880f0-3e87-4bd6-bc77-fd46423180ff",
+    "1f8b5f7b-9b3a-471c-86b7-8db463d49ae7",
+    "9e1fb99e-f6eb-44e6-a336-8da024b77f20",
+    "0cb4e4e5-31ff-4303-b43c-07a14645c8bb"
   ]
 }
