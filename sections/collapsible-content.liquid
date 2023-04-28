@@ -46,21 +46,38 @@
           {% endif %}
           <div class="grid__item">
             {%- for block in section.blocks -%}
-              <div class="accordion{% if section.settings.layout == 'row' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}" {{ block.shopify_attributes }}>
+              <div class="accordion{% if section.settings.layout == 'row' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %} el{{ forloop.index }}" {{ block.shopify_attributes }}>
                 <details id="Details-{{ block.id }}-{{ section.id }}"{% if section.settings.open_first_collapsible_row and forloop.first %} open{% endif %}>
                   <summary id="Summary-{{ block.id }}-{{ section.id }}">
-                    {% render 'icon-accordion', icon: block.settings.icon %}
+                    {% render 'icon-accordion', icon: block.settings.icon %}  
+                    
                     <h3 class="accordion__title">
                       {{ block.settings.heading | default: block.settings.page.title }}
                     </h3>
-                    {% render 'icon-caret' %}
+                    <svg height="26" viewBox="0 0 24 26" width="24" xmlns="http://www.w3.org/2000/svg" class="icon icon-plus-icon"><g fill="none" fill-rule="evenodd" stroke="#000" stroke-width="2"><path d="m11.662857 0v26" class="path1" /><path d="m11.662842 1.337143.00003 23.325714" transform="matrix(0 -1 1 0 -1.337143 24.662857)" class="path2"/></g></svg>
+                    
                   </summary>
                   <div class="accordion__content rte" id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}" role="region" aria-labelledby="Summary-{{ block.id }}-{{ section.id }}">
                     {{ block.settings.row_content }}
                     {{ block.settings.page.content }}
                   </div>
                 </details>
-              </div>
+              </div>  
+
+              <script>
+                console.log("test");
+                const myElement{{ forloop.index }} = document.querySelector('.el{{ forloop.index }}');
+                myElement{{ forloop.index }}.addEventListener('click', () => {
+                  console.log("test{{ forloop.index }}");
+                  myElement{{ forloop.index }}.classList.toggle('active');
+                });
+              </script>
+              <style>
+                .el{{ forloop.index }}.active .path1 {
+                  display: none;
+                }
+              </style>
+              
             {%- endfor -%}
           </div>
         </div>
@@ -68,6 +85,7 @@
     </div>
   </div>
 </div>
+
 
 {% schema %}
 {

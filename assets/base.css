@@ -3523,3 +3523,10 @@ body.index section .page-width {
 .card-product-list.top .card-product-list__col7 {
   width: 144px;
 }
+
+.icon-plus-icon {
+  position: absolute;
+  height: 1.5rem;
+  right: 1.5rem;
+  top: calc(50% - 0.2rem);
+}
