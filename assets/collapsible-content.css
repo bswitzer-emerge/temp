@@ -43,7 +43,8 @@
   margin: 0 auto;
   padding-right: 1.5rem;
   padding-left: 1.5rem;
-  max-width: 73.4rem;
+  max-width: 1100px;
+  /* max-width: 73.4rem; */
 }
 
 .collapsible-content__header {
@@ -83,14 +84,20 @@
   border: var(--text-boxes-border-width) solid rgba(var(--color-foreground),var(--text-boxes-border-opacity));
   margin-bottom: 1.5rem;
 }
-
+.accordion summary {
+  background-color: #ece3d9;
+  border-radius: 20px;
+  padding-left: 2em;
+}
 .collapsible-row-layout .accordion summary,
 .collapsible-row-layout .accordion .accordion__content {
+  
   padding: 1.5rem;
 }
 
 .collapsible-row-layout .accordion .accordion__content {
   padding-top: 0;
+
 }
 
 .collapsible-content summary:hover {

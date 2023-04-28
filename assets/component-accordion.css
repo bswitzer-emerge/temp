@@ -21,9 +21,11 @@
 
 .accordion {
   margin-top: 2.5rem;
-  margin-bottom: 0;
+  margin-bottom: 15px;
+  /* 
   border-top: 0.1rem solid rgba(var(--color-foreground), 0.08);
   border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
+  */
 }
 
 .accordion__title {
@@ -32,6 +34,7 @@
   min-height: 1.6rem;
   margin: 0;
   word-break: break-word;
+  font-size: 20px;;
 }
 
 .accordion .icon-accordion {
@@ -50,7 +53,12 @@
   margin-bottom: 1.5rem;
   word-break: break-word;
   overflow-x: auto;
-  padding: 0 0.6rem;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.accordion__content  p {
+  line-height: 34px;
 }
 
 .accordion__content img {
