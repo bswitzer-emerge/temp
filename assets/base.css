@@ -2697,7 +2697,7 @@ details[open] > .header__submenu {
 }
 
 .header__menu-item:hover span {
-  text-decoration: underline;
+  font-weight: 600;
   text-underline-offset: 0.3rem;
 }
 
@@ -2716,7 +2716,7 @@ details[open] > .header__menu-item .icon-caret {
 .header__active-menu-item {
   transition: text-decoration-thickness var(--duration-short) ease;
   color: rgb(var(--color-foreground));
-  text-decoration: underline;
+  font-weight: 600;
   text-underline-offset: 0.3rem;
 }
 
@@ -2966,6 +2966,13 @@ details-disclosure > details {
 
 .article-job-listing .register-for-access-message {
   display: none;
+}
+
+.icon-plus-icon {
+  position: absolute;
+  height: 1rem;
+  right: 1.5rem;
+  top: calc(50% - 0.5rem);
 }
 
 .hero-home-container {
@@ -3522,11 +3529,4 @@ body.index section .page-width {
 }
 .card-product-list.top .card-product-list__col7 {
   width: 144px;
-}
-
-.icon-plus-icon {
-  position: absolute;
-  height: 1.5rem;
-  right: 1.5rem;
-  top: calc(50% - 0.2rem);
 }

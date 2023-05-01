@@ -419,6 +419,7 @@ details[open] > .header__submenu {
   padding: 1.2rem;
   text-decoration: none;
   color: rgba(var(--color-foreground), 0.75);
+
 }
 
 .header__menu-item:hover {
@@ -430,7 +431,8 @@ details[open] > .header__submenu {
 }
 
 .header__menu-item:hover span {
-  text-decoration: underline;
+  //text-decoration: underline;
+  font-weight:  600;
   text-underline-offset: 0.3rem;
 }
 
@@ -449,7 +451,8 @@ details[open] > .header__menu-item .icon-caret {
 .header__active-menu-item {
   transition: text-decoration-thickness var(--duration-short) ease;
   color: rgb(var(--color-foreground));
-  text-decoration: underline;
+  //text-decoration: underline;
+  font-weight: 600;
   text-underline-offset: 0.3rem;
 }
 
