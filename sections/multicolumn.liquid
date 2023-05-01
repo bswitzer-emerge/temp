@@ -16,10 +16,14 @@
 
 
     {% if section.blocks.size == 2 %}
-      .col1-width {
+      #Slider-{{ section.id }} .col1-width {
         flex: {{ section.settings.left_col }};
       }
-      .col2-width  {
+      #Slider-{{ section.id }} .grid__item {
+        width: auto;
+        max-width: initial;
+      }
+      #Slider-{{ section.id }} .col2-width  {
         flex: {{ section.settings.right_col }};
 
     }
