@@ -79,7 +79,7 @@
         "swipe_on_mobile": false,
         "padding_top": 100,
         "padding_bottom": 100,
-        "left_col": 7,
+        "left_col": 8,
         "right_col": 4
       }
     },
@@ -89,7 +89,7 @@
         "94c69ea8-d97d-40f8-ad01-0398771df660": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/battery.png",
+            "image": "shopify:\/\/shop_images\/battery_grouped.png",
             "title": "",
             "text": "",
             "link_label": "",
@@ -130,7 +130,7 @@
         "padding_top": 100,
         "padding_bottom": 100,
         "left_col": 4,
-        "right_col": 7
+        "right_col": 8
       }
     },
     "ef7482f9-125c-425d-928c-2c4c644907ca": {
