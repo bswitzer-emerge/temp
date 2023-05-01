@@ -117,6 +117,7 @@
     "predictive_search_enabled": false,
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": false,
+    "favicon": "shopify:\/\/shop_images\/currents.png",
     "currency_code_enabled": true,
     "cart_type": "notification",
     "show_vendor": false,
@@ -137,6 +138,9 @@
         },
         "block_order": [
           "announcement-bar-0"
+        ],
+        "custom_css": [
+          "div {display: none;}"
         ],
         "settings": {
         }
