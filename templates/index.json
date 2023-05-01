@@ -273,7 +273,8 @@
     "722430fb-a8d5-4d0d-a2a2-f95a2af200a0": {
       "type": "featured-blog",
       "custom_css": [
-
+        "ul {position: relative; z-index: 1;}",
+        ".isolate {z-index: 1;}"
       ],
       "settings": {
         "heading": "",
@@ -288,6 +289,19 @@
         "show_view_all": true,
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "44e0b456-d4b2-4c47-88ee-9ca318b09149": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "#line-across {position: relative; z-index: 0;}",
+        "#thingy {width: 100%; height: auto; position: absolute; top: -500px; z-index: 0;}"
+      ],
+      "settings": {
+        "custom_liquid": "<div id=\"line-across\"><svg id=\"thingy\" height=\"889.579403\" viewBox=\"0 0 1280 889.579403\" width=\"1280\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"><g fill=\"none\" fill-rule=\"evenodd\" stroke=\"#fc7238\" stroke-width=\"2\" transform=\"translate(-75.05049 .977952)\"><path d=\"m39.8732798 474.679076c184.2676652-122.27076 312.0371502-110.972637 383.3084542 33.894367 106.906956 217.300507 299.620648 83.626952 589.393546 30.355467 289.7729-53.271485 326.14588-288.292975 379.96004-404.077228\" opacity=\".8355\"\/><path d=\"m0 0c239.540182 51.1514129 341.345362 158.020332 305.41554 320.606757-53.894734 243.879638 200.504836 293.06653 484.183367 476.807972 283.678533 183.741442 472.072283 37.119331 595.609643-7.450214\" opacity=\".346026\"\/><\/g><\/svg><\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "4099fb71-c26a-4b0e-8e42-8fafa1cfe444": {
@@ -305,7 +319,7 @@
         "border_radius": 50,
         "padding_top": 36,
         "padding_bottom": 100,
-        "inner_padding_top": 56,
+        "inner_padding_top": 24,
         "inner_padding_bottom": 56
       }
     }
@@ -323,6 +337,7 @@
     "5443d46e-38d2-45e9-a65c-0b1384acf72d",
     "4d66e566-c32d-4177-a910-5c7b233d204a",
     "722430fb-a8d5-4d0d-a2a2-f95a2af200a0",
+    "44e0b456-d4b2-4c47-88ee-9ca318b09149",
     "4099fb71-c26a-4b0e-8e42-8fafa1cfe444"
   ]
 }
