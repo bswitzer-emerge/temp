@@ -245,7 +245,8 @@
       "custom_css": [
         ".multicolumn-card.content-container .media {padding: 0 62px 62px 62px;}",
         ".multicolumn-card__info {padding-top: 0;}",
-        ".multicolumn-card-spacing {padding-top: 30px; margin-left: 62px; margin-right: 62px;}"
+        ".multicolumn-card-spacing {padding-top: 30px; margin-left: 62px; margin-right: 62px;}",
+        ".btn {min-width: 205px;}"
       ],
       "settings": {
         "title": "",
