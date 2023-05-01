@@ -294,13 +294,13 @@
       "type": "custom-liquid",
       "custom_css": [
         "#line-across {position: relative; z-index: 0;}",
-        "#thingy {width: 100%; height: auto; position: absolute; top: -1000px; z-index: 0;}"
+        "#thingy {width: 100%; height: auto; position: absolute; top: -800px; z-index: 0;}"
       ],
       "settings": {
         "custom_liquid": "<div id=\"line-across\"><svg id=\"thingy\" height=\"495.176041\" viewBox=\"0 0 1280 495.176041\" width=\"1280\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"><path d=\"m-35.1772105 3531.62667c184.2676655-122.27076 312.0371505-110.97264 383.3084545 33.89437 106.906956 217.30051 299.620647 83.62695 589.393549 30.35547 289.772897-53.27149 326.145877-288.29298 379.960037-404.07723\" fill=\"none\" opacity=\".8355\" stroke=\"#fc7238\" stroke-width=\"2\" transform=\"translate(0 -3191.377797)\"\/><\/svg><\/div>",
         "color_scheme": "background-1",
-        "padding_top": 40,
-        "padding_bottom": 52
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "4099fb71-c26a-4b0e-8e42-8fafa1cfe444": {
