@@ -273,7 +273,7 @@
     "722430fb-a8d5-4d0d-a2a2-f95a2af200a0": {
       "type": "featured-blog",
       "custom_css": [
-
+        ".blog .slider-mobile-gutter {position: relative; z-index: 1;}"
       ],
       "settings": {
         "heading": "",
