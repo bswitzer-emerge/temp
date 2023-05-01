@@ -98,9 +98,7 @@
                   {%- endif -%}
                 </p>
               {%- endif -%}
-              <div class="article-card__footer">
-                Booger
-                <!-- 
+              <div class="article-card__footer">                <!-- 
                 {%- if article.comments_count > 0 and blog.comments_enabled? -%}
                   <span>{{ 'blogs.article.comments' | t: count: article.comments_count }}</span>
                 {%- endif -%}
@@ -116,6 +114,11 @@
         </div>
       </div>
       <div class="card__content">
+        <div class="blog-post-tags">
+          {% for tag in article.tags %}
+            <div class="tag">{{ tag }}</div>
+          {% endfor %}
+        </div>
         <div class="card__information card__flex">
           <h3 class="card__heading{% if show_excerpt %} h2{% endif %}">
             <a href="{{ article.url }}" class="full-unstyled-link">

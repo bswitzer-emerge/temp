@@ -3300,6 +3300,7 @@ body.index section .page-width {
 .blog.color-inverse ul {
   display: grid;
   /* Three column */
+  grid-template-columns: 1fr 1fr;
   grid-gap: 50px 30px;
 }
 .blog.color-inverse li {
@@ -3311,9 +3312,6 @@ body.index section .page-width {
 }
 .blog.color-inverse li:first-child {
   /* Three column */
-}
-.blog.color-inverse li:first-child .card__content {
-  flex: 2;
 }
 .blog.color-inverse .card__inner {
   background-color: #1C1B19;
@@ -3329,12 +3327,22 @@ body.index section .page-width {
 .blog.color-inverse .btn {
   color: white;
   background-color: #525351;
-  border: 1px solid #E2D7C9;
   font-weight: 400;
   padding: 10px 60px;
 }
 .blog.color-inverse .btn:hover {
   background-color: #858684;
+}
+.blog.color-inverse .tag {
+  color: white;
+  background-color: #525351;
+  border-radius: 23px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: inline-block;
+  position: relative;
+  left: 30px;
+  top: 20px;
 }
 .blog.color-inverse .blog__posts .article-card .card__information {
   padding: 36px;
@@ -3353,7 +3361,7 @@ body.index section .page-width {
   flex: 2;
 }
 .blog.color-inverse .card__content {
-  flex: 3;
+  flex: 5;
 }
 
 .card__flex {
