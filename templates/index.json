@@ -214,7 +214,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/factory-right-align.png",
             "title": "Suppliers",
-            "text": "<p>We curate our suppliers and only work with sellers who align with our vision and mission. We are the exclusive marketplace for Nissan second-life batteries. Moving forward, we will only allow suppliers who support the second-life industry by providing fair, transparent pricing based on state-of-health.<\/p>",
+            "text": "<p>We curate our suppliers and only work with sellers who align with our vision and mission. We are an exclusive marketplace for second-life batteries. Moving forward, we will only allow suppliers who support the second-life industry by providing fair, transparent pricing based on state-of-health.<\/p>",
             "link_label": "Get In Touch",
             "link": "\/pages\/contact?contact=supplier"
           }
@@ -224,7 +224,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/worker-right-align.png",
             "title": "Buyers",
-            "text": "<p>We are a facilitation marketplace meaning we do not own the inventory. Therefore, we are not inflating prices. Buyers must provide their business credentials for access to the platform, then, once approved, can view and purchase Nissan’s best available inventory. Spend less time sourcing and more time scaling.<\/p>",
+            "text": "<p>We are a facilitation marketplace meaning we do not own the inventory. Therefore, we are not inflating prices. Buyers must provide their business credentials for access to the platform, then, once approved, can view and purchase the best available inventory. Spend less time sourcing and more time scaling.<\/p>",
             "link_label": "Register for Access",
             "link": "\/pages\/contact?contact=buyer"
           }
