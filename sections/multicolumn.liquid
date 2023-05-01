@@ -13,6 +13,18 @@
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
+
+
+    {% if section.blocks.size == 2 %}
+      .col1-width {
+        flex: {{ section.settings.left_col }};
+      }
+      .col2-width  {
+        flex: {{ section.settings.right_col }};
+
+    }
+    {% endif %}
+   
   }
 {%- endstyle -%}
 
@@ -55,7 +67,7 @@
             {%- assign empty_column = ' multicolumn-list__item--empty' -%}
           {%- endif -%}
 
-          <li id="Slide-{{ section.id }}-{{ forloop.index }}" class="multicolumn-list__item grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}{{ empty_column }}" {{ block.shopify_attributes }}>
+          <li id="Slide-{{ section.id }}-{{ forloop.index }}" class="multicolumn-list__item grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}{{ empty_column }} col{{ forloop.index }}-width" {{ block.shopify_attributes }}>
             <div class="multicolumn-card content-container">
               {%- if block.settings.image != blank -%}
                 {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
@@ -327,7 +339,32 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
+    },
+    {
+      "type": "header",
+      "content": "Column Width (Flex) Works only with two columns"
+    },
+    {
+      "type": "range",
+      "id": "left_col",
+      "min": 1,
+      "max": 20,
+      "step": 1,
+      "unit": "flx",
+      "label": "Col 1 Width",
+      "default": 1
+    },
+    {
+      "type": "range",
+      "id": "right_col",
+      "min": 1,
+      "max": 20,
+      "step": 1,
+      "unit": "flx",
+      "label": "Col 2 Width",
+      "default": 1
     }
+
   ],
   "blocks": [
     {
