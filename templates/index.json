@@ -292,13 +292,17 @@
     },
     "4099fb71-c26a-4b0e-8e42-8fafa1cfe444": {
       "type": "register-for-access",
+      "custom_css": [
+
+      ],
       "settings": {
         "sub_head": "Still Unsure?",
         "head": "Contact Our Team",
         "message": "We're here to help with any questions you may have. Connect with our team to learn more about how the platform works, how your business can benefit, and how we can work together toward the circular economy. Talk with you soon!",
         "button_text": "Contact Us",
         "button_url": "\/pages\/contact?contact=buyer",
-        "background_color": "",
+        "background_color": "#efe2d4",
+        "border_radius": 50,
         "padding_top": 36,
         "padding_bottom": 100
       }
