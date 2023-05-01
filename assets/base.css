@@ -3299,7 +3299,7 @@ body.index section .page-width {
 }
 .blog.color-inverse ul {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* Three column */
   grid-gap: 50px 30px;
 }
 .blog.color-inverse li {
@@ -3310,7 +3310,7 @@ body.index section .page-width {
   grid-column: span 1;
 }
 .blog.color-inverse li:first-child {
-  grid-column: 1/-1;
+  /* Three column */
 }
 .blog.color-inverse li:first-child .card__content {
   flex: 2;

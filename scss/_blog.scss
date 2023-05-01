@@ -18,7 +18,8 @@
     }
     ul {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        /* Three column */
+        //grid-template-columns: 1fr 1fr;
         grid-gap: 50px 30px;
     }
     li {
@@ -29,7 +30,8 @@
         grid-column: span 1;
     }
     li:first-child {
-        grid-column: 1 / -1;
+        /* Three column */
+        //grid-column: 1 / -1;
         .card__content {
             flex: 2;
         }
