@@ -129,8 +129,8 @@
         "swipe_on_mobile": false,
         "padding_top": 100,
         "padding_bottom": 100,
-        "left_col": 1,
-        "right_col": 1
+        "left_col": 4,
+        "right_col": 7
       }
     },
     "ef7482f9-125c-425d-928c-2c4c644907ca": {
