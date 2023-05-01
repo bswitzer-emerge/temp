@@ -2,6 +2,11 @@
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+   
+  }
+  .section-{{ section.id }}-padding .page-width {
+    background-color: {{section.settings.background_color }};
+    border-radius: {{section.settings.border_radius }}
   }
 
   @media screen and (min-width: 750px) {
@@ -74,6 +79,16 @@
         "type": "color",
         "id": "background_color",
         "label": "Background color"
+      },
+      {
+        "type": "range",
+        "id": "border_radius",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Border Radius",
+        "default": 20
       },
       {
         "type": "range",
