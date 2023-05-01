@@ -6,7 +6,9 @@
   }
   .section-{{ section.id }}-padding .page-width {
     background-color: {{section.settings.background_color }};
-    border-radius: {{section.settings.border_radius }}
+    border-radius: {{section.settings.border_radius }};
+    padding-top: {{ section.settings.inner_padding_top }};
+    padding-bottom: {{ section.settings.inner_padding_bottom }};
   }
 
   @media screen and (min-width: 750px) {
@@ -108,6 +110,26 @@
         "step": 4,
         "unit": "px",
         "label": "t:sections.all.padding.padding_bottom",
+        "default": 36
+      },
+      {
+        "type": "range",
+        "id": "inner_padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "Inner top padding",
+        "default": 36
+      },
+      {
+        "type": "range",
+        "id": "inner_padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "Inner bottom padding",
         "default": 36
       }
      ],
