@@ -305,7 +305,7 @@
         "border_radius": 50,
         "padding_top": 36,
         "padding_bottom": 100,
-        "inner_padding_top": 56,
+        "inner_padding_top": 24,
         "inner_padding_bottom": 56
       }
     }
