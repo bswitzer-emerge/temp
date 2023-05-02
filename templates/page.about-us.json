@@ -192,10 +192,10 @@
       "type": "custom-liquid",
       "custom_css": [
         "#about-us-right {position: relative;}",
-        "#about-us-right-img {position: absolute; right: 0; top: -800px;}"
+        "#about-us-right-img {position: absolute; right: -1050px; top: -800px; max-width: 100%;}"
       ],
       "settings": {
-        "custom_liquid": "<div class=\"page-width\" id=\"about-us-right\">\n <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0719\/5269\/5597\/files\/lines-about-us-right.svg?v=1683060007\" id=\"about-us-right-img\">\n<\/div>",
+        "custom_liquid": "<div class=\"page-width\" id=\"about-us-right\">\n <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0719\/5269\/5597\/files\/lines-about-us-right-v2.svg?v=1683061760\" id=\"about-us-right-img\">\n<\/div>",
         "color_scheme": "background-1",
         "padding_top": 40,
         "padding_bottom": 52
@@ -240,7 +240,7 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "background-1",
+        "color_scheme": "none",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 0
@@ -274,7 +274,7 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "background-1",
+        "color_scheme": "none",
         "full_width": true,
         "padding_top": 0,
         "padding_bottom": 52
@@ -324,7 +324,8 @@
         "p {font-size: 16px; line-height: 26px;}",
         ".media {padding-bottom: 0 !important;}",
         "img {max-width: 177px; max-height: 177px; position: relative;}",
-        ".multicolumn-card {background: none !important;}"
+        ".multicolumn-card {background: none !important;}",
+        "div {position: relative; z-index: 2;}"
       ],
       "settings": {
         "title": "Directors",
@@ -336,7 +337,7 @@
         "background_style": "primary",
         "button_label": "",
         "button_link": "",
-        "color_scheme": "background-1",
+        "color_scheme": "none",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
@@ -344,6 +345,19 @@
         "grid_width": 80,
         "left_col": 1,
         "right_col": 1
+      }
+    },
+    "ccc9bc06-fc67-4833-b301-1aaf0fb359c1": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "#about-us-cont {position: relative;}",
+        "#about-us-bottom {width: 120%; left: -10%; top: -800px; position: absolute;}"
+      ],
+      "settings": {
+        "custom_liquid": "<div id=\"about-us-cont\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0719\/5269\/5597\/files\/lines-about-us-bottom.svg?v=1683062008\" id=\"about-us-bottom\"> <\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "f4514e01-ddf4-4147-a392-c5869d965f38": {
@@ -390,6 +404,7 @@
         "p {font-size: 16px; line-height: 26px;}",
         ".media {padding-bottom: 0 !important;}",
         "img {max-width: 177px; max-height: 177px; position: relative;}",
+        "div {position: relative; z-index: 2;}",
         ".multicolumn-card {background: none !important;}"
       ],
       "settings": {
@@ -402,7 +417,7 @@
         "background_style": "primary",
         "button_label": "",
         "button_link": "",
-        "color_scheme": "background-1",
+        "color_scheme": "none",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 12,
@@ -440,6 +455,7 @@
     "39cbacb5-adbc-4f85-98ed-2900f62496d9",
     "94a9fd44-a0b8-4ff5-a0cb-e34fb87d623a",
     "78a0508e-6e5f-40e1-ba6f-65c16372c9e0",
+    "ccc9bc06-fc67-4833-b301-1aaf0fb359c1",
     "f4514e01-ddf4-4147-a392-c5869d965f38",
     "81e2878b-d9df-4801-9464-da55b2afa88b"
   ]
