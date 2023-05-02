@@ -5,11 +5,15 @@
    
   }
   .section-{{ section.id }}-padding .page-width {
-    background-color: {{section.settings.background_color }};
-    border-radius: {{section.settings.border_radius }}px;
+    position: relative;
+  }
+  .section-{{ section.id }}-padding .bg {
     padding-top: {{ section.settings.inner_padding_top }}px;
     padding-bottom: {{ section.settings.inner_padding_bottom }}px;
-    position: relative;
+    background-color: {{section.settings.background_color }};
+    border-radius: {{section.settings.border_radius }}px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   @media screen and (min-width: 750px) {
@@ -23,6 +27,7 @@
 {% unless customer %}
     <div class="register-for-access-message section-{{ section.id }}-padding" >
       <div class=" page-width">
+        <div class="bg">
         {% if section.settings.sub_head  %}
           <p class="mono">{{ section.settings.sub_head }}</p>
         {% endif %}
@@ -38,7 +43,7 @@
             <br>
             <a href="{{ section.settings.button_url }}" class="btn register-for-access-button">{{ section.settings.button_text }}</a>
           {% endif %}
-          
+        </div>
       </div>
     </div>
   {% endunless %}

@@ -9,11 +9,13 @@
   }
   
   .shopify-section-header-hidden {
-    transform: translateY(-100%);
+    //transform: translateY(-100%);
+    background-color: #EFEDEA;
   }
   
   .shopify-section-header-hidden.menu-open {
     transform: translateY(0);
+    
   }
   
   #shopify-section-header.animate {
