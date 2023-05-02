@@ -88,6 +88,8 @@
   background-color: #EFE2D4;
   border-radius: 20px;
   padding-left: 2em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .collapsible-row-layout .accordion summary,
 .collapsible-row-layout .accordion .accordion__content {
