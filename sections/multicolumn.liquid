@@ -17,8 +17,8 @@
     
     {% if section.blocks.size == 2 %}
       #section-{{ section.id }} .grid {
-      column-gap: {{ section.settings.grid_width }}px;
-    }
+        column-gap: {{ section.settings.grid_width }}px;
+      }
       #Slider-{{ section.id }} .col1-width {
         flex: {{ section.settings.left_col }};
       }
@@ -349,7 +349,7 @@
     },
     {
       "type": "header",
-      "content": "Grid Width"
+      "content": "Grid Width (two column only)"
     },
     {
       "type": "range",
