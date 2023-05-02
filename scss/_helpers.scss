@@ -94,7 +94,7 @@
     color: rgba(var(--color-foreground), 0.75);
     background-color: rgb(var(--color-background));
   }
-  .color-no-color {
+  .color-no-color, .color-none, .color-none.gradient, .color-no-color.gradient {
     background-color: rgb(0,0,0,0);
   }
   .background-secondary {

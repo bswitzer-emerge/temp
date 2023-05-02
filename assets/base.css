@@ -479,7 +479,7 @@ body,
   background-color: rgb(var(--color-background));
 }
 
-.color-no-color {
+.color-no-color, .color-none, .color-none.gradient, .color-no-color.gradient {
   background-color: rgba(0, 0, 0, 0);
 }
 
