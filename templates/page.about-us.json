@@ -7,7 +7,38 @@
       ],
       "settings": {
         "padding_top": 28,
-        "padding_bottom": 28
+        "padding_bottom": 0
+      }
+    },
+    "6d58f46e-3507-4d0a-8c94-9e6c34c03a97": {
+      "type": "rich-text",
+      "blocks": {
+        "template--18857520202029__6d58f46e-3507-4d0a-8c94-9e6c34c03a97-16830529602d9d5ff5-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Join us as we march toward a circular, net-zero future.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--18857520202029__6d58f46e-3507-4d0a-8c94-9e6c34c03a97-16830529602d9d5ff5-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    },
+    "b306090c-e7b4-4047-9ad3-df4027efca4f": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"center\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0719\/5269\/5597\/files\/person-plus.svg?v=1683053164\"><\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "bb871c2f-8c8b-4ebf-b84d-556aad643dd1": {
@@ -50,6 +81,9 @@
         "template--18857520202029__bb871c2f-8c8b-4ebf-b84d-556aad643dd1-16825389981c69ca4d-1",
         "template--18857520202029__bb871c2f-8c8b-4ebf-b84d-556aad643dd1-16825389981c69ca4d-2",
         "ef1bb80f-db73-48d2-82fd-ebf76d0d2361"
+      ],
+      "custom_css": [
+        "p {font-size: 24px;}"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -371,6 +405,8 @@
   },
   "order": [
     "main",
+    "6d58f46e-3507-4d0a-8c94-9e6c34c03a97",
+    "b306090c-e7b4-4047-9ad3-df4027efca4f",
     "bb871c2f-8c8b-4ebf-b84d-556aad643dd1",
     "0cb4e4e5-31ff-4303-b43c-07a14645c8bb",
     "0ab1e298-23ad-4203-86c4-8fa63be12411",
