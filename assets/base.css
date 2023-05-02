@@ -3282,7 +3282,7 @@ body.index {
   overflow-x: hidden;
 }
 body.index .header-wrapper, body.index .announcement-bar {
-  background-color: rgba(246, 245, 243, 0);
+  background-color: #f9d5ba;
   transition: background-color 2s;
 }
 body.index section .page-width {
@@ -3290,7 +3290,7 @@ body.index section .page-width {
   z-index: 2;
 }
 body.index .shopify-section-header-sticky .header-wrapper {
-  background-color: rgb(246, 245, 243);
+  background-color: #f6f5f3;
 }
 
 #bg-custom-homepage1 {

@@ -1,7 +1,7 @@
 body.index {
     overflow-x: hidden;
     .header-wrapper, .announcement-bar  {
-        background-color: rgba(246, 245, 243, 0);
+        background-color: #f9d5ba;
         transition: background-color 2s;
         // background-color: var(--gradient-base-background-2);
     }
@@ -10,7 +10,7 @@ body.index {
         z-index: 2;
     }
     .shopify-section-header-sticky .header-wrapper {
-        background-color: rgba(246, 245, 243, 1);
+        background-color: #f6f5f3;
     }
     
 }
