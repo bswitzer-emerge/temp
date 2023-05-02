@@ -183,18 +183,30 @@
         "padding_bottom": 0
       }
     },
+    "39cbacb5-adbc-4f85-98ed-2900f62496d9": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"center\">\n  <div class=\"btn disabled\">\nno open positions\n   <\/div>\n<\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "94a9fd44-a0b8-4ff5-a0cb-e34fb87d623a": {
       "type": "rich-text",
       "blocks": {
         "template--18857520202029__94a9fd44-a0b8-4ff5-a0cb-e34fb87d623a-16829730331f3286dd-1": {
           "type": "text",
           "settings": {
-            "text": "<p><em>Currently, we do not have any open positions, check back soon.<\/em><\/p>"
+            "text": "<p>Don’t see something that matches your skills? <a href=\"\/pages\/contact\" title=\"Contact\">Send us an email<\/a>, let’s talk.<\/p>"
           }
         }
       },
       "block_order": [
         "template--18857520202029__94a9fd44-a0b8-4ff5-a0cb-e34fb87d623a-16829730331f3286dd-1"
+      ],
+      "custom_css": [
+        "p {font-size: 20px;}"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -368,6 +380,7 @@
     "bb871c2f-8c8b-4ebf-b84d-556aad643dd1",
     "0cb4e4e5-31ff-4303-b43c-07a14645c8bb",
     "0ab1e298-23ad-4203-86c4-8fa63be12411",
+    "39cbacb5-adbc-4f85-98ed-2900f62496d9",
     "94a9fd44-a0b8-4ff5-a0cb-e34fb87d623a",
     "4a18e7d5-4f7b-4eda-accd-5e76836409d1",
     "78a0508e-6e5f-40e1-ba6f-65c16372c9e0",
