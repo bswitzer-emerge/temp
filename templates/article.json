@@ -1,2 +1,31 @@
-{"sections":{"main":{"type":"article-main","settings":{"padding_top":28,"padding_bottom":28}}},"order":["main"]}
-
+{
+  "sections": {
+    "main": {
+      "type": "article-main",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "46b02c83-f003-4e07-9068-a7a9a43ff181": {
+      "type": "register-for-access",
+      "settings": {
+        "sub_head": "Still Unsure?",
+        "head": "Contact Our Team",
+        "message": "We're here to help with any questions you may have. Connect with our team to learn more about how the platform works, how your business can benefit, and how we can work together toward the circular economy. Talk with you soon!",
+        "button_text": "Contact Us",
+        "button_url": "\/pages\/contact?contact=buyer",
+        "background_color": "#efe2d4",
+        "border_radius": 40,
+        "padding_top": 52,
+        "padding_bottom": 96,
+        "inner_padding_top": 24,
+        "inner_padding_bottom": 56
+      }
+    }
+  },
+  "order": [
+    "main",
+    "46b02c83-f003-4e07-9068-a7a9a43ff181"
+  ]
+}
