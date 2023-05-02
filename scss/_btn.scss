@@ -22,6 +22,14 @@ button.btn {
         background-color: lighten(#D8D8D8, 20%)
     }
 }
+.btn.disabled {
+    background-color: rgba(0,0,0,0);
+    border: 1px solid rgb(32,32,32);
+    opacity: 0.4;
+}
+.btn.wide {
+    min-width: 270px;
+}
 .btn.small {
     padding: 2px 30px;
     font-size: 15px;
