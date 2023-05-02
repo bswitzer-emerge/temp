@@ -19,19 +19,19 @@
     <input type="radio" name="group" id="general-radio" value="general-radio" checked>
     <label for="general-radio" id="general-label">
       <img src="https://cdn.shopify.com/s/files/1/0719/5269/5597/files/hands-without-plus.png?v=1679696990">
-      <span>General Inquiry</span>  {{ section.settings.col1 }}
+      <span>{{ section.settings.col1_title }}</span>  {{ section.settings.col1 }}
     </label>
 
 
     <input type="radio" name="group" id="supplier-radio" value="supplier-radio">
     <label for="supplier-radio" id="supplier-label">
       <img src="https://cdn.shopify.com/s/files/1/0719/5269/5597/files/warehouse.png?v=1678492628">
-      <span>Supplier</span> {{ section.settings.col2 }}
+      <span>{{ section.settings.col2_title }}</span> {{ section.settings.col2 }}
     </label>
 
       <input type="radio" name="group" id="buyer-radio" value="buyer-radio">
       <label for="buyer-radio" id="buyer-label"><img src="https://cdn.shopify.com/s/files/1/0719/5269/5597/files/dude.png?v=1678492672">
-      <span>Buyer</span> {{ section.settings.col3 }} 
+      <span>{{ section.settings.col3_title }}</span> {{ section.settings.col3 }} 
     </label>
     
 </div>
@@ -256,6 +256,12 @@
     },
     {
       "type": "text",
+      "id": "col1_title",
+      "default": "General Inquiry",
+      "label": "Col 1: Title"
+    },
+    {
+      "type": "text",
       "id": "col1",
       "default": "I just want to chat with the team",
       "label": "Col 1: description"
@@ -268,6 +274,12 @@
     },
     {
       "type": "text",
+      "id": "col2_title",
+      "default": "Supplier",
+      "label": "Col 2: Title"
+    },
+    {
+      "type": "text",
       "id": "col2",
       "default": "I have batteries to supply",
       "label": "Col 2: description"
@@ -277,6 +289,12 @@
       "id": "col2_form",
       "default": "<p><iframe src=\"https://docs.google.com/forms/d/e/1FAIpQLSf3eU4dwEzi7wIS46FQjYLGH3g407_n8ziQBFRS50tT_pSUaQ/viewform?embedded=true\" width=\"640\" height=\"600\" frameborder=\"0\" marginheight=\"0\" marginwidth=\"0\">Loading…</iframe></p>",
       "label": "Col 2 Form code"
+    },
+    {
+      "type": "text",
+      "id": "col3_title",
+      "default": "Buyer",
+      "label": "Col 3: Title"
     },
     {
       "type": "text",
