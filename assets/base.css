@@ -1,6 +1,10 @@
 @charset "UTF-8";
-/* Color custom properties */
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@100;300;400;500;700&display=swap");
+body {
+  overflow-x: hidden;
+}
+
+/* Color custom properties */
 :root,
 .color-background-1 {
   --color-foreground: var(--color-base-text);
