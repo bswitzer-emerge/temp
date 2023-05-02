@@ -23,6 +23,9 @@
       "block_order": [
         "template--18857520202029__6d58f46e-3507-4d0a-8c94-9e6c34c03a97-16830529602d9d5ff5-1"
       ],
+      "custom_css": [
+        "div {position: relative; z-index: 2; background: none;}"
+      ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -34,8 +37,14 @@
     },
     "b306090c-e7b4-4047-9ad3-df4027efca4f": {
       "type": "custom-liquid",
+      "custom_css": [
+        "#aboutus {position: relative;}",
+        ".center {position: relative; z-index: 2;}",
+        ".bg_text {position: absolute; z-index: 1; top: -110px; left: 0; right: 0;}",
+        "#lines-about-us {width: 100%;}"
+      ],
       "settings": {
-        "custom_liquid": "<div class=\"center\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0719\/5269\/5597\/files\/person-plus.svg?v=1683053164\"><\/div>",
+        "custom_liquid": "<div id=\"aboutus\"><div class=\"center\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0719\/5269\/5597\/files\/person-plus.svg?v=1683053164\"><\/div>\n\n<div class=\"bg_text\">\n   <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0719\/5269\/5597\/files\/lines-about-us.png?v=1683059570\" id=\"lines-about-us\">\n<\/div>\n<\/div>",
         "color_scheme": "background-1",
         "padding_top": 0,
         "padding_bottom": 0
@@ -83,7 +92,8 @@
         "ef1bb80f-db73-48d2-82fd-ebf76d0d2361"
       ],
       "custom_css": [
-        "p {font-size: 24px;}"
+        "p {font-size: 24px;}",
+        "div {position: relative; z-index: 2; background: none;}"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -160,6 +170,9 @@
         "497a6f28-3bf2-476f-bb18-51e0419c7343",
         "09fbde24-8c58-4af9-a8a9-f6bd997d9afb"
       ],
+      "custom_css": [
+        "div {position: relative; z-index: 2;}"
+      ],
       "settings": {
         "caption": "",
         "heading": "",
@@ -173,6 +186,19 @@
         "desktop_layout": "image_second",
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "6b6a6ce1-8385-4d31-87c3-4c4ac30db63b": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "#about-us-right {position: relative;}",
+        "#about-us-right-img {position: absolute; right: 0; top: -800px;}"
+      ],
+      "settings": {
+        "custom_liquid": "<div class=\"page-width\" id=\"about-us-right\">\n <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0719\/5269\/5597\/files\/lines-about-us-right.svg?v=1683060007\" id=\"about-us-right-img\">\n<\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "0ab1e298-23ad-4203-86c4-8fa63be12411": {
@@ -409,6 +435,7 @@
     "b306090c-e7b4-4047-9ad3-df4027efca4f",
     "bb871c2f-8c8b-4ebf-b84d-556aad643dd1",
     "0cb4e4e5-31ff-4303-b43c-07a14645c8bb",
+    "6b6a6ce1-8385-4d31-87c3-4c4ac30db63b",
     "0ab1e298-23ad-4203-86c4-8fa63be12411",
     "39cbacb5-adbc-4f85-98ed-2900f62496d9",
     "94a9fd44-a0b8-4ff5-a0cb-e34fb87d623a",
