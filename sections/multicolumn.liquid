@@ -14,10 +14,11 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
 
-    #section-{{ section.id }} .grid {
+    
+    {% if section.blocks.size == 2 %}
+      #section-{{ section.id }} .grid {
       column-gap: {{ section.settings.grid_width }}px;
     }
-    {% if section.blocks.size == 2 %}
       #Slider-{{ section.id }} .col1-width {
         flex: {{ section.settings.left_col }};
       }
