@@ -3282,11 +3282,15 @@ body.index {
   overflow-x: hidden;
 }
 body.index .header-wrapper, body.index .announcement-bar {
-  background-color: #f9d5ba;
+  background-color: rgba(246, 245, 243, 0);
+  transition: background-color 2s;
 }
 body.index section .page-width {
   position: relative;
   z-index: 2;
+}
+body.index .shopify-section-header-sticky .header-wrapper {
+  background-color: rgb(246, 245, 243);
 }
 
 #bg-custom-homepage1 {

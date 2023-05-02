@@ -1,14 +1,21 @@
 body.index {
     overflow-x: hidden;
     .header-wrapper, .announcement-bar  {
-        background-color: #f9d5ba;
+        background-color: rgba(246, 245, 243, 0);
+        transition: background-color 2s;
         // background-color: var(--gradient-base-background-2);
     }
     section .page-width {
         position: relative;
         z-index: 2;
     }
+    .shopify-section-header-sticky .header-wrapper {
+        background-color: rgba(246, 245, 243, 1);
+    }
+    
 }
+
+
 #bg-custom-homepage1 {
     position: absolute;
     z-index: 1;
