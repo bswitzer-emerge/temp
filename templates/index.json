@@ -78,7 +78,7 @@
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 100,
-        "padding_bottom": 100,
+        "padding_bottom": 0,
         "grid_width": 80,
         "left_col": 8,
         "right_col": 4
@@ -128,8 +128,8 @@
         "color_scheme": "background-2",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 100,
-        "padding_bottom": 100,
+        "padding_top": 0,
+        "padding_bottom": 16,
         "grid_width": 80,
         "left_col": 4,
         "right_col": 8
@@ -149,14 +149,18 @@
       "settings": {
         "custom_liquid": "<style>\n  #fourup img {\n    max-width: 100%;\n    max-height: 144px;\n    object-fit: contain;\n  }\n  #fourup li p, #fourup li {\n    text-align: center;\n    font-family: \"Roboto Mono\", monospace;\n  }\n  #fourup li {\n    padding-left: 40px;\n    padding-right: 40px;\n    display:  flex;\n    flex-direction: column;\n    justify-content: space-between;\n    align-items: center;\n    position: relative;\n    \n  }\n  #fourup li:after {\n    position: absolute;\n    top: 31px;\n    right: -21px;\n    content: \"\";\n    background-image: url(\"https:\/\/cdn.shopify.com\/s\/files\/1\/0719\/5269\/5597\/files\/arrow-right-sm.svg?v=1680125743\");\n    background-repeat: no-repeat;\n    background-position: center;\n    width: 39px;\n    height: 100%;\n    \n  }\n  #fourup li:last-of-type::after {\n    display: none;\n    background-image: none;\n  }\n  #reposition1 {\n    position: relative;\n    top: 12px;\n  }\n  #reposition2 {\n    position: relative;\n    top: 23px;\n  }\n<\/style>\n<div class=\"bg\">\n<div class=\"page-width\" id=\"fourup\">\n    <ul class=\"multicolumn-list contains-content-container grid grid--1-col-tablet-down grid--4-col-desktop\">\n      <li class=\"multicolumn-list__item grid__item\">\n          <p>car<\/p>\n          <img src=\"\/\/cdn.shopify.com\/s\/files\/1\/0719\/5269\/5597\/files\/car_10c852e8-4ca0-4c79-883f-f55a5272913c.png?v=1678492591&amp;width=1420\" alt=\"\" class=\"multicolumn-card__image laziness\">\n      <\/li>\n      <li class=\"multicolumn-list__item grid__item\">\n       <p>warehouse<\/p>\n        <img src=\"\/\/cdn.shopify.com\/s\/files\/1\/0719\/5269\/5597\/files\/warehouse.png?v=1678492628&amp;width=1420\" alt=\"\"  class=\"multicolumn-card__image  laziness\">\n      <\/li>\n      <li class=\"multicolumn-list__item grid__item\">\n        <p>platform<\/p>\n        <img src=\"\/\/cdn.shopify.com\/s\/files\/1\/0719\/5269\/5597\/files\/platform.png?v=1678492644&amp;width=1420\" alt=\"\" class=\"multicolumn-card__image laziness\" id=\"reposition1\">\n      <\/li>\n      <li class=\"multicolumn-list__item grid__item\">\n            <p>buyer<\/p>\n            <img src=\"\/\/cdn.shopify.com\/s\/files\/1\/0719\/5269\/5597\/files\/dude.png?v=1678492672&amp;width=1420\" alt=\"\" class=\"multicolumn-card__image laziness\" id=\"reposition2\">\n      <\/li>\n    <\/ul>\n<\/div>\n<\/div>\n<style>\n.laziness {\n  opacity: 0;\n  transition: all 2s;\n  transform: translateY(15px);\n}\n.laziness.loaded {\n  opacity: 1;\n  transform: translateY(0px);\n}\n<\/style>\n\n\n<script>\nconst images = document.querySelectorAll('.laziness');\n\nconst options = {\n  rootMargin: '0px',\n  threshold: 0.95\n};\n\nconst observer = new IntersectionObserver(function(entries, observer) {\n  entries.forEach(entry => {\n    if (entry.isIntersecting) {\n      const img = entry.target;\n      \/\/img.setAttribute('src', img.dataset.src);\n      img.classList.add('loaded');\n      observer.unobserve(img);\n    }\n  });\n}, options);\n\nimages.forEach(image => {\n  observer.observe(image);\n});\n\n\n<\/script>",
         "color_scheme": "background-2",
-        "padding_top": 100,
-        "padding_bottom": 100
+        "padding_top": 16,
+        "padding_bottom": 32
       }
     },
     "919791fe-f788-4a66-a0d1-721d19b0ba79": {
       "type": "custom-liquid",
+      "custom_css": [
+        "#about-us-right {position: relative;}",
+        "#about-us-right-img {position: absolute; right: -1050px; top: -200px; max-width: 100%;}"
+      ],
       "settings": {
-        "custom_liquid": "<div id=\"bg-custom-homepage1\"><svg height=\"1449\" viewBox=\"0 0 695 1449\" width=\"695\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"><g fill=\"none\" fill-rule=\"evenodd\" stroke=\"#fc7238\" stroke-width=\"2\" transform=\"translate(1.454978 1.057481)\"><path d=\"m-340.492987 755.928359c192.347976-109.119052 319.0181036-88.935703 380.010383 60.550048 91.488419 224.228623 293.057265 104.323721 585.840325 71.395538 292.783061-32.928183 345.461708-264.839921 407.221479-376.588244\" transform=\"matrix(-.190809 .98162718 -.98162718 -.190809 1129.00903 530.029761)\"\/><path d=\"m406.481368 0c77.860541 207.515658 38.020678 329.743267-119.519591 366.682828-236.3104034 55.40934-149.21854 273.74391-162.526994 568.735615-13.308454 294.991707 208.004106 383.499457 308.941847 462.156717\" opacity=\".350321\"\/><\/g><\/svg><\/div>",
+        "custom_liquid": "<div class=\"page-width\" id=\"about-us-right\">\n <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0719\/5269\/5597\/files\/lines-about-us-right-v2.svg?v=1683061760\" id=\"about-us-right-img\">\n<\/div>",
         "color_scheme": "background-1",
         "padding_top": 0,
         "padding_bottom": 0
@@ -196,15 +200,15 @@
         "3fd598c0-ed1a-4d0b-b60f-4504ab3e948e"
       ],
       "custom_css": [
-        "p {font-size: 24px;}"
+        "p {font-size: 23px;}"
       ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "background-2",
         "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 100
+        "padding_top": 8,
+        "padding_bottom": 28
       }
     },
     "5443d46e-38d2-45e9-a65c-0b1384acf72d": {
@@ -286,7 +290,7 @@
         "show_image": true,
         "show_date": false,
         "show_author": false,
-        "show_view_all": true,
+        "show_view_all": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -311,8 +315,8 @@
       ],
       "settings": {
         "sub_head": "Still Unsure?",
-        "head": "Contact Our Team",
-        "message": "We're here to help with any questions you may have. Connect with our team to learn more about how the platform works, how your business can benefit, and how we can work together toward the circular economy. Talk with you soon!",
+        "head": "Register for Access Our Team",
+        "message": "Provide your business’ information, receive your login credentials, and gain access to the highest quality and fairest priced inventory in the market today. It’s as simple as that.",
         "button_text": "Contact Us",
         "button_url": "\/pages\/contact?contact=buyer",
         "background_color": "#efe2d4",
