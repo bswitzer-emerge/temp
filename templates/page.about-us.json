@@ -188,8 +188,8 @@
       "settings": {
         "custom_liquid": "<div class=\"center\">\n  <div class=\"btn disabled\">\nno open positions\n   <\/div>\n<\/div>",
         "color_scheme": "background-1",
-        "padding_top": 40,
-        "padding_bottom": 52
+        "padding_top": 24,
+        "padding_bottom": 28
       }
     },
     "94a9fd44-a0b8-4ff5-a0cb-e34fb87d623a": {
