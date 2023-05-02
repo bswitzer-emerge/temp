@@ -180,7 +180,7 @@
         "heading_alignment": "center",
         "layout": "none",
         "color_scheme": "none",
-        "container_color_scheme": "background-2",
+        "container_color_scheme": "none",
         "open_first_collapsible_row": true,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
