@@ -188,6 +188,19 @@
         "padding_bottom": 36
       }
     },
+    "6b6a6ce1-8385-4d31-87c3-4c4ac30db63b": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "#about-us-right {position: relative;}",
+        "#about-us-right-img {position: absolute; right: 0; top: -800px;}"
+      ],
+      "settings": {
+        "custom_liquid": "<div class=\"page-width\" id=\"about-us-right\">\n <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0719\/5269\/5597\/files\/lines-about-us-right.svg?v=1683060007\" id=\"about-us-right-img\">\n<\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "0ab1e298-23ad-4203-86c4-8fa63be12411": {
       "type": "rich-text",
       "blocks": {
@@ -422,6 +435,7 @@
     "b306090c-e7b4-4047-9ad3-df4027efca4f",
     "bb871c2f-8c8b-4ebf-b84d-556aad643dd1",
     "0cb4e4e5-31ff-4303-b43c-07a14645c8bb",
+    "6b6a6ce1-8385-4d31-87c3-4c4ac30db63b",
     "0ab1e298-23ad-4203-86c4-8fa63be12411",
     "39cbacb5-adbc-4f85-98ed-2900f62496d9",
     "94a9fd44-a0b8-4ff5-a0cb-e34fb87d623a",
