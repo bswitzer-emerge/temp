@@ -170,6 +170,9 @@
         "497a6f28-3bf2-476f-bb18-51e0419c7343",
         "09fbde24-8c58-4af9-a8a9-f6bd997d9afb"
       ],
+      "custom_css": [
+        "div {position: relative; z-index: 2;}"
+      ],
       "settings": {
         "caption": "",
         "heading": "",
