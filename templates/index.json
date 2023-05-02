@@ -155,8 +155,12 @@
     },
     "919791fe-f788-4a66-a0d1-721d19b0ba79": {
       "type": "custom-liquid",
+      "custom_css": [
+        "#about-us-right {position: relative;}",
+        "#about-us-right-img {position: absolute; right: -1050px; top: -200px; max-width: 100%;}"
+      ],
       "settings": {
-        "custom_liquid": "<div id=\"bg-custom-homepage1\"><svg height=\"1449\" viewBox=\"0 0 695 1449\" width=\"695\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"><g fill=\"none\" fill-rule=\"evenodd\" stroke=\"#fc7238\" stroke-width=\"2\" transform=\"translate(1.454978 1.057481)\"><path d=\"m-340.492987 755.928359c192.347976-109.119052 319.0181036-88.935703 380.010383 60.550048 91.488419 224.228623 293.057265 104.323721 585.840325 71.395538 292.783061-32.928183 345.461708-264.839921 407.221479-376.588244\" transform=\"matrix(-.190809 .98162718 -.98162718 -.190809 1129.00903 530.029761)\"\/><path d=\"m406.481368 0c77.860541 207.515658 38.020678 329.743267-119.519591 366.682828-236.3104034 55.40934-149.21854 273.74391-162.526994 568.735615-13.308454 294.991707 208.004106 383.499457 308.941847 462.156717\" opacity=\".350321\"\/><\/g><\/svg><\/div>",
+        "custom_liquid": "<div class=\"page-width\" id=\"about-us-right\">\n <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0719\/5269\/5597\/files\/lines-about-us-right-v2.svg?v=1683061760\" id=\"about-us-right-img\">\n<\/div>",
         "color_scheme": "background-1",
         "padding_top": 0,
         "padding_bottom": 0
