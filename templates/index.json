@@ -4,7 +4,7 @@
       "type": "home-page-hero",
       "custom_css": [
         ".hide {display: none;}",
-        ".hero-home {min-height: 680px;}"
+        ".hero-home {min-height: 700px;}"
       ],
       "settings": {
         "heading": "Second-life sourcing starts here",
