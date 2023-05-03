@@ -116,12 +116,25 @@
         "padding_top": 36,
         "padding_bottom": 96
       }
+    },
+    "9afc1514-51e5-4720-8957-7ec99c20ffdd": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "div {display: block; width: 100%; height: 80px;}"
+      ],
+      "settings": {
+        "custom_liquid": "<div><\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "main",
     "64f2ca88-7d16-43f4-89df-f623035f1e72",
     "7cce4582-f982-4858-b777-604ebf3abb56",
-    "form"
+    "form",
+    "9afc1514-51e5-4720-8957-7ec99c20ffdd"
   ]
 }
