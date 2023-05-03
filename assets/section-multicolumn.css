@@ -280,6 +280,10 @@
   width: 100%;
 }
 .multicolumn.color-background-2 
+.multicolumn-card__image-wrapper.multicolumn-card__image-wrapper--full-width > div  {
+  padding: 62px;
+}
+.multicolumn.color-background-2 
 .multicolumn-card__image-wrapper.multicolumn-card__image-wrapper--full-width .media {
   padding-bottom: 0 !important;
 }

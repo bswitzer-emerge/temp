@@ -33,10 +33,13 @@
   }
 
   .header__heading-logo {
-    max-width: {{ section.settings.logo_width }}px;
+    max-width: 105px;
   }
 
   @media screen and (min-width: 990px) {
+    .header__heading-logo {
+      max-width: {{ section.settings.logo_width }}px;
+    }
     header-drawer {
       display: none;
     }

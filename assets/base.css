@@ -3274,6 +3274,12 @@ button.btn {
   min-width: 130px;
 }
 
+@media screen and (max-width: 989px) {
+  .header__signin {
+    width: 163px;
+  }
+}
+
 .header__signin #customer_login_link:hover {
   background-color: #ffae72;
 }

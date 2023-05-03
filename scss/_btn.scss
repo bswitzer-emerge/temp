@@ -38,6 +38,11 @@ button.btn {
     min-width: 130px;
     
 }
+.header__signin {
+    @media screen and (max-width: 989px) { 
+        width: 163px;
+    }
+}
 .header__signin #customer_login_link:hover {
     background-color: lighten(#FF730C, 20%)
 }
