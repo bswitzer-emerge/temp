@@ -17,7 +17,7 @@
     "3f7accfd-adfc-48c8-a8bf-dc26f19c97f7": {
       "type": "custom-liquid",
       "custom_css": [
-        "#whyweaccess {position: relative; top: 150px;}"
+        "#whyweaccess {position: relative; top: 0px;}"
       ],
       "settings": {
         "custom_liquid": "<a href=\"#\" id=\"whyweaccess\" name=\"whyweaccess\"><\/a>\n\n<div id=\"waves-top\" class=\"waves\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0719\/5269\/5597\/files\/waves_background_top-v4.webp?v=1683157021\"><\/div>",
