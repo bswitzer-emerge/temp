@@ -27,12 +27,21 @@
     line-height: 2.4em;
     margin-bottom: 2.5em;
   }
+  @media screen and (max-width: 749px) { 
+    flex-direction: column-reverse;
+  }
 }
 .blog__col_1, .blog__col_2 {
 
 }
 .blog__col_1 {
   flex: 2;
+  @media screen and (max-width: 749px) { 
+    .back {
+      display: none;
+    }
+  }
+
 }
 .blog__col_1 p {
   margin-top: 0;

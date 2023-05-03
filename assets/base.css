@@ -940,6 +940,11 @@ summary::-webkit-details-marker {
 .footer__content-top .row {
   display: flex;
 }
+@media screen and (max-width: 749px) {
+  .footer__content-top .row {
+    flex-wrap: wrap;
+  }
+}
 .footer__content-top .linkedin {
   width: 100px;
 }
@@ -949,6 +954,11 @@ summary::-webkit-details-marker {
 .footer__content-top .links {
   flex-grow: 1;
   text-align: right;
+}
+@media screen and (max-width: 749px) {
+  .footer__content-top .links {
+    text-align: center;
+  }
 }
 .footer__content-top .links a {
   color: white;
@@ -2928,9 +2938,19 @@ details-disclosure > details {
   line-height: 2.4em;
   margin-bottom: 2.5em;
 }
+@media screen and (max-width: 749px) {
+  .blog__article {
+    flex-direction: column-reverse;
+  }
+}
 
 .blog__col_1 {
   flex: 2;
+}
+@media screen and (max-width: 749px) {
+  .blog__col_1 .back {
+    display: none;
+  }
 }
 
 .blog__col_1 p {
@@ -3035,6 +3055,11 @@ details-disclosure > details {
 .hero-home .btn {
   font-size: 16px;
   padding: 10px 30px;
+}
+@media screen and (max-width: 749px) {
+  .hero-home .btn {
+    margin-bottom: 1em;
+  }
 }
 .hero-home .secondary {
   background-color: white;
@@ -3458,11 +3483,23 @@ body.index .shopify-section-header-sticky .header-wrapper {
   margin-top: 2em;
   position: relative;
 }
+@media screen and (max-width: 749px) {
+  .social-badges {
+    display: flex;
+    justify-content: center;
+  }
+}
 .social-badges a {
   text-decoration: none;
   display: block;
   margin-bottom: 1em;
   margin-left: 3em;
+}
+@media screen and (max-width: 749px) {
+  .social-badges a {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
 }
 .social-badges #copied {
   display: none;

@@ -51,7 +51,13 @@
   margin-bottom: 0;
   padding: 0;
 }
+@media screen and (max-width: 749px) { 
+  .multicolumn-list li {
+    margin-bottom: 2em;
 
+  }
+
+}
 .multicolumn-list__item:only-child {
   max-width: 72rem;
 }

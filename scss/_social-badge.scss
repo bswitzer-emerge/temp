@@ -1,11 +1,19 @@
 .social-badges {
     margin-top: 2em;
     position: relative;
+    @media screen and (max-width: 749px) { 
+        display: flex;
+        justify-content: center;
+    }
     a {
         text-decoration: none;
         display: block;
         margin-bottom: 1em;
         margin-left: 3em;
+        @media screen and (max-width: 749px) { 
+            margin-left: 0.5em;
+            margin-right: 0.5em;
+        }
     }
     #copied {
         display: none;
