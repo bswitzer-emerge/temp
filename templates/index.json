@@ -4,7 +4,7 @@
       "type": "home-page-hero",
       "custom_css": [
         ".hide {display: none;}",
-        ".hero-home {min-height: 680px;}"
+        ".hero-home {min-height: 710px;}"
       ],
       "settings": {
         "heading": "Second-life sourcing starts here",
@@ -20,7 +20,7 @@
         "#whyweaccess {position: relative; top: 150px;}"
       ],
       "settings": {
-        "custom_liquid": "<a href=\"#\" id=\"whyweaccess\" name=\"whyweaccess\"><\/a>\n\n<div id=\"waves-top\" class=\"waves\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0719\/5269\/5597\/files\/waves_background_top-v2.webp?v=1680297595\"><\/div>",
+        "custom_liquid": "<a href=\"#\" id=\"whyweaccess\" name=\"whyweaccess\"><\/a>\n\n<div id=\"waves-top\" class=\"waves\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0719\/5269\/5597\/files\/waves_background_top-v3.webp?v=1683156556\"><\/div>",
         "color_scheme": "background-1",
         "padding_top": 0,
         "padding_bottom": 0
