@@ -80,7 +80,7 @@
         "swipe_on_mobile": false,
         "padding_top": 100,
         "padding_bottom": 0,
-        "grid_width": 50,
+        "grid_width": 2,
         "left_col": 6,
         "right_col": 4
       }
@@ -131,9 +131,9 @@
         "swipe_on_mobile": false,
         "padding_top": 0,
         "padding_bottom": 16,
-        "grid_width": 40,
+        "grid_width": 2,
         "left_col": 4,
-        "right_col": 7
+        "right_col": 6
       }
     },
     "ef7482f9-125c-425d-928c-2c4c644907ca": {
