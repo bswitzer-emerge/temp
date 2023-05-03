@@ -103,6 +103,15 @@
       "settings": {
         "heading": "",
         "heading_size": "h1",
+        "col1_title": "General Inquiry",
+        "col1": "I just want to chat with the team",
+        "col1_form": "<iframe src=\"https:\/\/docs.google.com\/forms\/d\/e\/1FAIpQLSdOXzCyBdHWZy9mVxX2Wxeu6g__ylTqFsFe9kuAnV-rqOxTfw\/viewform?embedded=true%22%20%20width=\" height=\"1123\" frameborder=\"0\" marginheight=\"0\" marginwidth=\"0\">Loading…<\/iframe>",
+        "col2_title": "Supplier",
+        "col2": "I have batteries to supply",
+        "col2_form": "<iframe src=\"https:\/\/docs.google.com\/forms\/d\/e\/1FAIpQLSdOXzCyBdHWZy9mVxX2Wxeu6g__ylTqFsFe9kuAnV-rqOxTfw\/viewform?embedded=true%22%20%20width=\" height=\"1123\" frameborder=\"0\" marginheight=\"0\" marginwidth=\"0\">Loading…<\/iframe>",
+        "col3_title": "Buyer",
+        "col3": "I want to purchase batteries",
+        "col3_form": "<iframe src=\"https:\/\/docs.google.com\/forms\/d\/e\/1FAIpQLSfVyi2gBGJL-Nou0zlbKQJTgF2TwUOF_WQKuhL5K6pxSY71TA\/viewform?embedded=true\" width=\"640\" height=\"2415\" frameborder=\"0\" marginheight=\"0\" marginwidth=\"0\">Loading…<\/iframe>",
         "color_scheme": "background-1",
         "padding_top": 36,
         "padding_bottom": 20
