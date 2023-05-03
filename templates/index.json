@@ -80,8 +80,8 @@
         "swipe_on_mobile": false,
         "padding_top": 100,
         "padding_bottom": 0,
-        "grid_width": 80,
-        "left_col": 8,
+        "grid_width": 50,
+        "left_col": 6,
         "right_col": 4
       }
     },
@@ -131,9 +131,9 @@
         "swipe_on_mobile": false,
         "padding_top": 0,
         "padding_bottom": 16,
-        "grid_width": 80,
+        "grid_width": 40,
         "left_col": 4,
-        "right_col": 8
+        "right_col": 7
       }
     },
     "ef7482f9-125c-425d-928c-2c4c644907ca": {
