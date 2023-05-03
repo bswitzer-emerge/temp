@@ -3306,7 +3306,7 @@ body.index {
   overflow-x: hidden;
 }
 body.index .header-wrapper, body.index .announcement-bar {
-  background-color: f9d5ba;
+  background-color: #f9d5ba;
   transition: background-color 2s;
 }
 body.index section .page-width {
