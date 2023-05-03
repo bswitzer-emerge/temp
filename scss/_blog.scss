@@ -10,7 +10,6 @@
     .blog__post:hover {
         .btn {
             background-color: lighten(#525351, 20%);
-
         }
     }
     .grid {
@@ -21,6 +20,9 @@
         /* Three column */
         //grid-template-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+        @media screen and (max-width: 989px) { 
+            grid-template-columns: 1fr;
+        }
         grid-gap: 50px 30px;
     }
     li {

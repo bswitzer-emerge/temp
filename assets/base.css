@@ -1200,9 +1200,6 @@ summary::-webkit-details-marker {
   .grid--peek .grid__item {
     min-width: 35%;
   }
-  .grid--peek.slider .grid__item:first-of-type {
-    margin-left: 1.5rem;
-  }
   /* Fix to show some space at the end of our sliders in all browsers */
   .grid--peek.slider:after {
     margin-left: calc(-1 * var(--grid-mobile-horizontal-spacing));
@@ -1261,11 +1258,6 @@ summary::-webkit-details-marker {
   .grid--gapless .grid__item {
     padding-left: 0;
     padding-bottom: 0;
-  }
-  @media screen and (min-width: 749px) {
-    .grid--peek .grid__item {
-      padding-left: var(--grid-mobile-horizontal-spacing);
-    }
   }
   .product-grid .grid__item {
     padding-bottom: var(--grid-mobile-vertical-spacing);
@@ -3198,6 +3190,7 @@ details-disclosure > details {
   text-align: center;
   justify-content: center;
   align-content: center;
+  margin-bottom: 2em;
 }
 .dummy-options .radio-inputs label:hover {
   border: solid 1px #f2d5bf;
@@ -3336,6 +3329,11 @@ body.index .shopify-section-header-sticky .header-wrapper {
   /* Three column */
   grid-template-columns: 1fr 1fr;
   grid-gap: 50px 30px;
+}
+@media screen and (max-width: 989px) {
+  .blog.color-inverse ul {
+    grid-template-columns: 1fr;
+  }
 }
 .blog.color-inverse li {
   background-color: #2F2926;
