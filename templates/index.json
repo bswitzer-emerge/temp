@@ -301,7 +301,7 @@
     "4099fb71-c26a-4b0e-8e42-8fafa1cfe444": {
       "type": "register-for-access",
       "custom_css": [
-
+        "div {position: relative; z-index: 3;}"
       ],
       "settings": {
         "sub_head": "Still Unsure?",
