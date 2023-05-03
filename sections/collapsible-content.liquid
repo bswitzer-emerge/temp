@@ -63,17 +63,11 @@
                   </div>
                 </details>
               </div>  
-
-              <script>
-                console.log("test");
-                const myElement{{ forloop.index }} = document.querySelector('.el{{ forloop.index }}');
-                myElement{{ forloop.index }}.addEventListener('click', () => {
-                  console.log("test{{ forloop.index }}");
-                  myElement{{ forloop.index }}.classList.toggle('active');
-                });
-              </script>
+                
+              
               <style>
-                .el{{ forloop.index }}.active .path1 {
+
+                [aria-expanded="true"] .path1 {
                   display: none;
                 }
               </style>
