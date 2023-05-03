@@ -1,21 +1,20 @@
 
-    <div class="hero-home-container">
-    <div class="hero-home">
-       <div class="content">
-          <h1>{{ section.settings.heading }}</h1>
-          <h4>{{ section.settings.subheading }}</h4>
-          {% unless customer %}
-          <div class="buttons">
-             <a href="/pages/contact?contact=buyer" class="btn primary">Register for Access</a>
-             <a href="#whyweaccess" class="btn tertiary">Learn More</a>
-            {% endunless %}
-          </div>
-          <p class="hide">Exclusive marketplace for: <img src="https://cdn.shopify.com/s/files/1/0719/5269/5597/files/nissan_logo.png?v=1678492965" id="nissan-logo"></p>
-       </div>
-    </div>
-    
-    {{ section.settings.svg }}
-    </div>
+<div class="hero-home-container">
+  <div class="hero-home">
+      <div class="content">
+        <h1>{{ section.settings.heading }}</h1>
+        <h4>{{ section.settings.subheading }}</h4>
+        {% unless customer %}
+        <div class="buttons">
+            <a href="/pages/contact?contact=buyer" class="btn primary">Register for Access</a>
+            <a href="#whyweaccess" class="btn tertiary">Learn More</a>
+          {% endunless %}
+        </div>
+        <p class="hide">Exclusive marketplace for: <img src="https://cdn.shopify.com/s/files/1/0719/5269/5597/files/nissan_logo.png?v=1678492965" id="nissan-logo"></p>
+      </div>
+  </div>
+  {{ section.settings.svg }}
+</div>
 
 
 
