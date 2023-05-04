@@ -4,7 +4,7 @@
       "type": "home-page-hero",
       "custom_css": [
         ".hide {display: none;}",
-        ".hero-home {min-height: 710px;}",
+        ".hero-home {min-height: 400px;}",
         "#home-spacer {width: 100%;}"
       ],
       "settings": {
