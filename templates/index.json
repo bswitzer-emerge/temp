@@ -81,7 +81,7 @@
         "color_scheme": "background-2",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 100,
+        "padding_top": 32,
         "padding_bottom": 0,
         "grid_width": 2,
         "left_col": 6,
@@ -285,25 +285,17 @@
         "right_col": 1
       }
     },
-    "722430fb-a8d5-4d0d-a2a2-f95a2af200a0": {
-      "type": "featured-blog",
+    "4ffeec90-d7ed-4c69-b7ee-abe6d933bfb7": {
+      "type": "custom-liquid",
       "custom_css": [
         "ul {position: relative; z-index: 1;}",
         ".isolate {z-index: 1;}"
       ],
       "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "blog": "news",
-        "post_limit": 2,
-        "columns_desktop": 2,
-        "color_scheme": "inverse",
-        "show_image": true,
-        "show_date": false,
-        "show_author": false,
-        "show_view_all": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "custom_liquid": "<div class=\"blog color-inverse gradient no-heading\">\n    <div class=\"page-width-desktop isolate page-width-tablet section-template--17947966701869__722430fb-a8d5-4d0d-a2a2-f95a2af200a0-padding\"><slider-component class=\"slider-mobile-gutter\">\n          <ul id=\"Slider-template--17947966701869__722430fb-a8d5-4d0d-a2a2-f95a2af200a0\" class=\"blog__posts articles-wrapper contains-card contains-card--article contains-card--standard grid grid--peek grid--2-col-tablet grid--2-col-desktop slider slider--mobile\" role=\"list\">\n            \n            <li id=\"Slide-template--17947966701869__722430fb-a8d5-4d0d-a2a2-f95a2af200a0-1\" class=\"blog__post grid__item article slider__slide slider__slide--full-width\">\n                \n  <div class=\"article-card-wrapper card-wrapper underline-links-hover\">\n      \n      <div class=\"\n          card article-card\n          card--standard\n          \n           card--media\n          \n          \n        \" style=\"--ratio-percent: 60.24096385542169%;\">\n        \n        <div class=\"card__content\">\n          <div class=\"blog-post-tags\">\n            \n              <div class=\"tag\">Article<\/div>\n            \n          <\/div>\n          <div class=\"card__information card__flex\">\n            <h3 class=\"card__heading h2\">\n              <a href=\"\/blogs\/articles\/enabling-profitable-sustainability-white-paper-on-battery-second-life\" class=\"full-unstyled-link\">\n                Enabling Profitable Sustainability: White Paper on Battery Second Life\n              <\/a>\n            <\/h3>\n            <div class=\"article-card__info caption-with-letter-spacing h5\"><\/div><p class=\"article-card__excerpt rte-width\">The market dynamics of the second life industry are on the cusp of fundamentally shifting to meet the growing demand. \n  <\/p><div class=\"article-card__footer\">\n                <a href=\"\/blogs\/articles\/enabling-profitable-sustainability-white-paper-on-battery-second-life\" class=\"btn\">\n                  Read\n                <\/a><\/div><\/div><\/div>\n      <\/div>\n    <\/div>\n              <\/li>\n  \n              <li id=\"Slide-template--17947966701869__722430fb-a8d5-4d0d-a2a2-f95a2af200a0-1\" class=\"blog__post grid__item article slider__slide slider__slide--full-width\">\n                \n                <div class=\"article-card-wrapper card-wrapper underline-links-hover\">\n                    \n                    <div class=\"\n                        card article-card\n                        card--standard\n                        \n                         card--media\n                        \n                        \n                      \" style=\"--ratio-percent: 60.24096385542169%;\">\n                      \n                      <div class=\"card__content\">\n                        <div class=\"blog-post-tags\">\n                          \n                            <div class=\"tag\">Press Release<\/div>\n                          \n                        <\/div>\n                        <div class=\"card__information card__flex\">\n                          <h3 class=\"card__heading h2\">\n                            <a href=\"\/blogs\/press-releases-1\/hg-ventures-partners-with-battery-marketplace-company-currents\" class=\"full-unstyled-link\">\n                              HG Ventures Partners with Battery Marketplace Company, Currents\n                            <\/a>\n                          <\/h3>\n                          <div class=\"article-card__info caption-with-letter-spacing h5\"><\/div><p class=\"article-card__excerpt rte-width\">HG Ventures, the corporate venture arm of The Heritage Group, announced today the addition of Currents, a second-life battery marketplace platform, to its growing portfolio.\n                <\/p><div class=\"article-card__footer\">\n                              <a href=\"\/blogs\/press-releases-1\/hg-ventures-partners-with-battery-marketplace-company-currents\" class=\"btn\">\n                                Read\n                              <\/a><\/div><\/div><\/div>\n                    <\/div>\n                  <\/div>\n                            <\/li>\n            \n            \n            <\/ul><\/slider-component><\/div>\n  <\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "4099fb71-c26a-4b0e-8e42-8fafa1cfe444": {
@@ -351,7 +343,7 @@
     "rich_text",
     "5443d46e-38d2-45e9-a65c-0b1384acf72d",
     "4d66e566-c32d-4177-a910-5c7b233d204a",
-    "722430fb-a8d5-4d0d-a2a2-f95a2af200a0",
+    "4ffeec90-d7ed-4c69-b7ee-abe6d933bfb7",
     "4099fb71-c26a-4b0e-8e42-8fafa1cfe444",
     "44e0b456-d4b2-4c47-88ee-9ca318b09149"
   ]
