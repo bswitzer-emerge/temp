@@ -7,9 +7,9 @@
     "gradient_accent_2": "",
     "colors_text": "#121212",
     "colors_outline_button_labels": "#121212",
-    "colors_background_1": "#efecea",
+    "colors_background_1": "#f5f4f2",
     "gradient_background_1": "",
-    "colors_background_2": "#f5f4f2",
+    "colors_background_2": "#efedea",
     "gradient_background_2": "linear-gradient(270deg, rgba(0, 0, 0, 0), rgba(249, 163, 163, 0) 98%)",
     "type_header_font": "assistant_n4",
     "heading_scale": 100,
@@ -165,7 +165,7 @@
       "footer": {
         "type": "footer",
         "custom_css": [
-          "footer {position: relative; z-index: 3;}"
+          "footer{position: relative; z-index: 3;}"
         ],
         "settings": {
           "color_scheme": "inverse",
