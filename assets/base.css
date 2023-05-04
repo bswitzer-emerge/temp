@@ -790,8 +790,8 @@ h3 .icon-arrow,
     max-width: 1920px;
     margin-left: auto;
     margin-right: auto;
-    border-left: 1px solid grey;
-    border-right: 1px solid grey;
+    border-left: 1px solid #d1d1d1;
+    border-right: 1px solid #d1d1d1;
     position: relative;
   }
 }
