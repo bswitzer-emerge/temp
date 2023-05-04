@@ -5,7 +5,7 @@
       "custom_css": [
         ".hide {display: none;}",
         ".hero-home {min-height: 710px;}",
-        "#home-spacer {width: 100%; height:500px;}"
+        "#home-spacer {width: 100%;}"
       ],
       "settings": {
         "heading": "Second-life sourcing starts here",
