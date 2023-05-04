@@ -785,6 +785,16 @@ h3 .icon-arrow,
   display: none;
 }
 
+@media screen and (min-width: 1919px) {
+  body {
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+  }
+}
+
 /* base-details-summary */
 summary {
   cursor: pointer;
