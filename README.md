@@ -35,10 +35,16 @@ In the `/_gulp` dir, you'll need to install the node dependencies.
 
 Run `npm install` and then run `gulp watch`. 
 
+## 
+
+
 ### Helpful Links
 
 List of the liquid filters
 https://shopify.dev/docs/api/liquid/filters
+
+GitHub
+https://github.com/EmergeInteractive/currents-marketplace-mvp
 
 
 
