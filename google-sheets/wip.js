@@ -1,4 +1,16 @@
 
+/* 
+  functions overview since this is a bit messy!
+
+  MergeData - Main function that fires when script is run
+  setInventoryToZero - If there's a merged sheet, it will set all inventory to zero. This way when IDs are detected, they can be set to inventory of 1.
+  checkAndCreateSheet - Makes sure a merged sheet tab exists, if it does not, it will create one.
+  isIDExists - used to find existing IDs
+  updateInventory - compares important data against merged data. If an ID is found, sets inventory to 1.
+  fillOutMissingCols - Shopify with Matrixify requires some duplicate data, this fills out said data programically.
+  copyTabToAnotherSheet - Matrixify doesn't understand Google sheets with multiple tabs. This copies merged to a seperate sheet.
+*/
+
 
 function mergeData() {
 
@@ -63,9 +75,10 @@ function mergeData() {
     var lastRow = mergedSheet.getLastRow();
     mergedSheet.getRange(lastRow + 1, 1, mergedData.length, mergedData[0].length).setValues(mergedData);
   }
+  /* closing functions: These run a series of commands to */
   updateInventory(sheet1, mergedSheet ); // now that rows have been created, set the proper inventory;
-  fillOutMissingCols(mergedSheet);
-  copyTabToAnotherSheet();
+  fillOutMissingCols(mergedSheet); // A few columns need to have values assigned that are either duplicates or combinations of data (Title and ID)
+  copyTabToAnotherSheet();  // Moves Merged to a separate sheet that only has one tab so Matrixify can import the data.
 }
 
 
@@ -94,6 +107,7 @@ if (!mergedSheet) {
     // place the header if it doesn't exist
     var lastRow1 = mergedSheet.getLastRow();
     //mergedSheet.getRange(lastRow1 + 1, 1, 1, mergedData[0].length).setValues([mergedData[0]]);
+    Logger.log("Merged sheet not found! New sheet created.");
   }
 }
 
