@@ -4,13 +4,30 @@ The repository is connected to Current's shopify theme. As a development flow, a
 
 
 ## Getting Started
+
+Clone the git repo
+https://github.com/EmergeInteractive/currents-marketplace-mvp
+
 See:
 https://shopify.dev/docs/themes/best-practices/version-control
 
 Also, you'll need to install the CLI for:
 https://shopify.dev/docs/themes/tools/cli/install
 
-From the root of the directory, to start theme development, run `shopify theme dev --store=currents-marketplace-dev` 
+From the root of the directory, to start theme development, run `shopify theme dev --store=currents-marketplace-dev` for the dev server, set the branch for dev. 
+
+### CSS manipulation
+
+Currently, Currents uses gulp, and requires running `gulp watch` from ethe directory. Setting up Gulp requires running an `npm install`.  Scss files were created by porting much of the compiled CSS manually.  
+
+### The spaghetti staretgy for JS and CSS
+
+Since any editable area generates its own ID from Liquid, many of the templates use inline CSS and JS. We have continued this rather than trying to encapsulate all into the master CSS/JS.
+
+
+## Weirdness of Shopify 
+
+Shopify when wired to github will create it's own commits when manipulating the theme via the UI. 
 
 
 By default when you login if the store is password protected, you'll need to pull the password for the front end from admin login on the shopify hosted site
@@ -28,6 +45,8 @@ https://currents-marketplace-dev.myshopify.com/admin/online_store/preferences?tu
 
 https://shopify.dev/docs/themes/architecture/templates
 
+Ideally, when creating templates, they will be JSON that links to template files with editable areas.
+
 
 ## Compiling SCSS
 
@@ -35,7 +54,7 @@ In the `/_gulp` dir, you'll need to install the node dependencies.
 
 Run `npm install` and then run `gulp watch`. 
 
-## 
+
 
 
 ### Helpful Links
@@ -46,6 +65,16 @@ https://shopify.dev/docs/api/liquid/filters
 GitHub
 https://github.com/EmergeInteractive/currents-marketplace-mvp
 
+# Git Strategy
+
+## Git Branches
+
+The branching strategy for Currents is straight forward: The live site is on master, and development is on development (or potentially another code branch). Due to the content nature where editing the theme will cause Git changes (to JSON files) there may be merge conflicts that need to be manually handled. 
+
+## Controlling code branches
+
+Code branches can be switched on Shopify. This is done by going to Add Theme -> Connect theme, use the account Emerge and then find the Currents repo. This will add the branch. To swap themes, click publish and from the themes.
+https://currents-marketplace-dev.myshopify.com/admin/themes?appLoadId=5c7993f0-d020-4495-8769-7f5661f25e28
 
 
 
