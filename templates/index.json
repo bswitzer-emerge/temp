@@ -350,11 +350,11 @@
     "8ff2f10c-e22f-461a-9ea3-64d6d7025199": {
       "type": "featured-multi-blog",
       "settings": {
-        "heading": "Blog posts",
+        "heading": "",
         "heading_size": "h1",
         "blog-1": "news",
         "blog-2": "articles",
-        "blog-3": "",
+        "blog-3": "press-releases-1",
         "post_limit": 3,
         "columns_desktop": 3,
         "color_scheme": "background-1",
