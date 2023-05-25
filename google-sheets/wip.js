@@ -9,6 +9,13 @@
   updateInventory - compares important data against merged data. If an ID is found, sets inventory to 1.
   fillOutMissingCols - Shopify with Matrixify requires some duplicate data, this fills out said data programically.
   copyTabToAnotherSheet - Matrixify doesn't understand Google sheets with multiple tabs. This copies merged to a seperate sheet.
+
+
+  //error checks
+  errorCatchColumnNotFound_fillOutMissingCols - If a column is missing, this will give the array position to let you know which can't be found in merged data when fillOutMissingCols
+
+  This sheet can be found in the github project for currents. If you make changes, please update it in the "Google Sheets" dir
+
 */
 
 
@@ -200,23 +207,28 @@ for (var i = 0; i < headers.length; i++) {
     genTypeColumnIndex = i;
   } else if (headers[i] === "Battery Size") {
     batterySizeColumnIndex = i;
-  } else if (headers[i] === "Model") {
+  } else if (headers[i].includes("model")) {
     modelColumnIndex = i;
-  } else if (headers[i] === "Make") {
+  } else if (headers[i].includes("make")) {
     makeColumnIndex = i;
-  } else if (headers[i] === "SOH Measurement") {
+  } else if (headers[i].includes("SOH")) {
     sohMeasurementIndex = i;
-  } else if (headers[i] === "Modules") {
+  } else if (headers[i].includes("modules")) {
     modulesIndex = i;
   } else if (headers[i] === "ID") {
     itemIDIndex = i;
   }
 }
+errorCatchColumnNotFound_fillOutMissingCols([genTypeColumnIndex, batterySizeColumnIndex,modelColumnIndex, makeColumnIndex, sohMeasurementIndex, modulesIndex, itemIDIndex]);
+
+
 
 // Combine the values and place them in the "Title" column
 var titleColumnIndex = headers.indexOf("Title");
 var handleColumnIndex = headers.indexOf("Handle");
-if (genTypeColumnIndex !== -1 && batterySizeColumnIndex !== -1 && modelColumnIndex !== -1 && makeColumnIndex !== -1 && titleColumnIndex !== -1) {
+
+
+if (genTypeColumnIndex !== -1 && batterySizeColumnIndex !== -1 && modelColumnIndex !== -1 && makeColumnIndex !== -1 && titleColumnIndex !== -1 && modulesIndex !== -1 && itemIDIndex !== -1 ) {
   for (var row = 1; row < data.length; row++) {
     var genType = data[row][genTypeColumnIndex];
     var batterySize = data[row][batterySizeColumnIndex];
@@ -231,12 +243,14 @@ if (genTypeColumnIndex !== -1 && batterySizeColumnIndex !== -1 && modelColumnInd
     handle = `${handle}-${itemID}`;
     handle = handle.replace(/\s/g, ''); //removespaces
     handle = handle.toLowerCase();
+   // Logger.log(handle)
+   // Logger.log(combinedValue)
     sheet.getRange(row + 1, titleColumnIndex + 1).setValue(combinedValue); //place title
     sheet.getRange(row + 1, handleColumnIndex + 1).setValue(handle); //place handle
   }
   Logger.log("Values combined successfully.");
 } else {
-  Logger.log("One or more required columns not found.");
+  Logger.log("One or more required columns not found. Did one of the columns change?");
 }
 }
 
@@ -260,3 +274,11 @@ var targetRange = targetSheet.getRange(1, 1, sourceRange.getNumRows(), sourceRan
 targetRange.setValues(sourceRange.getValues());
 }
 
+
+function errorCatchColumnNotFound_fillOutMissingCols( check ) {
+for (var i = 0; i < check.length; i++) {
+  if (check[i] === -1) {
+    Logger.log("Found missing column at position " + i);
+  }
+} 
+}
