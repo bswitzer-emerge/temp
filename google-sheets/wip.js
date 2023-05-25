@@ -39,6 +39,13 @@ function mergeData() {
    // Get the two sheets
    var sheet1 = ss.getSheetByName('Dynamic Data From Nissan');
    var sheet2 = ss.getSheetByName('Static Battery Specifications');
+   if(!sheet1) {
+     Logger.log("Sheet tab Dynamic Data From Nissan not found");
+   }
+   if (!sheet2) {
+     Logger.log("Sheet tab Static Battery Specifications not found");
+   }
+
    var mergedSheet = ss.getSheetByName(settings.productList.src);
 
    setInventoryToZero(mergedSheet); // zero out inventory
@@ -146,6 +153,8 @@ function setInventoryToZero(sheet) {
      var inventoryColumn = dataRange.offset(1, inventoryColumnIndex, numRows - 1, 1); // Exclude the header row
      inventoryColumn.setValue(0);
    }
+ } else {
+   Logger.log("setInventoryToZero() failed. Merged Sheet not found. Something is wrong.")
  }
 }
 
