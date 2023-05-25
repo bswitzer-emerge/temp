@@ -352,9 +352,9 @@
       "settings": {
         "heading": "",
         "heading_size": "h1",
-        "blog-1": "news",
-        "blog-2": "articles",
-        "blog-3": "press-releases-1",
+        "blog1": "news",
+        "blog2": "press-releases",
+        "blog3": "press-releases-1",
         "post_limit": 3,
         "columns_desktop": 3,
         "color_scheme": "background-1",
