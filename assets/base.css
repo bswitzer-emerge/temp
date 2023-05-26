@@ -3364,6 +3364,7 @@ body.index .shopify-section-header-sticky .header-wrapper {
   display: grid;
   /* Three column */
   grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 50px 30px;
 }
 @media screen and (max-width: 989px) {
@@ -3380,6 +3381,10 @@ body.index .shopify-section-header-sticky .header-wrapper {
 }
 .blog.color-inverse li:first-child {
   /* Three column */
+  grid-column: 1/-1;
+}
+.blog.color-inverse li:first-child .card__content {
+  flex: 2;
 }
 .blog.color-inverse .card__inner {
   background-color: #1C1B19;

@@ -30,7 +30,7 @@
     assign posts_displayed = section.settings.post_limit
   endif
 -%}
-<div class="blog color-{{ section.settings.color_scheme }} gradient{% if section.settings.heading == blank %} no-heading{% endif %}">
+<div class="blog color-{{ section.settings.color_scheme }} section-{{ section.id }}  gradient{% if section.settings.heading == blank %} no-heading{% endif %}">
   <div class="page-width-desktop isolate page-width--narrow  {% if posts_displayed < 3 %} page-width-tablet{% endif %} section-{{ section.id }}-padding">
     {%- unless section.settings.heading == blank -%}
       <div class="title-wrapper-with-link{% if posts_displayed > 2 %} title-wrapper--self-padded-tablet-down{% else %} title-wrapper--self-padded-mobile{% endif %} title-wrapper--no-top-margin">
@@ -51,21 +51,21 @@
           role="list"
         >
           {%- if section.settings.blog1 != blank and section.settings.blog1.articles_count > 0 -%}
-            {%- for article in section.settings.blog1.articles limit: 1 -%}
+            {%- for article in section.settings.blog1.articles limit: 3 -%}
               <li id="Slide-{{ section.id }}-{{ forloop.index }}" class="blog__post grid__item article slider__slide slider__slide--full-width" data-date="{{ article.published_at | date: "%Y-%m-%d" }}">
                 {% render 'article-card', blog: section.settings.blog1, article: article, media_aspect_ratio: 1.66, show_image: section.settings.show_image, show_date: section.settings.show_date, show_author: section.settings.show_author, show_excerpt: true %}
               </li>
             {%- endfor -%}
           {%- endif -%}
           {%- if section.settings.blog2 != blank and section.settings.blog2.articles_count > 0 -%}
-            {%- for article in section.settings.blog2.articles limit: 1 -%}
+            {%- for article in section.settings.blog2.articles limit: 3 -%}
               <li id="Slide-{{ section.id }}-{{ forloop.index }}" class="blog__post grid__item article slider__slide slider__slide--full-width" data-date="{{ article.published_at | date: "%Y-%m-%d" }}">
                 {% render 'article-card', blog: section.settings.blog1, article: article, media_aspect_ratio: 1.66, show_image: section.settings.show_image, show_date: section.settings.show_date, show_author: section.settings.show_author, show_excerpt: true %}
               </li>
             {%- endfor -%}
           {%- endif -%}
           {%- if section.settings.blog3 != blank and section.settings.blog3.articles_count > 0 -%}
-            {%- for article in section.settings.blog3.articles limit: 1 -%}
+            {%- for article in section.settings.blog3.articles limit: 3 -%}
               <li id="Slide-{{ section.id }}-{{ forloop.index }}" class="blog__post grid__item article slider__slide slider__slide--full-width" data-date="{{ article.published_at | date: "%Y-%m-%d" }}">
                 {% render 'article-card', blog: section.settings.blog1, article: article, media_aspect_ratio: 1.66, show_image: section.settings.show_image, show_date: section.settings.show_date, show_author: section.settings.show_author, show_excerpt: true %}
               </li>
@@ -81,6 +81,33 @@
 
   </div>
 </div>
+
+
+<script>
+  window.onload = function() {
+    var list = document.querySelector('ul');
+    var items = Array.from(list.getElementsByTagName('li'));
+  
+    items.sort(function(a, b) {
+      return new Date(b.getAttribute('data-date')) - new Date(a.getAttribute('data-date'));
+    });
+  
+    // Keep the three newest items
+    items = items.slice(0, 3);
+  
+    // Clear the list
+    while (list.firstChild) {
+      list.removeChild(list.firstChild);
+    }
+  
+    // Add back the three newest items
+    items.forEach(function(item) {
+      list.appendChild(item);
+    });
+  };
+  </script>
+  
+  
 
 {% schema %}
 {

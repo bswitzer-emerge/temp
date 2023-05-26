@@ -18,7 +18,7 @@
     ul {
         display: grid;
         /* Three column */
-        //grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
         @media screen and (max-width: 989px) { 
             grid-template-columns: 1fr;
@@ -34,9 +34,9 @@
     }
     li:first-child {
         /* Three column */
-        //grid-column: 1 / -1;
+        grid-column: 1 / -1;
         .card__content {
-           // flex: 2;
+          flex: 2;
         }
     }
     .card__inner {
