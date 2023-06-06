@@ -3677,7 +3677,7 @@ body.index .shopify-section-header-sticky .header-wrapper {
 }
 
 body.gradient.product {
-  background-color: white;
+  background-color: #f9f8f6;
 }
 body.gradient.product .header-wrapper {
   background-color: white;
@@ -3693,6 +3693,12 @@ body.gradient.product .header-wrapper {
 }
 .simple-specs .image {
   padding: 15px;
+}
+.simple-specs .image img {
+  max-width: 100%;
+}
+.simple-specs .row:nth-of-type(odd) {
+  background-color: white;
 }
 .simple-specs .row:nth-of-type(even) {
   background-color: #F9F9F9;
