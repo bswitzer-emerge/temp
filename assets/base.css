@@ -3650,6 +3650,7 @@ body.index .shopify-section-header-sticky .header-wrapper {
 }
 .test-information .container {
   background-color: #F1F1F1;
+  border-radius: 10px;
 }
 .test-information .container, .test-information .stats {
   display: flex;
