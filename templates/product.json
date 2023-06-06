@@ -77,7 +77,7 @@
       "settings": {
         "head": "Product Description",
         "size": "h2",
-        "text_style": "paragraph",
+        "text_style": "large",
         "padding_top": 36,
         "padding_bottom": 36
       }
