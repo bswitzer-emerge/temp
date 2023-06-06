@@ -166,26 +166,49 @@
         "padding_bottom": 36
       }
     },
-    "be0d6573-829b-4e18-bbf0-0360e4c916eb": {
-      "type": "rich-text",
-      "blocks": {
-        "template--18960933323053__be0d6573-829b-4e18-bbf0-0360e4c916eb-1686038562729ef4d9-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Our shipping and logistics partner, SNT, strictly follows guidelines set by 49 CFR, DOT, IMDG and IATA to ensure that shipping standards and regulatory documentation for advanced battery systems are met for each battery shipment. All shipping and handling is completed by employees who are certified in shipping of hazardous materials with a focus on lithium-ion battery shipping.<\/p><p><br\/><\/p><p>We will select the best carrier and shipping method based on transit time and cost, and will remain in contact with carriers to ensure shipments are consistent and meet transit time requirements. Please allow for <strong>1-3 business days for a shipping quote<\/strong> to be delivered.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--18960933323053__be0d6573-829b-4e18-bbf0-0360e4c916eb-1686038562729ef4d9-1"
-      ],
+    "0a654ab4-a3e4-4412-bf46-501d5580ed29": {
+      "type": "simple-text",
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "content_alignment": "left",
+        "body": "<p>Our shipping and logistics partner, SNT, strictly follows guidelines set by 49 CFR, DOT, IMDG and IATA to ensure that shipping standards and regulatory documentation for advanced battery systems are met for each battery shipment. All shipping and handling is completed by employees who are certified in shipping of hazardous materials with a focus on lithium-ion battery shipping.<\/p><p><br\/><\/p><p>We will select the best carrier and shipping method based on transit time and cost, and will remain in contact with carriers to ensure shipments are consistent and meet transit time requirements. Please allow for <strong>1-3 business days for a shipping quote<\/strong> to be delivered.<\/p>",
+        "text_style": "paragraph",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "380f48f8-7e1a-455d-9a64-a4762a1ce565": {
+      "type": "simple-horizontal-rule",
+      "settings": {
+        "style": "default",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "83669de0-0460-4a9c-99af-c72572370ac6": {
+      "type": "simple-title",
+      "settings": {
+        "head": "Specs",
+        "size": "h2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "4e2a8775-7b72-4068-86df-2485051a6a06": {
+      "type": "simple-text",
+      "settings": {
+        "content_alignment": "left",
+        "body": "<p>Talk about your brand<\/p>",
+        "text_style": "paragraph",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "b28d74c4-6d36-4a1c-b0d1-380828d4c5a1": {
+      "type": "simple-horizontal-rule",
+      "settings": {
+        "style": "default",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
@@ -197,6 +220,10 @@
     "3e5f055a-c825-4d32-b5c1-0ec01e149a69",
     "4ed09881-e92c-447c-b7ae-4ffb962ab623",
     "2f174276-3176-4b56-af8c-3b8b89e70dd7",
-    "be0d6573-829b-4e18-bbf0-0360e4c916eb"
+    "0a654ab4-a3e4-4412-bf46-501d5580ed29",
+    "380f48f8-7e1a-455d-9a64-a4762a1ce565",
+    "83669de0-0460-4a9c-99af-c72572370ac6",
+    "4e2a8775-7b72-4068-86df-2485051a6a06",
+    "b28d74c4-6d36-4a1c-b0d1-380828d4c5a1"
   ]
 }
