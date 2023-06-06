@@ -3677,3 +3677,9 @@ body.gradient.product .header-wrapper {
   border: 1px solid #D5D5D5;
   border-radius: 0 0 8px 8px;
 }
+.simple-specs .image {
+  padding: 15px;
+}
+.simple-specs .row:nth-of-type(odd) {
+  background-color: #F9F9F9;
+}
