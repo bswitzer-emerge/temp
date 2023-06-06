@@ -16,6 +16,15 @@ button.btn {
     padding: 19px 30px;
     font-size: 16px;
 }
+.btn.white {
+    background-color: white;
+    color: rgba(25,25,25,255);
+    border: 1px rgba(25,25,25,255) solid;
+    font-weight: 400;
+    &:hover {
+        background-color: #F9F9F9;
+    }
+}
 .btn.grey {
     background-color: #D8D8D8;
     &:hover {
