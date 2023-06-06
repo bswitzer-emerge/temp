@@ -48,31 +48,6 @@
           "type": "description",
           "settings": {
           }
-        },
-        "f1e843ed-ccea-44ab-9c56-b3b6a93b4dd3": {
-          "type": "text",
-          "settings": {
-            "text": "Test Information",
-            "text_style": "subtitle"
-          }
-        },
-        "collapsible-row-0": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Product Description",
-            "icon": "recycle",
-            "content": "<p>{{ product.title }}<\/p><p>{{ shop.brand.short_description }}<\/p><p><\/p>",
-            "page": ""
-          }
-        },
-        "collapsible-row-1": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Testing Results",
-            "icon": "box",
-            "content": "<p><strong>Battery<\/strong>: {{ product.metafields.custom.battery_type.value }}<\/p><p><strong>Capacity New:<\/strong> {{ product.metafields.custom.capacity_new.value }}<\/p><p><strong>State of health<\/strong>: {{ product.metafields.custom.soh.value }}%<\/p><p><strong>Model<\/strong>: {{ product.metafields.custom.make.value }} {{ product.metafields.custom.model.value }}<\/p><p><strong>Type<\/strong>: {{ product.metafields.custom.modules_cells.value }}<\/p><p><strong>Reason for Retirement: <\/strong><\/p><p><strong>Vendor<\/strong>: {{ product.vendor }}<\/p><p><\/p>",
-            "page": ""
-          }
         }
       },
       "block_order": [
@@ -83,10 +58,7 @@
         "quantity_selector",
         "buy_buttons",
         "25daecd3-7b4d-4e0f-909f-d39080c8f140",
-        "description",
-        "f1e843ed-ccea-44ab-9c56-b3b6a93b4dd3",
-        "collapsible-row-0",
-        "collapsible-row-1"
+        "description"
       ],
       "settings": {
         "enable_sticky_info": true,
