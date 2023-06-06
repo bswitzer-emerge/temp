@@ -3650,6 +3650,12 @@ body.index .shopify-section-header-sticky .header-wrapper {
 .test-information .page-width, .test-information .stats {
   display: flex;
 }
+.test-information .stats {
+  font-weight: 600;
+}
+.test-information .stat1 {
+  padding-right: 1em;
+}
 .test-information h3 {
   padding-top: 0;
   margin-top: 0;

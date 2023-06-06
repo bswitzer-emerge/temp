@@ -9,6 +9,12 @@
     .page-width, .stats {
         display: flex;
     }
+    .stats {
+        font-weight: 600;
+    }
+    .stat1 {
+        padding-right: 1em;
+    }
     h3 {
         padding-top: 0;
         margin-top: 0;
