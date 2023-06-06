@@ -199,6 +199,42 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "83443fe9-c6ec-4a05-a3b5-19dba09fb341": {
+      "type": "image-with-text",
+      "blocks": {
+        "be5730c9-9c3e-4618-a18d-e18a155f50b5": {
+          "type": "heading",
+          "settings": {
+            "heading": "Recovery Method",
+            "heading_size": "h2"
+          }
+        },
+        "48f897b4-0a5e-47d6-a9c2-59d64945fb54": {
+          "type": "text",
+          "settings": {
+            "text": "<p>All batteries are owned by Nissan North America. These batteries were recovered as core returns through Nissan’s approved internal warranty network via Nissan dealerships.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "be5730c9-9c3e-4618-a18d-e18a155f50b5",
+        "48f897b4-0a5e-47d6-a9c2-59d64945fb54"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/recovery_method.png",
+        "height": "small",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -206,6 +242,7 @@
     "product-recommendations",
     "587ad740-eaf9-42c5-9d9a-180881b9351b",
     "f04a8da5-8185-4662-803a-0c41cd8f2233",
-    "774c7a6d-f588-4a3a-bf98-a70421e93324"
+    "774c7a6d-f588-4a3a-bf98-a70421e93324",
+    "83443fe9-c6ec-4a05-a3b5-19dba09fb341"
   ]
 }
