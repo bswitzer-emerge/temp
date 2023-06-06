@@ -118,6 +118,17 @@
         "padding_bottom": 28
       }
     },
+    "a299019e-01ef-4a93-a008-19b5d89caceb": {
+      "type": "test-information",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/checkbox.png",
+        "head": "Header",
+        "message": "My message goes here",
+        "button_text": "Contact Us",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "c918acfc-b0a5-4a17-874f-c2206f18cdc3": {
       "type": "simple-title",
       "settings": {
@@ -215,6 +226,7 @@
   "order": [
     "main",
     "product-recommendations",
+    "a299019e-01ef-4a93-a008-19b5d89caceb",
     "c918acfc-b0a5-4a17-874f-c2206f18cdc3",
     "2b5b3d10-7a4a-4fe8-91ef-56d8e6d5ca23",
     "3e5f055a-c825-4d32-b5c1-0ec01e149a69",
