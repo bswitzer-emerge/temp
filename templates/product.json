@@ -197,6 +197,48 @@
         "padding_top": 2,
         "padding_bottom": 2
       }
+    },
+    "3bd16cc0-c8cb-47e9-a420-93a4a19afd23": {
+      "type": "rich-text",
+      "blocks": {
+        "template--18960933323053__3bd16cc0-c8cb-47e9-a420-93a4a19afd23-1686082750ff4c2fb1-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Our Mission<\/p>",
+            "heading_size": "h1"
+          }
+        },
+        "template--18960933323053__3bd16cc0-c8cb-47e9-a420-93a4a19afd23-1686082750ff4c2fb1-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Everything we do is guided by achieving net zero carbon emissions by 2050. We believe energy storage, resource and energy independence, and supply chain innovation are cornerstones of decarbonization — these objectives are the fuel to our fire.<\/p>"
+          }
+        },
+        "template--18960933323053__3bd16cc0-c8cb-47e9-a420-93a4a19afd23-1686082750ff4c2fb1-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn More",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18960933323053__3bd16cc0-c8cb-47e9-a420-93a4a19afd23-1686082750ff4c2fb1-0",
+        "template--18960933323053__3bd16cc0-c8cb-47e9-a420-93a4a19afd23-1686082750ff4c2fb1-1",
+        "template--18960933323053__3bd16cc0-c8cb-47e9-a420-93a4a19afd23-1686082750ff4c2fb1-2"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -212,6 +254,7 @@
     "380f48f8-7e1a-455d-9a64-a4762a1ce565",
     "83669de0-0460-4a9c-99af-c72572370ac6",
     "4e2a8775-7b72-4068-86df-2485051a6a06",
-    "b28d74c4-6d36-4a1c-b0d1-380828d4c5a1"
+    "b28d74c4-6d36-4a1c-b0d1-380828d4c5a1",
+    "3bd16cc0-c8cb-47e9-a420-93a4a19afd23"
   ]
 }
