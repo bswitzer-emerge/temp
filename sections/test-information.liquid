@@ -2,10 +2,14 @@
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-    padding-left: {{ section.settings.padding_left_right | times: 0.75 | round: 0 }}px;
-    padding-right: {{ section.settings.padding_left_right | times: 0.75 | round: 0 }}px;
    
   }
+
+    .section-{{ section.id }}-padding .container {
+        padding-left: {{ section.settings.padding_left_right | times: 0.75 | round: 0 }}px;
+        padding-right: {{ section.settings.padding_left_right | times: 0.75 | round: 0 }}px;
+    }
+  
   .section-{{ section.id }}-padding .page-width {
     position: relative;
   }
@@ -18,9 +22,12 @@
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
-      padding-right: {{ section.settings.padding_left_right }}px;
-      padding-left: {{ section.settings.padding_left_right }}px;
+      
 
+    }
+    .section-{{ section.id }}-padding .container {
+        padding-right: {{ section.settings.padding_left_right }}px;
+      padding-left: {{ section.settings.padding_left_right }}px;
     }
   }
 {%- endstyle -%}
@@ -109,11 +116,11 @@
         "type": "range",
         "id": "padding_left_right",
         "min": 0,
-        "max": 100,
-        "step": 4,
+        "max": 50,
+        "step": 2,
         "unit": "px",
         "label": "Left / Right padding",
-        "default": 36
+        "default": 4
       }
      ],
      "presets": [
