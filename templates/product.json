@@ -117,10 +117,95 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "587ad740-eaf9-42c5-9d9a-180881b9351b": {
+      "type": "rich-text",
+      "blocks": {
+        "template--18960933323053__587ad740-eaf9-42c5-9d9a-180881b9351b-168603557552092149-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Test Information<\/p>",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "template--18960933323053__587ad740-eaf9-42c5-9d9a-180881b9351b-168603557552092149-0"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "f04a8da5-8185-4662-803a-0c41cd8f2233": {
+      "type": "rich-text",
+      "blocks": {
+        "9e74c1bf-fc5f-42f8-851a-a305936b71be": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>About the Battery<\/p><p><\/p>",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "9e74c1bf-fc5f-42f8-851a-a305936b71be"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "774c7a6d-f588-4a3a-bf98-a70421e93324": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--18960933323053__774c7a6d-f588-4a3a-bf98-a70421e93324-1686035732e1e72d9c-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Storage Conditions",
+            "heading_size": "h2"
+          }
+        },
+        "template--18960933323053__774c7a6d-f588-4a3a-bf98-a70421e93324-1686035732e1e72d9c-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Batteries are stored in a climate controlled environment with full fire protection and safety and property loss control measures in accordance with NFPA standards.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--18960933323053__774c7a6d-f588-4a3a-bf98-a70421e93324-1686035732e1e72d9c-0",
+        "template--18960933323053__774c7a6d-f588-4a3a-bf98-a70421e93324-1686035732e1e72d9c-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/storage-conditions.png",
+        "height": "small",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
-    "product-recommendations"
+    "product-recommendations",
+    "587ad740-eaf9-42c5-9d9a-180881b9351b",
+    "f04a8da5-8185-4662-803a-0c41cd8f2233",
+    "774c7a6d-f588-4a3a-bf98-a70421e93324"
   ]
 }
