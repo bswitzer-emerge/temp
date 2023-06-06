@@ -176,29 +176,12 @@
         "padding_bottom": 24
       }
     },
-    "380f48f8-7e1a-455d-9a64-a4762a1ce565": {
-      "type": "simple-horizontal-rule",
-      "settings": {
-        "style": "default",
-        "padding_top": 2,
-        "padding_bottom": 2
-      }
-    },
-    "83669de0-0460-4a9c-99af-c72572370ac6": {
-      "type": "simple-title",
-      "settings": {
-        "head": "Specs",
-        "size": "h2",
-        "padding_top": 36,
-        "padding_bottom": 12
-      }
-    },
     "b28d74c4-6d36-4a1c-b0d1-380828d4c5a1": {
       "type": "simple-horizontal-rule",
       "settings": {
         "style": "default",
         "padding_top": 2,
-        "padding_bottom": 50
+        "padding_bottom": 16
       }
     },
     "87e05a09-ed93-48a4-a0f1-3e3756e5c6ee": {
@@ -207,8 +190,8 @@
         "image": "shopify:\/\/shop_images\/specs-demo.png",
         "head": "Specs",
         "size": "h2",
-        "padding_top": 36,
-        "padding_bottom": 40
+        "padding_top": 24,
+        "padding_bottom": 24
       }
     },
     "145a4bce-d30a-4b07-ae5a-d0fe615310f3": {
@@ -275,8 +258,6 @@
     "4ed09881-e92c-447c-b7ae-4ffb962ab623",
     "2f174276-3176-4b56-af8c-3b8b89e70dd7",
     "0a654ab4-a3e4-4412-bf46-501d5580ed29",
-    "380f48f8-7e1a-455d-9a64-a4762a1ce565",
-    "83669de0-0460-4a9c-99af-c72572370ac6",
     "b28d74c4-6d36-4a1c-b0d1-380828d4c5a1",
     "87e05a09-ed93-48a4-a0f1-3e3756e5c6ee",
     "145a4bce-d30a-4b07-ae5a-d0fe615310f3",
