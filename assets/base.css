@@ -3623,3 +3623,17 @@ body.index .shopify-section-header-sticky .header-wrapper {
 .card-product-list.top .card-product-list__col7 {
   width: 144px;
 }
+
+.icon-with-text-small img {
+  max-width: 80px;
+}
+.icon-with-text-small .col1 {
+  padding-right: 40px;
+}
+.icon-with-text-small .page-width {
+  display: flex;
+}
+.icon-with-text-small h3 {
+  padding-top: 0;
+  margin-top: 0;
+}
