@@ -72,11 +72,11 @@
         "padding_bottom": 12
       }
     },
-    "4291594e-5388-4810-9346-a76e58720ade": {
-      "type": "simple-text",
+    "d1249115-f0bf-4c55-8d81-9fee8962e5ba": {
+      "type": "simple-product-description",
       "settings": {
-        "content_alignment": "left",
-        "body": "<p>Talk about your brand<\/p>",
+        "head": "Product Description",
+        "size": "h2",
         "text_style": "paragraph",
         "padding_top": 36,
         "padding_bottom": 36
@@ -261,7 +261,7 @@
   },
   "order": [
     "main",
-    "4291594e-5388-4810-9346-a76e58720ade",
+    "d1249115-f0bf-4c55-8d81-9fee8962e5ba",
     "product-recommendations",
     "cbf6f8cb-1261-4c27-a5b0-9c6b5efbffdd",
     "a299019e-01ef-4a93-a008-19b5d89caceb",
