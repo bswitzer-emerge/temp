@@ -20,7 +20,7 @@
   }
 {%- endstyle -%}
 
-    <div class="test-information  section-{{ section.id }}-padding" >
+    <div class="test-information section-{{ section.id }}-padding" >
       <div class=" page-width">
         <div class="col1">
             {%- if section.settings.image != blank -%}
@@ -33,6 +33,10 @@
             {% if section.settings.head  %}
                 <h3 class="">{{ section.settings.head }}</h3>
             {% endif %}
+            <div class="state">
+                <div>{{ section.settings.state-of-health }}</div>
+                <div>{{ section.settings.tested-on }}</div>
+            </div>
             {% if section.settings.message %}
             <p class="message">{{ section.settings.message }}</p>
             {% endif %}
@@ -64,9 +68,15 @@
       }, 
       {
         "type": "text",
-        "id": "button_text",
-        "label": "Button Text",
-        "default": "Contact Us"
+        "id": "state-of-health",
+        "label": "Stats",
+        "default": "stats go here"
+      }, 
+      {
+        "type": "text",
+        "id": "tested-on",
+        "label": "Tested On",
+        "default": "Tested Date"
       }, 
       {
         "type": "range",
