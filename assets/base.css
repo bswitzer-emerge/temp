@@ -3637,3 +3637,17 @@ body.index .shopify-section-header-sticky .header-wrapper {
   padding-top: 0;
   margin-top: 0;
 }
+
+.test-information img {
+  max-width: 80px;
+}
+.test-information .col1 {
+  padding-right: 40px;
+}
+.test-information .page-width {
+  display: flex;
+}
+.test-information h3 {
+  padding-top: 0;
+  margin-top: 0;
+}
