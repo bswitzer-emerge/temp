@@ -124,7 +124,8 @@
         "image": "shopify:\/\/shop_images\/checkbox.png",
         "head": "Header",
         "message": "My message goes here",
-        "button_text": "Contact Us",
+        "state-of-health": "{{ product.metafields.custom.soh.value }}%",
+        "tested-on": "Tested on  {{ product.metafields.custom.soh_test_date | metafield_text }}",
         "padding_top": 36,
         "padding_bottom": 36
       }
