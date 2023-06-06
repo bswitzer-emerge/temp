@@ -153,8 +153,8 @@
       "type": "simple-horizontal-rule",
       "settings": {
         "style": "default",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 4,
+        "padding_bottom": 4
       }
     },
     "2f174276-3176-4b56-af8c-3b8b89e70dd7": {
