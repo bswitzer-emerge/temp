@@ -118,50 +118,13 @@
         "padding_bottom": 28
       }
     },
-    "587ad740-eaf9-42c5-9d9a-180881b9351b": {
-      "type": "rich-text",
-      "blocks": {
-        "template--18960933323053__587ad740-eaf9-42c5-9d9a-180881b9351b-168603557552092149-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>Test Information<\/p>",
-            "heading_size": "h2"
-          }
-        }
-      },
-      "block_order": [
-        "template--18960933323053__587ad740-eaf9-42c5-9d9a-180881b9351b-168603557552092149-0"
-      ],
+    "c918acfc-b0a5-4a17-874f-c2206f18cdc3": {
+      "type": "simple-title",
       "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "f04a8da5-8185-4662-803a-0c41cd8f2233": {
-      "type": "rich-text",
-      "blocks": {
-        "9e74c1bf-fc5f-42f8-851a-a305936b71be": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>About the Battery<\/p><p><\/p>",
-            "heading_size": "h2"
-          }
-        }
-      },
-      "block_order": [
-        "9e74c1bf-fc5f-42f8-851a-a305936b71be"
-      ],
-      "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "head": "About The Battery",
+        "size": "h2",
+        "padding_top": 36,
+        "padding_bottom": 20
       }
     },
     "2b5b3d10-7a4a-4fe8-91ef-56d8e6d5ca23": {
@@ -185,14 +148,46 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "2f174276-3176-4b56-af8c-3b8b89e70dd7": {
+      "type": "simple-title",
+      "settings": {
+        "head": "Shipping Information",
+        "size": "h2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "be0d6573-829b-4e18-bbf0-0360e4c916eb": {
+      "type": "rich-text",
+      "blocks": {
+        "template--18960933323053__be0d6573-829b-4e18-bbf0-0360e4c916eb-1686038562729ef4d9-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our shipping and logistics partner, SNT, strictly follows guidelines set by 49 CFR, DOT, IMDG and IATA to ensure that shipping standards and regulatory documentation for advanced battery systems are met for each battery shipment. All shipping and handling is completed by employees who are certified in shipping of hazardous materials with a focus on lithium-ion battery shipping.<\/p><p><br\/><\/p><p>We will select the best carrier and shipping method based on transit time and cost, and will remain in contact with carriers to ensure shipments are consistent and meet transit time requirements. Please allow for <strong>1-3 business days for a shipping quote<\/strong> to be delivered.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--18960933323053__be0d6573-829b-4e18-bbf0-0360e4c916eb-1686038562729ef4d9-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "main",
     "product-recommendations",
-    "587ad740-eaf9-42c5-9d9a-180881b9351b",
-    "f04a8da5-8185-4662-803a-0c41cd8f2233",
+    "c918acfc-b0a5-4a17-874f-c2206f18cdc3",
     "2b5b3d10-7a4a-4fe8-91ef-56d8e6d5ca23",
-    "3e5f055a-c825-4d32-b5c1-0ec01e149a69"
+    "3e5f055a-c825-4d32-b5c1-0ec01e149a69",
+    "2f174276-3176-4b56-af8c-3b8b89e70dd7",
+    "be0d6573-829b-4e18-bbf0-0360e4c916eb"
   ]
 }
