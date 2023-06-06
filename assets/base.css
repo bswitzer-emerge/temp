@@ -3638,16 +3638,16 @@ body.index .shopify-section-header-sticky .header-wrapper {
   margin-top: 0;
 }
 
-.test-information {
-  background-color: #F1F1F1;
-}
 .test-information img {
   max-width: 80px;
 }
 .test-information .col1 {
   padding-right: 40px;
 }
-.test-information .page-width, .test-information .stats {
+.test-information .container {
+  background-color: #F1F1F1;
+}
+.test-information .container, .test-information .stats {
   display: flex;
 }
 .test-information .stats {
