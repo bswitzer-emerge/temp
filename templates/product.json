@@ -72,6 +72,16 @@
         "padding_bottom": 12
       }
     },
+    "4291594e-5388-4810-9346-a76e58720ade": {
+      "type": "simple-text",
+      "settings": {
+        "content_alignment": "left",
+        "body": "<p>Talk about your brand<\/p>",
+        "text_style": "paragraph",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "product-recommendations": {
       "type": "product-recommendations",
       "disabled": true,
@@ -88,6 +98,14 @@
         "columns_mobile": "2",
         "padding_top": 36,
         "padding_bottom": 28
+      }
+    },
+    "cbf6f8cb-1261-4c27-a5b0-9c6b5efbffdd": {
+      "type": "simple-horizontal-rule",
+      "settings": {
+        "style": "default",
+        "padding_top": 4,
+        "padding_bottom": 4
       }
     },
     "a299019e-01ef-4a93-a008-19b5d89caceb": {
@@ -243,7 +261,9 @@
   },
   "order": [
     "main",
+    "4291594e-5388-4810-9346-a76e58720ade",
     "product-recommendations",
+    "cbf6f8cb-1261-4c27-a5b0-9c6b5efbffdd",
     "a299019e-01ef-4a93-a008-19b5d89caceb",
     "c918acfc-b0a5-4a17-874f-c2206f18cdc3",
     "2b5b3d10-7a4a-4fe8-91ef-56d8e6d5ca23",
