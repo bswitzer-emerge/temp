@@ -1,11 +1,12 @@
 .test-information {
+    background-color: #F1F1F1;
     img {
         max-width: 80px;
     }
     .col1 {
         padding-right: 40px;
     }
-    .page-width {
+    .page-width, .stats {
         display: flex;
     }
     h3 {

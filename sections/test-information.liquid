@@ -2,6 +2,8 @@
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    padding-left: {{ section.settings.padding_left_right | times: 0.75 | round: 0 }}px;
+    padding-right: {{ section.settings.padding_left_right | times: 0.75 | round: 0 }}px;
    
   }
   .section-{{ section.id }}-padding .page-width {
@@ -16,6 +18,9 @@
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
+      padding-right: {{ section.settings.padding_left_right }}px;
+      padding-left: {{ section.settings.padding_left_right }}px;
+
     }
   }
 {%- endstyle -%}
@@ -96,6 +101,16 @@
         "step": 4,
         "unit": "px",
         "label": "t:sections.all.padding.padding_bottom",
+        "default": 36
+      },
+      {
+        "type": "range",
+        "id": "padding_left_right",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "Left / Right padding",
         "default": 36
       }
      ],
