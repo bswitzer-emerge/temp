@@ -123,9 +123,10 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/checkbox.png",
         "head": "Header",
-        "message": "My message goes here",
-        "button_text": "Contact Us",
-        "padding_top": 36,
+        "message": "Batteries are tested using a proprietary, Nissan-approved test by our logistics partner, Spiers New Technologies. The state-of-health is the remaining\/measured capacity as a percentage of new.",
+        "state-of-health": "{{ product.metafields.custom.soh.value }}%",
+        "tested-on": "Tested on  {{ product.metafields.custom.soh_test_date | metafield_text }}",
+        "padding_top": 40,
         "padding_bottom": 36
       }
     },
