@@ -3685,7 +3685,7 @@ body.gradient.product .header-wrapper {
 
 .simple-specs .container {
   border: 1px solid #D5D5D5;
-  border-radius: 0 0 8px 8px;
+  border-radius: 8px;
 }
 .simple-specs .btn-container {
   width: 100%;
