@@ -149,6 +149,14 @@
         "padding_bottom": 36
       }
     },
+    "4ed09881-e92c-447c-b7ae-4ffb962ab623": {
+      "type": "simple-horizontal-rule",
+      "settings": {
+        "style": "default",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "2f174276-3176-4b56-af8c-3b8b89e70dd7": {
       "type": "simple-title",
       "settings": {
@@ -187,6 +195,7 @@
     "c918acfc-b0a5-4a17-874f-c2206f18cdc3",
     "2b5b3d10-7a4a-4fe8-91ef-56d8e6d5ca23",
     "3e5f055a-c825-4d32-b5c1-0ec01e149a69",
+    "4ed09881-e92c-447c-b7ae-4ffb962ab623",
     "2f174276-3176-4b56-af8c-3b8b89e70dd7",
     "be0d6573-829b-4e18-bbf0-0360e4c916eb"
   ]
