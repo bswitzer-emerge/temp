@@ -23,6 +23,13 @@
     <div class="simple-specs  section-{{ section.id }}-padding" >
       <div class=" page-width">
         <h2 class="{{ section.settings.size }}">{{ section.settings.head }}</h2>
+        <div class="image">
+            {%- if section.settings.image != blank -%}
+                {{ section.settings.image| img_url: '2048x' | img_tag }}
+            {%- else -%}
+                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+            {%- endif -%}
+        </div>
         <div class="stats">
             <div class="row">
                 <div class="col-1">Dimensions</div>
@@ -57,7 +64,11 @@
   {
      "name": "simple-specs",
      "settings": [
-
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+        },
       {
         "type": "text",
         "id": "head",
