@@ -23,8 +23,9 @@
 
 <div class="simple-specs  section-{{ section.id }}-padding" >
     <div class=" page-width">
+        <h2 class="{{ section.settings.size }}">{{ section.settings.head }}</h2>
+
             <div class="container">
-            <h2 class="{{ section.settings.size }}">{{ section.settings.head }}</h2>
             <div class="image">
                 {%- if section.settings.image != blank -%}
                     {{ section.settings.image| img_url: '2048x' | img_tag }}
