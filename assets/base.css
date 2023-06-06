@@ -3664,3 +3664,10 @@ body.index .shopify-section-header-sticky .header-wrapper {
   padding-top: 0;
   margin-top: 0;
 }
+
+body.gradient.product {
+  background-color: white;
+}
+body.gradient.product .header-wrapper {
+  background-color: white;
+}
