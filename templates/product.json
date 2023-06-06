@@ -82,7 +82,6 @@
       "settings": {
         "head": "Product description",
         "size": "h2",
-        "text_style": "paragraph",
         "padding_top": 36,
         "padding_bottom": 0
       }
@@ -193,16 +192,6 @@
         "padding_bottom": 12
       }
     },
-    "4e2a8775-7b72-4068-86df-2485051a6a06": {
-      "type": "simple-text",
-      "settings": {
-        "content_alignment": "left",
-        "body": "<p>Talk about your brand<\/p>",
-        "text_style": "paragraph",
-        "padding_top": 24,
-        "padding_bottom": 24
-      }
-    },
     "b28d74c4-6d36-4a1c-b0d1-380828d4c5a1": {
       "type": "simple-horizontal-rule",
       "settings": {
@@ -269,7 +258,6 @@
     "0a654ab4-a3e4-4412-bf46-501d5580ed29",
     "380f48f8-7e1a-455d-9a64-a4762a1ce565",
     "83669de0-0460-4a9c-99af-c72572370ac6",
-    "4e2a8775-7b72-4068-86df-2485051a6a06",
     "b28d74c4-6d36-4a1c-b0d1-380828d4c5a1",
     "3bd16cc0-c8cb-47e9-a420-93a4a19afd23"
   ]
