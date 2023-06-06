@@ -3672,3 +3672,8 @@ body.gradient.product {
 body.gradient.product .header-wrapper {
   background-color: white;
 }
+
+.simple-specs .container {
+  border: 1px solid #D5D5D5;
+  border-radius: 0 0 8px 8px;
+}
