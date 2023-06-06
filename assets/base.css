@@ -751,6 +751,10 @@ hr {
     margin: 7rem 0;
   }
 }
+.simple-horizontal-rule hr {
+  margin: 0;
+}
+
 @media (prefers-reduced-motion) {
   .motion-reduce {
     transition: none !important;
