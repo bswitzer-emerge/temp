@@ -48,31 +48,6 @@
           "type": "description",
           "settings": {
           }
-        },
-        "f1e843ed-ccea-44ab-9c56-b3b6a93b4dd3": {
-          "type": "text",
-          "settings": {
-            "text": "Test Information",
-            "text_style": "subtitle"
-          }
-        },
-        "collapsible-row-0": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Product Description",
-            "icon": "recycle",
-            "content": "<p>{{ product.title }}<\/p><p>{{ shop.brand.short_description }}<\/p><p><\/p>",
-            "page": ""
-          }
-        },
-        "collapsible-row-1": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Testing Results",
-            "icon": "box",
-            "content": "<p><strong>Battery<\/strong>: {{ product.metafields.custom.battery_type.value }}<\/p><p><strong>Capacity New:<\/strong> {{ product.metafields.custom.capacity_new.value }}<\/p><p><strong>State of health<\/strong>: {{ product.metafields.custom.soh.value }}%<\/p><p><strong>Model<\/strong>: {{ product.metafields.custom.make.value }} {{ product.metafields.custom.model.value }}<\/p><p><strong>Type<\/strong>: {{ product.metafields.custom.modules_cells.value }}<\/p><p><strong>Reason for Retirement: <\/strong><\/p><p><strong>Vendor<\/strong>: {{ product.vendor }}<\/p><p><\/p>",
-            "page": ""
-          }
         }
       },
       "block_order": [
@@ -83,10 +58,7 @@
         "quantity_selector",
         "buy_buttons",
         "25daecd3-7b4d-4e0f-909f-d39080c8f140",
-        "description",
-        "f1e843ed-ccea-44ab-9c56-b3b6a93b4dd3",
-        "collapsible-row-0",
-        "collapsible-row-1"
+        "description"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -98,6 +70,16 @@
         "enable_video_looping": false,
         "padding_top": 36,
         "padding_bottom": 12
+      }
+    },
+    "4291594e-5388-4810-9346-a76e58720ade": {
+      "type": "simple-text",
+      "settings": {
+        "content_alignment": "left",
+        "body": "<p>Talk about your brand<\/p>",
+        "text_style": "paragraph",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "product-recommendations": {
@@ -118,6 +100,14 @@
         "padding_bottom": 28
       }
     },
+    "cbf6f8cb-1261-4c27-a5b0-9c6b5efbffdd": {
+      "type": "simple-horizontal-rule",
+      "settings": {
+        "style": "default",
+        "padding_top": 4,
+        "padding_bottom": 4
+      }
+    },
     "a299019e-01ef-4a93-a008-19b5d89caceb": {
       "type": "test-information",
       "settings": {
@@ -128,7 +118,9 @@
         "tested-on": "Tested on  {{ product.metafields.custom.soh_test_date | metafield_text }}",
         "padding_top": 40,
         "padding_bottom": 36,
-        "padding_left_right": 8
+        "padding_left_right": 26,
+        "margin_bottom": 4,
+        "margin_top": 4
       }
     },
     "c918acfc-b0a5-4a17-874f-c2206f18cdc3": {
@@ -223,11 +215,55 @@
         "padding_top": 2,
         "padding_bottom": 2
       }
+    },
+    "3bd16cc0-c8cb-47e9-a420-93a4a19afd23": {
+      "type": "rich-text",
+      "blocks": {
+        "template--18960933323053__3bd16cc0-c8cb-47e9-a420-93a4a19afd23-1686082750ff4c2fb1-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Our Mission<\/p>",
+            "heading_size": "h1"
+          }
+        },
+        "template--18960933323053__3bd16cc0-c8cb-47e9-a420-93a4a19afd23-1686082750ff4c2fb1-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Everything we do is guided by achieving net zero carbon emissions by 2050. We believe energy storage, resource and energy independence, and supply chain innovation are cornerstones of decarbonization — these objectives are the fuel to our fire.<\/p>"
+          }
+        },
+        "template--18960933323053__3bd16cc0-c8cb-47e9-a420-93a4a19afd23-1686082750ff4c2fb1-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn More",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18960933323053__3bd16cc0-c8cb-47e9-a420-93a4a19afd23-1686082750ff4c2fb1-0",
+        "template--18960933323053__3bd16cc0-c8cb-47e9-a420-93a4a19afd23-1686082750ff4c2fb1-1",
+        "template--18960933323053__3bd16cc0-c8cb-47e9-a420-93a4a19afd23-1686082750ff4c2fb1-2"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "main",
+    "4291594e-5388-4810-9346-a76e58720ade",
     "product-recommendations",
+    "cbf6f8cb-1261-4c27-a5b0-9c6b5efbffdd",
     "a299019e-01ef-4a93-a008-19b5d89caceb",
     "c918acfc-b0a5-4a17-874f-c2206f18cdc3",
     "2b5b3d10-7a4a-4fe8-91ef-56d8e6d5ca23",
@@ -238,6 +274,7 @@
     "380f48f8-7e1a-455d-9a64-a4762a1ce565",
     "83669de0-0460-4a9c-99af-c72572370ac6",
     "4e2a8775-7b72-4068-86df-2485051a6a06",
-    "b28d74c4-6d36-4a1c-b0d1-380828d4c5a1"
+    "b28d74c4-6d36-4a1c-b0d1-380828d4c5a1",
+    "3bd16cc0-c8cb-47e9-a420-93a4a19afd23"
   ]
 }
