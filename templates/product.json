@@ -128,7 +128,9 @@
         "tested-on": "Tested on  {{ product.metafields.custom.soh_test_date | metafield_text }}",
         "padding_top": 40,
         "padding_bottom": 36,
-        "padding_left_right": 8
+        "padding_left_right": 26,
+        "margin_bottom": 4,
+        "margin_top": 4
       }
     },
     "c918acfc-b0a5-4a17-874f-c2206f18cdc3": {
