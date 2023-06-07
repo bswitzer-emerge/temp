@@ -3704,6 +3704,9 @@ body.gradient.product .product .product__info-wrapper button {
   font-size: 16px;
   font-weight: 400;
 }
+body.gradient.product .product .product__info-wrapper button:after {
+  display: none;
+}
 body.gradient.product .price__container {
   width: 100%;
   background: #F4F4F4;
@@ -3748,6 +3751,7 @@ body.gradient.product .product-form__buttons {
   padding-top: 20px;
   padding-bottom: 20px;
   flex-basis: auto;
+  font-weight: 500;
 }
 .simple-specs .col-2 {
   flex-grow: 1;

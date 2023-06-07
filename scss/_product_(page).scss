@@ -24,7 +24,9 @@ body.gradient.product {
             padding-bottom: 25px;
             font-size: 16px;
             font-weight: 400;
-    
+            &:after {
+                display: none;
+            }
         }
     }
     .price__container {
