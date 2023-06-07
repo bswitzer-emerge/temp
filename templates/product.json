@@ -6,13 +6,14 @@
         "head": "{{ product.title }}",
         "size": "h1",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 0
       }
     },
     "45d0b708-55c0-46af-85fe-d8341452a1d0": {
       "type": "simple-product-images",
       "settings": {
-        "padding_top": 36,
+        "tooltip": "Photos are generic. They are not actual images of each unique product.",
+        "padding_top": 0,
         "padding_bottom": 36
       }
     },
