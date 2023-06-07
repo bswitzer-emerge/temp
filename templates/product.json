@@ -65,7 +65,7 @@
         "buy_buttons"
       ],
       "custom_css": [
-        "section {max-width: 33%;}"
+        "section {max-width: 25%;}"
       ],
       "settings": {
         "enable_sticky_info": true,
