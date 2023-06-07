@@ -20,17 +20,16 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "c54a1ebe-7b47-494d-9c52-c5fd0c8c81d6": {
-          "type": "text",
-          "settings": {
-            "text": "Type {{ product.metafields.custom.battery_type.value }}",
-            "text_style": "body"
-          }
-        },
         "title": {
           "type": "title",
           "disabled": true,
           "settings": {
+          }
+        },
+        "69373153-7750-41a8-a55b-1f9e0e7f1623": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": ""
           }
         },
         "price": {
@@ -58,8 +57,8 @@
         }
       },
       "block_order": [
-        "c54a1ebe-7b47-494d-9c52-c5fd0c8c81d6",
         "title",
+        "69373153-7750-41a8-a55b-1f9e0e7f1623",
         "price",
         "variant_picker",
         "quantity_selector",
