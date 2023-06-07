@@ -64,6 +64,9 @@
         "quantity_selector",
         "buy_buttons"
       ],
+      "custom_css": [
+        "section {max-width: 33%;}"
+      ],
       "settings": {
         "enable_sticky_info": true,
         "media_position": "left",
