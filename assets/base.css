@@ -3682,6 +3682,9 @@ body.gradient.product {
 body.gradient.product .header-wrapper {
   background-color: white;
 }
+body.gradient.product .product .product__info-wrapper {
+  padding: 0;
+}
 
 .simple-specs .container {
   border: 1px solid #D5D5D5;
