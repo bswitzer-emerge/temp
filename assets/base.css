@@ -3773,3 +3773,43 @@ body.gradient.product .header-wrapper {
   text-decoration: none;
   cursor: pointer;
 }
+
+.simple-product-images .relative {
+  position: relative;
+}
+.simple-product-images .images {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  height: 100%;
+}
+.simple-product-images .images div {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: filter 200ms;
+  cursor: pointer;
+}
+.simple-product-images .images div:hover {
+  filter: brightness(0.73);
+}
+.simple-product-images .images div:nth-of-type(1) {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: 3;
+  grid-column-end: 3;
+}
+.simple-product-images .info {
+  position: absolute;
+  bottom: 10px;
+  left: 14px;
+  z-index: 2;
+}
+.simple-product-images img {
+  max-width: 100%;
+  width: 100%;
+  object-fit: contain;
+  object-position: 50% 50%; /* default position */
+}
