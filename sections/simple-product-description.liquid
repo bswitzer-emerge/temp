@@ -23,6 +23,7 @@
 
     <div class="simple-product-description  section-{{ section.id }}-padding" >
       <div class=" page-width">
+        <div class="simple-content">
         <h2 class="{{ section.settings.size }}">{{ section.settings.head }}</h2>
         <div class="{{ section.settings.text_style }}">  
             {%- if product.description != blank -%}
@@ -33,6 +34,7 @@
         </div>
       </div>
     </div>
+  </div>
   
   {% schema %}
   {

@@ -3743,14 +3743,21 @@ body.gradient.product .product__info-wrapper .col-2 {
     max-width: 100%;
     width: 100%;
   }
+  body.gradient.product .simple-content {
+    max-width: 75%;
+  }
 }
 
-.product.product--medium.product--left.product--columns {
-  max-width: 20%;
-  position: absolute;
-  right: 0;
+@media screen and (min-width: 990px) {
+  .product.product--medium.product--left.product--columns {
+    position: relative;
+  }
+  .product.product--medium.product--left.product--columns > div {
+    max-width: 25%;
+    position: absolute;
+    right: 0;
+  }
 }
-
 .simple-specs .container {
   border: 1px solid #D5D5D5;
   border-radius: 8px;
