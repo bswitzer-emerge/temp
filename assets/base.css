@@ -3720,6 +3720,24 @@ body.gradient.product .product-form__buttons {
   border: none !important;
   border-width: 0 !important;
 }
+body.gradient.product .product__info-wrapper .row {
+  font-size: 16px;
+  display: flex;
+}
+body.gradient.product .product__info-wrapper .col-1 {
+  font-weight: 500;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  flex-basis: auto;
+}
+body.gradient.product .product__info-wrapper .col-2 {
+  flex-grow: 1;
+  text-align: right;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
 
 .simple-specs .container {
   border: 1px solid #D5D5D5;

@@ -43,4 +43,26 @@ body.gradient.product {
         border: none !important; 
         border-width: 0 !important;
     }
+    .product__info-wrapper {
+        .row {
+            font-size: 16px;
+            display: flex;
+    
+        }
+        .col-1 {
+            font-weight: 500;
+            padding-left: 5px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            flex-basis: auto;
+        }
+        .col-2 {
+            flex-grow: 1;
+            text-align: right;
+            padding-right: 5px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+    }
+    
 }
