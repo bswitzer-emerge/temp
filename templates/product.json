@@ -65,7 +65,7 @@
         "buy_buttons"
       ],
       "custom_css": [
-
+        "section {position: relative}"
       ],
       "settings": {
         "enable_sticky_info": true,
