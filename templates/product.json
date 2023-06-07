@@ -29,7 +29,7 @@
         "69373153-7750-41a8-a55b-1f9e0e7f1623": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": ""
+            "custom_liquid": "<div class=\"row\">\n    <div class=\"col-1\">\n        Type\n    <\/div>\n    <div class=\"col-2\">\n\n    <\/div>\n<\/div>\n<div class=\"row\">\n    <div class=\"col-1\">\n        Capacity\n    <\/div>\n    <div class=\"col-2\">\n\n    <\/div>\n<\/div>\n<div class=\"row\">\n    <div class=\"col-1\">\n        Year Range\n    <\/div>\n    <div class=\"col-2\">\n\n    <\/div>\n<\/div>\n<div class=\"row\">\n    <div class=\"col-1\">\n        State of Health\n    <\/div>\n    <div class=\"col-2\">\n\n    <\/div>\n<\/div>\n<div class=\"row\">\n    <div class=\"col-1\">\n        Item ID\n    <\/div>\n    <div class=\"col-2\">\n\n    <\/div>\n<\/div>"
           }
         },
         "price": {
