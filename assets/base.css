@@ -3776,6 +3776,8 @@ body.gradient.product .header-wrapper {
 
 .simple-product-images .relative {
   position: relative;
+  border: 1px #C5C5C5 solid;
+  border-radius: 4px;
 }
 .simple-product-images .images {
   display: grid;
@@ -3800,10 +3802,20 @@ body.gradient.product .header-wrapper {
   grid-column-start: 1;
   grid-row-end: 3;
   grid-column-end: 3;
+  border-radius: 15px 0px 0px 15px;
+}
+.simple-product-images .images div:nth-of-type(1) img {
+  border-radius: 15px 0px 0px 15px;
+}
+.simple-product-images .images div:nth-of-type(3) {
+  border-radius: 0px 15px 0px 0px;
+}
+.simple-product-images .images div:nth-of-type(5) {
+  border-radius: 0px 0px 15px 0px;
 }
 .simple-product-images .info {
   position: absolute;
-  bottom: 10px;
+  bottom: 4px;
   left: 14px;
   z-index: 2;
 }

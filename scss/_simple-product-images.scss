@@ -1,6 +1,8 @@
 .simple-product-images {
     .relative {
         position: relative;
+        border: 1px #C5C5C5 solid;
+        border-radius: 4px;
     }
     .images {
         display: grid;
@@ -27,11 +29,21 @@
 
             grid-row-end: 3;
             grid-column-end: 3;
+            border-radius: 15px 0px 0px 15px;
+            img {
+                border-radius: 15px 0px 0px 15px;
+            }
+        }
+        div:nth-of-type(3){
+            border-radius: 0px 15px 0px 0px;
+        }
+        div:nth-of-type(5){
+            border-radius: 0px 0px 15px 0px;
         }
     }
     .info {
         position: absolute;
-        bottom: 10px;
+        bottom: 4px;
         left: 14px;
         z-index: 2;
     }
