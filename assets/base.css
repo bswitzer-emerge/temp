@@ -3745,6 +3745,12 @@ body.gradient.product .product__info-wrapper .col-2 {
   }
 }
 
+.product.product--medium.product--left.product--columns {
+  max-width: 20%;
+  position: absolute;
+  right: 0;
+}
+
 .simple-specs .container {
   border: 1px solid #D5D5D5;
   border-radius: 8px;

@@ -69,6 +69,10 @@ body.gradient.product {
             max-width: 100%;
             width: 100%;
         }
-    }
-    
+    }   
+}
+.product.product--medium.product--left.product--columns {
+    max-width: 20%;
+    position: absolute;
+    right: 0;
 }
