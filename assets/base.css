@@ -3744,7 +3744,7 @@ body.gradient.product .product__info-wrapper .col-2 {
     width: 100%;
   }
   body.gradient.product .simple-content {
-    max-width: 75%;
+    max-width: 70%;
     padding-right: 70px;
   }
 }
@@ -3754,7 +3754,7 @@ body.gradient.product .product__info-wrapper .col-2 {
     position: relative;
   }
   .product.product--medium.product--left.product--columns > div {
-    max-width: 25%;
+    max-width: 30%;
     position: absolute;
     right: 0;
   }
