@@ -263,7 +263,7 @@
       ],
       "custom_css": [
         ".color-background-1 {background: none;}",
-        ".rich-text__blocks.center {background-color: ##efe7df;}"
+        ".rich-text__blocks.center {background-color: #efe7df; padding: 30px; border-radius: 20px;}"
       ],
       "settings": {
         "desktop_content_position": "center",
