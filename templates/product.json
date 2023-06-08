@@ -209,6 +209,13 @@
         "padding_bottom": 16
       }
     },
+    "8933c1fa-4fe9-4b03-92ec-df5472ff86aa": {
+      "type": "simple-complementary",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "87e05a09-ed93-48a4-a0f1-3e3756e5c6ee": {
       "type": "simple-specs",
       "settings": {
@@ -292,6 +299,7 @@
     "2f174276-3176-4b56-af8c-3b8b89e70dd7",
     "0a654ab4-a3e4-4412-bf46-501d5580ed29",
     "b28d74c4-6d36-4a1c-b0d1-380828d4c5a1",
+    "8933c1fa-4fe9-4b03-92ec-df5472ff86aa",
     "87e05a09-ed93-48a4-a0f1-3e3756e5c6ee",
     "145a4bce-d30a-4b07-ae5a-d0fe615310f3",
     "3bd16cc0-c8cb-47e9-a420-93a4a19afd23"
