@@ -115,12 +115,12 @@
         "padding_bottom": 30
       }
     },
-    "2d443c4c-cacf-45fc-8e3c-3cab44a7ca16": {
-      "type": "simple-title",
+    "bd57cf80-3347-480a-9b9a-4550947ddafd": {
+      "type": "simple-test-information",
       "settings": {
         "head": "Test Information",
         "size": "h2",
-        "padding_top": 20,
+        "padding_top": 24,
         "padding_bottom": 24
       }
     },
@@ -278,7 +278,7 @@
     "ec60cac5-15a5-4c72-8f2c-bfd22f478aba",
     "product-recommendations",
     "cbf6f8cb-1261-4c27-a5b0-9c6b5efbffdd",
-    "2d443c4c-cacf-45fc-8e3c-3cab44a7ca16",
+    "bd57cf80-3347-480a-9b9a-4550947ddafd",
     "cdf23f10-a8c7-4044-ad9c-d8e91d225f7c",
     "ae0235b8-0055-4264-b61f-aa7d6fca2df6",
     "c918acfc-b0a5-4a17-874f-c2206f18cdc3",
