@@ -38,25 +38,28 @@
         </div>
       </div>
     </div>
-</div>
+
     <script>
-        const stateOfHealthCircle = document.getElementById("test-info-circle");
+        function simpleTestInformation() {
+            const stateOfHealthCircle = document.getElementById("test-info-circle");
 
-        const stateOfHealth = {{ product.metafields.custom.soh }};
-        let myClass = "green"
-        if (stateOfHealth >= 80 ) {
-            myClass = "green"
-        } else if (stateOfHealth <= 80 && stateOfHealth >= 60 ) {
-            myClass = "med-green"
-        } else if (stateOfHealth <= 60 && stateOfHealth >= 40 ) {
-            myClass = "yellow"
-        } else if (stateOfHealth <= 40 && stateOfHealth >= 20 ) {
-            myClass = "orange"
-        } else if (stateOfHealth <= 20 ) {
-            myClass = "red"
+            const stateOfHealth = {{ product.metafields.custom.soh }};
+            let myClass = "green"
+            if (stateOfHealth >= 80 ) {
+                myClass = "green"
+            } else if (stateOfHealth <= 80 && stateOfHealth >= 60 ) {
+                myClass = "med-green"
+            } else if (stateOfHealth <= 60 && stateOfHealth >= 40 ) {
+                myClass = "yellow"
+            } else if (stateOfHealth <= 40 && stateOfHealth >= 20 ) {
+                myClass = "orange"
+            } else if (stateOfHealth <= 20 ) {
+                myClass = "red"
+            }
+
+            stateOfHealthCircle.classList.add(myClass);
         }
-
-        stateOfHealthCircle.classList.add(myClass);
+        simpleTestInformation();
     </script>
   
   
