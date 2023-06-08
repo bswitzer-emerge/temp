@@ -1,0 +1,20 @@
+.circle {
+    display: inline-block;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: 2FAD00;
+    margin-right: 5px;
+    &.med-green {
+        background-color: #00E055;
+    }
+    &.yellow {
+        background-color: #C8E400;
+    }
+    &.orange {
+        background-color: #FFC600;
+    }
+    &.red {
+        background-color: #FF7C7C;
+    }
+}

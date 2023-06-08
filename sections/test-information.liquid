@@ -36,32 +36,28 @@
   }
 {%- endstyle -%}
 
-    <div class="test-information section-{{ section.id }}-padding" >
-      <div class=" page-width">
-        <div class="container">
-            <div class="col1">
-                {%- if section.settings.image != blank -%}
-                    {{ section.settings.image| img_url: '2048x' | img_tag }}
-                {%- else -%}
-                    {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-                {%- endif -%}
-            </div>
-            <div class="col2">
-                {% if section.settings.head  %}
-                    <h3 class="">{{ section.settings.head }}</h3>
-                {% endif %}
-                <div class="stats">
-                    <div class="stat1">{{ section.settings.state-of-health }}</div>
-                    <div>{{ section.settings.tested-on }}</div>
-                </div>
-                {% if section.settings.message %}
-                <p class="message">{{ section.settings.message }}</p>
-                {% endif %}
-            </div>
-        </div>
-      </div>
-    </div>
-  
+<div class="test-information section-{{ section.id }}-padding">
+	<div class="page-width">
+		<div class="container">
+			<div class="col1">
+				{%- if section.settings.image != blank -%} {{ section.settings.image| img_url: '2048x' | img_tag }} {%- else -%} {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }} {%- endif -%}
+			</div>
+			<div class="col2">
+				{% if section.settings.head %}
+				<h3 class="">{{ section.settings.head }}</h3>{% endif %}
+				<div class="stats">
+					<div class="stat1">
+						{{ section.settings.state-of-health }}
+					</div>
+					<div>
+						{{ section.settings.tested-on }}
+					</div>
+				</div>{% if section.settings.message %}
+				<p class="message">{{ section.settings.message }}</p>{% endif %}
+			</div>
+		</div>
+	</div>
+</div>
   
   {% schema %}
   {
