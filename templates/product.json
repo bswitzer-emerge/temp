@@ -261,6 +261,9 @@
         "template--18960933323053__3bd16cc0-c8cb-47e9-a420-93a4a19afd23-1686082750ff4c2fb1-1",
         "template--18960933323053__3bd16cc0-c8cb-47e9-a420-93a4a19afd23-1686082750ff4c2fb1-2"
       ],
+      "custom_css": [
+        ".color-background-1 {background: none;}"
+      ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
