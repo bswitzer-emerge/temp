@@ -50,11 +50,21 @@
   <div class="modal-content">
       <span class="close" id="close-{{ section.id }}">&times;</span>
   <div class="image">
+    <div id="slideshow-container">
+      <img class="slideshow" id="image" src="" alt="Slideshow Image">
+    </div>
+    <div class="modal-buttons">
+      <button id="prev-button">Previous</button>
+      <button id="next-button">Next</button>
+    </div>
+   
+    <!--
     {% for image in product.images %}
       <div>
           <img src="{{ image.src | image_url:  width: 2048 }}">
       </div>
   {% endfor %}
+-->
   </div>
   </div>
 </div>
@@ -86,6 +96,50 @@
       modal.style.display = "none";
     }
   }
+</script>
+
+
+<script>
+  const images = [
+    {% for image in product.images %}
+      '{{ image.src | image_url:  width: 2048 }}'
+      {% unless forloop.last %}
+        ,
+      {% else %}
+      {% endunless %}
+    {% endfor %}
+  ];
+  
+  const slideshowContainer = document.getElementById('slideshow-container');
+  const image = document.getElementById('image');
+  const prevButton = document.getElementById('prev-button');
+  const nextButton = document.getElementById('next-button');
+
+  let currentIndex = 0;
+
+  function showImage(index) {
+    if (index < 0 || index >= images.length) {
+      return;
+    }
+
+    image.src = images[index];
+  }
+
+  function prevImage() {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    showImage(currentIndex);
+  }
+
+  function nextImage() {
+    currentIndex = (currentIndex + 1) % images.length;
+    showImage(currentIndex);
+  }
+
+  prevButton.addEventListener('click', prevImage);
+  nextButton.addEventListener('click', nextImage);
+
+  showImage(currentIndex);
+  slideshowContainer.style.display = 'block';
 </script>
 
    {% schema %}

@@ -3679,6 +3679,9 @@ body.index .shopify-section-header-sticky .header-wrapper {
 body.gradient.product {
   background-color: #f9f8f6;
 }
+body.gradient.product .btn {
+  cursor: pointer;
+}
 body.gradient.product .header-wrapper {
   background-color: white;
 }
@@ -3855,6 +3858,12 @@ body.gradient.product .product__info-wrapper .col-2 {
   position: relative;
   border: 1px #C5C5C5 solid;
   border-radius: 15px;
+  margin-bottom: 45px;
+}
+@media screen and (min-width: 990px) {
+  .simple-product-images .relative {
+    margin-bottom: 0;
+  }
 }
 .simple-product-images .images {
   display: grid;
@@ -3897,10 +3906,15 @@ body.gradient.product .product__info-wrapper .col-2 {
   z-index: 2;
 }
 .simple-product-images .btn {
+  bottom: -65px;
   position: absolute;
-  right: 15px;
-  bottom: 15px;
   padding: 6px 26px;
+}
+@media screen and (min-width: 990px) {
+  .simple-product-images .btn {
+    right: 15px;
+    bottom: 15px;
+  }
 }
 .simple-product-images .btn svg {
   margin-top: 6px;
@@ -3939,7 +3953,18 @@ body.gradient.product .product__info-wrapper .col-2 {
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: calc(100% - 30px);
+  position: relative;
+}
+@media screen and (min-width: 990px) {
+  .modal-content {
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+}
+
+.modal-buttons {
+  position: absolute;
+  bottom: 10px;
 }
 
 /* The Close Button */
@@ -4069,4 +4094,8 @@ body.gradient.product .product__info-wrapper .col-2 {
 
 [data-tooltip=""]::after, [data-tooltip=""]::before {
   display: none !important;
+}
+
+[data-tooltip]:hover svg path {
+  fill: #000;
 }
