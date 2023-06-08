@@ -262,7 +262,8 @@
         "template--18960933323053__3bd16cc0-c8cb-47e9-a420-93a4a19afd23-1686082750ff4c2fb1-2"
       ],
       "custom_css": [
-        ".color-background-1 {background: none;}"
+        ".color-background-1 {background: none;}",
+        ".rich-text__blocks.center {background-color: ##efe7df;}"
       ],
       "settings": {
         "desktop_content_position": "center",
