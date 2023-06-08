@@ -1,0 +1,38 @@
+.simple-test-information  {
+    .row {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    .col-2 {
+        flex: 1;
+        text-align: right;
+    }
+    #soh-percentage {
+        font-size: 28px;
+    }
+    #calendar-icon {
+        margin-left: 30px;
+        margin-right: 20px;
+    }
+    .circle {
+        display: inline-block;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        background-color: green;
+        margin-right: 5px;
+        &.med-green {
+            background-color: #C8E400;
+        }
+        &.yellow {
+            background-color: yellow;
+        }
+        &.orange {
+            background-color: orange;
+        }
+        &.red {
+            background-color: red;
+        }
+    }
+}
