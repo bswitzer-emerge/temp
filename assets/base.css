@@ -4121,26 +4121,6 @@ body.gradient.product .product__info-wrapper .col-2 {
   margin-left: 30px;
   margin-right: 20px;
 }
-.simple-test-information .circle {
-  display: inline-block;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  background-color: green;
-  margin-right: 5px;
-}
-.simple-test-information .circle.med-green {
-  background-color: #C8E400;
-}
-.simple-test-information .circle.yellow {
-  background-color: yellow;
-}
-.simple-test-information .circle.orange {
-  background-color: orange;
-}
-.simple-test-information .circle.red {
-  background-color: red;
-}
 
 .circle {
   display: inline-block;
