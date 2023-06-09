@@ -34,7 +34,7 @@
         <div class="row">
           <!-- class="facets-vertical-form"  -->
           <div class="col-1">
-            <h2>Test</h2>
+            <h2>  {{- collection.title | escape -}} </h2>
             <span>
               {%- if collection.results_count -%}
                 {{ 'templates.search.results_with_count' | t: terms: collection.terms, count: collection.results_count }}
@@ -57,7 +57,7 @@
                   <option value="{{ option.value | escape }}"{% if option.value == sort_by %} selected="selected"{% endif %}>{{ option.name | escape }}</option>
                 {%- endfor -%}
               </select>
-              {% render 'icon-caret' %}
+              {% render 'icon-caret-custom' %}
             <noscript>
               <button type="submit" class="facets__button-no-js button button--secondary">{{ 'products.facets.sort_button' | t }}</button>
             </noscript>
@@ -123,7 +123,9 @@
                   Price
               </div>
               <div class="card-product-list__col3" id="soh-sort">
-                State of Health
+                State of Health <div class="info" id="info-soh" data-tooltip="text goes here" data-flow="top">
+                  <svg height="18" viewBox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg"><path d="m103.636647 711.23666c-4.9627995 0-9.0000005 4.037201-9.0000005 9s4.037201 9 9.0000005 9c4.962799 0 9-4.037201 9-9s-4.037201-9-9-9zm0 3.750046c.414047 0 .749954.335907.749954.749954s-.335907.749954-.749954.749954c-.414048 0-.749955-.335907-.749955-.749954s.335907-.749954.749955-.749954zm1.6875 10.499908h-3.375c-.414734 0-.749955-.335907-.749955-.749954s.335221-.749954.749955-.749954h.937545v-4.5h-.5625c-.414734 0-.750091-.336044-.750091-.750092 0-.41391.335357-.749954.750091-.749954h1.312455c.414733 0 .749954.336044.749954.749954v5.250092h.937546c.414733 0 .749954.335907.749954.749954s-.335221.749954-.749954.749954z" fill="#a7a4a1" transform="translate(-94.636647 -711.23666)"></path></svg>
+              </div>
               </div>
               <div class="card-product-list__col4" id="makemodel-sort">
                 Type

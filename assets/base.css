@@ -3598,6 +3598,11 @@ body.index .shopify-section-header-sticky .header-wrapper {
   padding-right: 15px;
 }
 
+div[class^=card-product-list__], div[class*=card-product-list__] {
+  display: flex;
+  align-items: center;
+}
+
 .card-product-list {
   display: flex;
   justify-content: space-between;
@@ -3605,24 +3610,28 @@ body.index .shopify-section-header-sticky .header-wrapper {
 
 .card-product-list__col1 {
   padding-right: 10px;
-  flex: 1.5;
+  flex: 1.25;
 }
 
 .card-product-list__col2 {
-  flex: 0.75;
+  flex: 0.9;
+  justify-content: center;
 }
 
 .card-product-list__col3 {
   flex: 0.7;
+  justify-content: center;
 }
 
 .card-product-list__col4 {
   flex: 0.5;
   padding-right: 10px;
+  justify-content: center;
 }
 
 .card-product-list__col5 {
   flex: 0.7;
+  justify-content: center;
 }
 
 .card-product-list__col6 {
@@ -3630,8 +3639,19 @@ body.index .shopify-section-header-sticky .header-wrapper {
   flex: 1.2;
 }
 
+.card-product-list__col7 {
+  flex: 0.7;
+  justify-content: center;
+}
+
 .card-product-list.top {
   width: 100%;
+  font-size: 14px;
+}
+.card-product-list.top .info {
+  position: relative;
+  top: 3px;
+  left: 5px;
 }
 .card-product-list.top .card-product-list__col1,
 .card-product-list.top .card-product-list__col2,
@@ -3640,18 +3660,32 @@ body.index .shopify-section-header-sticky .header-wrapper {
 .card-product-list.top .card-product-list__col5,
 .card-product-list.top .card-product-list__col6,
 .card-product-list.top .card-product-list__col7 {
-  text-align: left;
+  text-align: center;
 }
-.card-product-list.top .card-product-list__col7 {
-  width: 144px;
+.card-product-list.top .card-product-list__col3 {
+  max-width: 120px;
 }
-
 #FacetSortForm .row {
   display: flex;
 }
 #FacetSortForm .col-1 {
   width: 320px;
   padding-right: 3rem;
+}
+#FacetSortForm .col-1 h2 {
+  margin-bottom: 0;
+}
+#FacetSortForm .col-1, #FacetSortForm .col-2 {
+  padding-bottom: 2em;
+}
+#FacetSortForm select {
+  background: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  width: 230px;
+}
+#FacetSortForm .select svg {
+  right: 10px;
 }
 
 .product-grid-container {
@@ -3667,6 +3701,7 @@ body.index .shopify-section-header-sticky .header-wrapper {
 }
 .product-grid-container .card-product-list.top {
   padding: 15px 15px;
+  border-bottom: 1px solid #C5C5C5;
 }
 .product-grid-container .circle {
   width: 12px;
