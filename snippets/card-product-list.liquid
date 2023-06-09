@@ -47,19 +47,16 @@
 
         </div>
         <div class="card-product-list__col3">
-            {{ card_product.metafields.custom.soh.value }}
+            <div class="circle">&nbsp;</div>
+            {{ card_product.metafields.custom.soh.value }}%
 
             
         </div>
         <div class="card-product-list__col4">
-            {{ card_product.metafields.custom.make.value }} {{ card_product.metafields.custom.model.value }} 
+            {{ card_product.metafields.custom.gen_type.value }}
         </div>
         <div class="card-product-list__col5">
-            {{ card_product.metafields.custom.battery_type.value }}
-        </div>
-
-        <div class="card-product-list__col6">
-            {{ card_product.metafields.custom.location_city }}, {{ card_product.metafields.custom.location_state }}
+            {{ card_product.metafields.custom.capacity_new.value }}
         </div>
         <div class="card-product-list__col7">
                 <div class="quick-add no-js-hidden">
