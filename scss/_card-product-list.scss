@@ -12,17 +12,18 @@
 }
 .card-product-list__col1 {
     padding-right: 10px;
-    flex: 2;
+    flex: 1.5;
 }
 .card-product-list__col2 {
     //width: 100%;
-    flex: 1;
+    flex: 0.75;
 }
 .card-product-list__col3 {
     flex: 0.7;
 }
 .card-product-list__col4 {
-    flex: 1;
+    //flex: 1;
+    flex: 0.5;
     padding-right: 10px;
 }
 .card-product-list__col5 {
@@ -78,4 +79,20 @@
         width: 12px;
         height: 12px;
     }
+
+    button {
+       // background: url('');
+        background-color: transparent;
+        outline: none;
+        border: none; 
+        padding: 0 2rem;
+        border-radius: 20px;
+        &:hover {
+            background-color: #ffaf73;
+        }
+        &:before, &:after {
+            display: none;
+        }
+    }
 }
+

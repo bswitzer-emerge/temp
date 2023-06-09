@@ -3605,11 +3605,11 @@ body.index .shopify-section-header-sticky .header-wrapper {
 
 .card-product-list__col1 {
   padding-right: 10px;
-  flex: 2;
+  flex: 1.5;
 }
 
 .card-product-list__col2 {
-  flex: 1;
+  flex: 0.75;
 }
 
 .card-product-list__col3 {
@@ -3617,7 +3617,7 @@ body.index .shopify-section-header-sticky .header-wrapper {
 }
 
 .card-product-list__col4 {
-  flex: 1;
+  flex: 0.5;
   padding-right: 10px;
 }
 
@@ -3671,6 +3671,19 @@ body.index .shopify-section-header-sticky .header-wrapper {
 .product-grid-container .circle {
   width: 12px;
   height: 12px;
+}
+.product-grid-container button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding: 0 2rem;
+  border-radius: 20px;
+}
+.product-grid-container button:hover {
+  background-color: #ffaf73;
+}
+.product-grid-container button:before, .product-grid-container button:after {
+  display: none;
 }
 
 .icon-with-text-small img {

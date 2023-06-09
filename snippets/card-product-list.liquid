@@ -141,10 +141,11 @@
                             {% if card_product.selected_or_first_available_variant.available == false %}
                             disabled
                             {% endif %}
-                        >
+                        >   <img src="https://cdn.shopify.com/s/files/1/0719/5269/5597/files/cart.svg" alt="cart">
                             <span>
+
                             {%- if card_product.selected_or_first_available_variant.available -%}
-                                {{ 'products.product.add_to_cart' | t }}
+                             <!-- {{ 'products.product.add_to_cart' | t }} --> 
                             {%- else -%}
                                 {{ 'products.product.sold_out' | t }}
                             {%- endif -%}
