@@ -163,6 +163,11 @@ div[class^='card-product-list__'], div[class*='card-product-list__']{
     }
 }
 
+.collection-alt-collection {
+    option[value="best-selling"] {
+        display: none;
+    }
+}
 .collection-alt-collection .facets-vertical {
     @media screen and (max-width: 989px) {
         display: flex;

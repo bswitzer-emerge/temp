@@ -3743,6 +3743,10 @@ body.index .shopify-section-header-sticky .header-wrapper {
     overflow-y: auto;
   }
 }
+.collection-alt-collection option[value=best-selling] {
+  display: none;
+}
+
 @media screen and (max-width: 989px) {
   .collection-alt-collection .facets-vertical {
     display: flex;
