@@ -6,13 +6,23 @@
     padding-right: 15px;
 }
 div[class^='card-product-list__'], div[class*='card-product-list__']{
-    display: flex;
-    align-items: center;
+    @media screen and (min-width: 500px) {
+
+        display: flex;
+        align-items: center;
+    }
 }
 
 .card-product-list {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: left;
+    @media screen and (min-width: 500px) {
+        flex-direction: row;
+
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .card-product-list__col1 {
@@ -113,7 +123,7 @@ div[class^='card-product-list__'], div[class*='card-product-list__']{
     border: 1px solid #C5C5C5;
     border-radius: 8px;
     li {
-        padding: 30px 15px;
+        padding: 14px 15px;
     }
     li:nth-of-type(even) {
         background-color: #f5f4f4;
@@ -125,6 +135,10 @@ div[class^='card-product-list__'], div[class*='card-product-list__']{
     .circle {
         width: 12px;
         height: 12px;
+        @media screen and (max-width: 499px) {
+            position: relative;
+            top: -10px;
+        }
     }
 
     button {
@@ -142,4 +156,24 @@ div[class^='card-product-list__'], div[class*='card-product-list__']{
         }
     }
 }
+@media screen and (min-width: 990px) {
+    #product-grid {
+        max-height: 700px;
+        overflow-y: auto;
+    }
+}
 
+.collection-alt-collection .facets-vertical {
+    @media screen and (max-width: 989px) {
+        display: flex;
+        flex-direction: column;
+        aside {
+            margin-bottom: 1.5em;
+        }
+        aside, .facets-container {
+            width: 100%;
+            padding-right: 0;
+        }
+    }
+    
+}

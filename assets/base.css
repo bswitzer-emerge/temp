@@ -3598,14 +3598,24 @@ body.index .shopify-section-header-sticky .header-wrapper {
   padding-right: 15px;
 }
 
-div[class^=card-product-list__], div[class*=card-product-list__] {
-  display: flex;
-  align-items: center;
+@media screen and (min-width: 500px) {
+  div[class^=card-product-list__], div[class*=card-product-list__] {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .card-product-list {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: left;
+}
+@media screen and (min-width: 500px) {
+  .card-product-list {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .card-product-list__col1 {
@@ -3694,7 +3704,7 @@ div[class^=card-product-list__], div[class*=card-product-list__] {
   border-radius: 8px;
 }
 .product-grid-container li {
-  padding: 30px 15px;
+  padding: 14px 15px;
 }
 .product-grid-container li:nth-of-type(even) {
   background-color: #f5f4f4;
@@ -3706,6 +3716,12 @@ div[class^=card-product-list__], div[class*=card-product-list__] {
 .product-grid-container .circle {
   width: 12px;
   height: 12px;
+}
+@media screen and (max-width: 499px) {
+  .product-grid-container .circle {
+    position: relative;
+    top: -10px;
+  }
 }
 .product-grid-container button {
   background-color: transparent;
@@ -3719,6 +3735,26 @@ div[class^=card-product-list__], div[class*=card-product-list__] {
 }
 .product-grid-container button:before, .product-grid-container button:after {
   display: none;
+}
+
+@media screen and (min-width: 990px) {
+  #product-grid {
+    max-height: 700px;
+    overflow-y: auto;
+  }
+}
+@media screen and (max-width: 989px) {
+  .collection-alt-collection .facets-vertical {
+    display: flex;
+    flex-direction: column;
+  }
+  .collection-alt-collection .facets-vertical aside {
+    margin-bottom: 1.5em;
+  }
+  .collection-alt-collection .facets-vertical aside, .collection-alt-collection .facets-vertical .facets-container {
+    width: 100%;
+    padding-right: 0;
+  }
 }
 
 .icon-with-text-small img {

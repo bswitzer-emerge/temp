@@ -113,7 +113,7 @@
               {%- assign total_active_values = total_active_values | plus: filter.active_values.size -%}
               {% case filter.type %}
                 {% when 'boolean', 'list' %}
-                  <details
+                  <div open
                     id="Details-{{ forloop.index }}-{{ section.id }}"
                     class="{% if filter_type == 'horizontal' %}disclosure-has-popup facets__disclosure{% else %} facets__disclosure-vertical{% endif %} js-filter"
                     data-index="{{ forloop.index }}"
@@ -121,6 +121,8 @@
                       open
                     {% endif %}
                   >
+                   
+                    {% comment %}
                     <summary
                       class="facets__summary caption-large focus-offset"
                       aria-label="{{ filter.label }} ({{ 'products.facets.filters_selected.one' | t: count: filter.active_values.size }})"
@@ -137,6 +139,7 @@
                         {% render 'icon-caret' %}
                       </div>
                     </summary>
+                    {% endcomment %}
                     <div
                       id="Facet-{{ forloop.index }}-{{ section.id }}"
                       class="parent-display {% if filter_type == 'horizontal' %}facets__display{% else %}facets__display-vertical{% endif %}"
@@ -182,7 +185,7 @@
                                   width="1.6rem"
                                   height="1.6rem"
                                   viewBox="0 0 16 16"
-                                  aria-hidden="true"
+                                  aria-hidden="true"-
                                   focusable="false"
                                 >
                                   <rect width="16" height="16" stroke="currentColor" fill="none" stroke-width="1"></rect>
@@ -300,7 +303,7 @@
                         </show-more-button>
                       {%- endif %}
                     </div>
-                  </details>
+                  </div>
                 {% when 'price_range' %}
                   {% liquid
                     assign currencies_using_comma_decimals = 'ANG,ARS,BRL,BYN,BYR,CLF,CLP,COP,CRC,CZK,DKK,EUR,HRK,HUF,IDR,ISK,MZN,NOK,PLN,RON,RUB,SEK,TRY,UYU,VES,VND' | split: ','
@@ -309,7 +312,7 @@
                       assign uses_comma_decimals = true
                     endif
                   %}
-                  <details
+                  <details open
                     id="Details-{{ forloop.index }}-{{ section.id }}"
                     class="{% if filter_type == 'horizontal' %}disclosure-has-popup facets__disclosure{% else %} facets__disclosure-vertical{% endif %} js-filter"
                     data-index="{{ forloop.index }}"
