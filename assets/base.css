@@ -3763,6 +3763,9 @@ body.index .shopify-section-header-sticky .header-wrapper {
 .collection-alt-collection .facets-vertical .facets__price input {
   background-color: white;
 }
+.collection-alt-collection .facets-vertical #product-grid {
+  margin-top: 0;
+}
 
 .icon-with-text-small img {
   max-width: 80px;
