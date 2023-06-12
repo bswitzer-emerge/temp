@@ -175,5 +175,9 @@ div[class^='card-product-list__'], div[class*='card-product-list__']{
             padding-right: 0;
         }
     }
-    
+    .facets__price {
+        input {
+            background-color: white;
+        }
+    }
 }

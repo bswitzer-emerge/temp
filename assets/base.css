@@ -3756,6 +3756,9 @@ body.index .shopify-section-header-sticky .header-wrapper {
     padding-right: 0;
   }
 }
+.collection-alt-collection .facets-vertical .facets__price input {
+  background-color: white;
+}
 
 .icon-with-text-small img {
   max-width: 80px;
