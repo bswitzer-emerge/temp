@@ -1,0 +1,10 @@
+.simple-product-title  .simple-content {
+    display: flex;
+    align-items: center;
+    h2 {
+        flex: 1;
+    }
+    .btn {
+        flex: 0;
+    }
+}

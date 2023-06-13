@@ -4272,3 +4272,14 @@ body.gradient.product .product__info-wrapper .col-2 {
 .circle.red {
   background-color: #FF7C7C;
 }
+
+.simple-product-title .simple-content {
+  display: flex;
+  align-items: center;
+}
+.simple-product-title .simple-content h2 {
+  flex: 1;
+}
+.simple-product-title .simple-content .btn {
+  flex: 0;
+}
