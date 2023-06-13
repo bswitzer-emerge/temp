@@ -1,6 +1,3 @@
-
-// TODO: when adding a new product, the duplicate information isn't being populated
-
 /*
   [Link to this script in Github](https://github.com/EmergeInteractive/currents-marketplace-mvp/blob/development/google-sheets/google-sheets-inventory.js).
   If you make changes here in the App Script editor, please update it in source control as well.
