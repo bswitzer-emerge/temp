@@ -3885,6 +3885,9 @@ body.gradient.product .product__info-wrapper .col-2 {
     padding-right: 70px;
   }
 }
+body.gradient.product .product-form__buttons, body.gradient.product .product__info-container {
+  max-width: 100%;
+}
 
 @media screen and (min-width: 990px) {
   .product.product--medium.product--left.product--columns {

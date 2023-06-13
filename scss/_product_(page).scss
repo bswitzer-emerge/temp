@@ -82,8 +82,10 @@ body.gradient.product {
             padding-right: 70px;
         }
     }   
-   
-}
+    .product-form__buttons, .product__info-container {
+        max-width: 100%;
+    }
+}   
 @media screen and (min-width: 990px) {
     .product.product--medium.product--left.product--columns {
         position: relative;
