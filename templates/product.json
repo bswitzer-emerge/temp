@@ -1,5 +1,14 @@
 {
   "sections": {
+    "d4bf3c69-e3d5-4c60-beba-594c696f0376": {
+      "type": "simple-product-title",
+      "settings": {
+        "head": "{{ product.title }}",
+        "size": "h1",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
     "b0ed329b-4492-4507-9794-cc36841f10d3": {
       "type": "simple-title",
       "settings": {
@@ -283,6 +292,7 @@
     }
   },
   "order": [
+    "d4bf3c69-e3d5-4c60-beba-594c696f0376",
     "b0ed329b-4492-4507-9794-cc36841f10d3",
     "45d0b708-55c0-46af-85fe-d8341452a1d0",
     "main",
