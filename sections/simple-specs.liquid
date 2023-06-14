@@ -57,11 +57,11 @@
             </div>
             <div class="row">
                 <div class="col-1">Modules</div>
-                <div class="col-2">{{ product.metafields.custom.modules }}</div>
+                <div class="col-2">{{ product.metafields.custom.modules | round }}</div>
             </div>
             <div class="row">
                 <div class="col-1">Total Cells</div>
-                <div class="col-2"{{ product.metafields.custom.total_cells }}></div>
+                <div class="col-2">{{ product.metafields.custom.total_cells | round }}</div>
             </div>
         </div>
 
