@@ -104,7 +104,7 @@ function main() {
 
             // otherwise create a new product to append
         } else {
-            item.push(calculatedPrice); // add new price
+            item.push(itemPrice); // add new price
             item.push(1); // add to inventory
             newProducts.push(item.concat(specLookup[specKey] || []))
         }
