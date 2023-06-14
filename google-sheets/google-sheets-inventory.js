@@ -1,6 +1,9 @@
 /*
   [Link to this script in Github](https://github.com/EmergeInteractive/currents-marketplace-mvp/blob/development/google-sheets/google-sheets-inventory.js).
   If you make changes here in the App Script editor, please update it in source control as well.
+
+  Future improvements:
+  - Validate the order of the columns and that they are all present before allowing generation to happen.
 */
 
 // settings
@@ -56,9 +59,11 @@ function main() {
         const itemId = item[getColIdx("Item ID", inventoryHeaders)];
         const itemGenType = item[getColIdx("Gen Type", inventoryHeaders)];
         const itemBatterySize = item[getColIdx("Battery Size", inventoryHeaders)];
-        const itemPrice = item[getColIdx("Price", inventoryHeaders)] * 1.1;
+        const calculatedPrice = item[getColIdx("Price", inventoryHeaders)] * 1.1;
         const itemSOH = item[getColIdx("SOH Measurement", inventoryHeaders)];
         const itemSOHTestDate = item[getColIdx("SOH Test Date", inventoryHeaders)];
+
+        const itemPrice = Math.ceil(calculatedPrice);
 
         const specKey = itemGenType + '-' + itemBatterySize;
 
@@ -99,7 +104,7 @@ function main() {
 
             // otherwise create a new product to append
         } else {
-            item.push(itemPrice); // add new price
+            item.push(calculatedPrice); // add new price
             item.push(1); // add to inventory
             newProducts.push(item.concat(specLookup[specKey] || []))
         }
@@ -116,6 +121,10 @@ function main() {
 
     // Duplicate values to additional columns as required for import data
     expandImportData();
+
+    // TODO: Set inventory for those items that we want to pull out of the store
+    // If there is a 0 in the inventory qty column, set it to empty and add a -1 in the inventory adjust
+
     Logger.log("Processing complete.");
 }
 
@@ -277,6 +286,7 @@ function expandImportData() {
         const batterySize = item[getColIdx("Battery Size", productsHeaders)];
         const stateOfHealth = item[getColIdx("SOH Measurement", productsHeaders)];
         const sohTestDate = item[getColIdx("SOH Test Date", productsHeaders)];
+        const itemPrice = item[getColIdx("Variant Price", productsHeaders)];
 
         // these three have to be fuzzy, since we aren't matching on the exact col header
         const model = item[fuzzyColIdx("custom.model", productsHeaders)];
@@ -284,7 +294,7 @@ function expandImportData() {
         const modules = item[fuzzyColIdx("custom.modules", productsHeaders)];
 
         // these two are constructed of other values
-        const title = buildTitle(make, model, genType, batterySize, stateOfHealth, modules)
+        const title = buildTitle(make, model, genType, batterySize, stateOfHealth, itemPrice);
         const handle = buildHandle(itemID, make, model, genType, batterySize, stateOfHealth, modules)
 
         // Set cell values, account for header && 1 index rows/cols
@@ -300,9 +310,12 @@ function expandImportData() {
 
 /**
  * Builds title string
+ *
+ * Result: Nissan Leaf / Gen 1 / 40kWh / 60% SOH / $3000
  */
-function buildTitle(make, model, genType, batterySize, stateOfHealth, modules) {
-    return `${make} ${model} ${genType} - ${batterySize} ${stateOfHealth}% ${modules}`;
+function buildTitle(make, model, genType, batterySize, stateOfHealth, itemPrice) {
+    const delimiter = "/";
+    return `${make} ${model} ${delimiter} ${genType} ${delimiter} ${batterySize} ${delimiter} ${stateOfHealth}% SOH ${delimiter} \$${itemPrice}`;
 }
 
 /**
