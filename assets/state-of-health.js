@@ -48,8 +48,8 @@ function updateInputs() {
 function ensureRange() {
     const lowValue = parseInt(sohLowInput.value);
     const highValue = parseInt(sohHighInput.value);
+    console.log(`ensureRange() lowValue ${lowValue}, highValue ${highValue}`);
     
-    console.log(`ensureRange() lowValue ${lowValue}, highValue ${highValue}`)
     // Ensure #soh-low is never higher than #soh-high
     if (lowValue >= highValue) {
       sohLowInput.value = highValue - 1;
@@ -72,11 +72,9 @@ function checkTheBoxes() {
     // Go through entire list of checkboxes
     for (const [index, checkbox] of checkboxes.entries()) {
         const checkboxValue = parseInt(checkbox.value);
-        //console.log(`checkboxValue ${checkboxValue}`);
 
         if (checkboxValue >= lowValue && checkboxValue <= highValue) {
             // Perform the desired action, e.g., check the checkbox
-            //console.log(`${checkboxValue} >= = ${lowValue} && ${checkboxValue}  <= ${highValue} `) 
             checkbox.checked = true;
             filteredValues.push(checkboxValue);
         } else {
@@ -91,9 +89,7 @@ function checkTheBoxes() {
     }
 }
 
-
 // timer
-
 function timerCountdown() {
     timerCountReset();
     typingTimer = setTimeout(updateInputs, doneTypingInterval);
@@ -106,10 +102,8 @@ function timerCountReset() {
 // Page loading!
 function onPageLoadSoh() {
     const url = window.location.href;
-
     const urlParams = new URLSearchParams(url);
     const sohValues = urlParams.getAll("filter.p.m.custom.soh");
-
 
     if (sohValues.length >= 1) {
           // Converting the values to numbers for comparison
@@ -121,8 +115,5 @@ function onPageLoadSoh() {
 
         sohLowInput.value = lowestValue;
         sohHighInput.value = highestValue;
-        //console.log("Lowest value:", lowestValue);
-       // console.log("Highest value:", highestValue);
     }
-  
 }
