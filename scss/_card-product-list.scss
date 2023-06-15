@@ -197,3 +197,29 @@ div[class^='card-product-list__'], div[class*='card-product-list__']{
         margin-top: 0;
     }
 }
+
+// State of health filter
+.collection-alt-collection {
+    .facets-vertical .active-facets__button {
+        display:  none;
+    }
+}
+#soh-filters {
+    display: flex;
+    gap: 12px;
+
+}
+#soh-low, #soh-high {
+
+    flex: 1;
+    flex-grow: 1;
+    text-align: left;
+    padding: 1.5rem;
+    margin: var(--inputs-border-width);
+    transition: box-shadow var(--duration-short) ease;
+
+}
+#soh-health-form-items {
+    display: none;
+    
+}

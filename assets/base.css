@@ -3774,6 +3774,28 @@ body.index .shopify-section-header-sticky .header-wrapper {
   margin-top: 0;
 }
 
+.collection-alt-collection .facets-vertical .active-facets__button {
+  display: none;
+}
+
+#soh-filters {
+  display: flex;
+  gap: 12px;
+}
+
+#soh-low, #soh-high {
+  flex: 1;
+  flex-grow: 1;
+  text-align: left;
+  padding: 1.5rem;
+  margin: var(--inputs-border-width);
+  transition: box-shadow var(--duration-short) ease;
+}
+
+#soh-health-form-items {
+  display: none;
+}
+
 .icon-with-text-small img {
   max-width: 80px;
 }
