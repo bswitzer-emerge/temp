@@ -3597,6 +3597,12 @@ body.index .shopify-section-header-sticky .header-wrapper {
   padding-left: 15px;
   padding-right: 15px;
 }
+.collection-alt-collection .facets-container .legend-pad {
+  padding-top: 0.75em;
+}
+.collection-alt-collection .facets-container .icon-caret {
+  display: none;
+}
 
 @media screen and (min-width: 500px) {
   div[class^=card-product-list__], div[class*=card-product-list__] {
@@ -3683,6 +3689,7 @@ body.index .shopify-section-header-sticky .header-wrapper {
   padding-right: 3rem;
 }
 #FacetSortForm .col-1 h2 {
+  margin-top: 0.25em;
   margin-bottom: 0;
 }
 #FacetSortForm .col-1, #FacetSortForm .col-2 {

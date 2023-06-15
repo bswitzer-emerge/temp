@@ -157,11 +157,12 @@
                         </div>
                       {%- endif -%}
                       <fieldset class="facets-wrap parent-wrap {% if filter_type == 'vertical' %} facets-wrap-vertical{% endif %}">
-                        <legend class="visually-hidden">{{ filter.label | escape }}</legend>
+                        {% comment %} visually-hidden {% endcomment %}
+                        <legend class="legend-pad">{{ filter.label | escape }}</legend>
                         <ul
                           class="{% if filter_type != 'vertical' %} facets__list{% endif %} list-unstyled no-js-hidden"
                           role="list"
-                        >
+                          >
                           {%- for value in filter.values -%}
                             <li class="list-menu__item facets__item{% if forloop.index > 10 and filter_type == 'vertical' %} show-more-item hidden{% endif %}">
                               <label
@@ -226,6 +227,7 @@
                           class="{% if filter_type != 'vertical' %} facets__list{% endif %} no-js-list list-unstyled no-js"
                           role="list"
                         >
+                          Test
                           {%- for value in filter.values -%}
                             <li class="list-menu__item facets__item">
                               <label
