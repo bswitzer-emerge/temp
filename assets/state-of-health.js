@@ -13,6 +13,8 @@
     checkTheBoxes() - looks for the #soh-health-form-items, and then
                     checks the ones that match the input range. This  is a work around for the lack of filtering avaliable nu default in facets.liquid
                     It has to simulate a mouse click for the original mystery meat Shopify JS to work.
+    timerCountDown / timerCountReset - using the classic StackOverflow solution
+                    https://stackoverflow.com/questions/4220126/run-javascript-function-when-user-finishes-typing-instead-of-on-key-u
 */
 
 const sohLowInput = document.getElementById('soh-low');
@@ -49,7 +51,7 @@ function ensureRange() {
     const lowValue = parseInt(sohLowInput.value);
     const highValue = parseInt(sohHighInput.value);
     console.log(`ensureRange() lowValue ${lowValue}, highValue ${highValue}`);
-    
+
     // Ensure #soh-low is never higher than #soh-high
     if (lowValue >= highValue) {
       sohLowInput.value = highValue - 1;
