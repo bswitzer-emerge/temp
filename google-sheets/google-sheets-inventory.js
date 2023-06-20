@@ -120,8 +120,8 @@ function main() {
     // Duplicate values to additional columns as required for import data
     expandImportData();
 
-    // TODO: Set inventory for those items that we want to pull out of the store
-    // If there is a 0 in the inventory qty column, set it to empty and add a -1 in the inventory adjust
+    // adjust inventory so we remove any products that are in the store already but not in this spreadsheet
+    adjustInventory();
 
     Logger.log("Processing complete.");
 }
@@ -303,6 +303,32 @@ function expandImportData() {
         productsRef.getRange(currentRow, batteryColIdx + 1).setValue(batterySize);
         productsRef.getRange(currentRow, sohColIdx + 1).setValue(stateOfHealth);
         productsRef.getRange(currentRow, sohTestColIdx + 1).setValue(sohTestDate);
+    })
+}
+
+/**
+ * In order to set inventory to zero, we need to update and not merge
+ *
+ * For any item that has a 0 in the inventory qty column,
+ * set the command to UPDATE so that we overwrite the current inventory in the
+ * store to make it unavailable.
+ *
+ * https://matrixify.app/documentation/products/#command
+ */
+function adjustInventory() {
+    const productsRef = activeSpreadsheet.getSheetByName("Products");
+    const productsData = productsRef.getDataRange().getValues().slice(1);
+    const productsHeaders = productsRef.getDataRange().getValues()[0];
+
+    const inventoryColIdx = getColIdx("Variant Inventory Qty", productsHeaders);
+    const commandColIdx = getColIdx("Command", productsHeaders);
+
+    productsData.forEach((item, row) => {
+        const quantity = item[inventoryColIdx];
+        const currentRow = row + 2;
+        if(quantity === 0) {
+            productsRef.getRange(currentRow, commandColIdx + 1).setValue("UPDATE");
+        }
     })
 }
 
