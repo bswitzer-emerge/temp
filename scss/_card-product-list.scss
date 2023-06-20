@@ -217,6 +217,27 @@ div[class^='card-product-list__'], div[class*='card-product-list__']{
     padding: 1.5rem;
     margin: var(--inputs-border-width);
     transition: box-shadow var(--duration-short) ease;
+    color: rgba(var(--color-foreground), 0.75);
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: white;
+
+
+    color: rgb(var(--color-foreground));
+    width: 100%;
+    box-sizing: border-box;
+    transition: box-shadow var(--duration-short) ease;
+    border-radius: var(--inputs-radius);
+    height: 4.5rem;
+    min-height: calc(var(--inputs-border-width) * 2);
+    min-width: calc(7rem + var(--inputs-border-width) * 2);
+    position: relative;
+    border: 0;
+    &:focus, &:not(:placeholder-shown) {
+        padding: 2.2rem 1.5rem 0.8rem 2rem;
+        margin: var(--inputs-border-width);
+    }
+    
 
 }
 #soh-health-form-items {

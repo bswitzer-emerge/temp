@@ -160,8 +160,14 @@
                         {% comment %} visually-hidden {% endcomment %}
                         {%- if filter.label == 'State of Health' -%}
                           <div id="soh-filters">
-                          <input class="" name="" id="soh-low" type="number" placeholder="0" min="0" max="100" value="0">
-                          <input class="" name="" id="soh-high" type="number" placeholder="0" min="0" max="100" value="100">
+                            <div class="field">
+                          <input  name="" id="soh-low" type="number" placeholder="0"  class="field__input" min="0" max="100" >
+                          <label class="field__label" for="soh-low">From</label>
+                            </div>
+                            <div class="field">
+                          <input name="" id="soh-high" type="number" placeholder="100" min="0" max="100" class="field__input" >
+                          <label class="field__label" for="soh-low">To</label>
+                            </div>
                           </div>
                         {%- endif -%}
 

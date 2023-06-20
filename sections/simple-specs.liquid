@@ -29,11 +29,19 @@
     <h2 class="{{ section.settings.size }}">{{ section.settings.head }}</h2>
     <div class="container">
         <div class="image" >
+          {%- if product.metafields.custom.gen_type.value == 'Gen 5' -%}
+            <img src="https://cdn.shopify.com/s/files/1/0719/5269/5597/files/gen5.webp?v=1687304982">
+          {%- else -%}
+            <img src="https://cdn.shopify.com/s/files/1/0719/5269/5597/files/gen1-4.webp?v=16873049824">
+          {%- endif -%}
+          {% comment %}
             {%- if section.settings.image != blank -%}
                 {{ section.settings.image| img_url: '2048x' | img_tag }}
             {%- else -%}
                 {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
             {%- endif -%}
+                  {% endcomment %}
+
             <div class="btn-container">
             <div class="btn white" id="button-{{ section.id }}"><svg height="14.5" viewBox="0 0 14.4998731 14.5" width="14.499873" xmlns="http://www.w3.org/2000/svg"><g transform="matrix(-1 0 0 -1 14.499872 14.5)"><path d="m3.5520249.888014v-.888014h-3.10802179c-.24522847 0-.44400311.19877638-.44400311.444007v3.10804899h.88800623v-2.03799212l4.12478891 4.12482502.62604439-.62604987-4.12478892-4.12482502z"/><path d="m14.05587 0h-3.1080218v.888014h2.0379743l-4.12478895 4.12482502.62604438.62604987 4.12478897-4.12482502v2.03799212h.8880062v-3.10804899c0-.24523062-.1987747-.444007-.4440031-.444007z"/><path d="m13.6118669 12.9859361-4.12478897-4.12482499-.62604438.62604987 4.12478895 4.12482502h-2.0379743v.888014h3.1080218c.2452284 0 .4440031-.1987764.4440031-.444007v-3.108049h-.8880062z"/><path d="m5.01279514 8.86111111-4.12478891 4.12601629v-2.0363887h-.88800623v3.1056036c0 .2450377.19877464.4436577.44400311.4436577h3.10802179v-.8873153h-2.03797429l4.12478892-4.12157971z"/></g></svg> Expand</div>
             </div>
@@ -74,11 +82,11 @@
     <div class="modal-content">
         <span class="close" id="close-{{ section.id }}">&times;</span>
     <div class="image">
-        {%- if section.settings.image != blank -%}
-            {{ section.settings.image| img_url: '2048x' | img_tag }}
-        {%- else -%}
-            {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-        {%- endif -%}
+      {%- if product.metafields.custom.gen_type.value == 'Gen 5' -%}
+        <img src="https://cdn.shopify.com/s/files/1/0719/5269/5597/files/gen5.webp?v=1687304982">
+      {%- else -%}
+        <img src="https://cdn.shopify.com/s/files/1/0719/5269/5597/files/gen1-4.webp?v=16873049824">
+      {%- endif -%}
     </div>
     </div>
 </div>
