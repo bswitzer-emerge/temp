@@ -157,11 +157,21 @@
                         </div>
                       {%- endif -%}
                       <fieldset class="facets-wrap parent-wrap {% if filter_type == 'vertical' %} facets-wrap-vertical{% endif %}">
-                        <legend class="visually-hidden">{{ filter.label | escape }}</legend>
+                        {% comment %} visually-hidden {% endcomment %}
+                        {%- if filter.label == 'State of Health' -%}
+                          <div id="soh-filters">
+                          <input class="" name="" id="soh-low" type="number" placeholder="0" min="0" max="100" value="0">
+                          <input class="" name="" id="soh-high" type="number" placeholder="0" min="0" max="100" value="100">
+                          </div>
+                        {%- endif -%}
+
+                        <script src="{{ 'state-of-health.js' | asset_url }}" defer="defer"></script>
+
+                        <legend class="legend-pad">{{ filter.label | escape }}</legend>
                         <ul
-                          class="{% if filter_type != 'vertical' %} facets__list{% endif %} list-unstyled no-js-hidden"
+                          class="{% if filter_type != 'vertical' %} facets__list{% endif %} list-unstyled no-js-hidden" id="{%- if filter.label == 'State of Health' -%} soh-health-form-items {%- endif -%}"
                           role="list"
-                        >
+                          >
                           {%- for value in filter.values -%}
                             <li class="list-menu__item facets__item{% if forloop.index > 10 and filter_type == 'vertical' %} show-more-item hidden{% endif %}">
                               <label
@@ -226,6 +236,7 @@
                           class="{% if filter_type != 'vertical' %} facets__list{% endif %} no-js-list list-unstyled no-js"
                           role="list"
                         >
+                          Test
                           {%- for value in filter.values -%}
                             <li class="list-menu__item facets__item">
                               <label
@@ -284,6 +295,7 @@
                               </label>
                             </li>
                           {%- endfor -%}
+
                         </ul>
                       </fieldset>
                       {%- if filter.values.size > 10 and filter_type == 'vertical' -%}
