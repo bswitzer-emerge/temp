@@ -63,8 +63,6 @@ function main() {
         const itemSOH = item[getColIdx("SOH Measurement", inventoryHeaders)];
         const itemSOHTestDate = item[getColIdx("SOH Test Date", inventoryHeaders)];
 
-        const itemPrice = Math.ceil(calculatedPrice);
-
         const specKey = itemGenType + '-' + itemBatterySize;
 
         if(itemGenType === "Gen 3") {
@@ -89,7 +87,7 @@ function main() {
             productsRef.getRange(productRowIdx, getColIdx("Gen Type", productsHeaders) + 1).setValue(itemGenType);
             productsRef.getRange(productRowIdx, getColIdx("Battery Size", productsHeaders) + 1).setValue(itemBatterySize);
             productsRef.getRange(productRowIdx, getColIdx("Price", productsHeaders) + 1).setValue(item[getColIdx("Price", inventoryHeaders)]);
-            productsRef.getRange(productRowIdx, getColIdx("Variant Price", productsHeaders) + 1).setValue(itemPrice);
+            productsRef.getRange(productRowIdx, getColIdx("Variant Price", productsHeaders) + 1).setValue(calculatedPrice);
             productsRef.getRange(productRowIdx, getColIdx("SOH Measurement", productsHeaders) + 1).setValue(itemSOH);
             productsRef.getRange(productRowIdx, getColIdx("SOH Test Date", productsHeaders) + 1).setValue(itemSOHTestDate);
 
@@ -104,7 +102,7 @@ function main() {
 
             // otherwise create a new product to append
         } else {
-            item.push(itemPrice); // add new price
+            item.push(calculatedPrice); // add new price
             item.push(1); // add to inventory
             newProducts.push(item.concat(specLookup[specKey] || []))
         }
@@ -122,8 +120,8 @@ function main() {
     // Duplicate values to additional columns as required for import data
     expandImportData();
 
-    // TODO: Set inventory for those items that we want to pull out of the store
-    // If there is a 0 in the inventory qty column, set it to empty and add a -1 in the inventory adjust
+    // adjust inventory so we remove any products that are in the store already but not in this spreadsheet
+    adjustInventory();
 
     Logger.log("Processing complete.");
 }
@@ -295,7 +293,7 @@ function expandImportData() {
 
         // these two are constructed of other values
         const title = buildTitle(make, model, genType, batterySize, stateOfHealth, itemPrice);
-        const handle = buildHandle(itemID, make, model, genType, batterySize, stateOfHealth, modules)
+        const handle = buildHandle(itemID, make, model)
 
         // Set cell values, account for header && 1 index rows/cols
         productsRef.getRange(currentRow, idColIdx + 1).setValue(itemID);
@@ -309,20 +307,47 @@ function expandImportData() {
 }
 
 /**
+ * In order to set inventory to zero, we need to update and not merge
+ *
+ * For any item that has a 0 in the inventory qty column,
+ * set the command to UPDATE so that we overwrite the current inventory in the
+ * store to make it unavailable.
+ *
+ * https://matrixify.app/documentation/products/#command
+ */
+function adjustInventory() {
+    const productsRef = activeSpreadsheet.getSheetByName("Products");
+    const productsData = productsRef.getDataRange().getValues().slice(1);
+    const productsHeaders = productsRef.getDataRange().getValues()[0];
+
+    const inventoryColIdx = getColIdx("Variant Inventory Qty", productsHeaders);
+    const commandColIdx = getColIdx("Command", productsHeaders);
+
+    productsData.forEach((item, row) => {
+        const quantity = item[inventoryColIdx];
+        const currentRow = row + 2;
+        if(quantity === 0) {
+            productsRef.getRange(currentRow, commandColIdx + 1).setValue("UPDATE");
+        }
+    })
+}
+
+/**
  * Builds title string
  *
  * Result: Nissan Leaf / Gen 1 / 40kWh / 60% SOH / $3000
  */
 function buildTitle(make, model, genType, batterySize, stateOfHealth, itemPrice) {
     const delimiter = "/";
-    return `${make} ${model} ${delimiter} ${genType} ${delimiter} ${batterySize} ${delimiter} ${stateOfHealth}% SOH ${delimiter} \$${itemPrice}`;
+    const roundedPrice = Math.floor(itemPrice)
+    return `${make} ${model} ${delimiter} ${genType} ${delimiter} ${batterySize} ${delimiter} ${stateOfHealth}% SOH ${delimiter} \$${roundedPrice}`;
 }
 
 /**
  * Builds handle string (unique for URL navigation)
  */
-function buildHandle(itemID, make, model, genType, batterySize, stateOfHealth, modules) {
-    let handle = `${make}-${model}-${genType}-${batterySize}-${stateOfHealth}-${modules}-modules-${itemID}`;
+function buildHandle(itemID, make, model) {
+    let handle = `${make}-${model}-${itemID}`;
     handle = handle.replace(/\s/g, ''); //removespaces
     handle = handle.toLowerCase();
     return handle;
