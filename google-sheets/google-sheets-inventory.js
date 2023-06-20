@@ -63,8 +63,6 @@ function main() {
         const itemSOH = item[getColIdx("SOH Measurement", inventoryHeaders)];
         const itemSOHTestDate = item[getColIdx("SOH Test Date", inventoryHeaders)];
 
-        const itemPrice = Math.ceil(calculatedPrice);
-
         const specKey = itemGenType + '-' + itemBatterySize;
 
         if(itemGenType === "Gen 3") {
@@ -89,7 +87,7 @@ function main() {
             productsRef.getRange(productRowIdx, getColIdx("Gen Type", productsHeaders) + 1).setValue(itemGenType);
             productsRef.getRange(productRowIdx, getColIdx("Battery Size", productsHeaders) + 1).setValue(itemBatterySize);
             productsRef.getRange(productRowIdx, getColIdx("Price", productsHeaders) + 1).setValue(item[getColIdx("Price", inventoryHeaders)]);
-            productsRef.getRange(productRowIdx, getColIdx("Variant Price", productsHeaders) + 1).setValue(itemPrice);
+            productsRef.getRange(productRowIdx, getColIdx("Variant Price", productsHeaders) + 1).setValue(calculatedPrice);
             productsRef.getRange(productRowIdx, getColIdx("SOH Measurement", productsHeaders) + 1).setValue(itemSOH);
             productsRef.getRange(productRowIdx, getColIdx("SOH Test Date", productsHeaders) + 1).setValue(itemSOHTestDate);
 
@@ -295,7 +293,7 @@ function expandImportData() {
 
         // these two are constructed of other values
         const title = buildTitle(make, model, genType, batterySize, stateOfHealth, itemPrice);
-        const handle = buildHandle(itemID, make, model, genType, batterySize, stateOfHealth, modules)
+        const handle = buildHandle(itemID, make, model)
 
         // Set cell values, account for header && 1 index rows/cols
         productsRef.getRange(currentRow, idColIdx + 1).setValue(itemID);
@@ -315,14 +313,15 @@ function expandImportData() {
  */
 function buildTitle(make, model, genType, batterySize, stateOfHealth, itemPrice) {
     const delimiter = "/";
-    return `${make} ${model} ${delimiter} ${genType} ${delimiter} ${batterySize} ${delimiter} ${stateOfHealth}% SOH ${delimiter} \$${itemPrice}`;
+    const roundedPrice = Math.floor(itemPrice)
+    return `${make} ${model} ${delimiter} ${genType} ${delimiter} ${batterySize} ${delimiter} ${stateOfHealth}% SOH ${delimiter} \$${roundedPrice}`;
 }
 
 /**
  * Builds handle string (unique for URL navigation)
  */
-function buildHandle(itemID, make, model, genType, batterySize, stateOfHealth, modules) {
-    let handle = `${make}-${model}-${genType}-${batterySize}-${stateOfHealth}-${modules}-modules-${itemID}`;
+function buildHandle(itemID, make, model) {
+    let handle = `${make}-${model}-${itemID}`;
     handle = handle.replace(/\s/g, ''); //removespaces
     handle = handle.toLowerCase();
     return handle;
