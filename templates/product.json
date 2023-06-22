@@ -235,6 +235,33 @@
         "padding_bottom": 50
       }
     },
+    "044f0d1d-5958-418a-ba89-3b2cfa1522d4": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured collection",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "nissan-inventory-aware",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "3bd16cc0-c8cb-47e9-a420-93a4a19afd23": {
       "type": "rich-text",
       "blocks": {
@@ -302,6 +329,7 @@
     "8933c1fa-4fe9-4b03-92ec-df5472ff86aa",
     "87e05a09-ed93-48a4-a0f1-3e3756e5c6ee",
     "145a4bce-d30a-4b07-ae5a-d0fe615310f3",
+    "044f0d1d-5958-418a-ba89-3b2cfa1522d4",
     "3bd16cc0-c8cb-47e9-a420-93a4a19afd23"
   ]
 }
