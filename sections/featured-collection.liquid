@@ -45,7 +45,7 @@
   endif
 -%}
 
-<div class="color-{{ section.settings.color_scheme }} isolate gradient">
+<div class=""> <!--- color-{{ section.settings.color_scheme }} isolate gradient -->
   <div class="collection section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}">
       <div class="collection__title title-wrapper title-wrapper--no-top-margin page-width{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
         {%- if section.settings.title != blank -%}
@@ -60,7 +60,7 @@
       <ul id="Slider-{{ section.id }}" class="grid product-grid contains-card contains-card--product{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid--{{ section.settings.columns_desktop }}-col-desktop{% if section.settings.collection == blank %} grid--2-col-tablet-down{% else %} grid--{{ section.settings.columns_mobile }}-col-tablet-down{% endif %}{% if show_mobile_slider or show_desktop_slider %} slider{% if show_desktop_slider %} slider--desktop{% endif %}{% if show_mobile_slider %} slider--tablet grid--peek{% endif %}{% endif %}" role="list" aria-label="{{ 'general.slider.name' | t }}">
         {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
           <li id="Slide-{{ section.id }}-{{ forloop.index }}" class="grid__item{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %}">
-            {% render 'card-product',
+            {% render 'card-product-featured',
               card_product: product,
               media_aspect_ratio: section.settings.image_ratio,
               show_secondary_image: section.settings.show_secondary_image,
@@ -105,6 +105,32 @@
   </div>
 </div>
 
+
+<script>
+  function simpleTestInformation_featured() {
+    const stateOfHealthCircles = document.getElementsByClassName("test-info-circle");
+  
+    const stateOfHealth = {{ product.metafields.custom.soh }};
+    let myClass = "green";
+    if (stateOfHealth >= 80) {
+      myClass = "green";
+    } else if (stateOfHealth <= 80 && stateOfHealth >= 60) {
+      myClass = "med-green";
+    } else if (stateOfHealth <= 60 && stateOfHealth >= 40) {
+      myClass = "yellow";
+    } else if (stateOfHealth <= 40 && stateOfHealth >= 20) {
+      myClass = "orange";
+    } else if (stateOfHealth <= 20) {
+      myClass = "red";
+    }
+  
+    Array.from(stateOfHealthCircles).forEach(circle => {
+      circle.classList.add(myClass);
+    });
+  }
+  
+  simpleTestInformation_featured();
+</script>
 {% schema %}
 {
   "name": "t:sections.featured-collection.name",
