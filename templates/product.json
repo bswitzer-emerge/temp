@@ -237,9 +237,12 @@
     },
     "044f0d1d-5958-418a-ba89-3b2cfa1522d4": {
       "type": "featured-collection",
+      "custom_css": [
+        "img {max-width: 100px;}"
+      ],
       "settings": {
-        "title": "Featured collection",
-        "heading_size": "h1",
+        "title": "Similar items",
+        "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
@@ -247,7 +250,7 @@
         "products_to_show": 3,
         "columns_desktop": 3,
         "full_width": false,
-        "show_view_all": true,
+        "show_view_all": false,
         "view_all_style": "solid",
         "enable_desktop_slider": false,
         "color_scheme": "background-1",
