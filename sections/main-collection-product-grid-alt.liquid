@@ -99,8 +99,7 @@
         {% render 'facets', results: collection, enable_filtering: section.settings.enable_filtering, enable_sorting: section.settings.enable_sorting, filter_type: section.settings.filter_type %}
       </aside>
     {%- endif -%}
-
-    <div class="product-grid-container" id="ProductGridContainer">
+\    <div class="product-grid-container" id="ProductGridContainer">
       {%- paginate collection.products by section.settings.products_per_page -%}
         {%- if collection.products.size == 0 -%}
           <div class="collection collection--empty page-width" id="product-grid" data-id="{{ section.id }}">
@@ -132,7 +131,7 @@
                 Type
               </div>
               <div class="card-product-list__col5" id="battery_type-sort">
-                Capacity
+                Battery Size
               </div>
               <div class="card-product-list__col7">
                 Add to Cart
@@ -221,6 +220,48 @@
    cursor: pointer;
   }
 </style>
+
+
+
+
+<script>
+  console.log("YOOOOOOO ")
+  console.log("YOOOOOO!!!O ")
+  console.log("YOOOOOOO ")
+
+  console.log("YOO!!!!OOOOO ")
+  console.log("YOOOOOOO ")
+  console.log("YOOOOOOO ")
+  console.log("YOOOOOOO ")
+
+  function simpleTestInformation_featured() {
+    const stateOfHealthCircles = document.getElementsByClassName("test-info-circle");
+  
+    let myClass = "green";
+  
+    Array.from(stateOfHealthCircles).forEach(circle => {
+      const stateOfHealth = parseInt(circle.getAttribute("data-soh"));
+      
+      if (stateOfHealth >= 90) {
+        myClass = "green";
+      } else if (stateOfHealth >= 80 && stateOfHealth <= 89) {
+        myClass = "med-green";
+      } else if (stateOfHealth >= 70 && stateOfHealth <= 79) {
+        myClass = "yellow";
+      } else if (stateOfHealth >= 60 && stateOfHealth <= 69) {
+        myClass = "orange";
+      } else if (stateOfHealth <= 59) {
+        myClass = "red";
+      }
+      
+      circle.classList.add(myClass);
+    });
+  }
+  
+  simpleTestInformation_featured();
+</script>
+
+
 <script>
 
   const ul = document.querySelector('#product-grid');
@@ -320,6 +361,10 @@ function sortNumerical (sort, whichData) {
 
 
 </script>
+
+
+
+
 
 
 {% schema %}
