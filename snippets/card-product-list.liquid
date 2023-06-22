@@ -162,11 +162,11 @@
                             {%- if card_product.selected_or_first_available_variant.available -%}
                                 <img src="https://cdn.shopify.com/s/files/1/0719/5269/5597/files/cart.svg" alt="cart">
                             {%- else -%}
-                              {{ 'products.product.sold_out' | t }}
+                               In Cart
                             {%- endif -%}
                           </span>
                           <span class="sold-out-message hidden">
-                            {{ 'products.product.sold_out' | t }}
+                              In Cart
                           </span>
                           {%- if horizontal_quick_add -%}
                             <span class="icon-wrap">{% render 'icon-plus' %}</span>
