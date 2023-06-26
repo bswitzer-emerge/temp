@@ -3815,7 +3815,7 @@ body.index .shopify-section-header-sticky .header-wrapper {
 }
 
 #soh-health-form-items,
-#Details-2-template--19193280594221__product-grid .button-show-more {
+.soh-list + show-more-button {
   display: none;
 }
 
