@@ -3745,7 +3745,7 @@ body.index .shopify-section-header-sticky .header-wrapper {
 
 @media screen and (min-width: 990px) {
   #product-grid {
-    max-height: 700px;
+    max-height: 923px;
     overflow-y: auto;
   }
 }
