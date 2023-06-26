@@ -159,7 +159,74 @@
                       <fieldset class="facets-wrap parent-wrap {% if filter_type == 'vertical' %} facets-wrap-vertical{% endif %}">
                         {% comment %} visually-hidden {% endcomment %}
                         {%- if filter.label == 'State of Health' -%}
+                            <div id="state-of-health-checkboxes">
+                            <label for="faux-59" class="facet-checkbox">
+                              <input type="checkbox" name="" value="59" id="faux-59">
+                              <svg width="1.6rem" height="1.6rem" viewBox="0 0 16 16" aria-hidden="true" -="" focusable="false">
+                                <rect width="16" height="16" stroke="currentColor" fill="none" stroke-width="1"></rect>
+                              </svg>
+                              <svg aria-hidden="true" class="icon icon-checkmark" width="1.1rem" height="0.7rem" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.5 3.5L2.83333 4.75L4.16667 6L9.5 1" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"></path>
+                              </svg>
+                              <span aria-hidden="true"> > 59%</span>
+                              <span class="visually-hidden"> > 59% </span>
+                            </label>
+
+
+                            <label for="faux-60" class="facet-checkbox">
+                              <input type="checkbox" name="" value="59" id="faux-60">
+                              <svg width="1.6rem" height="1.6rem" viewBox="0 0 16 16" aria-hidden="true" -="" focusable="false">
+                                <rect width="16" height="16" stroke="currentColor" fill="none" stroke-width="1"></rect>
+                              </svg>
+                              <svg aria-hidden="true" class="icon icon-checkmark" width="1.1rem" height="0.7rem" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.5 3.5L2.83333 4.75L4.16667 6L9.5 1" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"></path>
+                              </svg>
+                              <span aria-hidden="true"> 60% - 69%</span>
+                              <span class="visually-hidden"> 60% - 69% </span>
+                            </label>
+
+
+                            <label for="faux-70" class="facet-checkbox">
+                              <input type="checkbox" name="" value="70" id="faux-70">
+                              <svg width="1.6rem" height="1.6rem" viewBox="0 0 16 16" aria-hidden="true" -="" focusable="false">
+                                <rect width="16" height="16" stroke="currentColor" fill="none" stroke-width="1"></rect>
+                              </svg>
+                              <svg aria-hidden="true" class="icon icon-checkmark" width="1.1rem" height="0.7rem" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.5 3.5L2.83333 4.75L4.16667 6L9.5 1" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"></path>
+                              </svg>
+                              <span aria-hidden="true"> 70% - 79%</span>
+                              <span class="visually-hidden"> 70% - 79% </span>
+                            </label>
+
+
+                            <label for="faux-80" class="facet-checkbox">
+                              <input type="checkbox" name="" value="80" id="faux-80">
+                              <svg width="1.6rem" height="1.6rem" viewBox="0 0 16 16" aria-hidden="true" -="" focusable="false">
+                                <rect width="16" height="16" stroke="currentColor" fill="none" stroke-width="1"></rect>
+                              </svg>
+                              <svg aria-hidden="true" class="icon icon-checkmark" width="1.1rem" height="0.7rem" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.5 3.5L2.83333 4.75L4.16667 6L9.5 1" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"></path>
+                              </svg>
+                              <span aria-hidden="true"> 80% - 89%</span>
+                              <span class="visually-hidden"> 80% - 89% </span>
+                            </label>
+
+
+                            <label for="faux-90" class="facet-checkbox">
+                              <input type="checkbox" name="" value="80" id="faux-90">
+                              <svg width="1.6rem" height="1.6rem" viewBox="0 0 16 16" aria-hidden="true" -="" focusable="false">
+                                <rect width="16" height="16" stroke="currentColor" fill="none" stroke-width="1"></rect>
+                              </svg>
+                              <svg aria-hidden="true" class="icon icon-checkmark" width="1.1rem" height="0.7rem" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.5 3.5L2.83333 4.75L4.16667 6L9.5 1" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"></path>
+                              </svg>
+                              <span aria-hidden="true"> 90% - 100%</span>
+                              <span class="visually-hidden"> 90% - 100% </span>
+                            </label>
+                            </div>
                           <div id="soh-filters">
+                            
+                             {% comment %}
                             <div class="field">
                           <input  name="" id="soh-low" type="number" placeholder="0"  class="field__input" min="0" max="100" >
                           <label class="field__label" for="soh-low">From</label>
@@ -168,10 +235,11 @@
                           <input name="" id="soh-high" type="number" placeholder="100" min="0" max="100" class="field__input" >
                           <label class="field__label" for="soh-low">To</label>
                             </div>
+                             {% endcomment %}
                           </div>
                         {%- endif -%}
 
-                        <script src="{{ 'state-of-health.js' | asset_url }}" defer="defer"></script>
+                     
 
                         <legend class="legend-pad">{{ filter.label | escape }}</legend>
                         <ul
@@ -1122,4 +1190,9 @@
       </form>
     </facet-filters-form>
   {%- endif -%}
+
+  
 </div>
+
+
+<script src="{{ 'state-of-health-checkbox.js' | asset_url }}" ></script>

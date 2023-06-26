@@ -48,9 +48,55 @@ function updateInputs() {
 
 // keep from low exceeding high and high going below low
 function ensureRange() {
-    const lowValue = parseInt(sohLowInput.value);
-    const highValue = parseInt(sohHighInput.value);
+
+    let lowValue;
+    let highValue;
+    console.log(`first check: lowValue: ${lowValue}, highValue: ${highValue}`);
+    if (sohLowInput.value) {
+        lowValue = 0;
+    } else {
+        parseInt(sohLowInput.value);
+    }
+
+    if (sohHighInput.value) {
+        highValue = 100;
+    } else {
+        highValue = parseInt(sohHighInput.value);
+    }
+   
+   
     console.log(`ensureRange() lowValue ${lowValue}, highValue ${highValue}`);
+
+
+    if (lowValue > 100 ) {
+        lowValue = 100;
+        sohLowInput.value = 100;
+        sohLowInput.setAttribute('value', 100);
+    }
+
+    if (highValue > 100 ) {
+        highValue = 100;
+        console.log("Too high");
+        console.log("Too high");
+        console.log("Too high");
+        console.log("Too high");
+        console.log("Too high");
+        sohHighInput.value = 100;
+        sohHighInput.setAttribute('value', 100);
+
+    }
+
+    if (lowValue < 0 ) {
+        lowValue = 0;
+        sohLowInput.value = 0;
+    }
+
+    if (highValue < 0 ) {
+        highValue = 0;
+        sohHighInput.value = 0;
+    }
+
+    
 
     // Ensure #soh-low is never higher than #soh-high
     if (lowValue >= highValue) {
@@ -60,15 +106,30 @@ function ensureRange() {
     // Ensure #soh-high is never lower than #soh-low
     if (highValue <= lowValue) {
       sohHighInput.value = lowValue + 1;
+      sohHighInput.setAttribute('value',  lowValue + 1);
     }
+    sohHighInput.setAttribute('value', highValue);
+    console.log(`fixes: ensureRange() lowValue ${lowValue}, highValue ${highValue}`);
 }
 
 // apply the filter to actual code
 function checkTheBoxes() {
-    const lowValue = parseInt(sohLowInput.value);
-    const highValue = parseInt(sohHighInput.value);
+    let lowValue = parseInt(sohLowInput.value);
+    let highValue = parseInt(sohHighInput.value);
 
-    //console.log(`checkTheBoxes() lowValue ${lowValue}, highValue ${highValue}`)
+    console.log(`checkTheBoxes() lowValue ${lowValue}, highValue ${highValue}`)
+
+    if (!parseInt(sohLowInput.value)) {
+        lowValue = 0;
+        sohLowInput.value = 0;
+    } 
+    if (!parseInt(sohHighInput.value)) {
+        highValue = 100;
+        sohHighInput.value = 100;
+    } 
+   
+
+    
     filteredValues.length = 0; // Clear the array
     
     // Go through entire list of checkboxes
@@ -119,3 +180,4 @@ function onPageLoadSoh() {
         sohHighInput.value = highestValue;
     }
 }
+

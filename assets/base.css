@@ -3809,7 +3809,13 @@ body.index .shopify-section-header-sticky .header-wrapper {
   margin: var(--inputs-border-width);
 }
 
-#soh-health-form-items {
+#state-of-health-checkboxes span {
+  position: relative;
+  top: -3px;
+}
+
+#soh-health-form-items,
+#Details-2-template--19193280594221__product-grid .button-show-more {
   display: none;
 }
 

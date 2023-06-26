@@ -316,6 +316,20 @@
   flex-shrink: 0;
 }
 
+/* custom colors hack */
+.facet-checkbox [type="checkbox"]:checked  + svg,
+.facet-checkbox [type="checkbox"]:checked  + svg + svg {
+  background-color: #fc7238;
+}
+.facet-checkbox [type="checkbox"]:checked  + svg + svg path  {
+  stroke: white;
+}
+/*
+.facet-checkbox {
+  background-color: #fc7238;
+}
+*/
+
 .facet-checkbox .icon-checkmark {
   visibility: hidden;
   position: absolute;
