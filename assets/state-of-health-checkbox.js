@@ -2,6 +2,9 @@
     This script is for the state of health filter 
     on the collections
 
+    Idea:
+    Make a virtualized form, to simulate checkboxes ranges. Really we're hiding the real form and making an interface for it.
+
     Problem I had:
     When shopify’s form is interacted with, it wipes the DOM where the form lives and shits out a new form, this means if you change the form with JS values are lost. That’s been the issue from the get go. Simply listening to form changes meant it’d see the change, make the changes only to be wiped.
 
@@ -28,6 +31,7 @@ let lowValue;
 let highValue;
 
 // Iterate over each checkbox and assign an event listener
+// this is done to see changes in real time
 newInputs.forEach(function(newInput) {
     newInput.addEventListener('change', function() {
     // Check if the checkbox is checked
@@ -45,12 +49,13 @@ newInputs.forEach(function(newInput) {
 
 
 // apply the filter to actual code
+// This is the code that interacts with the real form. It is hidden in the  _card-product-list.scss under #soh-health-form-items display none
 function checkTheBoxes(switcher) {
 
-    console.log(`checkTheBoxes() lowValue ${lowValue}, highValue ${highValue}`)
+    //console.log(`checkTheBoxes() lowValue ${lowValue}, highValue ${highValue}`)
     filteredValues.length = 0; // Clear the array
     
-    // Go through entire list of checkboxes
+    // Get the real form and go through entire list of checkboxes
     const checkboxes = document.querySelectorAll('#soh-health-form-items input[type="checkbox"]');
 
     for (const [index, checkbox] of checkboxes.entries()) {
@@ -208,18 +213,19 @@ function disableEnable() {
 }
 
 
+// The magic of MutationObserver to detect when the dom has refreshed from shopify.
 const div = document.getElementById('FacetsWrapperDesktop');
-
 // Create a new MutationObserver
 const observer = new MutationObserver(mutationsList => {
   for (let mutation of mutationsList) {
     if (mutation.type === 'childList' || mutation.type === 'characterData') {
       console.log('Content changed:');
       disableEnable();
-      // Perform your desired actions here
     }
   }
 });
 
 // Start observing the div for changes
+// https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver
+// we will not disconnect! :)
 observer.observe(div, { childList: true, characterData: true, subtree: true });
