@@ -18,6 +18,7 @@
     Step 3: On the mutation (or when the form is reloaded), re-run all that same logic! 
 
 */
+const checkboxes = document.querySelectorAll('#soh-health-form-items input[type="checkbox"]');
 
 const newInputs =  document.querySelectorAll('#state-of-health-checkboxes input[type="checkbox"]');
 
@@ -35,7 +36,7 @@ let highValue;
 newInputs.forEach(function(newInput) {
     newInput.addEventListener('change', function() {
     // Check if the checkbox is checked
-
+    console.log("Change")
     if (this.checked) {
       // Checkbox is checked
       checkTheBoxes(true);
@@ -57,22 +58,18 @@ function checkTheBoxes(switcher) {
     
     // Get the real form and go through entire list of checkboxes
     const checkboxes = document.querySelectorAll('#soh-health-form-items input[type="checkbox"]');
+    console.log("checkboxes", checkboxes)
+
 
     for (const [index, checkbox] of checkboxes.entries()) {
         const checkboxValue = parseInt(checkbox.value);
 
-        if (checkboxValue >= lowValue && checkboxValue <= highValue) {
-            // Perform the desired action, e.g., check the checkbox
-            if (switcher) {
-                checkbox.checked = true;
-            } else {
-                checkbox.checked = false;
-            }
-            filteredValues.push(checkboxValue);
+        if (switcher) {
+            checkbox.checked = true;
         } else {
-            //checkbox.checked = false;
-            filteredValues.push(checkboxValue);
+            checkbox.checked = false;
         }
+        filteredValues.push(checkboxValue);
         // simulate mouse click at the end of the array to trigger Shopify
         const isLastItem = index === checkboxes.length - 1;
         if (isLastItem) {
@@ -133,7 +130,6 @@ function onPageLoadSoh() {
 
     // On the page load, this will check if any filters are set 
     if (sohValues.length == 0 ) {
-        console.log("I'm da bess")
         disableEnable();
     }
     
