@@ -37,7 +37,7 @@ div[class^='card-product-list__'], div[class*='card-product-list__']{
 
 .card-product-list__col1 {
     padding-right: 10px;
-    flex: 1.25;
+    flex: 0.85;
     a span {
         font-size: 14px;
         color: #949494;
@@ -227,6 +227,12 @@ div[class^='card-product-list__'], div[class*='card-product-list__']{
     gap: 12px;
 
 }
+#FacetFiltersForm label {
+    font-weight: 400;
+    input:disabled {
+
+    }
+  }
 #soh-low, #soh-high {
 
     flex: 1;

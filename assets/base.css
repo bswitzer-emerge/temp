@@ -3796,6 +3796,9 @@ body.index .shopify-section-header-sticky .header-wrapper {
   gap: 12px;
 }
 
+#FacetFiltersForm label {
+  font-weight: 400;
+}
 #soh-low, #soh-high {
   flex: 1;
   flex-grow: 1;

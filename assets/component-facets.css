@@ -985,8 +985,11 @@ input.mobile-facets__checkbox {
   }
 
   .facets__disclosure-vertical {
-    border-top: 0.1rem solid rgba(var(--color-foreground), 0.1);
+    /* border-top: 0.1rem solid rgba(var(--color-foreground), 0.1); */
     margin-right: 0;
+  }
+  .facets__disclosure-vertical:first-of-type {
+    border-top: 0.1rem solid rgba(var(--color-foreground), 0.1);
   }
   
   .facets-vertical .facets__summary {
