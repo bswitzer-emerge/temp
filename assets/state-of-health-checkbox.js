@@ -2,6 +2,18 @@
     This script is for the state of health filter 
     on the collections
 
+    Problem I had:
+    When shopify’s form is interacted with, it wipes the DOM where the form lives and shits out a new form, this means if you change the form with JS values are lost. That’s been the issue from the get go. Simply listening to form changes meant it’d see the change, make the changes only to be wiped.
+
+    Solution: 
+    Using the MutationObserver now I can see when the form has been actually changed then run my logic against the form to enable and disable my custom check boxes. 
+
+    Logic:
+
+    Step 1: On page load make sure to disable the inputs if there’s no items within the checkbox ranges
+    Step 2: on the change trigger the immediate disabling (there’s a latency before it refreshes the form, and destroys the changes). This way the user can see the disabled/enabled inputs. This has to work with the all the filters.
+    Step 3: On the mutation (or when the form is reloaded), re-run all that same logic! 
+
 */
 
 const newInputs =  document.querySelectorAll('#state-of-health-checkboxes input[type="checkbox"]');
