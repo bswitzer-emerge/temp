@@ -52,7 +52,22 @@
 
         </div>
         <div class="card-product-list__col3">
-            <div class="circle test-info-circle" data-soh="{{ card_product.metafields.custom.soh.value }}">&nbsp;</div>
+          {% assign soh_value = card_product.metafields.custom.soh.value %}
+
+          {% if soh_value >= 0 and soh_value <= 59 %}
+            {% assign do_stuff = "red" %}
+          {% elsif soh_value >= 60 and soh_value <= 69 %}
+            {% assign do_stuff = "orange" %}
+          {% elsif soh_value >= 70 and soh_value <= 79 %}
+            {% assign do_stuff = "yellow" %}
+          {% elsif soh_value >= 80 and soh_value <= 89 %}
+            {% assign do_stuff = "med-green" %}
+          {% elsif soh_value >= 90 and soh_value <= 100 %}
+            {% assign do_stuff = "green" %}
+          {% endif %}
+
+
+            <div class="circle test-info-circle {{ soh_value }}" data-soh="{{ card_product.metafields.custom.soh.value }}">&nbsp;</div>
             {{ card_product.metafields.custom.soh.value }}%
 
             
