@@ -539,6 +539,9 @@ a.active-facets__button.focused .active-facets__button-inner,
 .facets-vertical .active-facets .active-facets-vertical-filter:only-child > facet-remove {
   display: none;
 }
+.active-facets-vertical-filter {
+  margin-top: 7px;
+}
 
 .facets-vertical .active-facets-vertical-filter {
   display: flex;
