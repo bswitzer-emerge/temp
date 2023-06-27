@@ -2,41 +2,43 @@
     This script is for the state of health filter 
     on the collections
 
-    Idea:
-    Make a virtualized form, to simulate checkboxes ranges. Really we're hiding the real form and making an interface for it.
+    onPageLoadSoh(); - A URL grabby script to fill out the form if the page reloads
 
-    Problem I had:
-    When shopify’s form is interacted with, it wipes the DOM where the form lives and shits out a new form, this means if you change the form with JS values are lost. That’s been the issue from the get go. Simply listening to form changes meant it’d see the change, make the changes only to be wiped.
 
-    Solution: 
-    Using the MutationObserver now I can see when the form has been actually changed then run my logic against the form to enable and disable my custom check boxes. 
+    updateInputs() - no argumeents, attached to event listener
 
-    Logic:
+    ensureRange() - no arguements, makes sure that the low and high
+                    do not conflict with each other (ex low price can't be higher than high price)
 
-    Step 1: On page load make sure to disable the inputs if there’s no items within the checkbox ranges
-    Step 2: on the change trigger the immediate disabling (there’s a latency before it refreshes the form, and destroys the changes). This way the user can see the disabled/enabled inputs. This has to work with the all the filters.
-    Step 3: On the mutation (or when the form is reloaded), re-run all that same logic! 
-
+    checkTheBoxes() - looks for the #soh-health-form-items, and then
+                    checks the ones that match the input range. This  is a work around for the lack of filtering avaliable nu default in facets.liquid
+                    It has to simulate a mouse click for the original mystery meat Shopify JS to work.
+    timerCountDown / timerCountReset - using the classic StackOverflow solution
+                    https://stackoverflow.com/questions/4220126/run-javascript-function-when-user-finishes-typing-instead-of-on-key-u
 */
-const checkboxes = document.querySelectorAll('#soh-health-form-items input[type="checkbox"]');
 
+const sohLowInput = document.getElementById('soh-low');
+const sohHighInput = document.getElementById('soh-high');
 const newInputs =  document.querySelectorAll('#state-of-health-checkboxes input[type="checkbox"]');
 
+const checkboxes = document.querySelectorAll('#soh-health-form-items input[type="checkbox"]');
 const filteredValues = [];
 
 onPageLoadSoh(); // fire this on first run to make sure the values are reflected.
 
 //timer for keyup
+let typingTimer;                //timer identifier
+const doneTypingInterval = 700;  //time in ms
 
 let lowValue;
 let highValue;
 
 // Iterate over each checkbox and assign an event listener
-// this is done to see changes in real time
 newInputs.forEach(function(newInput) {
     newInput.addEventListener('change', function() {
     // Check if the checkbox is checked
-    console.log("Change")
+    highLowCheck(this.id);
+
     if (this.checked) {
       // Checkbox is checked
       checkTheBoxes(true);
@@ -48,28 +50,54 @@ newInputs.forEach(function(newInput) {
   });
 });
 
+function highLowCheck(id) {
+    console.log(`id: ${id}`);
+    if (id == "faux-59") {
+        lowValue = 0;
+        highValue = 59;
+    } 
+    if (id == "faux-60") {
+        lowValue = 60;
+        highValue = 69;
+    } 
+    if (id == "faux-70") {
+        lowValue = 70;
+        highValue = 79;
+       
+    } 
+    if (id == "faux-80") {
+        lowValue = 80;
+        highValue = 89;
+    }
+    if (id == "faux-90") {
+        lowValue = 90;
+        highValue = 100;
+    }
+}
+
 
 // apply the filter to actual code
-// This is the code that interacts with the real form. It is hidden in the  _card-product-list.scss under #soh-health-form-items display none
 function checkTheBoxes(switcher) {
 
-    //console.log(`checkTheBoxes() lowValue ${lowValue}, highValue ${highValue}`)
+    console.log(`checkTheBoxes() lowValue ${lowValue}, highValue ${highValue}`)
     filteredValues.length = 0; // Clear the array
     
-    // Get the real form and go through entire list of checkboxes
-    const checkboxes = document.querySelectorAll('#soh-health-form-items input[type="checkbox"]');
-    console.log("checkboxes", checkboxes)
-
-
+    // Go through entire list of checkboxes
     for (const [index, checkbox] of checkboxes.entries()) {
         const checkboxValue = parseInt(checkbox.value);
 
-        if (switcher) {
-            checkbox.checked = true;
+        if (checkboxValue >= lowValue && checkboxValue <= highValue) {
+            // Perform the desired action, e.g., check the checkbox
+            if (switcher) {
+                checkbox.checked = true;
+            } else {
+                checkbox.checked = false;
+            }
+            filteredValues.push(checkboxValue);
         } else {
-            checkbox.checked = false;
+            //checkbox.checked = false;
+            filteredValues.push(checkboxValue);
         }
-        filteredValues.push(checkboxValue);
         // simulate mouse click at the end of the array to trigger Shopify
         const isLastItem = index === checkboxes.length - 1;
         if (isLastItem) {
@@ -78,6 +106,16 @@ function checkTheBoxes(switcher) {
     } 
 }
 
+
+// timer
+function timerCountdown() {
+    timerCountReset();
+    typingTimer = setTimeout(updateInputs, doneTypingInterval);
+}
+
+function timerCountReset() {
+    clearTimeout(typingTimer);
+};
 
 // Page loading!
 function onPageLoadSoh() {
@@ -128,100 +166,57 @@ function onPageLoadSoh() {
     }
 
 
-    // On the page load, this will check if any filters are set 
+    // On the page load, this will check if any filters are set and if any inventory sets are missing. If there aren't any batteries that exist within a check box's range, then they will be greyed out.
     if (sohValues.length == 0 ) {
-        disableEnable();
-    }
-    
-}
+        console.log("I'm da bess")
+        let test59, test60, test70, test80, test90;
 
 
-// Check to see if any battereies exist within the range. It creates a fresh array and then checks any batteries that exist within a check box's range are still active. if none are, then they will be greyed out.
-// find #soh-health-form-items, .soh-list +  show-more-button  and display block to see this in action.
-
-
-function disableEnable() {
-    let test59, test60, test70, test80, test90;
-        const checkboxes2 = document.querySelectorAll('#soh-health-form-items input[type="checkbox"]');
-
-        for (const [index, checkbox] of checkboxes2.entries()) {
+        for (const [index, checkbox] of checkboxes.entries()) {
             const checkboxValue = parseInt(checkbox.value);
-
-           // console.log("disabled", checkbox.disabled)
-            doesValueRangeExist(checkboxValue, checkbox.disabled);
+            doesValueRangeExist(checkboxValue);
 
         } 
-        function doesValueRangeExist (value, disabled){
-            if ( value > 0 && value <= 59 && disabled == false ) {
+        function doesValueRangeExist (value){
+            if ( value > 0 && value <= 59) {
                 test59 = true;
             }
-            if ( value >= 60 && value <= 69 && disabled == false ) {
+            if ( value >= 60 && value <= 69) {
                 test60 = true;
             }
-            if ( value >= 70 && value <= 79 && disabled == false ) {
+            if ( value >= 70 && value <= 79) {
                 test70 = true;
             }
-            if ( value >= 80 && value <= 89 && disabled == false ) {
+            if ( value >= 80 && value <= 89) {
                 test80 = true;
             }
-            if ( value >= 90 && value <= 100 && disabled == false ) {
+            if ( value >= 90 && value <= 100) {
                 test90 = true;
             }
         }
-
-        // Stupid brute force: Just go down the list and check if each variable is false,to disable inputs, then if not enable them.
         if (!test59) {
             const checkbox = document.getElementById('faux-59');
             checkbox.disabled = true;
-        } else {
-            const checkbox = document.getElementById('faux-59');
-            checkbox.disabled = false;
         }
         if (!test60) {
             const checkbox = document.getElementById('faux-60');
             checkbox.disabled = true;
-        } else {
-            const checkbox = document.getElementById('faux-60');
-            checkbox.disabled = false;
         }
         if (!test70) {
             const checkbox = document.getElementById('faux-70');
             checkbox.disabled = true;
-        } else {
-            const checkbox = document.getElementById('faux-60');
-            checkbox.disabled = false;
         }
         if (!test80) {
             const checkbox = document.getElementById('faux-80');
             checkbox.disabled = true;
-        } else {
-            const checkbox = document.getElementById('faux-80');
-            checkbox.disabled = false;
         }
+
         if (!test90) {
             const checkbox = document.getElementById('faux-90');
             checkbox.disabled = true;
-         } else {
-            const checkbox = document.getElementById('faux-90');
-            checkbox.disabled = false;
-        }
-        //end brute force
+         }
+    }
+
+    
 }
 
-
-// The magic of MutationObserver to detect when the dom has refreshed from shopify.
-const div = document.getElementById('FacetsWrapperDesktop');
-// Create a new MutationObserver
-const observer = new MutationObserver(mutationsList => {
-  for (let mutation of mutationsList) {
-    if (mutation.type === 'childList' || mutation.type === 'characterData') {
-      console.log('Content changed:');
-      disableEnable();
-    }
-  }
-});
-
-// Start observing the div for changes
-// https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver
-// we will not disconnect! :)
-observer.observe(div, { childList: true, characterData: true, subtree: true });
