@@ -3790,9 +3790,7 @@ body.index .shopify-section-header-sticky .header-wrapper {
 .collection-alt-collection .facets-vertical .active-facets__button {
   display: none;
 }
-#FacetFiltersForm label {
-  font-weight: 400;
-}
+
 #soh-filters {
   display: flex;
   gap: 12px;
@@ -3828,6 +3826,14 @@ body.index .shopify-section-header-sticky .header-wrapper {
 #state-of-health-checkboxes span {
   position: relative;
   top: -3px;
+}
+
+#state-of-health-checkboxes input:disabled {
+  display: none;
+}
+#state-of-health-checkboxes input:disabled + svg + svg + span {
+  color: rgba(var(--color-foreground), 0.4);
+  cursor: not-allowed;
 }
 
 #soh-health-form-items,

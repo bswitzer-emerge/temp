@@ -263,6 +263,16 @@ div[class^='card-product-list__'], div[class*='card-product-list__']{
     position: relative;
     top: -3px;
 }
+#state-of-health-checkboxes {
+    //color: purple;
+    input:disabled {
+        display: none;
+    }
+    input:disabled + svg + svg + span {
+        color: rgba(var(--color-foreground), 0.4);
+        cursor: not-allowed;
+    }
+}
 #soh-health-form-items,
 .soh-list +  show-more-button {
     display: none;

@@ -166,7 +166,7 @@ function onPageLoadSoh() {
     }
 
 
-    // Grey out entries
+    // On the page load, this will check if any filters are set and if any inventory sets are missing. If there aren't any batteries that exist within a check box's range, then they will be greyed out.
     if (sohValues.length == 0 ) {
         console.log("I'm da bess")
         let test59, test60, test70, test80, test90;
@@ -196,6 +196,18 @@ function onPageLoadSoh() {
         }
         if (!test59) {
             const checkbox = document.getElementById('faux-59');
+            checkbox.disabled = true;
+        }
+        if (!test60) {
+            const checkbox = document.getElementById('faux-60');
+            checkbox.disabled = true;
+        }
+        if (!test70) {
+            const checkbox = document.getElementById('faux-70');
+            checkbox.disabled = true;
+        }
+        if (!test80) {
+            const checkbox = document.getElementById('faux-80');
             checkbox.disabled = true;
         }
 
