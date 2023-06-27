@@ -224,33 +224,6 @@
 
 
 
-<script>
-  function simpleTestInformation_featured() {
-    const stateOfHealthCircles = document.getElementsByClassName("test-info-circle");
-  
-    let myClass = "green";
-  
-    Array.from(stateOfHealthCircles).forEach(circle => {
-      const stateOfHealth = parseInt(circle.getAttribute("data-soh"));
-      
-      if (stateOfHealth >= 90) {
-        myClass = "green";
-      } else if (stateOfHealth >= 80 && stateOfHealth <= 89) {
-        myClass = "med-green";
-      } else if (stateOfHealth >= 70 && stateOfHealth <= 79) {
-        myClass = "yellow";
-      } else if (stateOfHealth >= 60 && stateOfHealth <= 69) {
-        myClass = "orange";
-      } else if (stateOfHealth <= 59) {
-        myClass = "red";
-      }
-      
-      circle.classList.add(myClass);
-    });
-  }
-  
-  simpleTestInformation_featured();
-</script>
 
 
 <script>
