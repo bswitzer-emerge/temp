@@ -3790,7 +3790,9 @@ body.index .shopify-section-header-sticky .header-wrapper {
 .collection-alt-collection .facets-vertical .active-facets__button {
   display: none;
 }
-
+#FacetFiltersForm label {
+  font-weight: 400;
+}
 #soh-filters {
   display: flex;
   gap: 12px;

@@ -164,5 +164,47 @@ function onPageLoadSoh() {
     if (input90) {
         faux90.checked= true;
     }
+
+
+    // Grey out entries
+    if (sohValues.length == 0 ) {
+        console.log("I'm da bess")
+        let test59, test60, test70, test80, test90;
+
+
+        for (const [index, checkbox] of checkboxes.entries()) {
+            const checkboxValue = parseInt(checkbox.value);
+            doesValueRangeExist(checkboxValue);
+
+        } 
+        function doesValueRangeExist (value){
+            if ( value > 0 && value <= 59) {
+                test59 = true;
+            }
+            if ( value >= 60 && value <= 69) {
+                test60 = true;
+            }
+            if ( value >= 70 && value <= 79) {
+                test70 = true;
+            }
+            if ( value >= 80 && value <= 89) {
+                test80 = true;
+            }
+            if ( value >= 90 && value <= 100) {
+                test90 = true;
+            }
+        }
+        if (!test59) {
+            const checkbox = document.getElementById('faux-59');
+            checkbox.disabled = true;
+        }
+
+        if (!test90) {
+            const checkbox = document.getElementById('faux-90');
+            checkbox.disabled = true;
+         }
+    }
+
+    
 }
 
