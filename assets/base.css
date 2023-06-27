@@ -3710,6 +3710,11 @@ body.index .shopify-section-header-sticky .header-wrapper {
   right: 10px;
 }
 
+#ProductGridContainer #product-grid {
+  column-gap: 0;
+  row-gap: 0;
+}
+
 .product-grid-container {
   background-color: white;
   border: 1px solid #C5C5C5;
@@ -3720,6 +3725,9 @@ body.index .shopify-section-header-sticky .header-wrapper {
 }
 .product-grid-container li:nth-of-type(even) {
   background-color: #f5f4f4;
+}
+.product-grid-container li:hover {
+  background-color: #FFF0DB;
 }
 .product-grid-container .card-product-list.top {
   padding: 15px 15px;

@@ -133,7 +133,11 @@ div[class^='card-product-list__'], div[class*='card-product-list__']{
         }
     }
 }
+#ProductGridContainer #product-grid {
+    column-gap: 0;
+    row-gap: 0;
 
+}
 .product-grid-container {
     background-color: white;
     //padding: 15px;
@@ -145,6 +149,11 @@ div[class^='card-product-list__'], div[class*='card-product-list__']{
     li:nth-of-type(even) {
         background-color: #f5f4f4;
     }
+   
+        li:hover {
+            background-color: #FFF0DB;
+        }
+    
     .card-product-list.top {
         padding: 15px 15px;
         border-bottom: 1px solid #C5C5C5;
