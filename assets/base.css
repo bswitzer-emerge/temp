@@ -3627,6 +3627,12 @@ body.index .shopify-section-header-sticky .header-wrapper {
   padding-right: 10px;
   flex: 1.25;
 }
+.card-product-list__col1 a span {
+  font-size: 14px;
+  color: #949494;
+  letter-spacing: 0;
+  line-height: 22px;
+}
 
 .card-product-list__col2 {
   flex: 0.9;

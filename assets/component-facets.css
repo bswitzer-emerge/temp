@@ -311,7 +311,8 @@
 }
 
 .facet-checkbox > svg {
-  background-color: rgb(var(--color-background));
+  /* background-color: rgb(var(--color-background)); */
+  background-color: white;
   margin-right: 1.2rem;
   flex-shrink: 0;
 }

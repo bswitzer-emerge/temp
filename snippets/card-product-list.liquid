@@ -38,7 +38,12 @@
             <h3  class=""  id="title-{{ section_id }}-{{ card_product.id }}" >
                 <a href="{{ card_product.url }}"   class="full-unstyled-link" id="StandardCardNoMediaLink-{{ section_id }}-{{ card_product.id }}" aria-labelledby="StandardCardNoMediaLink-{{ section_id }}-{{ card_product.id }} NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
                 >
+                  {{ card_product.metafields.custom.make.value }}
+                  {{ card_product.metafields.custom.model.value }}<br>
+                  <span>Item ID: {{ card_product.metafields.custom.item_id.value | round }}</span>
+                  <!--  
                     {{ card_product.title | escape }}
+                  -->
                 </a>
                 </h3>
         </div>
