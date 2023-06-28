@@ -154,117 +154,64 @@ function onPageLoadSoh() {
 
 
 }
-
-//big ugly mess to clean
 function disableEnable() {
-    let test59, test60, test70, test80, test90;
-    const checkboxes2 = document.querySelectorAll('#soh-health-form-items input[type="checkbox"]');
+  const checkboxes = document.querySelectorAll('#soh-health-form-items input[type="checkbox"]');
+  let test59 = false, test60 = false, test70 = false, test80 = false, test90 = false;
 
-    for (const [index, checkbox] of checkboxes2.entries()) {
-        const checkboxValue = parseInt(checkbox.value);
+  for (const checkbox of checkboxes) {
+    const checkboxValue = parseInt(checkbox.value);
+    doesValueRangeExist(checkboxValue, checkbox.disabled);
+  }
 
-        // console.log("disabled", checkbox.disabled)
-        doesValueRangeExist(checkboxValue, checkbox.disabled);
+  function doesValueRangeExist(value, disabled) {
+    if (value > 0 && value <= 59 && !disabled) {
+      test59 = true;
+    } else if (value >= 60 && value <= 69 && !disabled) {
+      test60 = true;
+    } else if (value >= 70 && value <= 79 && !disabled) {
+      test70 = true;
+    } else if (value >= 80 && value <= 89 && !disabled) {
+      test80 = true;
+    } else if (value >= 90 && value <= 100 && !disabled) {
+      test90 = true;
+    }
+  }
 
-    } 
-    function doesValueRangeExist (value, disabled){
-        if ( value > 0 && value <= 59 && disabled == false ) {
-            test59 = true;
-        }
-        if ( value >= 60 && value <= 69 && disabled == false ) {
-            test60 = true;
-        }
-        if ( value >= 70 && value <= 79 && disabled == false ) {
-            test70 = true;
-        }
-        if ( value >= 80 && value <= 89 && disabled == false ) {
-            test80 = true;
-        }
-        if ( value >= 90 && value <= 100 && disabled == false ) {
-            test90 = true;
-        }
-    }
+  const disableEnableCheckboxes = (testValue, checkboxId) => {
+    const checkbox = document.getElementById(checkboxId);
+    checkbox.disabled = !testValue;
+  };
 
-    
-    // Stupid brute force: Just go down the list and check if each variable is false,to disable inputs, then if not enable them.
-    if (!test59) {
-        const checkbox = document.getElementById('faux-59');
-        checkbox.disabled = true;
-    } else {
-        const checkbox = document.getElementById('faux-59');
-        checkbox.disabled = false;
-    }
+  disableEnableCheckboxes(test59, 'faux-59');
+  disableEnableCheckboxes(test60, 'faux-60');
+  disableEnableCheckboxes(test70, 'faux-70');
+  disableEnableCheckboxes(test80, 'faux-80');
+  disableEnableCheckboxes(test90, 'faux-90');
 
-    if (!test60) {
-        const checkbox = document.getElementById('faux-60');
-        checkbox.disabled = true;
-    } else {
-        const checkbox = document.getElementById('faux-60');
-        checkbox.disabled = false;
+  const areAnyBoxesChecked = Array.from(checkboxes).some(checkbox => checkbox.checked);
+  if (areAnyBoxesChecked) {
+    if (detectCheckedCheckboxes(0, 59)) {
+      document.getElementById('faux-59').checked = true;
     }
-
-    if (!test70) {
-        const checkbox = document.getElementById('faux-70');
-        checkbox.disabled = true;
-    } else {
-        const checkbox = document.getElementById('faux-60');
-        checkbox.disabled = false;
+    if (detectCheckedCheckboxes(60, 69)) {
+      document.getElementById('faux-60').checked = true;
     }
-
-    if (!test80) {
-        const checkbox = document.getElementById('faux-80');
-        checkbox.disabled = true;
-    } else {
-        const checkbox = document.getElementById('faux-80');
-        checkbox.disabled = false;
+    if (detectCheckedCheckboxes(70, 79)) {
+      document.getElementById('faux-70').checked = true;
     }
-    if (!test90) {
-        const checkbox = document.getElementById('faux-90');
-        checkbox.disabled = true;
-        } else {
-        const checkbox = document.getElementById('faux-90');
-        checkbox.disabled = false;
+    if (detectCheckedCheckboxes(80, 89)) {
+      document.getElementById('faux-80').checked = true;
     }
-    // get the state again
-    const checkboxes3 = document.querySelectorAll('#soh-health-form-items input[type="checkbox"]');
-    let areAnyBoxesChecked = false;
-    for (const [index, checkbox] of checkboxes3.entries()) {
-        if (checkbox.checked == true ) {
-            areAnyBoxesChecked = true;
-        }
-    } 
-    if (areAnyBoxesChecked) {
-        if (detectCheckedCheckboxes(0, 59)) {
-            document.getElementById('faux-59').checked = true;
-        } 
-        if (detectCheckedCheckboxes(60, 69)) {
-            document.getElementById('faux-60').checked = true;
-        } 
-        if (detectCheckedCheckboxes(70, 79)) {
-            document.getElementById('faux-70').checked = true;
-        } 
-        if (detectCheckedCheckboxes(80, 79)) {
-            document.getElementById('faux-80').checked = true;
-        } 
-    }
-    //end brute force
+  }
 }
 
-const detectCheckedCheckboxes = (val1, val2 ) => {
-    const checkboxes = Array.from(document.querySelectorAll('#soh-health-form-items input[type="checkbox"]'));
-    let isChecked = false;
-    for (const checkbox of checkboxes) {
-      const value = parseInt(checkbox.value);
-  
-      if (value >= val1 && value <= val2 && checkbox.checked && !checkbox.disabled) {
-        isChecked = true;
-        break;
-      }
-    }
-  
-    return isChecked;
+const detectCheckedCheckboxes = (val1, val2) => {
+  const checkboxes = document.querySelectorAll('#soh-health-form-items input[type="checkbox"]');
+  return Array.from(checkboxes).some(checkbox => {
+    const value = parseInt(checkbox.value);
+    return value >= val1 && value <= val2 && checkbox.checked && !checkbox.disabled;
+  });
 };
-
 
 
 // The magic of MutationObserver to detect when the dom has refreshed from shopify.
