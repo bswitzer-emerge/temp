@@ -102,7 +102,7 @@ function onPageLoadSoh() {
     const urlParams = new URLSearchParams(window.location.href);
     const sohValues = urlParams.getAll("filter.p.m.custom.soh");
   
-    const fauxCheckboxes = {
+    const checkboxStates = {
       "faux-59": false,
       "faux-60": false,
       "faux-70": false,
@@ -113,21 +113,21 @@ function onPageLoadSoh() {
     for (const value of sohValues) {
       const intValue = parseInt(value);
       if (intValue > 0 && intValue <= 59) {
-        fauxCheckboxes["faux-59"] = true;
+        checkboxStates["faux-59"] = true;
       } else if (intValue >= 60 && intValue <= 69) {
-        fauxCheckboxes["faux-60"] = true;
+        checkboxStates["faux-60"] = true;
       } else if (intValue >= 70 && intValue <= 79) {
-        fauxCheckboxes["faux-70"] = true;
+        checkboxStates["faux-70"] = true;
       } else if (intValue >= 80 && intValue <= 89) {
-        fauxCheckboxes["faux-80"] = true;
+        checkboxStates["faux-80"] = true;
       } else if (intValue >= 90 && intValue <= 100) {
-        fauxCheckboxes["faux-90"] = true;
+        checkboxStates["faux-90"] = true;
       }
     }
   
-    for (const checkboxId in fauxCheckboxes) {
+    for (const checkboxId in checkboxStates) {
       const checkbox = document.getElementById(checkboxId);
-      checkbox.checked = fauxCheckboxes[checkboxId];
+      checkbox.checked = checkboxStates[checkboxId];
     }
   
     disableEnable();
