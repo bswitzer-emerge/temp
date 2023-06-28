@@ -206,16 +206,28 @@
                 </li>
               {%- endfor -%}
             </ul>
-    
+            {% comment %}
             {%- if paginate.pages > 1 -%}
               {% render 'pagination', paginate: paginate, anchor: '' %}
             {%- endif -%}
+            {% endcomment %}
           </div>
         {%- endif -%}
       {%- endpaginate -%}
     </div>
   </div>
+  <div class="page-width">
+    <div class="padded-left">
+        {%- paginate collection.products by section.settings.products_per_page -%}
+        {%- if paginate.pages > 1 -%}
+          {% render 'pagination', paginate: paginate, anchor: '' %}
+        {%- endif -%}
+        {%- endpaginate -%}
+    </div>
+  </div>
 </div>
+
+
 
 <style>
   .highlighted {
@@ -223,6 +235,9 @@
   }
   [id$=sort]  {
    cursor: pointer;
+  }
+  .padded-left {
+    padding-left: 282px;
   }
 </style>
 
