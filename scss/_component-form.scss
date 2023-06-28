@@ -303,3 +303,20 @@ input[type='checkbox'] {
 .form-status-list .link::first-letter {
   text-transform: capitalize;
 }
+
+.field__price {
+  position: relative;
+  
+  .dollar-sign {
+    opacity: 0;
+    transition: opacity 200ms;
+  }
+  .field__input:not(:placeholder-shown) + label + .dollar-sign,
+  .field__input:focus + label + .dollar-sign {
+    position: absolute;
+    z-index: 1;
+    left: 5px;
+    size: 12px;
+    opacity: 1;
+  }
+}

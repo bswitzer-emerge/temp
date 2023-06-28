@@ -435,8 +435,10 @@
                       {% endcomment %}
 
                       <price-range class="facets__price">
+                        {% comment %}
                         <span class="field-currency">{{ cart.currency.symbol }}</span>
-                        <div class="field">
+                        {% endcomment %}
+                        <div class="field field__price">
                           <input
                             class="field__input"
                             name="{{ filter.min_value.param_name }}"
@@ -460,11 +462,14 @@
                           <label class="field__label" for="Filter-{{ filter.label | escape }}-GTE">
                             {{- 'products.facets.from' | t -}}
                           </label>
+                          <div class="dollar-sign">$</div>
                         </div>
                         {%- if filter_type != 'vertical' -%}
+
                           <span class="field-currency">{{ cart.currency.symbol }}</span>
                         {%- endif -%}
-                        <div class="field">
+                        <div class="field field__price">
+                          
                           <input
                             class="field__input"
                             name="{{ filter.max_value.param_name }}"
@@ -489,6 +494,7 @@
                           <label class="field__label" for="Filter-{{ filter.label | escape }}-LTE">
                             {{- 'products.facets.to' | t -}}
                           </label>
+                          <div class="dollar-sign">$</div>
                         </div>
                       </price-range>
                     </div>

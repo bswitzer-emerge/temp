@@ -2065,6 +2065,22 @@ input[type=checkbox] {
   text-transform: capitalize;
 }
 
+.field__price {
+  position: relative;
+}
+.field__price .dollar-sign {
+  opacity: 0;
+  transition: opacity 200ms;
+}
+.field__price .field__input:not(:placeholder-shown) + label + .dollar-sign,
+.field__price .field__input:focus + label + .dollar-sign {
+  position: absolute;
+  z-index: 1;
+  left: 5px;
+  size: 12px;
+  opacity: 1;
+}
+
 /* component-quantity */
 .quantity {
   color: rgba(var(--color-foreground));
