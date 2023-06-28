@@ -3821,6 +3821,7 @@ body.index .shopify-section-header-sticky .header-wrapper {
 }
 .collection-alt-collection .facets-vertical .facets__price input {
   background-color: white;
+  padding-right: 2px;
 }
 .collection-alt-collection .facets-vertical #product-grid {
   margin-top: 0;
