@@ -3859,6 +3859,11 @@ body.index .shopify-section-header-sticky .header-wrapper {
   cursor: not-allowed;
 }
 
+#soh-health-form-items,
+.soh-list + show-more-button {
+  display: none;
+}
+
 .icon-with-text-small img {
   max-width: 80px;
 }
