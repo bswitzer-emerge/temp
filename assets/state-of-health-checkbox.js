@@ -99,61 +99,40 @@ function checkTheBoxes(checkMe) {
 
 // Page loading!
 function onPageLoadSoh() {
-    const url = window.location.href;
-    const urlParams = new URLSearchParams(url);
+    const urlParams = new URLSearchParams(window.location.href);
     const sohValues = urlParams.getAll("filter.p.m.custom.soh");
-    
-    let input59, input60, input70, input80, input90;
-    const faux59 = document.getElementById('faux-59'), 
-    faux60 = document.getElementById('faux-60'),
-    faux70 = document.getElementById('faux-70'),
-    faux80 = document.getElementById('faux-80'),
-    faux00 = document.getElementById('faux-90');
-   
-
-    //process the input variables
-    sohValues.forEach(function(value) {
-        if ( value > 0 && value <= 59) {
-            input59 = true;
-        }
-        if ( value >= 60 && value <= 69) {
-            input60 = true;
-        }
-        if ( value >= 70 && value <= 79) {
-            input70 = true;
-        }
-        if ( value >= 80 && value <= 89) {
-            input80 = true;
-        }
-        if ( value >= 90 && value <= 100) {
-            input90 = true;
-        }
-    }); 
-    if (input59) {
-        faux59.checked= true;
+  
+    const fauxCheckboxes = {
+      "faux-59": false,
+      "faux-60": false,
+      "faux-70": false,
+      "faux-80": false,
+      "faux-90": false
+    };
+  
+    for (const value of sohValues) {
+      const intValue = parseInt(value);
+      if (intValue > 0 && intValue <= 59) {
+        fauxCheckboxes["faux-59"] = true;
+      } else if (intValue >= 60 && intValue <= 69) {
+        fauxCheckboxes["faux-60"] = true;
+      } else if (intValue >= 70 && intValue <= 79) {
+        fauxCheckboxes["faux-70"] = true;
+      } else if (intValue >= 80 && intValue <= 89) {
+        fauxCheckboxes["faux-80"] = true;
+      } else if (intValue >= 90 && intValue <= 100) {
+        fauxCheckboxes["faux-90"] = true;
+      }
     }
-    if (input60) {
-        faux60.checked= true;
+  
+    for (const checkboxId in fauxCheckboxes) {
+      const checkbox = document.getElementById(checkboxId);
+      checkbox.checked = fauxCheckboxes[checkboxId];
     }
-    if (input70) {
-        faux70.checked= true;
-    }
-    if (input80) {
-        faux80.checked= true;
-    }
-    if (input90) {
-        faux90.checked= true;
-    }
-
-
-    // On the page load, this will check if any filters are set and if any inventory sets are missing. If there aren't any batteries that exist within a check box's range, then they will be greyed out.
-    if (sohValues.length == 0 ) {
-        
-    }
+  
     disableEnable();
-
-
 }
+
 function disableEnable() {
   const checkboxes = document.querySelectorAll('#soh-health-form-items input[type="checkbox"]');
   let test59 = false, test60 = false, test70 = false, test80 = false, test90 = false;
