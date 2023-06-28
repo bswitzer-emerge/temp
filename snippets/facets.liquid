@@ -52,7 +52,7 @@
             {% comment %} Pills are right below the title for filter type vertical {% endcomment %}
             {%- if filter_type == 'vertical' -%}
               <div class="active-facets active-facets-desktop">
-                <div class="active-facets-vertical-filter">
+                <div class="active-facets-vertical-filter" ">
                   {%- unless results.filters == empty -%}
                     <p
                       class="facets__heading facets__heading--vertical caption-large "
@@ -412,11 +412,14 @@
                         {% render 'icon-caret' %}
                       </div>
                     </summary>
+                    
                     <div
                       id="Facet-{{ forloop.index }}-{{ section.id }}"
                       class="{% if filter_type == 'horizontal' %}facets__display{% else %}facets__display-vertical{% endif %}"
                     >
+                        {% comment %}
                       <div class="{% if filter_type == 'horizontal' %}facets__header{% else %}facets__header-vertical{% endif %}">
+                        
                         {%- assign max_price_amount = filter.range_max | money | strip_html | escape -%}
                         <span class="facets__selected">
                           {{- 'products.facets.max_price' | t: price: max_price_amount -}}
@@ -429,6 +432,8 @@
                           </facet-remove>
                         {%- endif -%}
                       </div>
+                      {% endcomment %}
+
                       <price-range class="facets__price">
                         <span class="field-currency">{{ cart.currency.symbol }}</span>
                         <div class="field">
