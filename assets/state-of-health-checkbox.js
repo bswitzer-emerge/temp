@@ -45,28 +45,22 @@ function setSOHlistener() {
 }
 
 function highLowCheck(id) {
-    //console.log(`id: ${id}`);
-    if (id == "faux-59") {
-        lowValue = 0;
-        highValue = 59;
-    } 
-    if (id == "faux-60") {
-        lowValue = 60;
-        highValue = 69;
-    } 
-    if (id == "faux-70") {
-        lowValue = 70;
-        highValue = 79;
-       
-    } 
-    if (id == "faux-80") {
-        lowValue = 80;
-        highValue = 89;
-    }
-    if (id == "faux-90") {
-        lowValue = 90;
-        highValue = 100;
-    }
+  if (id === "faux-59") {
+    lowValue = 0;
+    highValue = 59;
+  } else if (id === "faux-60") {
+    lowValue = 60;
+    highValue = 69;
+  } else if (id === "faux-70") {
+    lowValue = 70;
+    highValue = 79;
+  } else if (id === "faux-80") {
+    lowValue = 80;
+    highValue = 89;
+  } else if (id === "faux-90") {
+    lowValue = 90;
+    highValue = 100;
+  }
 }
 
 
