@@ -116,6 +116,9 @@
             <div class="loading-overlay gradient"></div>
             {%- if section.settings.list_display == "list_yes" -%} 
             <div class="card-product-list top">
+              <div class="card-product-list__col0">
+                &nbsp;
+              </div>
               <div class="card-product-list__col1" id="title-sort">
                  Title
               </div>
@@ -134,7 +137,9 @@
                 Battery Size
               </div>
               <div class="card-product-list__col7">
-                Add to Cart
+                <div class="btn slim disabled" id="add_to_cart-heading">
+                   Add to Cart
+                </div>
               </div>
             </div>
 
@@ -223,7 +228,8 @@
 
 
 
-
+<script>
+</script>
 
 
 <script>
@@ -321,14 +327,11 @@ function sortNumerical (sort, whichData) {
     });
   }
 
-  
-  
-
-
 </script>
 
 
 
+<script src="{{ 'group-add-to-cart.js' | asset_url }}" ></script>
 
 
 

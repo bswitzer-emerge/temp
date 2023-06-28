@@ -3281,6 +3281,18 @@ button.btn {
   font-size: 16px;
 }
 
+.btn.slim {
+  cursor: pointer;
+  padding: 5px 15px;
+}
+
+.btn.btn.disabled {
+  cursor: not-allowed;
+  background-color: #D8D8D8;
+  border-color: #D8D8D8;
+  border-width: 0;
+}
+
 .btn.white {
   background-color: white;
   color: rgb(25, 25, 25);
@@ -3623,6 +3635,13 @@ body.index .shopify-section-header-sticky .header-wrapper {
     justify-content: space-between;
   }
 }
+.card-product-list__col0 {
+  min-width: 48px;
+}
+.card-product-list__col0 label {
+  cursor: pointer;
+}
+
 .card-product-list__col1 {
   padding-right: 10px;
   flex: 0.85;
@@ -3674,6 +3693,7 @@ body.index .shopify-section-header-sticky .header-wrapper {
   top: 3px;
   left: 5px;
 }
+.card-product-list.top .card-product-list__col0,
 .card-product-list.top .card-product-list__col1,
 .card-product-list.top .card-product-list__col2,
 .card-product-list.top .card-product-list__col3,
@@ -3837,11 +3857,6 @@ body.index .shopify-section-header-sticky .header-wrapper {
 #state-of-health-checkboxes input:disabled + svg + svg + span {
   color: rgba(var(--color-foreground), 0.4);
   cursor: not-allowed;
-}
-
-#soh-health-form-items,
-.soh-list + show-more-button {
-  display: none;
 }
 
 .icon-with-text-small img {

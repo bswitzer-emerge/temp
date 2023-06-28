@@ -16,6 +16,16 @@ button.btn {
     padding: 19px 30px;
     font-size: 16px;
 }
+.btn.slim {
+    cursor: pointer;
+    padding: 5px 15px;
+}
+.btn.btn.disabled {
+    cursor: not-allowed;
+    background-color: #D8D8D8;
+    border-color: #D8D8D8 ;
+    border-width: 0;
+}
 .btn.white {
     background-color: white;
     color: rgba(25,25,25,255);

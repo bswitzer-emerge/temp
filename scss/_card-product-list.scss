@@ -35,6 +35,12 @@ div[class^='card-product-list__'], div[class*='card-product-list__']{
     }
 }
 
+.card-product-list__col0 {
+    min-width: 48px;
+    label {
+        cursor: pointer;
+    }
+}
 .card-product-list__col1 {
     padding-right: 10px;
     flex: 0.85;
@@ -87,6 +93,7 @@ div[class^='card-product-list__'], div[class*='card-product-list__']{
         top: 3px;
         left: 5px;
     }
+    .card-product-list__col0,
     .card-product-list__col1,
     .card-product-list__col2,
     .card-product-list__col3,
@@ -281,6 +288,6 @@ div[class^='card-product-list__'], div[class*='card-product-list__']{
 }
 #soh-health-form-items,
 .soh-list +  show-more-button {
-    display: none;
+    //display: none;
     
 }

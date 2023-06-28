@@ -34,51 +34,64 @@
     -%}
     <div class="card-wrapper product-card-wrapper underline-links-hover" data-price>
         <div class="card-product-list">
-        <div class="card-product-list__col1">
-            <h3  class=""  id="title-{{ section_id }}-{{ card_product.id }}" >
-                <a href="{{ card_product.url }}"   class="full-unstyled-link" id="StandardCardNoMediaLink-{{ section_id }}-{{ card_product.id }}" aria-labelledby="StandardCardNoMediaLink-{{ section_id }}-{{ card_product.id }} NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
-                >
-                  {{ card_product.metafields.custom.make.value }}
-                  {{ card_product.metafields.custom.model.value }}<br>
-                  <span>Item ID: {{ card_product.metafields.custom.item_id.value | round }}</span>
-                  <!--  
-                    {{ card_product.title | escape }}
-                  -->
-                </a>
-                </h3>
-        </div>
-        <div class="card-product-list__col2">
-            {% render 'price', product: card_product, price_class: '' %}
+          <div class="card-product-list__col0">
+            <label for="checkbox-{{ card_product.id }}" class="facet-checkbox addtocart-checkbox">
+              <input type="checkbox" name="" value="addtocart-{{ card_product.id }}" id="checkbox-{{ card_product.id }}" class="">
+              <svg width="1.6rem" height="1.6rem" viewBox="0 0 16 16" aria-hidden="true" -="" focusable="false">
+                <rect width="16" height="16" stroke="currentColor" fill="none" stroke-width="1"></rect>
+              </svg>
+              <svg aria-hidden="true" class="icon icon-checkmark" width="1.1rem" height="0.7rem" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.5 3.5L2.83333 4.75L4.16667 6L9.5 1" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+              <span aria-hidden="true"></span>
+              <span class="visually-hidden"></span>
+            </label>
+          </div>
+          <div class="card-product-list__col1">
+              <h3  class=""  id="title-{{ section_id }}-{{ card_product.id }}" >
+                  <a href="{{ card_product.url }}"   class="full-unstyled-link" id="StandardCardNoMediaLink-{{ section_id }}-{{ card_product.id }}" aria-labelledby="StandardCardNoMediaLink-{{ section_id }}-{{ card_product.id }} NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
+                  >
+                    {{ card_product.metafields.custom.make.value }}
+                    {{ card_product.metafields.custom.model.value }}<br>
+                    <span>Item ID: {{ card_product.metafields.custom.item_id.value | round }}</span>
+                    <!--  
+                      {{ card_product.title | escape }}
+                    -->
+                  </a>
+                  </h3>
+          </div>
+          <div class="card-product-list__col2">
+              {% render 'price', product: card_product, price_class: '' %}
 
-        </div>
-        <div class="card-product-list__col3">
-          {% assign soh_value = card_product.metafields.custom.soh.value %}
+          </div>
+          <div class="card-product-list__col3">
+            {% assign soh_value = card_product.metafields.custom.soh.value %}
 
-          {% if soh_value >= 0 and soh_value <= 59 %}
-            {% assign do_stuff = "red" %}
-          {% elsif soh_value >= 60 and soh_value <= 69 %}
-            {% assign do_stuff = "orange" %}
-          {% elsif soh_value >= 70 and soh_value <= 79 %}
-            {% assign do_stuff = "yellow" %}
-          {% elsif soh_value >= 80 and soh_value <= 89 %}
-            {% assign do_stuff = "med-green" %}
-          {% elsif soh_value >= 90 and soh_value <= 100 %}
-            {% assign do_stuff = "green" %}
-          {% endif %}
+            {% if soh_value >= 0 and soh_value <= 59 %}
+              {% assign do_stuff = "red" %}
+            {% elsif soh_value >= 60 and soh_value <= 69 %}
+              {% assign do_stuff = "orange" %}
+            {% elsif soh_value >= 70 and soh_value <= 79 %}
+              {% assign do_stuff = "yellow" %}
+            {% elsif soh_value >= 80 and soh_value <= 89 %}
+              {% assign do_stuff = "med-green" %}
+            {% elsif soh_value >= 90 and soh_value <= 100 %}
+              {% assign do_stuff = "green" %}
+            {% endif %}
 
 
-            <div class="circle test-info-circle {{ do_stuff }}" data-soh="{{ card_product.metafields.custom.soh.value }}">&nbsp;</div>
-            {{ card_product.metafields.custom.soh.value }}%
+              <div class="circle test-info-circle {{ do_stuff }}" data-soh="{{ card_product.metafields.custom.soh.value }}">&nbsp;</div>
+              {{ card_product.metafields.custom.soh.value }}%
 
-            
-        </div>
-        <div class="card-product-list__col4">
-            {{ card_product.metafields.custom.gen_type.value }}
-        </div>
-        <div class="card-product-list__col5">
-            {{ card_product.metafields.custom.battery_size.value }}
-        </div>
-        <div class="card-product-list__col7">
+              
+          </div>
+          <div class="card-product-list__col4">
+              {{ card_product.metafields.custom.gen_type.value }}
+          </div>
+          <div class="card-product-list__col5">
+              {{ card_product.metafields.custom.battery_size.value }}
+          </div>
+          <div class="card-product-list__col7" id="addtocart-{{ card_product.id }}">
             {%- if show_quick_add -%}
                 <div class="quick-add no-js-hidden">
                   {%- liquid
