@@ -12,6 +12,7 @@ function updateButtonState() {
     }
 }
 
+let firstrun = true;
 function addToCartListener() {
     document.getElementById("add_to_cart-heading").addEventListener("click", () => {
         // Find all checked checkboxes
@@ -25,10 +26,17 @@ function addToCartListener() {
             const div = document.getElementById(value);
             if (div) {
             const button = div.querySelector('button');
-            if (button) {
-                console.log("hit")
-                button.click();
-            }
+                if (firstrun && button) {
+                    button.click();
+                    first = false;
+                }
+                else if (button) {
+                    setTimeout(function() {
+                        button.click();
+                    }, 2200);
+                    console.log("button", button);
+                    
+                }
             }
         });
     });
