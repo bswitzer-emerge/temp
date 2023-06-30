@@ -3654,6 +3654,10 @@ body.index .shopify-section-header-sticky .header-wrapper {
     justify-content: space-between;
   }
 }
+.card-product-list .facet-checkbox--disabled.facet-checkbox > svg rect {
+  stroke: #ddd;
+}
+
 .card-product-list__col0 {
   min-width: 48px;
 }

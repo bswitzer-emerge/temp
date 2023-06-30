@@ -33,6 +33,9 @@ div[class^='card-product-list__'], div[class*='card-product-list__']{
     .sold-out-message {
         
     }
+    .facet-checkbox--disabled.facet-checkbox > svg rect {
+        stroke: #ddd;
+    }
 }
 
 .card-product-list__col0 {
