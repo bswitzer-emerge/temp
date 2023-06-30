@@ -32,11 +32,26 @@
         assign ratio = 1
       endif
     -%}
+
+    {% assign incart = "false" %}
+    {% for cart_item in cart.items %}
+      {% if cart_item.product.id == card_product.id %}
+        {% assign incart = "true" %}
+      {% endif %}
+    {% endfor %}
+
+
     <div class="card-wrapper product-card-wrapper underline-links-hover" data-price>
         <div class="card-product-list">
           <div class="card-product-list__col0">
-            <label for="checkbox-{{ card_product.id }}" class="facet-checkbox addtocart-checkbox">
-              <input type="checkbox" name="" value="addtocart-{{ card_product.id }}" id="checkbox-{{ card_product.id }}" class="">
+            <label for="checkbox-{{ card_product.id }}" class="facet-checkbox addtocart-checkbox 
+              {% if incart == "true" %}
+                facet-checkbox--disabled
+              {% endif %}
+              ">
+              <input type="checkbox" name="" value="addtocart-{{ card_product.id }}" id="checkbox-{{ card_product.id }}" class="" {% if incart == "true" %}
+                disabled
+              {% endif %}>
               <svg width="1.6rem" height="1.6rem" viewBox="0 0 16 16" aria-hidden="true" -="" focusable="false">
                 <rect width="16" height="16" stroke="currentColor" fill="none" stroke-width="1"></rect>
               </svg>
@@ -53,10 +68,16 @@
                   >
                     {{ card_product.metafields.custom.make.value }}
                     {{ card_product.metafields.custom.model.value }}<br>
+                    
                     <span>Item ID: {{ card_product.metafields.custom.item_id.value | round }}</span>
-                    <!--  
+                      {% comment %}
                       {{ card_product.title | escape }}
-                    -->
+                    {% for cart_item in cart.items %}
+                      {% if cart_item.product.id == card_product.id %}
+                         {{incart}}
+                      {% endif %}
+                    {% endfor %}
+                  {% endcomment %}
                   </a>
                   </h3>
           </div>
@@ -151,13 +172,14 @@
                         aria-modal="true"
                         class="quick-add-modal__content global-settings-popup"
                         tabindex="-1"
+                      
                       >
                         <button
                           id="ModalClose-{{ card_product.id }}"
                           type="button"
                           class="quick-add-modal__toggle"
                           aria-label="{{ 'accessibility.close' | t }}"
-                        >
+                        > 
                           {% render 'icon-close' %}
                         </button>
                         <div id="QuickAddInfo-{{ card_product.id }}" class="quick-add-modal__content-info"></div>
@@ -185,20 +207,41 @@
                           class="quick-add__submit button button--full-width button--secondary{% if horizontal_quick_add %} card--horizontal__quick-add{% endif %}"
                           aria-haspopup="dialog"
                           aria-labelledby="{{ product_form_id }}-submit title-{{ section_id }}-{{ card_product.id }}"
+                          {% if incart == "true" %}
+                            aria-disabled="true"
+                          {% endif %}
+
+                        
+
+
                           aria-live="polite"
                           data-sold-out-message="true"
                           {% if card_product.selected_or_first_available_variant.available == false %}
                             disabled
                           {% endif %}
                             >
-                          <span>
+                          <span 
+                            {% if incart == "true" %}
+                              {% comment  %}
+                                  hide me
+                              {% endcomment %}
+                               class="hidden"
+                            {% endif %}
+                          >
                             {%- if card_product.selected_or_first_available_variant.available -%}
                                 <img src="https://cdn.shopify.com/s/files/1/0719/5269/5597/files/cart.svg" alt="cart">
                             {%- else -%}
-                               In Cart
-                            {%- endif -%}
+                                In cart
+                          {%- endif -%}
                           </span>
-                          <span class="sold-out-message hidden">
+                          <span class="sold-out-message 
+                            {% if incart == "false" %}
+                                {% comment  %}
+                                hide me
+                            {% endcomment %}
+                              hidden
+                            {% endif %}
+                            " >
                               In Cart
                           </span>
                           {%- if horizontal_quick_add -%}
