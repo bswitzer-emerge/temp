@@ -1,3 +1,4 @@
+let firstrun = true;
 
 function updateButtonState() {
     const addToCartButton = document.querySelector('#add_to_cart-heading');
@@ -12,7 +13,6 @@ function updateButtonState() {
     }
 }
 
-let firstrun = true;
 function addToCartListener() {
     document.getElementById("add_to_cart-heading").addEventListener("click", () => {
         // Find all checked checkboxes
@@ -28,14 +28,12 @@ function addToCartListener() {
             const button = div.querySelector('button');
                 if (firstrun && button) {
                     button.click();
-                    first = false;
+                    firstrun = false;
                 }
                 else if (button) {
                     setTimeout(function() {
                         button.click();
                     }, 2200);
-                    console.log("button", button);
-                    
                 }
             }
         });
