@@ -2541,9 +2541,12 @@ menu-drawer + .header__search {
   display: none;
 }
 
+/* BHS - the display:none here is a low-impact way to hide the search icon for now */
+/* note that we may choose to enable this in the future */
 .header > .header__search {
   grid-area: left-icon;
   justify-self: start;
+  display: none;
 }
 
 .header:not(.header--has-menu) * > .header__search {
