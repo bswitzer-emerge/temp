@@ -2562,13 +2562,13 @@ menu-drawer + .header__search {
 }
 
 .header--top-center * > .header__search {
-  display: inline-flex;
+  display: none;
 }
 
 @media screen and (min-width: 990px) {
   .header:not(.header--top-center) * > .header__search,
   .header--top-center > .header__search {
-    display: inline-flex;
+    display: none;
   }
   .header:not(.header--top-center) > .header__search,
   .header--top-center * > .header__search {
