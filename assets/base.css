@@ -3349,12 +3349,17 @@ button.btn {
 }
 
 @media screen and (max-width: 989px) {
-  .header__signin {
+  .header__register {
     width: 163px;
+  }
+  .header__register,
+  .header__signin {
+    display: none;
   }
 }
 
-.header__signin #customer_login_link:hover {
+.header__register #customer_register_link:hover,
+.header__signin #customer_signin_link:hover {
   background-color: #ffae72;
 }
 

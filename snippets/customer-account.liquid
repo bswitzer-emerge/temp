@@ -1,0 +1,22 @@
+{%- if customer -%}
+<style>
+    .header__account {
+        display: flex;
+        align-items: center;
+        margin: 0 15px 0 0;
+    }
+
+    .header__account .header__customer-name {
+        display: inline-block;
+    }
+</style>
+<div class="header__account">
+    <a href="{{ routes.account_url }}" class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}">
+        {% render 'icon-account' %}
+        <span class="visually-hidden">
+            {%- liquid echo 'customer.account_fallback' | t -%}
+          </span>
+    </a>
+    <span class="header__customer-name">{{ customer.first_name }}</span>
+</div>
+{%- endif -%}

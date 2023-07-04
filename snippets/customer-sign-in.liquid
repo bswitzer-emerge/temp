@@ -1,8 +1,13 @@
 
 {% unless customer %}
     <style>
-        .header__signin
-        #customer_login_link {
+        .header__register,
+        .header__signin {
+            margin: 10px 8px;
+        }
+
+        .header__register
+        #customer_register_link {
             font-size: 13px;
             background: #FC7238;
             border-radius: 24px;
@@ -10,14 +15,30 @@
             text-decoration: none;
             color: black;
         }
+        .header__signin
+        #customer_signin_link {
+            font-size: 13px;
+            background: #FFFFFF;
+            border-radius: 24px;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: black;
+            border: 2px solid #FC7238;
+        }
+        .header__signin #customer_signin_link:hover {
+            border-color: #FFAE72;
+        }
     </style>
-    <div class="header__signin">
+    <div class="header__register">
         
-    <!-- https://shopify.dev/docs/api/liquid/filters 
+    <!-- https://shopify.dev/docs/api/liquid/filters
       {{  'Sign in' | customer_login_link }}
       -->
-      <a href="/pages/contact?contact=buyer" id="customer_login_link">Register for Access</a>
+      <a href="/pages/contact?contact=buyer" id="customer_register_link">Register for Access</a>
 
+    </div>
+    <div class="header__signin">
+        <a href="{{ routes.account_login_url }}" id="customer_signin_link">Sign In</a>
     </div>
 
 {% endunless %}
