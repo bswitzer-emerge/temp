@@ -433,7 +433,8 @@
       },
       "order_summary": {
         "free_total_label": "TBD",
-        "free_shipping_discount_label": "TBD"
+        "free_shipping_discount_label": "TBD",
+        "applied_free_shipping_discount_label": "TBD"
       }
     }
   }
