@@ -3643,7 +3643,7 @@ body.index .shopify-section-header-sticky .header-wrapper {
   display: none;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 621px) {
   div[class^=card-product-list__], div[class*=card-product-list__] {
     display: flex;
     align-items: center;
@@ -3656,7 +3656,7 @@ body.index .shopify-section-header-sticky .header-wrapper {
   flex-wrap: wrap;
   justify-content: left;
 }
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 621px) {
   .card-product-list {
     flex-direction: row;
     display: flex;
@@ -3679,7 +3679,7 @@ body.index .shopify-section-header-sticky .header-wrapper {
 .card-product-list__col0 label {
   cursor: pointer;
 }
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 620px) {
   .card-product-list__col0 {
     padding-top: 15px;
     flex: 1;
@@ -3691,7 +3691,7 @@ body.index .shopify-section-header-sticky .header-wrapper {
   padding-right: 10px;
   flex: 0.85;
 }
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 620px) {
   .card-product-list__col1 {
     flex: 1;
     width: calc(100% - 148px);
@@ -3735,7 +3735,7 @@ body.index .shopify-section-header-sticky .header-wrapper {
   flex: 0.7;
   justify-content: center;
 }
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 620px) {
   .card-product-list__col7 {
     padding-top: 20px;
     flex: 1;
@@ -3744,7 +3744,7 @@ body.index .shopify-section-header-sticky .header-wrapper {
   }
 }
 
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 620px) {
   .card-product-list__col0 {
     order: 1;
   }
@@ -3792,7 +3792,7 @@ body.index .shopify-section-header-sticky .header-wrapper {
 .card-product-list.top .card-product-list__col3 {
   max-width: 120px;
 }
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 620px) {
   .card-product-list.top .card-product-list__col0,
   .card-product-list.top .card-product-list__col1,
   .card-product-list.top .card-product-list__col2,
@@ -3855,7 +3855,7 @@ body.index .shopify-section-header-sticky .header-wrapper {
   width: 12px;
   height: 12px;
 }
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 620px) {
   .product-grid-container .circle {
     position: relative;
     top: -10px;
