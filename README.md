@@ -18,9 +18,9 @@ From the root of the directory, to start theme development, run `shopify theme d
 
 ### CSS manipulation
 
-Currently, Currents uses gulp, and requires running `gulp watch` from ethe directory. Setting up Gulp requires running an `npm install`.  Scss files were created by porting much of the compiled CSS manually.  
+Currently, Currents uses gulp, and requires running `run gulp:watch` from the `/_gulp` directory. Setting up Gulp requires running an `npm install`.  Scss files were created by porting much of the compiled CSS manually.
 
-### The spaghetti staretgy for JS and CSS
+### The spaghetti strategy for JS and CSS
 
 Since any editable area generates its own ID from Liquid, many of the templates use inline CSS and JS. We have continued this rather than trying to encapsulate all into the master CSS/JS.
 
@@ -28,7 +28,6 @@ Since any editable area generates its own ID from Liquid, many of the templates 
 ## Weirdness of Shopify 
 
 Shopify when wired to github will create it's own commits when manipulating the theme via the UI. 
-
 
 By default when you login if the store is password protected, you'll need to pull the password for the front end from admin login on the shopify hosted site
 

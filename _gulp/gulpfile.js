@@ -97,5 +97,5 @@ function watchTask(){
 }
 // tasks run from terminal
 exports.watch = series(  sassCompile, browsersyncServe, watchTask);
-exports.default = series( sassCompile,javascriptCompile );
+exports.default = series( sassCompile);
 exports.sass = series( sassCompile );

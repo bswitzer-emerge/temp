@@ -57,11 +57,19 @@ button.btn {
     min-width: 130px;
     
 }
+.header__register,
 .header__signin {
     @media screen and (max-width: 989px) { 
         width: 163px;
     }
 }
-.header__signin #customer_login_link:hover {
+.header__signin {
+    @media screen and (max-width: 989px) {
+        display: none;
+    }
+}
+
+.header__register #customer_register_link:hover,
+.header__signin #customer_signin_link:hover {
     background-color: lighten(#FF730C, 20%)
 }

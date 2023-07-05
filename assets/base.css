@@ -2285,8 +2285,8 @@ input[type=checkbox] {
   justify-content: center;
   align-items: center;
   font-size: 0.9rem;
-  bottom: 0.8rem;
-  left: 2.2rem;
+  bottom: 2.3rem;
+  left: 2rem;
   line-height: calc(1 + 0.1 / var(--font-body-scale));
 }
 
@@ -2551,7 +2551,7 @@ menu-drawer + .header__search {
 }
 
 .header__search {
-  display: inline-flex;
+  display: none;
   line-height: 0;
 }
 
@@ -2560,13 +2560,13 @@ menu-drawer + .header__search {
 }
 
 .header--top-center * > .header__search {
-  display: inline-flex;
+  display: none;
 }
 
 @media screen and (min-width: 990px) {
   .header:not(.header--top-center) * > .header__search,
   .header--top-center > .header__search {
-    display: inline-flex;
+    display: none;
   }
   .header:not(.header--top-center) > .header__search,
   .header--top-center * > .header__search {
@@ -3349,12 +3349,20 @@ button.btn {
 }
 
 @media screen and (max-width: 989px) {
+  .header__register,
   .header__signin {
     width: 163px;
   }
 }
 
-.header__signin #customer_login_link:hover {
+@media screen and (max-width: 989px) {
+  .header__signin {
+    display: none;
+  }
+}
+
+.header__register #customer_register_link:hover,
+.header__signin #customer_signin_link:hover {
   background-color: #ffae72;
 }
 
@@ -3952,6 +3960,16 @@ body.index .shopify-section-header-sticky .header-wrapper {
 
 #soh-health-form-items,
 .soh-list + show-more-button {
+  display: none;
+}
+
+/*
+TODO: Remove this ASAP (BHS)
+This absurd selector chain represents a whole bunch of ridiculous attempt to hide one word: "Free"
+from the checkout page, to avoid needing to build an entire custom app. This is as brittle as it
+gets.
+ */
+fieldset#shipping_methods div:nth-child(2) div div div div:nth-child(2) span {
   display: none;
 }
 

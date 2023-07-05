@@ -12,7 +12,8 @@
     "uglifyify": "^5.0.2"
   },
   "scripts": {
-    "gulp-default": "gulp"
+    "gulp-default": "gulp",
+    "gulp:watch": "gulp watch"
   },
   "devDependencies": {
     "@babel/core": "^7.13.15",
