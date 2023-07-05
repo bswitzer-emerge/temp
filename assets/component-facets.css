@@ -1131,3 +1131,14 @@ input.mobile-facets__checkbox {
     padding: 0 1rem 1rem;
   }
 }
+
+@media screen and (max-width: 749px) {
+  .product-count__text {
+    padding-right: 20px;
+  }
+  .active-facets__button-wrapper {
+    position: relative;
+    top: -10px;
+    right: 0px;
+  }
+}

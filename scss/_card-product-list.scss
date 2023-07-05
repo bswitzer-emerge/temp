@@ -22,11 +22,11 @@ div[class^='card-product-list__'], div[class*='card-product-list__']{
 
 .card-product-list {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: left;
     @media screen and (min-width: 500px) {
         flex-direction: row;
-
         display: flex;
         justify-content: space-between;
     }
@@ -51,10 +51,20 @@ div[class^='card-product-list__'], div[class*='card-product-list__']{
     label {
         cursor: pointer;
     }
+    @media screen and (max-width: 499px) {
+        padding-top: 15px;
+        flex: 1;
+        width: 48px;
+    }
 }
 .card-product-list__col1 {
     padding-right: 10px;
     flex: 0.85;
+    @media screen and (max-width: 499px) {
+        flex: 1;
+        width: calc(100% - 148px);
+        min-width: calc(100% - 148px);
+    }
     a span {
         font-size: 14px;
         color: #949494;
@@ -92,8 +102,41 @@ div[class^='card-product-list__'], div[class*='card-product-list__']{
 .card-product-list__col7  {
     flex: 0.7;
     justify-content: center;
-
+    @media screen and (max-width: 499px) {
+        padding-top: 20px;
+        flex: 1;
+        width: 100px;
+        min-width: 100px;
+    }
 }
+
+@media screen and (max-width: 499px) {
+    .card-product-list__col0 {
+        order: 1;
+    }
+    .card-product-list__col1 {
+        order: 2;
+    }
+    .card-product-list__col2 {
+        order: 4;
+    }
+    .card-product-list__col3 {
+        order: 5;
+    }
+    .card-product-list__col4  {
+        order: 6;
+    }
+    .card-product-list__col5  {
+        order: 7;
+    }
+    .card-product-list__col6 {
+        order: 8;
+    }
+    .card-product-list__col7 { 
+        order: 3;
+    }
+}
+
 
 
 .card-product-list.top {
@@ -119,7 +162,17 @@ div[class^='card-product-list__'], div[class*='card-product-list__']{
     }
     .card-product-list__col7 {
         //width: 144px;
-        
+    }
+    @media screen and (max-width: 499px) {
+        .card-product-list__col0,
+        .card-product-list__col1,
+        .card-product-list__col2,
+        .card-product-list__col3,
+        .card-product-list__col4, 
+        .card-product-list__col5,
+        .card-product-list__col6 {
+            display: none;
+        }
     }
 }
 #FacetSortForm {
