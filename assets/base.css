@@ -2550,8 +2550,6 @@ menu-drawer + .header__search {
   display: none;
 }
 
-/* BHS - the display:none here is a low-impact way to hide the search icon for now */
-/* note that we may choose to enable this in the future */
 .header__search {
   display: none;
   line-height: 0;
@@ -3351,10 +3349,13 @@ button.btn {
 }
 
 @media screen and (max-width: 989px) {
-  .header__register {
+  .header__register,
+  .header__signin {
     width: 163px;
   }
-  .header__register,
+}
+
+@media screen and (max-width: 989px) {
   .header__signin {
     display: none;
   }
@@ -3898,6 +3899,16 @@ body.index .shopify-section-header-sticky .header-wrapper {
 
 #soh-health-form-items,
 .soh-list + show-more-button {
+  display: none;
+}
+
+/*
+TODO: Remove this ASAP (BHS)
+This absurd selector chain represents a whole bunch of ridiculous attempt to hide one word: "Free"
+from the checkout page, to avoid needing to build an entire custom app. This is as brittle as it
+gets.
+ */
+fieldset#shipping_methods div:nth-child(2) div div div div:nth-child(2) span {
   display: none;
 }
 
