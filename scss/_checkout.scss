@@ -1,0 +1,10 @@
+/*
+TODO: Remove this ASAP (BHS)
+This absurd selector chain represents a whole bunch of ridiculous attempt to hide one word: "Free"
+from the checkout page, to avoid needing to build an entire custom app. This is as brittle as it
+gets.
+ */
+
+fieldset#shipping_methods div:nth-child(2) div div div div:nth-child(2) span {
+  display: none;
+}
