@@ -11,13 +11,13 @@
     "a116d3a0-c4c3-492c-955a-868f9c01ca25": {
       "type": "simple-title",
       "custom_css": [
-        ".simple-content {max-width: 740px; margin-left: auto; margin-right: auto; text-align: center; }",
+        ".simple-content {max-width: 740px; margin-left: auto; margin-right: auto; text-align: center;}",
         "h2 {font-weight: 700;}"
       ],
       "settings": {
         "head": "How to Buy",
         "size": "h1",
-        "padding_top": 36,
+        "padding_top": 72,
         "padding_bottom": 0
       }
     },
