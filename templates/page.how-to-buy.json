@@ -61,6 +61,67 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "26acfa2e-348c-4ede-bf87-e96c09d5d7cc": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--19872443466029__26acfa2e-348c-4ede-bf87-e96c09d5d7cc-16887656093f5a6053-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "none",
+            "row_content": "<p>Currents is a business-to-business marketplace for end-of-life electric vehicle batteries designed and optimized for second-life energy storage system integrators. Buyers must provide their business credentials for access to the platform. Once approved, they can view and purchase the best available inventory.<\/p>",
+            "page": ""
+          }
+        },
+        "template--19872443466029__26acfa2e-348c-4ede-bf87-e96c09d5d7cc-16887656093f5a6053-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "template--19872443466029__26acfa2e-348c-4ede-bf87-e96c09d5d7cc-16887656093f5a6053-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "template--19872443466029__26acfa2e-348c-4ede-bf87-e96c09d5d7cc-16887656093f5a6053-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "none",
+            "row_content": "<p>Currents is a business-to-business marketplace for end-of-life electric vehicle batteries designed and optimized for second-life energy storage system integrators. Buyers must provide their business credentials for access to the platform. Once approved, they can view and purchase the best available inventory.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19872443466029__26acfa2e-348c-4ede-bf87-e96c09d5d7cc-16887656093f5a6053-0",
+        "template--19872443466029__26acfa2e-348c-4ede-bf87-e96c09d5d7cc-16887656093f5a6053-1",
+        "template--19872443466029__26acfa2e-348c-4ede-bf87-e96c09d5d7cc-16887656093f5a6053-2",
+        "template--19872443466029__26acfa2e-348c-4ede-bf87-e96c09d5d7cc-16887656093f5a6053-3"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Frequently Asked Questions:",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -69,6 +130,7 @@
     "5637326c-17f2-44fc-88b4-4f9023ad81d6",
     "f17649e9-03e2-412d-b35b-1a69b5509e3b",
     "32388cfb-ceb5-4d14-aab8-47903d459e95",
-    "6cb0d11a-5aa4-40ee-be0e-df8b223ba219"
+    "6cb0d11a-5aa4-40ee-be0e-df8b223ba219",
+    "26acfa2e-348c-4ede-bf87-e96c09d5d7cc"
   ]
 }
