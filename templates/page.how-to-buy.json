@@ -9,6 +9,9 @@
     },
     "004bb535-3d9c-4825-acce-4fdd8bc434c3": {
       "type": "image-with-text-small",
+      "custom_css": [
+        "div {max-width:730px; }"
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/cart-with-pluses-square.svg",
         "head": "1. Shop",
