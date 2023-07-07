@@ -68,7 +68,7 @@
         "template--19872443466029__26acfa2e-348c-4ede-bf87-e96c09d5d7cc-16887656093f5a6053-0": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "How does Currents work?",
             "icon": "none",
             "row_content": "<p>Currents is a business-to-business marketplace for end-of-life electric vehicle batteries designed and optimized for second-life energy storage system integrators. Buyers must provide their business credentials for access to the platform. Once approved, they can view and purchase the best available inventory.<\/p>",
             "page": ""
@@ -77,7 +77,7 @@
         "template--19872443466029__26acfa2e-348c-4ede-bf87-e96c09d5d7cc-16887656093f5a6053-1": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "How do I get access to the platform to purchase batteries?",
             "icon": "none",
             "row_content": "",
             "page": ""
@@ -86,7 +86,7 @@
         "template--19872443466029__26acfa2e-348c-4ede-bf87-e96c09d5d7cc-16887656093f5a6053-2": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "Do I have to pay for access to Currents’ platform?",
             "icon": "none",
             "row_content": "",
             "page": ""
@@ -95,9 +95,54 @@
         "template--19872443466029__26acfa2e-348c-4ede-bf87-e96c09d5d7cc-16887656093f5a6053-3": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "Where is the supply coming from?",
             "icon": "none",
-            "row_content": "<p>Currents is a business-to-business marketplace for end-of-life electric vehicle batteries designed and optimized for second-life energy storage system integrators. Buyers must provide their business credentials for access to the platform. Once approved, they can view and purchase the best available inventory.<\/p>",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "a06e1e87-31d1-462d-86c5-a4d7974c5e43": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How is state-of-health determined?",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "44881dcf-61b8-496e-a9dd-0924a389369f": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How does payment work?",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "15e1e84b-34a0-4d8f-a0f2-d253e041b703": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do logistics work?",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "f401d8f4-c6f2-4703-95d0-5b61f98b8697": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is the warranty process?",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "b51e67d9-779f-427e-b10f-737cf63a4b97": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I return or cancel an order?",
+            "icon": "none",
+            "row_content": "",
             "page": ""
           }
         }
@@ -106,7 +151,12 @@
         "template--19872443466029__26acfa2e-348c-4ede-bf87-e96c09d5d7cc-16887656093f5a6053-0",
         "template--19872443466029__26acfa2e-348c-4ede-bf87-e96c09d5d7cc-16887656093f5a6053-1",
         "template--19872443466029__26acfa2e-348c-4ede-bf87-e96c09d5d7cc-16887656093f5a6053-2",
-        "template--19872443466029__26acfa2e-348c-4ede-bf87-e96c09d5d7cc-16887656093f5a6053-3"
+        "template--19872443466029__26acfa2e-348c-4ede-bf87-e96c09d5d7cc-16887656093f5a6053-3",
+        "a06e1e87-31d1-462d-86c5-a4d7974c5e43",
+        "44881dcf-61b8-496e-a9dd-0924a389369f",
+        "15e1e84b-34a0-4d8f-a0f2-d253e041b703",
+        "f401d8f4-c6f2-4703-95d0-5b61f98b8697",
+        "b51e67d9-779f-427e-b10f-737cf63a4b97"
       ],
       "settings": {
         "caption": "",
@@ -116,7 +166,7 @@
         "layout": "none",
         "color_scheme": "background-1",
         "container_color_scheme": "background-2",
-        "open_first_collapsible_row": false,
+        "open_first_collapsible_row": true,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
         "padding_top": 36,
