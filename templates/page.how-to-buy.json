@@ -172,6 +172,22 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "acc9d1fc-8a1e-423b-a9a7-069489526955": {
+      "type": "register-for-access",
+      "settings": {
+        "sub_head": "Like What You Hear? ",
+        "head": "Register for Access",
+        "message": "Provide your business’ information, receive your login credentials, and gain access to the highest quality and fairest priced inventory in the market today. It’s as simple as that.",
+        "button_text": "Register for Access",
+        "button_url": "\/pages\/contact?contact=buyer",
+        "background_color": "#efe2d4",
+        "border_radius": 20,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "inner_padding_top": 36,
+        "inner_padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -181,6 +197,7 @@
     "f17649e9-03e2-412d-b35b-1a69b5509e3b",
     "32388cfb-ceb5-4d14-aab8-47903d459e95",
     "6cb0d11a-5aa4-40ee-be0e-df8b223ba219",
-    "26acfa2e-348c-4ede-bf87-e96c09d5d7cc"
+    "26acfa2e-348c-4ede-bf87-e96c09d5d7cc",
+    "acc9d1fc-8a1e-423b-a9a7-069489526955"
   ]
 }
