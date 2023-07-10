@@ -135,7 +135,7 @@
           "settings": {
             "heading": "How do I get access to the platform to purchase batteries?",
             "icon": "none",
-            "row_content": "",
+            "row_content": "<p>We only allow access for valid energy storage customers. Please provide your business’ credentials on this form and a Currents team member will reach out with your credentials if you are approved.<\/p>",
             "page": ""
           }
         },
@@ -144,7 +144,7 @@
           "settings": {
             "heading": "Do I have to pay for access to Currents’ platform?",
             "icon": "none",
-            "row_content": "",
+            "row_content": "<p>Currents’ platform is free for buyers to register and use. Currents takes a commission on completed sales and the amount is included in all prices. What you see is what you pay.<\/p>",
             "page": ""
           }
         },
@@ -153,7 +153,7 @@
           "settings": {
             "heading": "Where is the supply coming from?",
             "icon": "none",
-            "row_content": "",
+            "row_content": "<p>Currents is Nissan’s official marketplace for second-life batteries. For the time being, our supply is from batteries recovered through Nissan’s approved battery return processes. All batteries on Currents’ platform are owned by Nissan. If you are interested in becoming a supplier, please contact our team.<\/p>",
             "page": ""
           }
         },
@@ -162,7 +162,16 @@
           "settings": {
             "heading": "How is state-of-health determined?",
             "icon": "none",
-            "row_content": "",
+            "row_content": "<p>Batteries are tested using a proprietary, Nissan-approved process by our logistics partner, Spiers New Technologies. The state-of-health is the remaining measured capacity as a percentage of the battery’s capacity when new. <\/p>",
+            "page": ""
+          }
+        },
+        "162b6598-2ca2-4052-be8c-99c1d77e6c23": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How is pricing determined?",
+            "icon": "none",
+            "row_content": "<p>Pricing is set by suppliers, and Nissan has priced all batteries based on the remaining useful life and usable kWh.<\/p>",
             "page": ""
           }
         },
@@ -171,7 +180,7 @@
           "settings": {
             "heading": "How does payment work?",
             "icon": "none",
-            "row_content": "",
+            "row_content": "<p>Upon checkout, you will receive an order confirmation for your batteries. Within the next 1-3 days, you will receive an invoice for your batteries plus logistics (freight). Invoices must be paid in full in order for the batteries to be shipped. Currents accepts all major credit cards. If you prefer to not use a credit card, please contact our team once you receive an invoice to arrange an ACH payment.<\/p>",
             "page": ""
           }
         },
@@ -180,7 +189,7 @@
           "settings": {
             "heading": "How do logistics work?",
             "icon": "none",
-            "row_content": "",
+            "row_content": "<p>Once an order is received, Currents works with our logistics partner, Spiers New Technologies (SNT), to secure the best deal on freight. SNT is an EV battery service provider specializing in 4R services. Once we receive a quote from the carrier, Currents will send an invoice with your batteries plus freight charges which must be paid to release an order. When an invoice is paid, Currents will forward along the tracking information when the order is picked up. All shipments are photographed before the carrier picks them up, so please contact us right away if you receive any broken eggs.<\/p>",
             "page": ""
           }
         },
@@ -189,7 +198,7 @@
           "settings": {
             "heading": "What is the warranty process?",
             "icon": "none",
-            "row_content": "",
+            "row_content": "<p>There are a few different scenarios that qualify for a warranty return:<\/p><p>The battery arrives damaged. This could be the result of damage in transit which is why we photograph all shipments before the carrier picks them up. If a damaged battery slips through our quality control, please contact our team and photograph the battery and serial number on the battery.<\/p><p>The battery is &gt;7% outside of the state-of-health range advertised. We will need to confirm the test used to record a measurement different from Nissan’s, and confirm the serial number of the battery tested. <\/p><p>Circumstances will dictate how warranties are handled, but buyers could receive a credit, have reverse logistics covered, or potentially have a new battery shipped out. It depends on the situation, and that’s exactly why we’re here.<\/p><p><\/p><p><\/p><p><\/p>",
             "page": ""
           }
         },
@@ -198,7 +207,7 @@
           "settings": {
             "heading": "Can I return or cancel an order?",
             "icon": "none",
-            "row_content": "",
+            "row_content": "<p>Outside of the warranty scenarios listed above, all orders are final. If you need assistance responsibly managing your end-of-life batteries, please contact our team and we can connect you with a recycler in our network.<\/p>",
             "page": ""
           }
         }
@@ -209,6 +218,7 @@
         "template--19872443466029__26acfa2e-348c-4ede-bf87-e96c09d5d7cc-16887656093f5a6053-2",
         "template--19872443466029__26acfa2e-348c-4ede-bf87-e96c09d5d7cc-16887656093f5a6053-3",
         "a06e1e87-31d1-462d-86c5-a4d7974c5e43",
+        "162b6598-2ca2-4052-be8c-99c1d77e6c23",
         "44881dcf-61b8-496e-a9dd-0924a389369f",
         "15e1e84b-34a0-4d8f-a0f2-d253e041b703",
         "f401d8f4-c6f2-4703-95d0-5b61f98b8697",
