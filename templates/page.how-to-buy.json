@@ -38,7 +38,7 @@
       "custom_css": [
         "#aboutus {position: relative;}",
         ".center {position: relative; z-index: 2;}",
-        ".bg_text {position: absolute; z-index: 0; top: -10px; left: 0; right: 0; opacity: 0.5;}",
+        ".bg_text {position: absolute; z-index: 0; top: 100px; left: 0; right: 0; opacity: 0.5;}",
         "#lines-about-us {width: 100%;}"
       ],
       "settings": {
@@ -51,7 +51,7 @@
     "004bb535-3d9c-4825-acce-4fdd8bc434c3": {
       "type": "image-with-text-small",
       "custom_css": [
-        ".simple-content {max-width: 740px; margin-left: auto; margin-right: auto;}"
+        ".simple-content {max-width: 740px; margin-left: auto; margin-right: auto; position: relative; z-index: 2;}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/cart-with-pluses-square.svg",
