@@ -38,14 +38,14 @@
       "custom_css": [
         "#aboutus {position: relative;}",
         ".center {position: relative; z-index: 2;}",
-        ".bg_text {position: absolute; z-index: 0; top: -110px; left: 0; right: 0; opacity: 0.5;}",
+        ".bg_text {position: absolute; z-index: 0; top: -10px; left: 0; right: 0; opacity: 0.5;}",
         "#lines-about-us {width: 100%;}"
       ],
       "settings": {
         "custom_liquid": "<div class=\"bg_text\">\n   <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0719\/5269\/5597\/files\/lines-about-us.png?v=1683059570\" id=\"lines-about-us\">\n<\/div>\n<\/div>",
         "color_scheme": "background-1",
-        "padding_top": 40,
-        "padding_bottom": 52
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "004bb535-3d9c-4825-acce-4fdd8bc434c3": {
