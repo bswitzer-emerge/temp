@@ -11,7 +11,7 @@
     "a116d3a0-c4c3-492c-955a-868f9c01ca25": {
       "type": "simple-title",
       "custom_css": [
-        ".simple-content {max-width: 740px; margin-left: auto; margin-right: auto; text-align: center;}",
+        ".simple-content {max-width: 740px; margin-left: auto; margin-right: auto; text-align: center; position: relative; z-index: 2;}",
         "h2 {font-weight: 700;}"
       ],
       "settings": {
@@ -24,13 +24,28 @@
     "1b40f804-7da7-47f2-8973-9d7d74b9b06f": {
       "type": "simple-title",
       "custom_css": [
-        ".simple-content {max-width: 740px; margin-left: auto; margin-right: auto; text-align: center;}"
+        ".simple-content {max-width: 740px; margin-left: auto; margin-right: auto; text-align: center; position: relative; z-index: 2;}"
       ],
       "settings": {
         "head": "Sourcing Simplified - How it Works",
         "size": "h2",
         "padding_top": 0,
         "padding_bottom": 36
+      }
+    },
+    "367c4b81-f0ec-428f-97c9-efe290b82ae2": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "#aboutus {position: relative;}",
+        ".center {position: relative; z-index: 2;}",
+        ".bg_text {position: absolute; z-index: 0; top: -110px; left: 0; right: 0; opacity: 0.5;}",
+        "#lines-about-us {width: 100%;}"
+      ],
+      "settings": {
+        "custom_liquid": "<div class=\"bg_text\">\n   <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0719\/5269\/5597\/files\/lines-about-us.png?v=1683059570\" id=\"lines-about-us\">\n<\/div>\n<\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "004bb535-3d9c-4825-acce-4fdd8bc434c3": {
@@ -235,6 +250,7 @@
     "main",
     "a116d3a0-c4c3-492c-955a-868f9c01ca25",
     "1b40f804-7da7-47f2-8973-9d7d74b9b06f",
+    "367c4b81-f0ec-428f-97c9-efe290b82ae2",
     "004bb535-3d9c-4825-acce-4fdd8bc434c3",
     "5637326c-17f2-44fc-88b4-4f9023ad81d6",
     "f17649e9-03e2-412d-b35b-1a69b5509e3b",
