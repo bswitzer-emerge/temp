@@ -261,6 +261,7 @@
         "head": "Sign up for our Newsletter",
         "size": "h2",
         "text": "Sign up for our Newsletter",
+        "background_color": "#efe2d4",
         "margin_bottom": 50,
         "padding_top": 40,
         "padding_bottom": 44,
