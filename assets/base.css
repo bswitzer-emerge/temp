@@ -3406,6 +3406,8 @@ body.index .shopify-section-header-sticky .header-wrapper {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: greyscale;
   background: var(--gradient-base-background-2);
+  position: relative;
+  z-index: 2;
 }
 .blog.color-inverse .blog__post:hover .btn {
   background-color: #858684;
