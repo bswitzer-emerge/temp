@@ -254,6 +254,17 @@
         "inner_padding_top": 36,
         "inner_padding_bottom": 36
       }
+    },
+    "e6725d22-04b7-466c-899c-d3c3c4250690": {
+      "type": "simple-newsletter",
+      "settings": {
+        "head": "Sign up for our Newsletter",
+        "size": "h2",
+        "text": "Sign up for our Newsletter",
+        "margin_bottom": 40,
+        "padding_top": 36,
+        "padding_bottom": 44
+      }
     }
   },
   "order": [
@@ -267,6 +278,7 @@
     "32388cfb-ceb5-4d14-aab8-47903d459e95",
     "6cb0d11a-5aa4-40ee-be0e-df8b223ba219",
     "26acfa2e-348c-4ede-bf87-e96c09d5d7cc",
-    "acc9d1fc-8a1e-423b-a9a7-069489526955"
+    "acc9d1fc-8a1e-423b-a9a7-069489526955",
+    "e6725d22-04b7-466c-899c-d3c3c4250690"
   ]
 }
