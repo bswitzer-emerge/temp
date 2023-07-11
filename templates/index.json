@@ -141,6 +141,7 @@
     },
     "ef7482f9-125c-425d-928c-2c4c644907ca": {
       "type": "custom-liquid",
+      "disabled": true,
       "custom_css": [
         "#waves-bottom {max-width: 1280px; margin-left: auto; margin-right: auto;}"
       ],
