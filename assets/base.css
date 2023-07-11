@@ -4325,6 +4325,19 @@ body.gradient.product .product-form__buttons, body.gradient.product .product__in
   cursor: pointer;
 }
 
+.simple-newsletter .container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.simple-newsletter .col-1 {
+  flex: 1;
+  padding-left: 3em;
+}
+.simple-newsletter .col-2 {
+  flex: 1;
+}
+
 [data-tooltip] {
   position: relative;
   cursor: pointer;

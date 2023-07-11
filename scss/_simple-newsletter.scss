@@ -1,0 +1,17 @@
+.simple-newsletter {
+    //display: none;
+    .container {
+        display: flex;
+        width: 100%;
+        align-items: center;
+
+    }
+    .col-1 {
+        flex: 1;
+        padding-left: 3em;
+
+    }
+    .col-2 {
+        flex: 1;
+    }
+}
