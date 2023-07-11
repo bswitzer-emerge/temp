@@ -1,0 +1,272 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "a116d3a0-c4c3-492c-955a-868f9c01ca25": {
+      "type": "simple-title",
+      "custom_css": [
+        ".simple-content {max-width: 740px; margin-left: auto; margin-right: auto; text-align: center; position: relative; z-index: 2;}",
+        "h2 {font-weight: 700;}"
+      ],
+      "settings": {
+        "head": "How to Buy",
+        "size": "h1",
+        "padding_top": 72,
+        "padding_bottom": 0
+      }
+    },
+    "1b40f804-7da7-47f2-8973-9d7d74b9b06f": {
+      "type": "simple-title",
+      "custom_css": [
+        ".simple-content {max-width: 740px; margin-left: auto; margin-right: auto; text-align: center; position: relative; z-index: 2;}"
+      ],
+      "settings": {
+        "head": "Sourcing Simplified - How it Works",
+        "size": "h2",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "367c4b81-f0ec-428f-97c9-efe290b82ae2": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "#aboutus {position: relative;}",
+        ".center {position: relative; z-index: 2;}",
+        ".bg_text {position: absolute; z-index: 0; top: 100px; left: 0; right: 0; opacity: 0.5;}",
+        "#lines-about-us {width: 100%;}"
+      ],
+      "settings": {
+        "custom_liquid": "<div class=\"bg_text\">\n   <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0719\/5269\/5597\/files\/lines-about-us.png?v=1683059570\" id=\"lines-about-us\">\n<\/div>\n<\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "004bb535-3d9c-4825-acce-4fdd8bc434c3": {
+      "type": "image-with-text-small",
+      "custom_css": [
+        ".simple-content {max-width: 740px; margin-left: auto; margin-right: auto; position: relative; z-index: 2;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/cart-with-pluses-square.svg",
+        "head": "1. Shop",
+        "message": "My message goes hereInventory and price transparency are here. Easily browse through Nissans batteries eligible for second-life with prices based on remaining state-of-health.",
+        "button_text": "Contact Us",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "5637326c-17f2-44fc-88b4-4f9023ad81d6": {
+      "type": "image-with-text-small",
+      "custom_css": [
+        ".simple-content {max-width: 740px; margin-left: auto; margin-right: auto;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/how-to-buy-select.svg",
+        "head": "2. Select",
+        "message": "Once you are ready to checkout, please review your cart one final time, then submit the order. You will receive an order confirmation, and there will be <strong>no payment due at the time of checkout.<\/strong>",
+        "button_text": "Contact Us",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "f17649e9-03e2-412d-b35b-1a69b5509e3b": {
+      "type": "image-with-text-small",
+      "custom_css": [
+        ".simple-content {max-width: 740px; margin-left: auto; margin-right: auto;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/how-to-buy-sit-back-relax.svg",
+        "head": "3. Sit Back & Relax",
+        "message": "A submitted order will trigger Currents to arrange freight. Once we receive a quote from the carrier, we will send an invoice with your batteries plus the cost of freight. Expect this <strong> invoice 1-3 business days<\/strong> from the day the order was submitted.",
+        "button_text": "Contact Us",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "32388cfb-ceb5-4d14-aab8-47903d459e95": {
+      "type": "image-with-text-small",
+      "custom_css": [
+        ".simple-content {max-width: 740px; margin-left: auto; margin-right: auto;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/how-to-buy-square-up.svg",
+        "head": "4. Square Up",
+        "message": "For the order to be shipped, the <strong>invoice must be paid in full<\/strong>. When the invoice is paid, Currents will send another email with tracking information when the carrier picks the batteries up.",
+        "button_text": "Contact Us",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "6cb0d11a-5aa4-40ee-be0e-df8b223ba219": {
+      "type": "image-with-text-small",
+      "custom_css": [
+        ".simple-content {max-width: 740px; margin-left: auto; margin-right: auto;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/how-to-buy-scale-up.svg",
+        "head": "5. Scale Up",
+        "message": "The final step is you receiving your order of batteries. Our mission is for second-life integrators to spend less time sourcing and more time scaling.",
+        "button_text": "Contact Us",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "26acfa2e-348c-4ede-bf87-e96c09d5d7cc": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--19872443466029__26acfa2e-348c-4ede-bf87-e96c09d5d7cc-16887656093f5a6053-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How does Currents work?",
+            "icon": "none",
+            "row_content": "<p>Currents is a business-to-business marketplace for end-of-life electric vehicle batteries designed and optimized for second-life energy storage system integrators. Buyers must provide their business credentials for access to the platform. Once approved, they can view and purchase the best available inventory.<\/p>",
+            "page": ""
+          }
+        },
+        "template--19872443466029__26acfa2e-348c-4ede-bf87-e96c09d5d7cc-16887656093f5a6053-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I get access to the platform to purchase batteries?",
+            "icon": "none",
+            "row_content": "<p>We only allow access for valid energy storage customers. Please provide your business’ credentials on this form and a Currents team member will reach out with your credentials if you are approved.<\/p>",
+            "page": ""
+          }
+        },
+        "template--19872443466029__26acfa2e-348c-4ede-bf87-e96c09d5d7cc-16887656093f5a6053-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do I have to pay for access to Currents’ platform?",
+            "icon": "none",
+            "row_content": "<p>Currents’ platform is free for buyers to register and use. Currents takes a commission on completed sales and the amount is included in all prices. What you see is what you pay.<\/p>",
+            "page": ""
+          }
+        },
+        "template--19872443466029__26acfa2e-348c-4ede-bf87-e96c09d5d7cc-16887656093f5a6053-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Where is the supply coming from?",
+            "icon": "none",
+            "row_content": "<p>Currents is Nissan’s official marketplace for second-life batteries. For the time being, our supply is from batteries recovered through Nissan’s approved battery return processes. All batteries on Currents’ platform are owned by Nissan. If you are interested in becoming a supplier, please contact our team.<\/p>",
+            "page": ""
+          }
+        },
+        "a06e1e87-31d1-462d-86c5-a4d7974c5e43": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How is state-of-health determined?",
+            "icon": "none",
+            "row_content": "<p>Batteries are tested using a proprietary, Nissan-approved process by our logistics partner, Spiers New Technologies. The state-of-health is the remaining measured capacity as a percentage of the battery’s capacity when new. <\/p>",
+            "page": ""
+          }
+        },
+        "162b6598-2ca2-4052-be8c-99c1d77e6c23": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How is pricing determined?",
+            "icon": "none",
+            "row_content": "<p>Pricing is set by suppliers, and Nissan has priced all batteries based on the remaining useful life and usable kWh.<\/p>",
+            "page": ""
+          }
+        },
+        "44881dcf-61b8-496e-a9dd-0924a389369f": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How does payment work?",
+            "icon": "none",
+            "row_content": "<p>Upon checkout, you will receive an order confirmation for your batteries. Within the next 1-3 days, you will receive an invoice for your batteries plus logistics (freight). Invoices must be paid in full in order for the batteries to be shipped. Currents accepts all major credit cards. If you prefer to not use a credit card, please contact our team once you receive an invoice to arrange an ACH payment.<\/p>",
+            "page": ""
+          }
+        },
+        "15e1e84b-34a0-4d8f-a0f2-d253e041b703": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do logistics work?",
+            "icon": "none",
+            "row_content": "<p>Once an order is received, Currents works with our logistics partner, Spiers New Technologies (SNT), to secure the best deal on freight. SNT is an EV battery service provider specializing in 4R services. Once we receive a quote from the carrier, Currents will send an invoice with your batteries plus freight charges which must be paid to release an order. When an invoice is paid, Currents will forward along the tracking information when the order is picked up. All shipments are photographed before the carrier picks them up, so please contact us right away if you receive any broken eggs.<\/p>",
+            "page": ""
+          }
+        },
+        "f401d8f4-c6f2-4703-95d0-5b61f98b8697": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is the warranty process?",
+            "icon": "none",
+            "row_content": "<p>There are a few different scenarios that qualify for a warranty return:<\/p><ol><li>The battery arrives damaged. This could be the result of damage in transit which is why we photograph all shipments before the carrier picks them up. If a damaged battery slips through our quality control, please contact our team and photograph the battery and serial number on the battery.<\/li><li>Purchaser shall have thirty (30) days after delivery to inspect the Products to confirm they are not damaged and are functional. If Purchaser wishes to claim damage or malfunction, it must make such claim within 30 days and Seller will take reasonable steps to respond to the claim. After such 30-day period Purchaser accepts all current and future legal and regulatory responsibilities applicable to the Products, including but not limited to recycling, disposal, recovery and reporting responsibilities.<\/li><\/ol>",
+            "page": ""
+          }
+        },
+        "b51e67d9-779f-427e-b10f-737cf63a4b97": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I return or cancel an order?",
+            "icon": "none",
+            "row_content": "<p>Outside of the warranty scenarios listed above, all orders are final. If you need assistance responsibly managing your end-of-life batteries, please contact our team and we can connect you with a recycler in our network.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19872443466029__26acfa2e-348c-4ede-bf87-e96c09d5d7cc-16887656093f5a6053-0",
+        "template--19872443466029__26acfa2e-348c-4ede-bf87-e96c09d5d7cc-16887656093f5a6053-1",
+        "template--19872443466029__26acfa2e-348c-4ede-bf87-e96c09d5d7cc-16887656093f5a6053-2",
+        "template--19872443466029__26acfa2e-348c-4ede-bf87-e96c09d5d7cc-16887656093f5a6053-3",
+        "a06e1e87-31d1-462d-86c5-a4d7974c5e43",
+        "162b6598-2ca2-4052-be8c-99c1d77e6c23",
+        "44881dcf-61b8-496e-a9dd-0924a389369f",
+        "15e1e84b-34a0-4d8f-a0f2-d253e041b703",
+        "f401d8f4-c6f2-4703-95d0-5b61f98b8697",
+        "b51e67d9-779f-427e-b10f-737cf63a4b97"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Frequently Asked Questions:",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": true,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "acc9d1fc-8a1e-423b-a9a7-069489526955": {
+      "type": "register-for-access",
+      "settings": {
+        "sub_head": "Like What You Hear? ",
+        "head": "Register for Access",
+        "message": "Provide your business’ information, receive your login credentials, and gain access to the highest quality and fairest priced inventory in the market today. It’s as simple as that.",
+        "button_text": "Register for Access",
+        "button_url": "\/pages\/contact?contact=buyer",
+        "background_color": "#efe2d4",
+        "border_radius": 20,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "inner_padding_top": 36,
+        "inner_padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "a116d3a0-c4c3-492c-955a-868f9c01ca25",
+    "1b40f804-7da7-47f2-8973-9d7d74b9b06f",
+    "367c4b81-f0ec-428f-97c9-efe290b82ae2",
+    "004bb535-3d9c-4825-acce-4fdd8bc434c3",
+    "5637326c-17f2-44fc-88b4-4f9023ad81d6",
+    "f17649e9-03e2-412d-b35b-1a69b5509e3b",
+    "32388cfb-ceb5-4d14-aab8-47903d459e95",
+    "6cb0d11a-5aa4-40ee-be0e-df8b223ba219",
+    "26acfa2e-348c-4ede-bf87-e96c09d5d7cc",
+    "acc9d1fc-8a1e-423b-a9a7-069489526955"
+  ]
+}

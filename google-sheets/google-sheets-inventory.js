@@ -60,7 +60,7 @@ function main() {
         const itemGenType = item[getColIdx("Gen Type", inventoryHeaders)];
         const itemBatterySize = item[getColIdx("Battery Size", inventoryHeaders)];
         const calculatedPrice = item[getColIdx("Price", inventoryHeaders)] * 1.1;
-        const itemSOH = item[getColIdx("SOH Measurement", inventoryHeaders)];
+        const itemSOH = Math.round(item[getColIdx("SOH Measurement", inventoryHeaders)]);
         const itemSOHTestDate = item[getColIdx("SOH Test Date", inventoryHeaders)];
 
         const specKey = itemGenType + '-' + itemBatterySize;
