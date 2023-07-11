@@ -2,6 +2,8 @@
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    margin-top: {{ section.settings.margin_top_container | times: 0.75 | round: 0 }}px;
+    margin-bottom: {{ section.settings.margin_bottom_container | times: 0.75 | round: 0 }}px;
   }
   .section-{{ section.id }}-padding h2 {
     margin-bottom: {{ section.settings.margin_bottom }}px;
@@ -19,6 +21,8 @@
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
+      margin-top: {{ section.settings.margin_top_container }}px;
+      margin-bottom: {{ section.settings.margin_bottom_container }}px;
     }
   }
 {%- endstyle -%}
@@ -26,7 +30,6 @@
 <div class="simple-newsletter  section-{{ section.id }}-padding" >
     <div class=" page-width">
         <div class="simple-content">
-            
             <div class="container">
                 <h2 class="{{ section.settings.size }}">{{ section.settings.head }}</h2>
                 <p>{{ section.settings.text | escape }}</p>
@@ -144,7 +147,28 @@
         "unit": "px",
         "label": "t:sections.all.padding.padding_bottom",
         "default": 36
+      },
+      {
+        "type": "range",
+        "id": "margin_bottom_container",
+        "min": 0,
+        "max": 50,
+        "step": 2,
+        "unit": "px",
+        "label": "Bbottom margin",
+        "default": 40
+      },
+      {
+        "type": "range",
+        "id": "margin_top_container",
+        "min": 0,
+        "max": 50,
+        "step": 2,
+        "unit": "px",
+        "label": "Top margin",
+        "default": 40
       }
+     ],
      ],
      "presets": [
         {
