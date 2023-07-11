@@ -262,8 +262,10 @@
         "size": "h2",
         "text": "Sign up for our Newsletter",
         "margin_bottom": 50,
-        "padding_top": 36,
-        "padding_bottom": 44
+        "padding_top": 40,
+        "padding_bottom": 44,
+        "margin_bottom_container": 50,
+        "margin_top_container": 0
       }
     }
   },
