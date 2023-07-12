@@ -4,8 +4,9 @@
       <div class="content">
         <h1>{{ section.settings.heading }}</h1>
         <h4>{{ section.settings.subheading }}</h4>
-        {% unless customer %}
+       
         <div class="buttons">
+          {% unless customer %}
             <a href="/pages/contact?contact=buyer" class="btn primary">Register for Access</a>
             <a href="#whyweaccess" class="btn tertiary">Learn More</a>
           {% endunless %}
