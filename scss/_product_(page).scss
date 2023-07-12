@@ -94,5 +94,14 @@ body.gradient.product {
         max-width: 30%;
         position: absolute;
         right: 0;
+        &.bottom {
+            bottom: 0;
+        }
+        &.locked {
+            position: fixed;
+            top: 150px;
+            z-index: 2;
+
+        }
     }
 }

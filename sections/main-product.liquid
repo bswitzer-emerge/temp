@@ -1176,6 +1176,59 @@
   </script>
 </section>
 
+
+<script>
+
+
+  let storedWidth = 360;
+
+  window.addEventListener('resize', function(){
+    const containerWidth = document.querySelector('.simple-product-description . page-width').offsetWidth;
+    const elWidth = document.querySelector('.simple-product-description .simple-content').offsetWidth;
+    const infoWrapper = document.querySelector('.product.product--medium.product--left.product--columns > div');
+
+    storedWidth = containerWidth - elWidth;
+    console.log("storedWidth", storedWidth);
+    if (infoWrapper.classList.contains('locked')) {
+
+    } else {
+    }
+  });
+  window.addEventListener('scroll', function() {
+    const infoWrapper = document.querySelector('.product.product--medium.product--left.product--columns > div');
+    const el = document.querySelector('.product.product--medium.product--left');
+    const marginRight = (parseFloat(document.documentElement.clientWidth) - parseFloat( document.querySelector('.simple-product-title .page-width .simple-content').offsetWidth))/2;
+    const collection__title = document.querySelector('.collection__title');
+    const scrollPosition = el.getBoundingClientRect();
+    const featuredCollection = document.querySelector('#featured-collection').getBoundingClientRect();
+
+    console.log("featuredCollection", featuredCollection.top);
+
+    if (scrollPosition.y <= 150 && featuredCollection.top < 690 ) {
+      console.log("hit v2")
+      infoWrapper.style.width = `${storedWidth}px`;
+      infoWrapper.style.right =  `${marginRight}px`;
+      infoWrapper.style.top = `${featuredCollection.top - 540}px`;
+
+
+    } else if ( scrollPosition.y <= 150  ) {
+      console.log("hit")
+      infoWrapper.classList.add('locked');
+      infoWrapper.style.width = `${storedWidth}px`;
+      infoWrapper.style.right =  `${marginRight}px`;
+      infoWrapper.style.top = `150px`;
+    } else {
+      storedWidth = document.querySelector('.product__info-wrapper.grid__item').offsetWidth;
+      console.log("no hit")
+      infoWrapper.classList.remove('locked');
+      infoWrapper.style.width = `100%`;
+      infoWrapper.style.right = `0`;
+      infoWrapper.style.top = `0`;
+    }
+  });
+
+</script>
+
 {% schema %}
 {
   "name": "t:sections.main-product.name",

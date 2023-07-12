@@ -4106,6 +4106,14 @@ body.gradient.product .product-form__buttons, body.gradient.product .product__in
     position: absolute;
     right: 0;
   }
+  .product.product--medium.product--left.product--columns > div.bottom {
+    bottom: 0;
+  }
+  .product.product--medium.product--left.product--columns > div.locked {
+    position: fixed;
+    top: 150px;
+    z-index: 2;
+  }
 }
 .simple-specs .container {
   border: 1px solid #D5D5D5;
