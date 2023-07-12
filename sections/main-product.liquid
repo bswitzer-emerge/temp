@@ -1181,7 +1181,36 @@
 
 
   let storedWidth = 360;
+
+ function positionLogic() {
+  const infoWrapper = document.querySelector('.product.product--medium.product--left.product--columns > div');
+  const el = document.querySelector('.product.product--medium.product--left');
+  // This is a pain in the ass calculation to position the box on the right side of hte screen
+  const marginRight = (parseFloat(document.documentElement.clientWidth) - parseFloat( document.querySelector('.simple-product-title .page-width .simple-content').offsetWidth))/2;
+  const collection__title = document.querySelector('.collection__title');
+  const scrollPosition = el.getBoundingClientRect();
+  const featuredCollection = document.querySelector('#featured-collection').getBoundingClientRect();
+
+  if (scrollPosition.y <= 150 && featuredCollection.top < 690 ) {
+    infoWrapper.style.width = `${storedWidth}px`;
+    infoWrapper.style.right =  `${marginRight}px`;
+    infoWrapper.style.top = `${featuredCollection.top - 540}px`;
+  } else if ( scrollPosition.y <= 150  ) {
+    infoWrapper.classList.add('locked');
+    infoWrapper.style.width = `${storedWidth}px`;
+    infoWrapper.style.right =  `${marginRight}px`;
+    infoWrapper.style.top = `150px`;
+  } else {
+    storedWidth = document.querySelector('.product__info-wrapper.grid__item').offsetWidth;
+    infoWrapper.classList.remove('locked');
+    infoWrapper.style.width = `100%`;
+    infoWrapper.style.right = `0`;
+    infoWrapper.style.top = `0`;
+  }
+}
+
   // resize behavior
+
   window.addEventListener('resize', function(){
     const containerWidth = document.querySelector('.simple-product-description . page-width').offsetWidth;
     const elWidth = document.querySelector('.simple-product-description .simple-content').offsetWidth;
@@ -1190,32 +1219,11 @@
   });
 
   window.addEventListener('scroll', function() {
-    const infoWrapper = document.querySelector('.product.product--medium.product--left.product--columns > div');
-    const el = document.querySelector('.product.product--medium.product--left');
-    // This is a pain in the ass calculation to position the box on the right side of hte screen
-    const marginRight = (parseFloat(document.documentElement.clientWidth) - parseFloat( document.querySelector('.simple-product-title .page-width .simple-content').offsetWidth))/2;
-    const collection__title = document.querySelector('.collection__title');
-    const scrollPosition = el.getBoundingClientRect();
-    const featuredCollection = document.querySelector('#featured-collection').getBoundingClientRect();
-
-    if (scrollPosition.y <= 150 && featuredCollection.top < 690 ) {
-      infoWrapper.style.width = `${storedWidth}px`;
-      infoWrapper.style.right =  `${marginRight}px`;
-      infoWrapper.style.top = `${featuredCollection.top - 540}px`;
-    } else if ( scrollPosition.y <= 150  ) {
-      infoWrapper.classList.add('locked');
-      infoWrapper.style.width = `${storedWidth}px`;
-      infoWrapper.style.right =  `${marginRight}px`;
-      infoWrapper.style.top = `150px`;
-    } else {
-      storedWidth = document.querySelector('.product__info-wrapper.grid__item').offsetWidth;
-      infoWrapper.classList.remove('locked');
-      infoWrapper.style.width = `100%`;
-      infoWrapper.style.right = `0`;
-      infoWrapper.style.top = `0`;
-    }
+    positionLogic();
   });
+  
 
+  positionLogic(); // on page Load
 </script>
 
 {% schema %}
