@@ -2830,7 +2830,7 @@ details-disclosure > details {
   }
 }
 /* new custom code */
-.signed-out li[href="/collections/battery-packs"],
+.signed-out [href="/collections/battery-packs"],
 .signed-out .header__icon {
   display: none;
 }
