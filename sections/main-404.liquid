@@ -17,7 +17,12 @@
   <h1 class="title">
     {{ 'templates.404.title' | t }}
   </h1>
+{% comment %}
   <a href="{{ routes.all_products_collection_url }}" class="button">
+    {{ 'general.continue_shopping' | t }}
+  </a>
+{% endcomment %}
+  <a href="/collections/battery-packs" class="button">
     {{ 'general.continue_shopping' | t }}
   </a>
 </div>
