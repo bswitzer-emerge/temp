@@ -525,3 +525,16 @@ details-disclosure > details {
     transform: translateY(0);
   }
 }
+
+/* new custom code */
+
+.signed-out {
+  li[href="/collections/nissan-inventory-aware"],
+  .header__icon {
+    display: none;
+  }
+}
+
+.collection-alt-collection  .signed-out  .header__icon {
+  display: block;
+}
