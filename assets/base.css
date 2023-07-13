@@ -4239,6 +4239,9 @@ body.gradient.product .product-form__buttons, body.gradient.product .product__in
   transition: filter 200ms;
   cursor: pointer;
 }
+.simple-product-images .images div:nth-child(n+6) {
+  display: none;
+}
 .simple-product-images .images div:hover {
   filter: brightness(0.73);
 }
