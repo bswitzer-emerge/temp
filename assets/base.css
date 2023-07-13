@@ -2830,13 +2830,9 @@ details-disclosure > details {
   }
 }
 /* new custom code */
-.signed-out li[href="/collections/nissan-inventory-aware"],
+.signed-out li[href="/collections/battery-packs"],
 .signed-out .header__icon {
   display: none;
-}
-
-.collection-alt-collection .signed-out .header__icon {
-  display: block;
 }
 
 .global-media-settings {

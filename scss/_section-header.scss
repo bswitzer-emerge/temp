@@ -529,12 +529,12 @@ details-disclosure > details {
 /* new custom code */
 
 .signed-out {
-  li[href="/collections/nissan-inventory-aware"],
+  li[href="/collections/battery-packs"],
   .header__icon {
     display: none;
   }
 }
 
 .collection-alt-collection  .signed-out  .header__icon {
-  display: block;
+  //display: block;
 }
