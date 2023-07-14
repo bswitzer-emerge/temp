@@ -105,7 +105,7 @@
             {%- when 'custom_liquid' -%}
               
             {%- when 'collapsible_tab' -%}
-              <!-- Old accordion-->
+              {% comment %} Old accordion {% endcomment %}
             {%- when 'quantity_selector' -%}
               {% render 'main-product-quantity-selector' %}
             {%- when 'popup' -%}
@@ -137,7 +137,7 @@
   <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %} {% endif %}">
     <div class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %}">
 
-      <!-- custom -->
+       {% comment %} custom behavior {% endcomment %}
      
       {%- for block in section.blocks -%}
         {%- case block.type -%}
@@ -164,8 +164,7 @@
         {%- endcase -%}
       {%- endfor -%}
     </div>
-
-    <!-- end grid -->
+     {% comment %} end grid {% endcomment %}
     <div class="product__info-wrapper grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}"> 
       
     </div>
@@ -212,7 +211,8 @@
     });
   </script>
 
-  <!-- accordion -->
+
+  {% comment %} accordion script {% endcomment %}
   <script>
 
     document.addEventListener('DOMContentLoaded', () => {

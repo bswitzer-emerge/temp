@@ -107,7 +107,8 @@
                   {% comment %}
                    class="link animate-arrow"
                   {% endcomment %}
-                  <a class="btn" {% if block.settings.link == blank %}role="link" aria-disabled="true"{% else %}href="{{ block.settings.link }}"{% endif %}>{{ block.settings.link_label | escape }}<!-- <span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span> --> </a>
+                  <a class="btn" {% if block.settings.link == blank %}role="link" aria-disabled="true"{% else %}href="{{ block.settings.link }}"{% endif %}>{{ block.settings.link_label | escape }}
+                  {% comment %} <span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>  {% endcomment %} </a>
                 {%- endif -%}
               </div>
             </div>

@@ -98,11 +98,12 @@
                   {%- endif -%}
                 </p>
               {%- endif -%}
-              <div class="article-card__footer">                <!-- 
+              <div class="article-card__footer">                
+                {% comment %}
                 {%- if article.comments_count > 0 and blog.comments_enabled? -%}
                   <span>{{ 'blogs.article.comments' | t: count: article.comments_count }}</span>
                 {%- endif -%}
-                -->
+              {% endcomment %}
               </div>
             {%- endif -%}
           </div>
