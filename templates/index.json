@@ -239,7 +239,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/factory-right-align.png",
             "title": "Suppliers",
-            "text": "<p>We curate our suppliers and only work with sellers who align with our vision and mission. We are an exclusive marketplace for second-life batteries. Moving forward, we will only allow suppliers who support the second-life industry by providing fair, transparent pricing based on state-of-health.<\/p>",
+            "text": "<p>We curate our suppliers and only work with sellers who align with our vision and mission. We are the exclusive marketplace for Nissan second-life batteries. Moving forward, we will only allow suppliers who support the second-life industry by providing fair, transparent pricing based on certified state-of-health.<\/p>",
             "link_label": "Get In Touch",
             "link": "\/pages\/contact?contact=supplier"
           }
@@ -329,9 +329,9 @@
         "div {position: relative; z-index: 1;}"
       ],
       "settings": {
-        "head": "Sign up for our Newsletter",
+        "head": "Join Our Mission",
         "size": "h2",
-        "text": "Sign up for our Newsletter",
+        "text": "Sign up for our newsletter for updates, news, and announcements as we march toward net-zero.",
         "background_color": "#efe2d4",
         "margin_bottom": 0,
         "padding_top": 36,
