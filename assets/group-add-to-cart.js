@@ -2,6 +2,7 @@ let firstrun = true;
 
 function updateButtonState() {
     const addToCartButton = document.querySelector('#add_to_cart-heading');
+    console.log("addToCartButton", addToCartButton);
     const checkedCheckboxes = document.querySelectorAll('.addtocart-checkbox input:checked');
     const isChecked = checkedCheckboxes.length > 0;
     console.log("isChecked: ", isChecked, "isChecked:", isChecked, "addToCartButton:", addToCartButton);
@@ -13,13 +14,13 @@ function updateButtonState() {
     }
 }
 
-function addToCartListener() {
+function groupaddToCartListener() {    
     document.getElementById("add_to_cart-heading").addEventListener("click", () => {
         // Find all checked checkboxes
         const checkboxes = document.querySelectorAll('.card-product-list__col0 input[type="checkbox"]:checked');
         // Store the values of checked checkboxes
         const values = Array.from(checkboxes).map(checkbox => checkbox.value);
-        console.log("values: ", values)
+        //console.log("values: ", values)
     
         // Click buttons inside divs matching checkbox values
         values.forEach(value => {
@@ -38,18 +39,19 @@ function addToCartListener() {
             }
         });
     });
+    
 }
 
 function queryForAddToCart() {
+    console.log("queryForAddToCart");
     const addToCartCheckboxes = document.querySelectorAll('.addtocart-checkbox');
     addToCartCheckboxes.forEach((checkbox) => {
         checkbox.addEventListener('change', updateButtonState);
     });
 }
 
-addToCartListener();
+groupaddToCartListener();
 queryForAddToCart();
-
 
 
   // The magic of MutationObserver to detect when the dom has refreshed from shopify.
@@ -59,9 +61,9 @@ const observerForList = new MutationObserver(mutationsList => {
   for (let mutation of mutationsList) {
 
     if (mutation.type === 'childList' || mutation.type === 'characterData' || mutation.type === "attributes") {
-        console.log('product-grid changed');
+        //console.log('group-add-to-cart.js detected changed');
+        groupaddToCartListener();
         queryForAddToCart();
-        addToCartListener();
         
     }
   }
