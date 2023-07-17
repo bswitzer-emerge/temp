@@ -529,8 +529,8 @@ details-disclosure > details {
 /* new custom code */
 
 .signed-out {
-  [href="/collections/battery-packs"],
-  .header__icon {
+  li[href="/collections/battery-packs"],
+  .header__icon--cart {
     display: none;
   }
 }
