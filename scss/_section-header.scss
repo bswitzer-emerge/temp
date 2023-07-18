@@ -529,7 +529,7 @@ details-disclosure > details {
 /* new custom code */
 
 .signed-out {
-  li[href="/collections/battery-packs"],
+  a[href="/collections/battery-packs"],
   .header__icon--cart {
     display: none;
   }
