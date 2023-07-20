@@ -4,15 +4,15 @@
 
     onPageLoadSoh(); - A URL grabby script to fill out the form if the page reloads
 
-
     updateInputs() - no argumeents, attached to event listener
 
     ensureRange() - no arguements, makes sure that the low and high
                     do not conflict with each other (ex low price can't be higher than high price)
 
-    checkTheBoxes() - looks for the #soh-health-form-items, and then
+    checkTheBoxes() - no argumeents, looks for the #soh-health-form-items, and then
                     checks the ones that match the input range. This  is a work around for the lack of filtering avaliable nu default in facets.liquid
                     It has to simulate a mouse click for the original mystery meat Shopify JS to work.
+                    
     timerCountDown / timerCountReset - using the classic StackOverflow solution
                     https://stackoverflow.com/questions/4220126/run-javascript-function-when-user-finishes-typing-instead-of-on-key-u
 */

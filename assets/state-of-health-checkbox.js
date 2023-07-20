@@ -6,7 +6,7 @@
     Make a virtualized form, to simulate checkboxes ranges. Really we're hiding the real form and making an interface for it.
 
     Problem I had:
-    When shopify’s form is interacted with, it wipes the DOM where the form lives and shits out a new form, this means if you change the form with JS values are lost. That’s been the issue from the get go. Simply listening to form changes meant it’d see the change, make the changes only to be wiped.
+    When shopify’s form is interacted with, it wipes the DOM where the form lives and barfs out a new form, this means if you change the form with JS values are lost. That’s been the issue from the get go. Simply listening to form changes meant it’d see the change, make the changes only to be wiped.
 
     Solution: 
     Using the MutationObserver now I can see when the form has been actually changed then run my logic against the form to enable and disable my custom check boxes. 

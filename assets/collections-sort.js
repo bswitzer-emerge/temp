@@ -1,3 +1,7 @@
+/* 
+ Work in progress, this is a script designed to reorder lists of filter items on collections pages
+*/
+
 
 let ul = document.querySelector('#product-grid');
 let lis = Array.from(ul.children);

@@ -1,3 +1,11 @@
+/* 
+When the cart is clicked on a collections page, it will not show the item as add to cart. A second click will do this properly as the shopify logic is to check inventory only at the mouse click. Exmaple: User clicks the cart and there's 1 item in stock, thus it adds to cart but does not check again after the initial click. A second click will check the inventory _then_ and only then, will it see that items are out of stock.
+
+This script forces the out of stock state after an item is added to the cart since all items have an inventory of 1
+
+Since the entire DOM is blown out when filters are clicked, it uses observerCarts to listen for DOM changes to attach addToCartListener() to items after a filter change.
+*/
+
 
 function addToCartListener() {
     const forms = document.querySelectorAll('.card-product-list__col7 form[data-type="add-to-cart-form"]');
@@ -6,11 +14,8 @@ function addToCartListener() {
     forms.forEach(form => {
       form.addEventListener('submit', event => {
     
-        // Perform your desired actions here
         console.log('Form submitted:', form.id);
     
-
-
         const inputId = event.target.querySelector("button");
         console.log('Input ID:', inputId);
         const checkBox = document.querySelector(`#group-${inputId.getAttribute("data-id")}`);

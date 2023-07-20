@@ -2,6 +2,41 @@
 
 The repository is connected to Current's shopify theme. As a development flow, any changes made within the CMS will create a git commit and commit it to this repo. Any commit made locally will be pushed up to the live sites.
 
+## Some of the workarounds important to understand.
+
+### Collections Page:
+
+The collections page has been heavily customized and is the majority of the development.
+
+#### Product filtering
+
+The currents marketplace template uses a fairly customized implimentation for the collections page, using trickery to create faux filters so users can use ranges to sort items. By default, Shopify prints out filters as checkboxes and there's no way to manipulate them.  This lead to a problem for custom metadata like the State Of Health (SOH) printing every value as an individual checkbox. Since batteries can have an SOH of 0-100%, a user could easily nearly 100 checkboxes to filter (depending on inventory/stock). 
+
+The solution was to hide the SOH check boxes and present the user with an alternative UI with range filters. This means having javascript logic to handle the changes, by using JS to literally find and check all the check boxes that match a range and click them. 
+
+The next layer of complexity is that Shopify is making various AJAX calls, thus breaking the attached events to the form, thus after a change has been made to the filtering, scripts must be reimplimented.  
+
+The final issue is if a user reloads a page or shared a page with the URL paramaters for a collections page, the appropriate filters may not appear as checked, thus the URL must be parsed and the update the UI to present an accurate representation of the SOH filters. 
+
+See: state-of-health-checkbox.js
+
+#### Group add to cart
+
+Another "creative" solution was handling the rest of being to add multiple items to the cart from the collections page. Shopify does not have this functionality thus javascript was used again to simulate a behavior.  Users can add multiple items by checking boxes next to the products and clicking add to cart. Javascript finds the checked boxes, and then clicks the add to cart for that item. Due the limiations, it has to wait via a time out to add to cart.
+
+Due to the same issues of AJAX destroying the dom, the scripts must be reattached after a mutation to the DOM.
+
+See: group-add-to-cart.js
+
+#### Add to cart needs to reflect inventory
+
+All products are uniques, thus when the add to cart needs to default to out of stock after a single mouse click. The issue is inventory checks are only perform when the item is added to cart, so if there's one item in stock, it will allow the user to add to cart but not update   Javascript listens for an add to cart click and sets the inventory to out of stock.  
+
+Due to the same issues of AJAX destroying the dom, the scripts must be reattached after a mutation to the DOM.
+
+See: add-to-cart-sanity-check.js
+
+
 
 ## Getting Started
 
