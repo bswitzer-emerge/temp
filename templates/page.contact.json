@@ -42,14 +42,15 @@
         "template--17947966341421__64f2ca88-7d16-43f4-89df-f623035f1e72-16790045283338dfd4-2"
       ],
       "custom_css": [
-        "h2 {font-family: roboto; font-weight: 500;}"
+        "h2 {font-family: Roboto-Medium; font-size: 50px; color: #1a1a1a; letter-spacing: 0.4px; text-align: center;}",
+        "p {font-family: Roboto-Regular; font-size: 20px; color: #222222; letter-spacing: 0; text-align: center; line-height: 40px;}"
       ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "background-1",
         "full_width": true,
-        "padding_top": 52,
+        "padding_top": 84,
         "padding_bottom": 0
       }
     },

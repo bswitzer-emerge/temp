@@ -237,7 +237,7 @@
         "template--17947966701869__4d66e566-c32d-4177-a910-5c7b233d204a-1677538970a88eb8d1-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/factory-right-align.png",
+            "image": "shopify:\/\/shop_images\/suppliers-with_sizing.webp",
             "title": "Suppliers",
             "text": "<p>We curate our suppliers and only work with sellers who align with our vision and mission. We are the exclusive marketplace for Nissan second-life batteries. Moving forward, we will only allow suppliers who support the second-life industry by providing fair, transparent pricing based on certified state-of-health.<\/p>",
             "link_label": "Get In Touch",
@@ -247,7 +247,7 @@
         "template--17947966701869__4d66e566-c32d-4177-a910-5c7b233d204a-1677538970a88eb8d1-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/worker-right-align.png",
+            "image": "shopify:\/\/shop_images\/buyers-with_sizing.webp",
             "title": "Buyers",
             "text": "<p>We are a facilitation marketplace meaning we do not own the inventory. Therefore, we are not inflating prices. Buyers must provide their business credentials for access to the platform, then, once approved, can view and purchase Nissan's best available inventory. Spend less time sourcing and more time scaling.<\/p>",
             "link_label": "Register for Access",
@@ -261,7 +261,7 @@
       ],
       "custom_css": [
         ".multicolumn-card.content-container .media {padding: 0 62px 62px 62px;}",
-        ".multicolumn-card__info {padding-top: 0; padding-bottom: 40px;}",
+        ".multicolumn-card__info {padding-top: 0; padding-bottom: 40px; margin-top: -1.3em;}",
         ".multicolumn-card-spacing {padding-top: 30px; margin-left: 62px; margin-right: 62px;}",
         ".btn {min-width: 205px;}"
       ],

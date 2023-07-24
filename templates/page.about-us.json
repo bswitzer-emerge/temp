@@ -2,11 +2,24 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "custom_css": [
-        "h1 {text-align: center;}"
+        "h1 {text-align: center; font-family: Roboto-Medium; font-size: 50px; color: #1a1a1a; letter-spacing: 0.4px; text-align: center;}"
       ],
       "settings": {
         "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "4fae997c-7ec3-4c38-a850-013c55e209dd": {
+      "type": "simple-title",
+      "custom_css": [
+        "h2 {font-family: Roboto-Medium; font-size: 50px; color: #1a1a1a; letter-spacing: 0.4px; text-align: center;}"
+      ],
+      "settings": {
+        "head": "About",
+        "size": "h2",
+        "padding_top": 48,
         "padding_bottom": 0
       }
     },
@@ -24,7 +37,7 @@
         "template--18857520202029__6d58f46e-3507-4d0a-8c94-9e6c34c03a97-16830529602d9d5ff5-1"
       ],
       "custom_css": [
-        "div {position: relative; z-index: 2; background: none;}"
+        "div {position: relative; z-index: 2; background: none; font-family: Roboto-Regular; font-size: 30px; color: #222222; letter-spacing: 0; text-align: center; line-height: 40px;}"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -447,6 +460,7 @@
   },
   "order": [
     "main",
+    "4fae997c-7ec3-4c38-a850-013c55e209dd",
     "6d58f46e-3507-4d0a-8c94-9e6c34c03a97",
     "b306090c-e7b4-4047-9ad3-df4027efca4f",
     "bb871c2f-8c8b-4ebf-b84d-556aad643dd1",
