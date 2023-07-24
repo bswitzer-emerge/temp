@@ -148,7 +148,8 @@
       "header": {
         "type": "header",
         "custom_css": [
-          ".header__register{display: none;}"
+          ".header__register {display: none;}",
+          ".header__signin {display: none;}"
         ],
         "settings": {
           "color_scheme": "background-1",
