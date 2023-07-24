@@ -4167,7 +4167,7 @@ body.gradient.product .product-form__buttons, body.gradient.product .product__in
   display: none;
   position: absolute;
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: 2; /* Sit on top */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
