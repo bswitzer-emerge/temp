@@ -54,8 +54,22 @@
         ".simple-content {max-width: 740px; margin-left: auto; margin-right: auto; position: relative; z-index: 2;}"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/Register_Icon_1.svg",
+        "head": "1. Register",
+        "message": "We only allow access for customers who are repurposing batteries into non-vehicle applications. Provide your business’ credentials on the Buyer form located on Contact page and a Currents team member will reach out with your login instructions if approved. If you are a university, research laboratory, or any other non-business integrator, please feel free to register for access and a team member will be in touch to learn more about your project.",
+        "button_text": "Contact Us",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "06770fa5-fe04-4cf9-92b3-d1373e350591": {
+      "type": "image-with-text-small",
+      "custom_css": [
+        ".simple-content {max-width: 740px; margin-left: auto; margin-right: auto; position: relative; z-index: 2;}"
+      ],
+      "settings": {
         "image": "shopify:\/\/shop_images\/cart-with-pluses-square.svg",
-        "head": "1. Shop",
+        "head": "2. Shop",
         "message": "Inventory and price transparency are here. Easily browse through Nissans batteries eligible for second-life with prices based on remaining state-of-health.",
         "button_text": "Contact Us",
         "padding_top": 36,
@@ -69,7 +83,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/how-to-buy-select.svg",
-        "head": "2. Select",
+        "head": "3. Select",
         "message": "Once you are ready to checkout, please review your cart one final time, then submit the order. You will receive an order confirmation, and there will be <strong>no payment due at the time of checkout.<\/strong>",
         "button_text": "Contact Us",
         "padding_top": 36,
@@ -83,8 +97,8 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/how-to-buy-sit-back-relax.svg",
-        "head": "3. Sit Back & Relax",
-        "message": "A submitted order will trigger Currents to arrange freight. Once we receive a quote from the carrier, we will send an invoice with your batteries plus the cost of freight. Expect this <strong> invoice 1-3 business days<\/strong> from the day the order was submitted.",
+        "head": "4. Sit Back & Relax",
+        "message": "A submitted order will trigger Currents to arrange freight. Once we receive a quote from the carrier, we will send an invoice with your batteries plus the cost of freight. Expect this invoice <strong>1-3 business days<\/strong> from the day the order was submitted. Freight quotes remain valid for 5 days.",
         "button_text": "Contact Us",
         "padding_top": 36,
         "padding_bottom": 36
@@ -97,8 +111,8 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/how-to-buy-square-up.svg",
-        "head": "4. Square Up",
-        "message": "For the order to be shipped, the <strong>invoice must be paid in full<\/strong>. When the invoice is paid, Currents will send another email with tracking information when the carrier picks the batteries up.",
+        "head": "5. Square Up",
+        "message": "For the order to be shipped, the <strong>invoice must be paid in full within 5 days to lock in freight<\/strong>. When the invoice is paid, Currents will send another email with tracking information when the carrier picks the batteries up.",
         "button_text": "Contact Us",
         "padding_top": 36,
         "padding_bottom": 36
@@ -111,7 +125,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/how-to-buy-scale-up.svg",
-        "head": "5. Scale Up",
+        "head": "6. Scale Up",
         "message": "The final step is you receiving your order of batteries. Our mission is for second-life integrators to spend less time sourcing and more time scaling.",
         "button_text": "Contact Us",
         "padding_top": 36,
@@ -276,6 +290,7 @@
     "1b40f804-7da7-47f2-8973-9d7d74b9b06f",
     "367c4b81-f0ec-428f-97c9-efe290b82ae2",
     "004bb535-3d9c-4825-acce-4fdd8bc434c3",
+    "06770fa5-fe04-4cf9-92b3-d1373e350591",
     "5637326c-17f2-44fc-88b4-4f9023ad81d6",
     "f17649e9-03e2-412d-b35b-1a69b5509e3b",
     "32388cfb-ceb5-4d14-aab8-47903d459e95",
