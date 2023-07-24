@@ -3,7 +3,7 @@
     "main": {
       "type": "main-page",
       "custom_css": [
-        "h1 {text-align: center;}"
+        "h1 {text-align: center; font-family: Roboto-Medium; font-size: 50px; color: #1a1a1a; letter-spacing: 0.4px; text-align: center;}"
       ],
       "settings": {
         "padding_top": 28,
@@ -24,7 +24,7 @@
         "template--18857520202029__6d58f46e-3507-4d0a-8c94-9e6c34c03a97-16830529602d9d5ff5-1"
       ],
       "custom_css": [
-        "div {position: relative; z-index: 2; background: none;}"
+        "div {position: relative; z-index: 2; background: none; font-family: Roboto-Regular; font-size: 30px; color: #222222; letter-spacing: 0; text-align: center; line-height: 40px;}"
       ],
       "settings": {
         "desktop_content_position": "center",
