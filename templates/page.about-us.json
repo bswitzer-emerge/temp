@@ -14,7 +14,7 @@
     "4fae997c-7ec3-4c38-a850-013c55e209dd": {
       "type": "simple-title",
       "custom_css": [
-        "h2 {font-family: Roboto-Medium; font-size: 50px; color: #1a1a1a; letter-spacing: 0.4px; text-align: center;}"
+        "h2 {font-weight: 500; font-size: 50px; color: #1a1a1a; letter-spacing: 0.4px; text-align: center;}"
       ],
       "settings": {
         "head": "About",
