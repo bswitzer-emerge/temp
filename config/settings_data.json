@@ -147,6 +147,10 @@
       },
       "header": {
         "type": "header",
+        "custom_css": [
+          ".header__register {display: none;}",
+          ".header__signin {display: none;}"
+        ],
         "settings": {
           "color_scheme": "background-1",
           "logo": "shopify:\/\/shop_images\/currents-logo_d7ef6cee-2c28-4e7e-8c0e-1acee2c0945b.svg",
