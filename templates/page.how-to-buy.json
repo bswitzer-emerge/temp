@@ -59,7 +59,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Register_Icon_1.svg",
         "head": "1. Register",
-        "message": "We only allow access for customers who are repurposing batteries into non-vehicle applications. Provide your business’ credentials on the Buyer form located on Contact page and a Currents team member will reach out with your login instructions if approved. If you are a university, research laboratory, or any other non-business integrator, please feel free to register for access and a team member will be in touch to learn more about your project.",
+        "message": "We only allow access for customers who are repurposing batteries into non-vehicle applications. Provide your business’ credentials on the <a href=\"%E2%80%9Chttps:\/\/currents.market\/pages\/contact?contact=buyer%E2%80%9D\">this form<\/a> and a Currents team member will reach out with your login instructions if approved. If you are a university, research laboratory, or any other non-business integrator, please feel free to register for access and a team member will be in touch to learn more about your project.",
         "button_text": "Contact Us",
         "padding_top": 36,
         "padding_bottom": 36
