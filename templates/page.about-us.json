@@ -37,7 +37,7 @@
         "template--18857520202029__6d58f46e-3507-4d0a-8c94-9e6c34c03a97-16830529602d9d5ff5-1"
       ],
       "custom_css": [
-        "div {position: relative; z-index: 2; background: none; font-family: Roboto-Regular; font-size: 30px; color: #222222; letter-spacing: 0; text-align: center; line-height: 40px;}"
+        "div {position: relative; z-index: 2; background: none; font-weight: 400; font-size: 30px; color: #222222; letter-spacing: 0; text-align: center; line-height: 40px;}"
       ],
       "settings": {
         "desktop_content_position": "center",
