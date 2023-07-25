@@ -148,7 +148,7 @@
       "header": {
         "type": "header",
         "custom_css": [
-          ".header__register {display: none;}",
+          ".header__register {}",
           ".header__signin {display: none;}"
         ],
         "settings": {
