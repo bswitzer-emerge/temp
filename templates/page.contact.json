@@ -43,7 +43,7 @@
       ],
       "custom_css": [
         "h2 {font-family: \"Roboto\", Roboto; font-size: 50px; color: #1a1a1a; letter-spacing: 0.4px; text-align: center; font-weight: 500;}",
-        "p {font-family: Roboto-Regular; font-size: 20px; color: #222222; letter-spacing: 0; text-align: center; line-height: 40px;}"
+        "p {font-weight: 400; font-size: 20px; color: #222222; letter-spacing: 0; text-align: center; line-height: 40px;}"
       ],
       "settings": {
         "desktop_content_position": "center",
