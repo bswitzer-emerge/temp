@@ -149,7 +149,7 @@
         "type": "header",
         "custom_css": [
           ".header__register {}",
-          ".header__signin {display: none;}"
+          ".header__signin {}"
         ],
         "settings": {
           "color_scheme": "background-1",
