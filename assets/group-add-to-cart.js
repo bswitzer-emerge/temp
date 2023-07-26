@@ -31,7 +31,7 @@ function groupaddToCartListener() {
                     button.click();
                     firstrun = false;
                 }
-                } else if (button) {
+                else if (button) {
                     // Set the initial delay to 2200 ms
                     let delay = 2200;
                     // If there are more than 3 values, increase the delay
