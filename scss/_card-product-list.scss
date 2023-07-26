@@ -190,6 +190,9 @@ div[class^='card-product-list__'], div[class*='card-product-list__']{
             margin-bottom: 0;
         }
     }
+    .col-2 {
+        display: none;
+    }
     .col-1, .col-2 {
         padding-bottom: 2em;
     }
