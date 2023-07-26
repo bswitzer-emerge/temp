@@ -23,7 +23,7 @@ function groupaddToCartListener() {
         //console.log("values: ", values)
     
         // Click buttons inside divs matching checkbox values
-        values.forEach(value => {
+        values.forEach((value, index) => {
             const div = document.getElementById(value);
             if (div) {
             const button = div.querySelector('button');
