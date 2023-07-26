@@ -3823,6 +3823,11 @@ body.index .shopify-section-header-sticky .header-wrapper {
   margin-top: 0.25em;
   margin-bottom: 0;
 }
+#FacetSortForm .col-2 select option[value=best-selling],
+#FacetSortForm .col-2 select option[value=title-ascending],
+#FacetSortForm .col-2 select option[value=title-descending] {
+  display: none;
+}
 #FacetSortForm .col-1, #FacetSortForm .col-2 {
   padding-bottom: 2em;
 }

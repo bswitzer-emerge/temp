@@ -192,6 +192,14 @@ div[class^='card-product-list__'], div[class*='card-product-list__']{
     }
     .col-2 {
        // display: none;
+       select {
+        option[value="best-selling"],
+        option[value="title-ascending"],
+        option[value="title-descending"]
+         {
+            display: none,
+        }
+       }
     }
     .col-1, .col-2 {
         padding-bottom: 2em;
