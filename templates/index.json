@@ -3,6 +3,7 @@
     "0bbe4f24-df39-4ae9-874c-0eee6d252dfc": {
       "type": "home-page-hero",
       "custom_css": [
+        ".hide {display: none;}",
         ".hero-home {min-height: 400px;}",
         "#home-spacer {width: 100%;}"
       ],
