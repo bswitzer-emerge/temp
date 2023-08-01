@@ -434,7 +434,10 @@
       "order_summary": {
         "free_total_label": "TBD",
         "free_shipping_discount_label": "TBD",
-        "applied_free_shipping_discount_label": "TBD"
+        "applied_free_shipping_discount_label": "TBD",
+        "payment_terms_totals": {
+          "due_later_checkout_to_draft": "Total Estimate without Shipping"
+        }
       }
     }
   }
