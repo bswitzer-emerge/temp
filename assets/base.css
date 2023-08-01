@@ -3692,6 +3692,7 @@ body.index .shopify-section-header-sticky .header-wrapper {
     padding-top: 15px;
     flex: 1;
     width: 48px;
+    display: none;
   }
 }
 
@@ -3781,6 +3782,11 @@ body.index .shopify-section-header-sticky .header-wrapper {
 .card-product-list.top {
   width: 100%;
   font-size: 14px;
+}
+@media screen and (max-width: 989px) {
+  .card-product-list.top {
+    display: none;
+  }
 }
 .card-product-list.top .info {
   position: relative;
