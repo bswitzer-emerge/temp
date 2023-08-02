@@ -4383,6 +4383,7 @@ body.gradient.product .product-form__buttons, body.gradient.product .product__in
   box-sizing: border-box;
   display: none;
   opacity: 0;
+  font-weight: 300;
 }
 
 [data-tooltip]:before {

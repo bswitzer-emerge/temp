@@ -13,6 +13,7 @@
     box-sizing: border-box;
     display: none;
     opacity: 0;
+    font-weight: 300;
   }
   [data-tooltip]:before {
     content: "";
