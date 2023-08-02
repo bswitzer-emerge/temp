@@ -4806,8 +4806,17 @@ body.gradient.product .product-form__buttons, body.gradient.product .product__in
 }
 
 @media screen and (max-width: 989px) {
+  .active-facets__button-wrapper {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+}
+
+@media screen and (max-width: 989px) {
   .facets__heading {
     cursor: pointer;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
   }
 }
 

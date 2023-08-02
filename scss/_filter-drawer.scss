@@ -15,9 +15,17 @@
         }
     }
 }
+.active-facets__button-wrapper {
+    @media screen and (max-width: 989px) { 
+        padding-bottom: 0 !important;
+        margin-bottom: 0 !important;
+    }
+}
 .facets__heading {
     @media screen and (max-width: 989px) { 
         cursor: pointer;
+        padding-bottom: 0 !important;
+        margin-bottom: 0 !important;
     }
 }
 .filter-drawer-bib {
