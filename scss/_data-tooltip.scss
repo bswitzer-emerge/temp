@@ -32,7 +32,7 @@
     background: black;
     color: #FFFFFF;
     z-index: 99;
-    width: 200px;
+    width: 215px;
   }
 
   [data-tooltip]:hover:before,
@@ -44,7 +44,7 @@
   [data-tooltip][data-flow="top"]::before {
     bottom: 100%;
     border-bottom-width: 0;
-    border-top-color: #4621FF;
+    border-top-color: black;
   }
   [data-tooltip]:not([data-flow])::after,
   [data-tooltip][data-flow="top"]::after {
