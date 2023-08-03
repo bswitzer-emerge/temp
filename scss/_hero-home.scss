@@ -4,7 +4,7 @@
 }
 #svg-bg {
     position: absolute;
-    top: -630px;
+    top: -300px;
     left: 0
 }
 #nissan-logo {
@@ -25,6 +25,23 @@
     display: flex;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  
+    @media screen and (min-width: 990px) {
+        .row {
+            display: flex;
+        }
+        .col1 {
+            text-align: left;
+            width: 50%;
+        }
+        .col2 {
+            width: 50%;
+        }
+    }
+    img {
+        width: 100%;
+        max-width: 650px ;
+    }
     & > div {
         max-width: 1024px;
         margin-left: auto;

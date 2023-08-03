@@ -2,14 +2,21 @@
 <div class="hero-home-container">
   <div class="hero-home page-width">
       <div class="content">
-        <h1>{{ section.settings.heading }}</h1>
-        <h4>{{ section.settings.subheading }}</h4>
-       
-        <div class="buttons">
-          {% unless customer %}
-            <a href="/pages/contact?contact=buyer" class="btn primary">Register for Access</a>
-            <a href="#whyweaccess" class="btn tertiary">Learn More</a>
-          {% endunless %}
+        <div class="row">
+          <div class="col1">
+            <h1>{{ section.settings.heading }}</h1>
+            <h4>{{ section.settings.subheading }}</h4>
+          
+            <div class="buttons">
+              {% unless customer %}
+                <a href="/pages/contact?contact=buyer" class="btn primary">Register for Access</a>
+                <a href="#whyweaccess" class="btn tertiary">Learn More</a>
+              {% endunless %}
+            </div>
+        </div>
+          <div class="col2">
+            <img src="https://cdn.shopify.com/s/files/1/0719/5269/5597/files/hero-combined.webp?v=1691103532">
+          </div>
         </div>
         <p class="hide">Exclusive marketplace for: <img src="https://cdn.shopify.com/s/files/1/0719/5269/5597/files/nissan_4r.webp?v=1689980626" id="nissan-logo"></p>
       </div>

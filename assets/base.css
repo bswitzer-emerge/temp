@@ -3042,7 +3042,7 @@ details-disclosure > details {
 
 #svg-bg {
   position: absolute;
-  top: -630px;
+  top: -300px;
   left: 0;
 }
 
@@ -3063,6 +3063,22 @@ details-disclosure > details {
   display: flex;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+@media screen and (min-width: 990px) {
+  .hero-home .row {
+    display: flex;
+  }
+  .hero-home .col1 {
+    text-align: left;
+    width: 50%;
+  }
+  .hero-home .col2 {
+    width: 50%;
+  }
+}
+.hero-home img {
+  width: 100%;
+  max-width: 650px;
 }
 .hero-home > div {
   max-width: 1024px;
