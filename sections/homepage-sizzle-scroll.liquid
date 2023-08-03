@@ -1,28 +1,62 @@
-<div>
-    <img src="https://cdn.shopify.com/s/files/1/0719/5269/5597/files/scroll-battery1.webp?v=1691090313">
-</div>
-<div>
-    <img src="https://cdn.shopify.com/s/files/1/0719/5269/5597/files/scroll-battery2.webp?v=1691090313">
-</div>
-<div>
-    <img src="https://cdn.shopify.com/s/files/1/0719/5269/5597/files/scroll-battery3.webp?v=1691090313">
-</div>
-<div>
-    <img src="https://cdn.shopify.com/s/files/1/0719/5269/5597/files/scroll-battery4.webp?v=1691090313">
-</div>
-<div>
-    <img src="https://cdn.shopify.com/s/files/1/0719/5269/5597/files/scroll-battery5.webp?v=1691090313">
-</div>
-<div>
-    <img src="https://cdn.shopify.com/s/files/1/0719/5269/5597/files/scroll-battery6.webp?v=1691090313">
-</div>
-<div>
-    <img src="https://cdn.shopify.com/s/files/1/0719/5269/5597/files/scroll-battery7.webp?v=1691090313">
-</div>
-<div>
-    <img src="https://cdn.shopify.com/s/files/1/0719/5269/5597/files/scroll-battery8.webp?v=1691090313">
-</div>
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+   
+  }
+  .section-{{ section.id }}-padding .bg {
+    padding-top: {{ section.settings.inner_padding_top }}px;
+    padding-bottom: {{ section.settings.inner_padding_bottom }}px;
+    background-color: {{section.settings.background_color }};
+    border-radius: {{section.settings.border_radius }}px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding .bg {
+      padding-left: 35px;
+    padding-right: 35px;
+    }
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+
+<div class="section-{{ section.id }}-padding">
+    <div id="homepage-sizzle-scroll">
+    <div class="sizzle" style="left: -20%;">
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0719/5269/5597/files/scroll-battery1.webp?v=1691090313">
+        </div>
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0719/5269/5597/files/scroll-battery2.webp?v=1691090313">
+        </div>
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0719/5269/5597/files/scroll-battery3.webp?v=1691090313">
+        </div>
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0719/5269/5597/files/scroll-battery4.webp?v=1691090313">
+        </div>
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0719/5269/5597/files/scroll-battery5.webp?v=1691090313">
+        </div>
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0719/5269/5597/files/scroll-battery6.webp?v=1691090313">
+        </div>
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0719/5269/5597/files/scroll-battery7.webp?v=1691090313">
+        </div>
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0719/5269/5597/files/scroll-battery8.webp?v=1691090313">
+        </div>
+    </div>
+    </div>
+</div>
+<script src="{{ 'homepage-sizzle-scroll.js' | asset_url }}" ></script>
 
 {% schema %}
 {

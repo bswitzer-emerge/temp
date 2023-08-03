@@ -1,0 +1,20 @@
+#homepage-sizzle-scroll {
+    position: relative;
+    z-index: 2;
+    padding-bottom: 130px;
+    max-width: 1920px;
+    overflow-x: hidden;
+    img {
+        width: 200px;
+    }
+    .sizzle {
+        position: absolute;
+        display: flex;
+        min-width: 1900px;
+        //left: 1000px;
+        //transition: left 0.2s;
+        div {
+            padding-right: 75px;
+        }
+    }
+}

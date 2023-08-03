@@ -4829,7 +4829,7 @@ body.gradient.product .product-form__buttons, body.gradient.product .product__in
     background-color: black;
     z-index: 9;
     opacity: 0.4;
-    transition: opacity 0.3s;
+    transition: opacity 2s;
     top: 0;
     left: 0;
     bottom: 0;
@@ -4848,4 +4848,23 @@ body.gradient.product .product-form__buttons, body.gradient.product .product__in
   max-width: 20px;
   position: absolute;
   right: 24px;
+}
+
+#homepage-sizzle-scroll {
+  position: relative;
+  z-index: 2;
+  padding-bottom: 130px;
+  max-width: 1920px;
+  overflow-x: hidden;
+}
+#homepage-sizzle-scroll img {
+  width: 200px;
+}
+#homepage-sizzle-scroll .sizzle {
+  position: absolute;
+  display: flex;
+  min-width: 1900px;
+}
+#homepage-sizzle-scroll .sizzle div {
+  padding-right: 75px;
 }
