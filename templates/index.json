@@ -323,6 +323,13 @@
         "inner_padding_bottom": 56
       }
     },
+    "b403ce4c-4c4e-433d-81f4-ec0c86af472d": {
+      "type": "homepage-sizzle-scroll",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "6d2c1a16-27a9-4ec8-8468-791f4661ac6e": {
       "type": "simple-newsletter",
       "custom_css": [
@@ -368,6 +375,7 @@
     "4d66e566-c32d-4177-a910-5c7b233d204a",
     "8ff2f10c-e22f-461a-9ea3-64d6d7025199",
     "4099fb71-c26a-4b0e-8e42-8fafa1cfe444",
+    "b403ce4c-4c4e-433d-81f4-ec0c86af472d",
     "6d2c1a16-27a9-4ec8-8468-791f4661ac6e",
     "44e0b456-d4b2-4c47-88ee-9ca318b09149"
   ]
