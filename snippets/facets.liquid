@@ -26,7 +26,7 @@
 
 <div class="facets-container{% if filter_type == 'drawer' %} facets-container-drawer{% endif %}">
   {%- if filter_type == 'vertical' or filter_type == 'horizontal' -%}
-    <facet-filters-form class="facets small-hide medium-hide">
+    <facet-filters-form class="facets">
       <form
         id="FacetFiltersForm"
         class="{% if filter_type == 'horizontal' %}facets__form{% else %}facets__form-vertical{% endif %}"
@@ -109,6 +109,13 @@
 
             <script src="{{ 'show-more.js' | asset_url }}" defer="defer"></script>
             {% comment %} Filters for both horizontal and vertical filter {% endcomment %}
+            <div class="filter-drawer">
+              <div class="filter-drawer-close large-up-hide">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="icon icon-close" fill="none" viewBox="0 0 18 17">
+                  <path d="M.865 15.978a.5.5 0 00.707.707l7.433-7.431 7.579 7.282a.501.501 0 00.846-.37.5.5 0 00-.153-.351L9.712 8.546l7.417-7.416a.5.5 0 10-.707-.708L8.991 7.853 1.413.573a.5.5 0 10-.693.72l7.563 7.268-7.418 7.417z" fill="currentColor">
+                </path></svg>
+              </div>
+              <h3 class="large-up-hide">Filters</h3>
             {%- for filter in results.filters -%}
               {%- assign total_active_values = total_active_values | plus: filter.active_values.size -%}
               {% case filter.type %}
@@ -501,6 +508,7 @@
                   </details>
               {% endcase %}
             {%- endfor -%}
+            </div>
             <noscript>
               <button type="submit" class="facets__button-no-js button button--secondary">
                 {{ 'products.facets.filter_button' | t }}
@@ -679,9 +687,11 @@
     {%- endif -%}
   {%- endif -%}
   {% comment %}  Drawer and mobile filter {% endcomment %}
+
   <menu-drawer
     class="mobile-facets__wrapper{% if filter_type == 'horizontal' or filter_type == 'vertical' %}  large-up-hide{% endif %}"
     data-breakpoint="mobile"
+    style="display: none"
   >
     <details class="mobile-facets__disclosure disclosure-has-popup">
       <summary class="mobile-facets__open-wrapper focus-offset">
@@ -1027,7 +1037,7 @@
     </details>
   </menu-drawer>
 
-  <div class="active-facets active-facets-mobile medium-hide large-up-hide">
+  <div class="active-facets active-facets-mobile medium-hide large-up-hide" style="display: none">
     {%- for filter in results.filters -%}
       {%- for value in filter.active_values -%}
         <facet-remove>
@@ -1201,9 +1211,8 @@
       </form>
     </facet-filters-form>
   {%- endif -%}
-
-  
 </div>
 
-
+<div class="filter-drawer-bib">&nbsp;</div>
+<script src="{{ 'mobile-drawer-show-hide.js' | asset_url }}" ></script>
 <script src="{{ 'state-of-health-checkbox.js' | asset_url }}" ></script>
