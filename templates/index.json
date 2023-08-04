@@ -318,7 +318,7 @@
         "background_color": "#efe2d4",
         "border_radius": 50,
         "padding_top": 36,
-        "padding_bottom": 0,
+        "padding_bottom": 40,
         "inner_padding_top": 24,
         "inner_padding_bottom": 56
       }
@@ -341,7 +341,7 @@
         "text": "Sign up for our newsletter for updates, news, and announcements as we march toward net-zero.",
         "background_color": "#efe2d4",
         "margin_bottom": 0,
-        "padding_top": 68,
+        "padding_top": 40,
         "padding_bottom": 72,
         "margin_bottom_container": 50,
         "margin_top_container": 0
