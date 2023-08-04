@@ -275,6 +275,7 @@
   display: flex;
   align-items: center;
   height: 100%;
+  justify-content: flex-start;
 }
 .multicolumn.color-background-2 .multicolumn-card.content-container { 
   flex-direction: column;

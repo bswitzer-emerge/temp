@@ -4,16 +4,16 @@ const handleSizzleScroll = () => {
     const sizzleRect = sizzleDiv.getBoundingClientRect();
 
     //console.log(`sizzleDiv: ${sizzleDiv}`);
-    //console.log(`sizzleRect: ${sizzleRect.left}`);
+    //console.log(`sizzleRect: ${sizzleRect.right}`);
 
 
-    // Check if the element is fully visible in the viewport from left to right
+    // Check if the element is fully visible in the viewport from right to left
     if (sizzleRect.top >= 0 && sizzleRect.bottom <= window.innerHeight) {
-        // Calculate the scroll progress from left to right
-        const scrollProgress = ((sizzleRect.top / window.innerHeight) * 100) - 80;
+        // Calculate the scroll progress from right to left
+        const scrollProgress = ((sizzleRect.top / window.innerHeight) * 100) - 100;
         console.log(`scrollProgress: ${scrollProgress}`)
-        // Set the left position of the .sizzle element based on the scroll progress
-        sizzleDiv.style.left = `${-scrollProgress}%`;
+        // Set the right position of the .sizzle element based on the scroll progress
+        sizzleDiv.style.right = `${scrollProgress}%`;
     }
 };
 
