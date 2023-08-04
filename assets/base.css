@@ -3101,8 +3101,7 @@ details-disclosure > details {
   font-weight: 100;
 }
 .hero-home .btn {
-  margin-left: 0.5em;
-  margin-right: 0.5em;
+  margin-right: 0.8em;
   display: inline-flex;
 }
 .hero-home .buttons {
