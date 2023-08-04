@@ -3080,6 +3080,11 @@ details-disclosure > details {
   width: 100%;
   max-width: 650px;
 }
+@media screen and (min-width: 990px) {
+  .hero-home img {
+    margin-top: 1.5em;
+  }
+}
 .hero-home > div {
   max-width: 1024px;
   margin-left: auto;
