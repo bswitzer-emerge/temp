@@ -4872,6 +4872,7 @@ body.gradient.product .product-form__buttons, body.gradient.product .product__in
   padding-bottom: 130px;
   max-width: 1920px;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 #homepage-sizzle-scroll img {
   width: 200px;
