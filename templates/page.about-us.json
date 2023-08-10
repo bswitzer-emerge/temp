@@ -264,7 +264,7 @@
       "type": "open-jobs",
       "settings": {
         "heading": "Blog posts",
-        "blog1": "blog",
+        "blog1": "news",
         "post_limit": 1,
         "columns_desktop": 3,
         "show_image": true,
