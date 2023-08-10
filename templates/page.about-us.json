@@ -260,6 +260,21 @@
         "padding_bottom": 0
       }
     },
+    "a1a6afcc-5836-4513-ab45-54a7c892c852": {
+      "type": "open-jobs",
+      "settings": {
+        "heading": "Blog posts",
+        "blog1": "news",
+        "post_limit": 1,
+        "columns_desktop": 3,
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "39cbacb5-adbc-4f85-98ed-2900f62496d9": {
       "type": "custom-liquid",
       "settings": {
@@ -467,6 +482,7 @@
     "0cb4e4e5-31ff-4303-b43c-07a14645c8bb",
     "6b6a6ce1-8385-4d31-87c3-4c4ac30db63b",
     "0ab1e298-23ad-4203-86c4-8fa63be12411",
+    "a1a6afcc-5836-4513-ab45-54a7c892c852",
     "39cbacb5-adbc-4f85-98ed-2900f62496d9",
     "94a9fd44-a0b8-4ff5-a0cb-e34fb87d623a",
     "78a0508e-6e5f-40e1-ba6f-65c16372c9e0",
