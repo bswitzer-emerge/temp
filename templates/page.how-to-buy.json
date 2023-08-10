@@ -87,7 +87,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/how-to-buy-select.svg",
         "head": "3. Select",
-        "message": "Once you are ready to checkout, please review your cart one final time, then submit the order. You will receive an order confirmation, and there will be <strong>no payment due at the time of checkout.<\/strong>",
+        "message": "Once you are ready to checkout, please review your cart one final time, then submit the order. You will receive an order confirmation, and there will be <strong>no payment will be due at checkout.<\/strong>",
         "button_text": "Contact Us",
         "padding_top": 36,
         "padding_bottom": 36
