@@ -28,6 +28,15 @@
         "padding_bottom": 0
       }
     },
+    "44444772-f08d-440e-b001-79a5fff4696a": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "This is a test: \n\n {% if customer.metafields.your_namespace.company_approval == \"approved\" %}\n        <!-- Customer is approved for the company -->\n        Yes\n      {% else %}\n        <!-- Customer is not approved for the company -->\n        No\n      {% endif %}",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "b5e92419-ebe8-4653-b900-2767aedec71d": {
       "type": "custom-liquid",
       "settings": {
@@ -52,7 +61,6 @@
         "template--17947966701869__3c84d83d-a074-42fe-946a-d67f3945f89a-1677538970a88eb8d1-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/hands.webp",
             "title": "",
             "text": "",
             "link_label": "",
@@ -94,7 +102,6 @@
         "94c69ea8-d97d-40f8-ad01-0398771df660": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/battery_grouped_81488887-ad2c-46e0-81da-e9819a6dd8e3.webp",
             "title": "",
             "text": "",
             "link_label": "",
@@ -263,7 +270,7 @@
       "custom_css": [
         ".multicolumn-card.content-container .media {padding: 0 62px 62px 62px;}",
         ".multicolumn-card__info {padding-top: 0; padding-bottom: 40px; margin-top: -1.3em; display: flex; flex-direction: column; height: 100%; justify-content: space-between;}",
-        ".multicolumn-card-spacing {padding-top: 30px; margin-left: 62px; margin-right: 62px; flex-shrink:0; padding-bottom: 0; height: auto;}",
+        ".multicolumn-card-spacing {padding-top: 30px; margin-left: 62px; margin-right: 62px; flex-shrink: 0; padding-bottom: 0; height: auto;}",
         ".media {padding-bottom: 0 !important; height: auto;}",
         ".btn {min-width: 205px; max-width: 235px;}"
       ],
@@ -369,6 +376,7 @@
   "order": [
     "0bbe4f24-df39-4ae9-874c-0eee6d252dfc",
     "3f7accfd-adfc-48c8-a8bf-dc26f19c97f7",
+    "44444772-f08d-440e-b001-79a5fff4696a",
     "b5e92419-ebe8-4653-b900-2767aedec71d",
     "3c84d83d-a074-42fe-946a-d67f3945f89a",
     "3881a41a-7704-4efc-8eae-a2a63b5a9fd9",
