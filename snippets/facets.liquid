@@ -24,7 +24,7 @@
   endif
 -%}
 
-<div class="facets-container{% if filter_type == 'drawer' %} facets-container-drawer{% endif %}">
+<div class="facets-container{% if filter_type == 'drawer' %} facets-container-drawer{% endif %}" id="facets-container">
   {%- if filter_type == 'vertical' or filter_type == 'horizontal' -%}
     <facet-filters-form class="facets">
       <form
@@ -51,7 +51,7 @@
             {%- endif -%}
             {% comment %} Pills are right below the title for filter type vertical {% endcomment %}
             {%- if filter_type == 'vertical' -%}
-              <div class="active-facets active-facets-desktop">
+              <div class="active-facets active-facets-desktop"  id="drawer-target">
                 <div class="active-facets-vertical-filter" ">
                   {%- unless results.filters == empty -%}
                     <p
@@ -111,7 +111,7 @@
             {% comment %} Filters for both horizontal and vertical filter {% endcomment %}
             <div class="filter-drawer">
               <div class="filter-drawer-close large-up-hide">
-                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="icon icon-close" fill="none" viewBox="0 0 18 17">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="icon icon-close" fill="none" viewBox="0 0 18 17" id="filter-drawer-close-svg">
                   <path d="M.865 15.978a.5.5 0 00.707.707l7.433-7.431 7.579 7.282a.501.501 0 00.846-.37.5.5 0 00-.153-.351L9.712 8.546l7.417-7.416a.5.5 0 10-.707-.708L8.991 7.853 1.413.573a.5.5 0 10-.693.72l7.563 7.268-7.418 7.417z" fill="currentColor">
                 </path></svg>
               </div>
@@ -517,7 +517,7 @@
           </div>
           {% comment %} Pills after filtes on filter type horizontal {% endcomment %}
           {%- if filter_type == 'horizontal' -%}
-            <div class="active-facets active-facets-desktop">
+            <div class="active-facets active-facets-desktop" id="">
               {%- for filter in results.filters -%}
                 {%- for value in filter.active_values -%}
                   <facet-remove>
