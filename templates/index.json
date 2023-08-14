@@ -263,7 +263,7 @@
       "custom_css": [
         ".multicolumn-card.content-container .media {padding: 0 62px 62px 62px;}",
         ".multicolumn-card__info {padding-top: 0; padding-bottom: 40px; margin-top: -1.3em; display: flex; flex-direction: column; height: 100%; justify-content: space-between;}",
-        ".multicolumn-card-spacing {padding-top: 30px; margin-left: 62px; margin-right: 62px; flex-shrink:0; padding-bottom: 0; height: auto;}",
+        ".multicolumn-card-spacing {padding-top: 30px; margin-left: 62px; margin-right: 62px; flex-shrink: 0; padding-bottom: 0; height: auto;}",
         ".media {padding-bottom: 0 !important; height: auto;}",
         ".btn {min-width: 205px; max-width: 235px;}"
       ],
@@ -312,7 +312,7 @@
     "4099fb71-c26a-4b0e-8e42-8fafa1cfe444": {
       "type": "register-for-access",
       "custom_css": [
-        "div {position: relative; z-index: 3;}"
+        "div {position: relative; z-index: 2;}"
       ],
       "settings": {
         "sub_head": "Still Unsure?",
