@@ -31,7 +31,7 @@
     "44444772-f08d-440e-b001-79a5fff4696a": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "This is a test: \n  {{ customer.company }}\n\n {% if customer.metafields.your_namespace.company_approval == \"approved\" %}\n        <!-- Customer is approved for the company -->\n        Yes\n      {% else %}\n        <!-- Customer is not approved for the company -->\n        No\n      {% endif %}",
+        "custom_liquid": "Customer:  {{ customer.company }} <br>\nName: {{ customer.first_name }}\n\n {% if customer.metafields.your_namespace.company_approval == \"approved\" %}\n        <!-- Customer is approved for the company -->\n        Yes\n      {% else %}\n        <!-- Customer is not approved for the company -->\n        No\n      {% endif %}",
         "color_scheme": "background-1",
         "padding_top": 40,
         "padding_bottom": 52
