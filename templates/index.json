@@ -290,7 +290,7 @@
     "8ff2f10c-e22f-461a-9ea3-64d6d7025199": {
       "type": "featured-multi-blog",
       "custom_css": [
-        ".blog.color-inverse ul {display: flex; grid-gap: 15px;}"
+        ".blog.color-inverse ul {\/* display: flex; grid-gap: 15px; *\/}"
       ],
       "settings": {
         "heading": "",
