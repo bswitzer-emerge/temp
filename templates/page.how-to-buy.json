@@ -227,6 +227,15 @@
             "row_content": "<p>Outside of the warranty scenarios listed above, all orders are final. If you need assistance responsibly managing your end-of-life batteries, please contact our team and we can connect you with a recycler in our network.<\/p>",
             "page": ""
           }
+        },
+        "a40a577b-1149-49ff-8731-5047cbe9998d": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What countries does Currents operate in?",
+            "icon": "none",
+            "row_content": "<p>As of right now, Currents operates in the United States and Canada only. If you are an international buyer, please contact our team directly.<\/p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -239,7 +248,8 @@
         "44881dcf-61b8-496e-a9dd-0924a389369f",
         "15e1e84b-34a0-4d8f-a0f2-d253e041b703",
         "f401d8f4-c6f2-4703-95d0-5b61f98b8697",
-        "b51e67d9-779f-427e-b10f-737cf63a4b97"
+        "b51e67d9-779f-427e-b10f-737cf63a4b97",
+        "a40a577b-1149-49ff-8731-5047cbe9998d"
       ],
       "settings": {
         "caption": "",
