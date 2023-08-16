@@ -2,11 +2,15 @@
 
 The repository is connected to Current's shopify theme. As a development flow, any changes made within the CMS will create a git commit and commit it to this repo. Any commit made locally will be pushed up to the live sites.
 
+# JSON vs liquid
+ 
+Shopify uses a template engine called liquid, these are in the sections (Which are components that can be used in the WYSIWYG) and snippets ( bits of code that can be included in sections). "Templates" are can be liquid but should be JSON as it allows the WYSIWYG GUI create dynamic pages, that reference instances of sections. 
+
 ## Some of the workarounds important to understand.
 
 ### Collections Page:
 
-The collections page has been heavily customized and is the majority of the development.
+The collections page has been heavily customized and is the majority of the development.  See `secions/main-collection-product-grid.liquid` and `snippets/card-product-list.liquid`.
 
 #### Product filtering
 
@@ -51,9 +55,11 @@ https://shopify.dev/docs/themes/tools/cli/install
 
 From the root of the directory, to start theme development, run `shopify theme dev --store=currents-marketplace-dev` for the dev server, set the branch for dev. 
 
+The CLI utility functionally is a wrapper for the hosted environments. It will default to likely http://127.0.0.1:9292/.
+
 ### CSS manipulation
 
-Currently, Currents uses gulp, and requires running `run gulp:watch` from the `/_gulp` directory. Setting up Gulp requires running an `npm install`.  Scss files were created by porting much of the compiled CSS manually.
+Currently, Currents uses gulp, and requires running `run gulp:watch` from the `/_gulp` directory. Setting up Gulp requires running an `npm install`.  Scss files were created by porting much of the compiled CSS manually. 
 
 ### The spaghetti strategy for JS and CSS
 

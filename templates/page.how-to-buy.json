@@ -59,7 +59,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Register_Icon_1.svg",
         "head": "1. Register",
-        "message": "We only allow access for customers who are repurposing batteries into non-vehicle applications. Provide your business’ credentials on the <a href=\"https:\/\/currents.market\/pages\/contact?contact=buyer\">this form<\/a> and a Currents team member will reach out with your login instructions if approved. If you are a university, research laboratory, or any other non-business integrator, please feel free to register for access and a team member will be in touch to learn more about your project.",
+        "message": "We only allow access for customers who are repurposing batteries into non-vehicle applications. Provide your business credentials on <a href=\"https:\/\/currents.market\/pages\/contact?contact=buyer\">this form<\/a>, and a Currents team member will reach out with your login instructions if approved. If you are a university, research laboratory, or any other non-business integrator, please feel free to register for access, and a team member will be in touch to learn more about your project.",
         "button_text": "Contact Us",
         "padding_top": 36,
         "padding_bottom": 36
@@ -87,7 +87,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/how-to-buy-select.svg",
         "head": "3. Select",
-        "message": "Once you are ready to checkout, please review your cart one final time, then submit the order. You will receive an order confirmation, and there will be <strong>no payment due at the time of checkout.<\/strong>",
+        "message": "Once you are ready to checkout, please review your cart one final time, then submit the order. You will receive an order confirmation, and <strong>no payment will be due at checkout.<\/strong>",
         "button_text": "Contact Us",
         "padding_top": 36,
         "padding_bottom": 36
@@ -227,6 +227,15 @@
             "row_content": "<p>Outside of the warranty scenarios listed above, all orders are final. If you need assistance responsibly managing your end-of-life batteries, please contact our team and we can connect you with a recycler in our network.<\/p>",
             "page": ""
           }
+        },
+        "a40a577b-1149-49ff-8731-5047cbe9998d": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What countries does Currents operate in?",
+            "icon": "none",
+            "row_content": "<p>As of right now, Currents operates in the United States and Canada only. If you are an international buyer, please contact our team directly.<\/p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -239,7 +248,8 @@
         "44881dcf-61b8-496e-a9dd-0924a389369f",
         "15e1e84b-34a0-4d8f-a0f2-d253e041b703",
         "f401d8f4-c6f2-4703-95d0-5b61f98b8697",
-        "b51e67d9-779f-427e-b10f-737cf63a4b97"
+        "b51e67d9-779f-427e-b10f-737cf63a4b97",
+        "a40a577b-1149-49ff-8731-5047cbe9998d"
       ],
       "settings": {
         "caption": "",

@@ -1,11 +1,15 @@
+body.gradient.product .simple-product-title  .simple-content {
+    max-width: 100%;
+    padding-right: 0;
+}
 .simple-product-title  .simple-content {
     
     width: 100%;
-    max-width: 100%;
     justify-content: space-between;
     margin-bottom: .5em;
+    display: flex;
+    align-items: flex-end;
     @media screen and (min-width: 865px){
-        display: flex;
          align-items: center;
          margin-bottom: 0;
     }
@@ -21,9 +25,12 @@
         padding-top: 4px;
         padding-bottom: 4px;
         border-radius: 15px;
+        flex-shrink: 0;
+        flex-grow: 0;
+
         cursor: pointer;
         @media screen and (max-width: 864px){
-            display: inline-block;
+            // display: inline-block;
         }
         &:hover {
             background-color: #edeae6;
@@ -96,6 +103,9 @@
             }
         }
     }
+    .product-title {
+        flex-grow: 1;
+    }
 }
 .showcopy .copied {
     opacity: 1 !important;
@@ -105,7 +115,7 @@
        //margin-right: 5px;
     }
     body.gradient .simple-product-title  .simple-content {
-        max-width: 100%;
-        padding-right: 0;
+       //  max-width: 100%;
+      //  padding-right: 0;
     }
 }

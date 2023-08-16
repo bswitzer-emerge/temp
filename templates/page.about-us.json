@@ -260,13 +260,19 @@
         "padding_bottom": 0
       }
     },
-    "39cbacb5-adbc-4f85-98ed-2900f62496d9": {
-      "type": "custom-liquid",
+    "a1a6afcc-5836-4513-ab45-54a7c892c852": {
+      "type": "open-jobs",
       "settings": {
-        "custom_liquid": "<div class=\"center\">\n  <div class=\"btn disabled wide\">\nno open positions\n   <\/div>\n<\/div>",
-        "color_scheme": "background-1",
-        "padding_top": 16,
-        "padding_bottom": 48
+        "heading": "Blog posts",
+        "blog1": "news",
+        "post_limit": 1,
+        "columns_desktop": 3,
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 56
       }
     },
     "94a9fd44-a0b8-4ff5-a0cb-e34fb87d623a": {
@@ -300,7 +306,7 @@
         "template--18857520202029__78a0508e-6e5f-40e1-ba6f-65c16372c9e0-1682545692c3d3c370-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Kip-0013_preferred.png",
+            "image": "shopify:\/\/shop_images\/kip_ai_uspcaled.webp",
             "title": "Kip Frey",
             "text": "<p>Kip is the Managing Director of HG Ventures and brings tremendous insight and expertise drawing upon his experience leading multiple start-ups and as a venture investor, board member, and entrepreneurial ecosystem builder. A lawyer by training, he practiced intellectual property law before joining Turner Broadcasting System in the early 1990’s and contributed to the acquisition of Castle Rock Entertainment, the formation of the Cartoon Network, and the construction of the MGM Grand Hotel.<\/p>",
             "link_label": "",
@@ -467,7 +473,7 @@
     "0cb4e4e5-31ff-4303-b43c-07a14645c8bb",
     "6b6a6ce1-8385-4d31-87c3-4c4ac30db63b",
     "0ab1e298-23ad-4203-86c4-8fa63be12411",
-    "39cbacb5-adbc-4f85-98ed-2900f62496d9",
+    "a1a6afcc-5836-4513-ab45-54a7c892c852",
     "94a9fd44-a0b8-4ff5-a0cb-e34fb87d623a",
     "78a0508e-6e5f-40e1-ba6f-65c16372c9e0",
     "ccc9bc06-fc67-4833-b301-1aaf0fb359c1",

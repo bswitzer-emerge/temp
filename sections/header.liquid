@@ -597,12 +597,27 @@
       </details-modal>
     {% endif %}
 
+
+    {% comment %}
+      https://shopify.dev/docs/api/liquid/objects/customer
+    {% endcomment %}
     {%- if shop.customer_accounts_enabled -%}
       {%- if customer -%}
-        {%- include 'customer-account' -%}
+
+      {% comment %}
+          This is so that the customer customer account should only show if the customer is attached to a business, this must be done in the customer section of the admin panel first for the account shown.
+      {% endcomment %}
+        {% if customer.b2b? == true %}
+          {%- include 'customer-account' -%}
+        {% else %}
+          
+        {% endif %}
+
       {%- else -%}
         {%- include 'customer-sign-in' -%}
       {%- endif -%}
+
+     
     {%- endif -%}
 
       <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">

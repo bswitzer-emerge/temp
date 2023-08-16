@@ -1,10 +1,13 @@
+$marginBottom: -130px;
+
 .hero-home-container {
     position: relative;
     overflow: hidden;
+    margin-bottom: $marginBottom;
 }
 #svg-bg {
     position: absolute;
-    top: -300px;
+    top: -300px + $marginBottom;
     left: 0
 }
 #nissan-logo {
