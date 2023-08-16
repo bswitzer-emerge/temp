@@ -3038,11 +3038,12 @@ details-disclosure > details {
 .hero-home-container {
   position: relative;
   overflow: hidden;
+  margin-bottom: -130px;
 }
 
 #svg-bg {
   position: absolute;
-  top: -300px;
+  top: -430px;
   left: 0;
 }
 
