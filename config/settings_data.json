@@ -129,10 +129,10 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "We just partnered with XYZ! Find out what this means",
+              "text": "Nissan North America signs agreement with Currents",
               "text_alignment": "center",
               "color_scheme": "background-1",
-              "link": ""
+              "link": "shopify:\/\/blogs\/press-releases-1\/test"
             }
           }
         },
