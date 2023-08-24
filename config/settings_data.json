@@ -140,7 +140,7 @@
           "announcement-bar-0"
         ],
         "custom_css": [
-          "div {display: ;}"
+          "div > p {background-color: #ff730c40; padding: 0.5em 1em; width: 95%; border-radius: 22px; font-weight: 300;}"
         ],
         "settings": {
         }
