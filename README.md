@@ -1,26 +1,71 @@
-# Currents Marketplace Liquid template
+# Currents Marketplace
 
-The repository is connected to Current's shopify theme. As a development flow, any changes made within the CMS will create a git commit and commit it to this repo. Any commit made locally will be pushed up to the live sites.
+## Online Store Theme
+The repository is the source code for the customizations to drive Current's Marketplace theme. It drives the brand and customizations for the online battery marketplace.
 
-# JSON vs liquid
- 
-Shopify uses a template engine called liquid, these are in the sections (Which are components that can be used in the WYSIWYG) and snippets ( bits of code that can be included in sections). "Templates" are can be liquid but should be JSON as it allows the WYSIWYG GUI create dynamic pages, that reference instances of sections. 
+## Workflow
+In order to have coordinated changes, when edits are made to the theme from inside Shopify's UI, a git commit is created. Therefore it is essential that when working locally, in order to reduce conflicts, it is required to update the project from the remote repo very frequently.
 
-## Some of the workarounds important to understand.
+## Local Theme Development
 
-### Collections Page:
+#### 1. Clone the git repo
+```
+$ https://github.com/EmergeInteractive/currents-marketplace-mvp
+$ cd currents-marketplace-mvp
+```
 
+#### 2. Install the Shopify CLI
+Install the Shopify CLI using [Homebrew](https://brew.sh/). If you are on a different platform, you can [install the CLI](https://shopify.dev/docs/themes/tools/cli/install) via different means. Verify that it has installed correctly by printing out the version.
+```
+$ brew tap shopify/shopify
+$ brew install shopify-cli
+$ shopify version
+```
+
+If you need to, you can update to the latest CLI by running
+```
+brew upgrade shopify
+```
+
+#### 3. Compile and watch CSS
+All the css in project is written in `scss` and needs to be compiled. We are using a gulp task to compile the `scss` into `css` and watch for changes. Note that you can skip this step if you are not making stylesheet changes. From the root of the project: 
+```
+$ cd _gulp
+$ npm install
+$ npm run gulp:watch
+```
+
+#### 4. Run the theme locally
+Note that you will need access and a login to Shopify Partners for Emerge in order to be able to successfully log in. From the root of the directory:
+```
+$ shopify theme dev --store=currents-marketplace-dev
+```
+
+When the theme is running, you will see a printout with the local URL to preview your theme, something in the neighborhood of http://127.0.0.1:9292/.
+
+### Using the CLI
+You can get details on the use of the CLI [here in the Shopify docs](https://shopify.dev/docs/themes/tools/cli/commands), or by running `shopify help` at the command line. Some of the more useful/common commands are:
+
+`shopify theme check` - will validate changes against the recommended practice
+
+---
+## Engineering Notes and Workarounds
+
+### Theme code in JSON vs Liquid
+Shopify uses a template engine called liquid, these are in the sections (Which are components that can be used in the WYSIWYG) and snippets ( bits of code that can be included in sections). "Templates" are can be liquid but should be JSON as it allows the WYSIWYG GUI create dynamic pages, that reference instances of sections.
+
+### Collections Page
 The collections page has been heavily customized and is the majority of the development.  See `secions/main-collection-product-grid.liquid` and `snippets/card-product-list.liquid`.
 
 #### Product filtering
 
-The currents marketplace template uses a fairly customized implimentation for the collections page, using trickery to create faux filters so users can use ranges to sort items. By default, Shopify prints out filters as checkboxes and there's no way to manipulate them.  This lead to a problem for custom metadata like the State Of Health (SOH) printing every value as an individual checkbox. Since batteries can have an SOH of 0-100%, a user could easily nearly 100 checkboxes to filter (depending on inventory/stock). 
+The currents marketplace template uses a fairly customized implimentation for the collections page, using trickery to create faux filters so users can use ranges to sort items. By default, Shopify prints out filters as checkboxes and there's no way to manipulate them.  This lead to a problem for custom metadata like the State Of Health (SOH) printing every value as an individual checkbox. Since batteries can have an SOH of 0-100%, a user could easily nearly 100 checkboxes to filter (depending on inventory/stock).
 
-The solution was to hide the SOH check boxes and present the user with an alternative UI with range filters. This means having javascript logic to handle the changes, by using JS to literally find and check all the check boxes that match a range and click them. 
+The solution was to hide the SOH check boxes and present the user with an alternative UI with range filters. This means having javascript logic to handle the changes, by using JS to literally find and check all the check boxes that match a range and click them.
 
-The next layer of complexity is that Shopify is making various AJAX calls, thus breaking the attached events to the form, thus after a change has been made to the filtering, scripts must be reimplimented.  
+The next layer of complexity is that Shopify is making various AJAX calls, thus breaking the attached events to the form, thus after a change has been made to the filtering, scripts must be reimplimented.
 
-The final issue is if a user reloads a page or shared a page with the URL paramaters for a collections page, the appropriate filters may not appear as checked, thus the URL must be parsed and the update the UI to present an accurate representation of the SOH filters. 
+The final issue is if a user reloads a page or shared a page with the URL paramaters for a collections page, the appropriate filters may not appear as checked, thus the URL must be parsed and the update the UI to present an accurate representation of the SOH filters.
 
 See: state-of-health-checkbox.js
 
@@ -34,32 +79,11 @@ See: group-add-to-cart.js
 
 #### Add to cart needs to reflect inventory
 
-All products are uniques, thus when the add to cart needs to default to out of stock after a single mouse click. The issue is inventory checks are only perform when the item is added to cart, so if there's one item in stock, it will allow the user to add to cart but not update   Javascript listens for an add to cart click and sets the inventory to out of stock.  
+All products are uniques, thus when the add to cart needs to default to out of stock after a single mouse click. The issue is inventory checks are only perform when the item is added to cart, so if there's one item in stock, it will allow the user to add to cart but not update   Javascript listens for an add to cart click and sets the inventory to out of stock.
 
 Due to the same issues of AJAX destroying the dom, the scripts must be reattached after a mutation to the DOM.
 
 See: add-to-cart-sanity-check.js
-
-
-
-## Getting Started
-
-Clone the git repo
-https://github.com/EmergeInteractive/currents-marketplace-mvp
-
-See:
-https://shopify.dev/docs/themes/best-practices/version-control
-
-Also, you'll need to install the CLI for:
-https://shopify.dev/docs/themes/tools/cli/install
-
-From the root of the directory, to start theme development, run `shopify theme dev --store=currents-marketplace-dev` for the dev server, set the branch for dev. 
-
-The CLI utility functionally is a wrapper for the hosted environments. It will default to likely http://127.0.0.1:9292/.
-
-### CSS manipulation
-
-Currently, Currents uses gulp, and requires running `run gulp:watch` from the `/_gulp` directory. Setting up Gulp requires running an `npm install`.  Scss files were created by porting much of the compiled CSS manually. 
 
 ### The spaghetti strategy for JS and CSS
 
