@@ -54,51 +54,6 @@
         "padding_bottom": 0
       }
     },
-    "7cce4582-f982-4858-b777-604ebf3abb56": {
-      "type": "rich-text",
-      "blocks": {
-        "template--17947966341421__7cce4582-f982-4858-b777-604ebf3abb56-16790045283338dfd4-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>I am a...<\/p>",
-            "heading_size": "h2"
-          }
-        },
-        "template--17947966341421__7cce4582-f982-4858-b777-604ebf3abb56-16790045283338dfd4-1": {
-          "type": "text",
-          "settings": {
-            "text": ""
-          }
-        },
-        "template--17947966341421__7cce4582-f982-4858-b777-604ebf3abb56-16790045283338dfd4-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "template--17947966341421__7cce4582-f982-4858-b777-604ebf3abb56-16790045283338dfd4-0",
-        "template--17947966341421__7cce4582-f982-4858-b777-604ebf3abb56-16790045283338dfd4-1",
-        "template--17947966341421__7cce4582-f982-4858-b777-604ebf3abb56-16790045283338dfd4-2"
-      ],
-      "custom_css": [
-        "h2 {font-family: roboto; font-size: 22px;}"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 0,
-        "padding_bottom": 16
-      }
-    },
     "form": {
       "type": "contact-form",
       "settings": {
@@ -107,8 +62,8 @@
         "col1_title": "General Inquiry",
         "col1": "I just want to chat with the team",
         "col1_form": "<iframe src=\"https:\/\/docs.google.com\/forms\/d\/e\/1FAIpQLSdOXzCyBdHWZy9mVxX2Wxeu6g__ylTqFsFe9kuAnV-rqOxTfw\/viewform?embedded=true%22%20%20\" width=\"640\" height=\"1123\" frameborder=\"0\" marginheight=\"0\" marginwidth=\"0\">Loading…<\/iframe>",
-        "col2_title": "Supplier",
-        "col2": "I have batteries to supply",
+        "col2_title": "Register for Access",
+        "col2": "I want to buy or sell batteries.",
         "col2_form": "<iframe src=\"https:\/\/docs.google.com\/forms\/d\/e\/1FAIpQLSdOXzCyBdHWZy9mVxX2Wxeu6g__ylTqFsFe9kuAnV-rqOxTfw\/viewform?embedded=true%22%20%20\" width=\"640\" height=\"1123\" frameborder=\"0\" marginheight=\"0\" marginwidth=\"0\">Loading…<\/iframe>",
         "col3_title": "Buyer",
         "col3": "I want to purchase batteries",
@@ -134,7 +89,6 @@
   "order": [
     "main",
     "64f2ca88-7d16-43f4-89df-f623035f1e72",
-    "7cce4582-f982-4858-b777-604ebf3abb56",
     "form",
     "9afc1514-51e5-4720-8957-7ec99c20ffdd"
   ]
