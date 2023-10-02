@@ -37,6 +37,33 @@
         "padding_bottom": 0
       }
     },
+    "de506389-e05a-4a56-9de6-6784f187d1ed": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "battery-packs",
+        "products_to_show": 12,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "3c84d83d-a074-42fe-946a-d67f3945f89a": {
       "type": "multicolumn",
       "blocks": {
@@ -364,39 +391,13 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
-    },
-    "de506389-e05a-4a56-9de6-6784f187d1ed": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured collection",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "",
-        "products_to_show": 12,
-        "columns_desktop": 3,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": true,
-        "color_scheme": "background-1",
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
     "0bbe4f24-df39-4ae9-874c-0eee6d252dfc",
     "3f7accfd-adfc-48c8-a8bf-dc26f19c97f7",
     "b5e92419-ebe8-4653-b900-2767aedec71d",
+    "de506389-e05a-4a56-9de6-6784f187d1ed",
     "3c84d83d-a074-42fe-946a-d67f3945f89a",
     "3881a41a-7704-4efc-8eae-a2a63b5a9fd9",
     "ef7482f9-125c-425d-928c-2c4c644907ca",
@@ -409,7 +410,6 @@
     "4099fb71-c26a-4b0e-8e42-8fafa1cfe444",
     "b403ce4c-4c4e-433d-81f4-ec0c86af472d",
     "6d2c1a16-27a9-4ec8-8468-791f4661ac6e",
-    "44e0b456-d4b2-4c47-88ee-9ca318b09149",
-    "de506389-e05a-4a56-9de6-6784f187d1ed"
+    "44e0b456-d4b2-4c47-88ee-9ca318b09149"
   ]
 }
