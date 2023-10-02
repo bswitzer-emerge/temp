@@ -37,19 +37,19 @@
         "padding_bottom": 0
       }
     },
-    "de506389-e05a-4a56-9de6-6784f187d1ed": {
-      "type": "featured-collection",
+    "7981f63f-1b22-4776-a72c-778084c15fac": {
+      "type": "featured-collect-carousel",
       "settings": {
-        "title": "",
+        "title": "Featured collection",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
         "description_style": "body",
         "collection": "battery-packs",
         "products_to_show": 12,
-        "columns_desktop": 3,
+        "columns_desktop": 4,
         "full_width": false,
-        "show_view_all": false,
+        "show_view_all": true,
         "view_all_style": "solid",
         "enable_desktop_slider": true,
         "color_scheme": "background-1",
@@ -397,7 +397,7 @@
     "0bbe4f24-df39-4ae9-874c-0eee6d252dfc",
     "3f7accfd-adfc-48c8-a8bf-dc26f19c97f7",
     "b5e92419-ebe8-4653-b900-2767aedec71d",
-    "de506389-e05a-4a56-9de6-6784f187d1ed",
+    "7981f63f-1b22-4776-a72c-778084c15fac",
     "3c84d83d-a074-42fe-946a-d67f3945f89a",
     "3881a41a-7704-4efc-8eae-a2a63b5a9fd9",
     "ef7482f9-125c-425d-928c-2c4c644907ca",
