@@ -60,7 +60,7 @@
       <ul id="Slider-{{ section.id }}" class="grid product-grid contains-card contains-card--product{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid--{{ section.settings.columns_desktop }}-col-desktop{% if section.settings.collection == blank %} grid--2-col-tablet-down{% else %} grid--{{ section.settings.columns_mobile }}-col-tablet-down{% endif %}{% if show_mobile_slider or show_desktop_slider %} slider{% if show_desktop_slider %} slider--desktop{% endif %}{% if show_mobile_slider %} slider--tablet grid--peek{% endif %}{% endif %}" role="list" aria-label="{{ 'general.slider.name' | t }}">
         {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
           <li id="Slide-{{ section.id }}-{{ forloop.index }}" class="grid__item{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %}">
-            {% render 'card-product-featured-carousel',
+            {% render 'card-product-featured',
               card_product: product,
               media_aspect_ratio: section.settings.image_ratio,
               show_secondary_image: section.settings.show_secondary_image,
@@ -108,7 +108,7 @@
 
 {% schema %}
 {
-  "name": "featured-collection-cara",
+  "name": "featured-prod-carousel",
   "tag": "section",
   "class": "section",
   "settings": [
@@ -116,7 +116,7 @@
       "type": "text",
       "id": "title",
       "default": "Featured collection",
-      "label": "featured-collection-cara"
+      "label": "t:sections.featured-collection.settings.title.label"
     },
     {
       "type": "select",
