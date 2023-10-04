@@ -40,8 +40,8 @@
     "7981f63f-1b22-4776-a72c-778084c15fac": {
       "type": "featured-collect-carousel",
       "settings": {
-        "title": "",
-        "heading_size": "h1",
+        "title": "Newest Listings",
+        "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
