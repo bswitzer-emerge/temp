@@ -1,5 +1,8 @@
+{% if customer %}
+
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
+
 <style>
   .grid-special {
     row-gap: 40px !important;
@@ -180,6 +183,7 @@
   </div>
 </div>
 
+{% endif %}
 
 {% schema %}
 {
