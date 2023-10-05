@@ -62,7 +62,7 @@ div[class^='card-product-list__'], div[class*='card-product-list__']{
 }
 .card-product-list__col1 {
     padding-right: 10px;
-    flex: 0.85;
+    flex: 0.7;
     @media screen and (max-width: $breakpoint) {
         flex: 1;
         width: calc(100% - 148px);
@@ -75,9 +75,16 @@ div[class^='card-product-list__'], div[class*='card-product-list__']{
         line-height: 22px;
     }
 }
+.card-product-list__col1-5 img {
+    max-width: 70px;
+    mix-blend-mode: darken;
+}
+#image-sort {
+    width: 70px;
+}
 .card-product-list__col2 {
     //width: 100%;
-    flex: 0.9;
+    flex: 0.85;
     justify-content: center;
 
 }

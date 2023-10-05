@@ -81,6 +81,10 @@
                   </a>
                   </h3>
           </div>
+          <div class="card-product-list__col1-5">
+            <img src="{{ card_product.images.first.src | image_url: width: 2048 }}">
+          
+          </div>
           <div class="card-product-list__col2">
               {% render 'price', product: card_product, price_class: '' %}
 

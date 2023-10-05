@@ -3723,7 +3723,7 @@ body.index .shopify-section-header-sticky .header-wrapper {
 
 .card-product-list__col1 {
   padding-right: 10px;
-  flex: 0.85;
+  flex: 0.7;
 }
 @media screen and (max-width: 620px) {
   .card-product-list__col1 {
@@ -3739,8 +3739,17 @@ body.index .shopify-section-header-sticky .header-wrapper {
   line-height: 22px;
 }
 
+.card-product-list__col1-5 img {
+  max-width: 70px;
+  mix-blend-mode: darken;
+}
+
+#image-sort {
+  width: 70px;
+}
+
 .card-product-list__col2 {
-  flex: 0.9;
+  flex: 0.85;
   justify-content: center;
 }
 
