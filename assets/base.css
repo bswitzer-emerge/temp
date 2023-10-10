@@ -3028,6 +3028,27 @@ details-disclosure > details {
   display: none;
 }
 
+.article-card-jobs {
+  background-color: #EFE2D4;
+  border-radius: 35px;
+  padding: 22px 2em 22px 2em;
+  border: black solid 1px;
+  position: relative;
+  max-width: 435px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+.article-card-jobs svg {
+  position: absolute;
+  right: 25px;
+  top: 26px;
+}
+.article-card-jobs h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .icon-plus-icon {
   position: absolute;
   height: 1rem;

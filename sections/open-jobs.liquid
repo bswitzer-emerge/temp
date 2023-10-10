@@ -27,27 +27,19 @@
 {% endcomment %}
 
 
-<div class="blog color-inverse gradient no-heading">
+<div class="blog">
     <div class="page-width-desktop isolate page-width--narrow">
         {%- if section.settings.blog1 != blank and section.settings.blog1.articles_count > 0 -%}
             <slider-component class="slider-mobile-gutter">
-                <ul id="Slider-{{ section.id }}">
                 
                     {%- for article in section.settings.blog1.articles limit: 3 -%}
                         {%- if article.tags contains 'Jobs' -%} 
-                            {%- if article.image -%}
-                                <li id="Slide-{{ section.id }}-{{ forloop.index }}" class="blog__post grid__item article slider__slide slider__slide--full-width" data-date="{{ article.published_at | date: "%Y-%m-%d" }}">
-                                    {% render 'article-card', blog: section.settings.blog1, article: article, media_aspect_ratio: 1.66, show_image: section.settings.show_image, show_date: section.settings.show_date, show_author: section.settings.show_author, show_excerpt: true %}
-                                </li>
-                                {%- else -%}
-                                <li id="Slide-{{ section.id }}-{{ forloop.index }}" class="blog__post grid__item article slider__slide slider__slide--full-width" data-date="{{ article.published_at | date: "%Y-%m-%d" }}">
-                                    {% render 'article-card-multi', blog: section.settings.blog1, article: article, media_aspect_ratio: 1.66, show_image: section.settings.show_image, show_date: section.settings.show_date, show_author: section.settings.show_author, show_excerpt: true %}
-                                </li>
-                            {%- endif -%}
+                          <div id="Slide-{{ section.id }}-{{ forloop.index }}" class="" data-date="{{ article.published_at | date: "%Y-%m-%d" }}">
+                            {% render 'article-card-jobs', blog: section.settings.blog1, article: article, media_aspect_ratio: 1.66, show_image: section.settings.show_image, show_date: section.settings.show_date, show_author: section.settings.show_author, show_excerpt: true %}
+                          </div>
                         {%- endif -%}
                     {%- endfor -%}
                     
-                </ul>
             </slider-component>
         {%- else -%}
         <div class="center">

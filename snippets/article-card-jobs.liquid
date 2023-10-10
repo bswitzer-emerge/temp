@@ -1,0 +1,51 @@
+{% comment %}
+  Renders an article card for a given blog with settings to either show the image or not.
+
+  Accepts:
+  - blog: {Object} Blog object
+  - article: {Object} Article object
+  - media_aspect_ratio: {String} The setting changes the aspect ratio of the article image, if shown
+  - media_height: {String} The setting changes the height of the article image. Overrides media_aspect_ratio.
+  - show_image: {String} The setting either show the article image or not. If it's not included it will show the image by default
+  - show_date: {String} The setting either show the article date or not. If it's not included it will not show the image by default
+  - show_author: {String} The setting either show the article author or not. If it's not included it will not show the author by default
+  - show_badge: {String} The setting either show the blog badge or not.
+  - lazy_load: {Boolean} Image should be lazy loaded. Default: true (optional)
+
+  Usage:
+  {% render 'article-card' blog: blog, article: article, show_image: section.settings.show_image %}
+{% endcomment %}
+
+{%- if article and article != empty -%}
+    {%- liquid
+      assign ratio = 1
+      if media_aspect_ratio != null
+        assign ratio = media_aspect_ratio
+      endif
+    -%}
+    <a href="{{ article.url }}" class="full-unstyled-link">
+    <div class="article-card-jobs">
+        <h3 class="">
+          
+              {{ article.title | truncate: 80 | escape }}
+            
+          </h3>
+
+          <svg width="41" height="17" viewBox="0 0 41 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="Icons/Navigation/Long Right">
+            <path id="Shape" d="M32.1643 0.447021L30.7543 1.85702L36.3343 7.44702H0.164307V9.44702H36.3343L30.7543 15.037L32.1643 16.447L40.1643 8.44702L32.1643 0.447021Z" fill="#1C1C1C"/>
+            <mask id="mask0_1_3826" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="41" height="17">
+            <path id="Shape_2" d="M32.1643 0.447021L30.7543 1.85702L36.3343 7.44702H0.164307V9.44702H36.3343L30.7543 15.037L32.1643 16.447L40.1643 8.44702L32.1643 0.447021Z" fill="white"/>
+            </mask>
+            <g mask="url(#mask0_1_3826)">
+            <g id="&#226;&#134;&#179; &#240;&#159;&#142;&#168;Color">
+            <rect id="Color" x="-9.83569" y="-21.553" width="60" height="60" fill="#080808"/>
+            </g>
+            </g>
+            </g>
+            </svg>
+            
+    </div>
+</a>
+  {%- endif -%}
+  
