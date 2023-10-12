@@ -3,68 +3,6 @@
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 
-<style>
-  .grid-special {
-    row-gap: 40px !important;
-    column-gap: 65px !important;
-    max-width: calc( -5rem + var(--page-width) );
-    margin: 0 auto;
-  }
-  .grid-special li {
-    max-width: 360px !important;
-  }
-  .grid-special li .card-wrapper {
-    border: 1px solid #C5C5C5;
-  }
-  .card__inner.image {
-    
-    background: #F6F6F6;
-    border-radius: 10px 10px 0px 0px;
-  }
-  .card__inner.image img {
-    max-width: 280px;
-    margin-left: auto;
-    margin-right: auto;
-    mix-blend-mode: darken;
-    display: block;
-  }
-  .scroll-padding-left {
-    
-  }
-  .collection .row {
-    display: flex;
-    align-items: baseline;
-  }
-  .collection .col-1 {
-    flex-grow: 1;
-  }
-  .view-all {
-    text-decoration: none;
-    color: #000;
-    /* font-family: Outfit; */
-    font-size: 17px;
-    font-weight: 300;
-    line-height: 21px;
-    letter-spacing: 0.8688889145851135px;
-    text-align: left;
-  }
-  .slider-buttons.slider-buttons-alt {
-    max-width: calc( 80px + var(--page-width) );
-    margin: 0 auto;
-    padding: 0 1.5rem;
-    justify-content: space-between;
-    position: relative;
-    top: -300px;
-    height: 0;
-  }
-  .slider-mobile-gutter {
-    position: relative;
-  }
-  .slider-buttons-alt .slider-button {
-    background: #EFEFEF;
-    border-radius: 100%;
-  }
-</style>
 <link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'template-collection.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- if section.settings.enable_quick_add -%}
