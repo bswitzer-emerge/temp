@@ -16,32 +16,6 @@
   Usage:
   {% render 'card-product', show_vendor: section.settings.show_vendor %}
 {% endcomment %}
-{% if customer %}
-
-<style>
-
-  .price__container.larger {
-    font-size: 26px;
-  }
-  .card-product-featured-carousel, .card-product-featured-carousel > div  {
-    border-radius: 10px;
-    
-  }
-  .row.space-between {
-    justify-content: space-between;
-    border-top: 1px #C5C5C5 solid;
-    margin: 0 -2rem;
-    margin-top: 1em;
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-  @media screen and (max-width: 620px) {
-    .row.space-between {
-     padding-left: 0.5rem;
-      padding-right: 0.5rem;
-    }
-  }
-</style>
 
 {%- if card_product and card_product != empty -%}
 
@@ -275,4 +249,3 @@
     </div>
   </div>
 {%- endif -%}
-    {% endif %}
