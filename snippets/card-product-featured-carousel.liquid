@@ -16,6 +16,7 @@
   Usage:
   {% render 'card-product', show_vendor: section.settings.show_vendor %}
 {% endcomment %}
+{% if customer %}
 
 <style>
 
@@ -33,6 +34,12 @@
     margin-top: 1em;
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+  @media screen and (max-width: 620px) {
+    .row.space-between {
+     padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
   }
 </style>
 
@@ -268,3 +275,4 @@
     </div>
   </div>
 {%- endif -%}
+    {% endif %}
