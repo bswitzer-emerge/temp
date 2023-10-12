@@ -35,7 +35,7 @@ function groupaddToCartListener() {
                     // Set the initial delay to 2200 ms
                     let delay = 2450;
                     // If there are more than 3 values, increase the delay
-                    if (values.length > 3) {
+                    if (values.length > 2) {
                         // Set a longer delay based on the index
                         // Adjust the multiplier (e.g., 1000) to control the delay increase
                         delay += index * 1000;
