@@ -43,7 +43,7 @@
               <a href="{{ routes.all_products_collection_url }}" class="button">
                 {{ 'general.continue_shopping' | t }}
               </a>
-              % endcomment %}
+              {% endcomment %}
 
               {%- if shop.customer_accounts_enabled and customer == null -%}
                 <p class="cart__login-title h3">{{ 'sections.cart.login.title' | t }}</p>
@@ -455,7 +455,7 @@
     cartSubmitInput.setAttribute('type', 'hidden');
     document.querySelector('#cart').appendChild(cartSubmitInput);
     document.querySelector('#checkout').addEventListener('click', function (event) {
-      document.querySelector('#cart').submit();
+    document.querySelector('#cart').submit();
     });
   });
 </script>
