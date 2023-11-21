@@ -179,7 +179,7 @@
           "settings": {
             "heading": "How is state-of-health determined?",
             "icon": "none",
-            "row_content": "<p>Batteries are tested using a proprietary, Nissan-approved process by our logistics partner, Spiers New Technologies (SNT). The state-of-health is the remaining\/measured capacity as a percentage of the battery’s capacity when new. <\/p>",
+            "row_content": "<p>Batteries are tested using a proprietary, Nissan-approved process by Spiers New Technologies (SNT). The state-of-health is the remaining\/measured capacity as a percentage of the battery’s capacity when new. <\/p>",
             "page": ""
           }
         },
@@ -206,7 +206,7 @@
           "settings": {
             "heading": "How do logistics work?",
             "icon": "none",
-            "row_content": "<p>Once an order is received, Currents works with our logistics partner, Spiers New Technologies (SNT), to secure the best deal on freight. SNT is an EV battery service provider specializing in 4R services. Once we receive a quote from the carrier, Currents will send an invoice with your batteries plus freight charges which must be paid to release an order. When an invoice is paid, Currents will forward along the tracking information when the order is picked up. All shipments are photographed before the carrier picks them up, so please contact us right away if you receive any broken eggs.<\/p>",
+            "row_content": "<p>Once an order is received, Currents will work with Spiers New Technologies (SNT) to secure the best deal on freight. SNT is an EV battery service provider specializing in 4R services. Once we receive a quote from the carrier, Currents will send an invoice with your batteries plus freight charges which must be paid to release an order. When an invoice is paid, Currents will forward along the tracking information when the order is picked up. All shipments are photographed before the carrier picks them up, so please contact us right away if you receive any broken eggs.<\/p>",
             "page": ""
           }
         },
@@ -273,7 +273,7 @@
         "head": "Register for Access",
         "message": "Provide your business’ information, receive your login credentials, and gain access to the highest quality and fairest priced inventory in the market today. It’s as simple as that.",
         "button_text": "Register for Access",
-        "button_url": "\/pages\/contact?contact=buyer",
+        "button_url": "\/pages\/contact?contact=supplier",
         "background_color": "#efe2d4",
         "border_radius": 20,
         "padding_top": 36,
@@ -285,9 +285,9 @@
     "e6725d22-04b7-466c-899c-d3c3c4250690": {
       "type": "simple-newsletter",
       "settings": {
-        "head": "Sign up for our Newsletter",
+        "head": "Join Our Mission",
         "size": "h2",
-        "text": "Sign up for our Newsletter",
+        "text": "Sign up for our newsletter for updates, news, and announcements as we march toward net zero.",
         "background_color": "#efe2d4",
         "margin_bottom": 0,
         "padding_top": 40,

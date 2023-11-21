@@ -40,7 +40,7 @@
     "inputs_shadow_horizontal_offset": 0,
     "inputs_shadow_vertical_offset": 4,
     "inputs_shadow_blur": 5,
-    "card_style": "card",
+    "card_style": "standard",
     "card_image_padding": 0,
     "card_text_alignment": "left",
     "card_color_scheme": "background-2",
@@ -128,11 +128,12 @@
         "blocks": {
           "announcement-bar-0": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
-              "text": "Nissan signs supply agreement with Currents to maximize battery repurposing. Read More",
+              "text": "We just partnered with XYZ! Find out what this means",
               "text_alignment": "center",
               "color_scheme": "background-1",
-              "link": "shopify:\/\/blogs\/press-releases-1\/test"
+              "link": ""
             }
           }
         },
@@ -140,7 +141,7 @@
           "announcement-bar-0"
         ],
         "custom_css": [
-          "div > p {background-color: #ff730c40; padding: 0.5em 1em; width: 95%; border-radius: 22px; font-weight: 300;}"
+          "div {display: none;}"
         ],
         "settings": {
         }

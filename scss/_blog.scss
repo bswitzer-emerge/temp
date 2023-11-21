@@ -45,10 +45,6 @@
         //background-color: #2F2926; 
         background-color: #1C1B19;
         border-radius: 20px;
-        display: none; /* hide images */
-    }
-    .rte-width {
-        max-width: 100%;
     }
     .card.article-card {
         display: flex;
@@ -104,7 +100,6 @@
     .card__content {
         flex: 5
     }
-    
 }
 
 .card__flex {

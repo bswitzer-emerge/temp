@@ -15,7 +15,13 @@ $breakpoint: 845px;
     }
   }
   .grid-special li {
-    max-width: 360px !important;
+    max-width: 29.46%!important;
+    @media screen and (max-width: $breakpoint) and (min-width: 1250px) {
+      max-width: 28%!important;
+    }
+    @media screen and (min-width: $breakpoint) {
+      width: 100% !important;
+    }
   }
   .grid-special li .card-wrapper {
     border: 1px solid #C5C5C5;
@@ -75,7 +81,7 @@ $breakpoint: 845px;
     position: relative;
   }
   .slider-buttons-alt .slider-button {
-    background: #EFEFEF;
+    background: #d2d2d2;
     border-radius: 100%;
   }
 

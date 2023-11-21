@@ -3,13 +3,15 @@
     "0bbe4f24-df39-4ae9-874c-0eee6d252dfc": {
       "type": "home-page-hero",
       "custom_css": [
-        ".hide {}",
-        ".hero-home {min-height: 400px;}",
+        ".hide {display: none;}",
+        ".hero-home {min-height: 460px;}",
         "#home-spacer {width: 100%;}"
       ],
       "settings": {
         "heading": "Second-life sourcing starts here",
         "subheading": "Currents is a B2B marketplace for end-of-life EV batteries intentionally designed for second-life energy solutions. The future of sourcing begins now.",
+        "loggedin-heading": "You're in.",
+        "loggedin-subheading": "Welcome to the future of second-life sourcing. View the best available inventory priced by state-of-health. We’re one step closer to net zero.",
         "svg": "<svg id=\"svg-bg\" class=\"hide\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" style=\"margin: auto; background: rgba(221, 221, 221, 0); display: block; shape-rendering: auto;\" width=\"2694\" height=\"1316\" preserveaspectratio=\"xMidYMid\" viewbox=\"0 0 2694 1316\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\">\n    <g transform=\"translate(1347,658) scale(1,1) translate(-1347,-658)\"><lineargradient id=\"lg-0.2905066362366657\" x1=\"0\" x2=\"1\" y1=\"0\" y2=\"0\">\n      <stop stop-color=\"#FFC191\" offset=\"0\"><\/stop>\n      <stop stop-color=\"#FFCFAA\" offset=\"1\"><\/stop>\n    <\/lineargradient><path d=\"\" fill=\"url(#lg-0.2905066362366657)\" opacity=\"0.4\">\n      <animate attributename=\"d\" dur=\"33.333333333333336s\" repeatcount=\"indefinite\" keytimes=\"0;0.333;0.667;1\" calcmode=\"spline\" keysplines=\"0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1\" begin=\"0s\" values=\"M0 0L 0 1005.1946326137997Q 336.75 997.4028352189227  673.5 966.5352755477741T 1347 1084.588987083283T 2020.5 950.8847862878124T 2694 868.9897704703067L 2694 0 Z;M0 0L 0 1014.4984211404882Q 336.75 1239.0769909285707  673.5 1200.4026173599493T 1347 886.1651345184112T 2020.5 912.9467049007064T 2694 755.1082403118064L 2694 0 Z;M0 0L 0 1053.5862448076164Q 336.75 1115.474536727129  673.5 1100.8232348790516T 1347 994.1319640905591T 2020.5 721.9652181729139T 2694 868.5511553068452L 2694 0 Z;M0 0L 0 1005.1946326137997Q 336.75 997.4028352189227  673.5 966.5352755477741T 1347 1084.588987083283T 2020.5 950.8847862878124T 2694 868.9897704703067L 2694 0 Z\"><\/animate>\n    <\/path><path d=\"\" fill=\"url(#lg-0.2905066362366657)\" opacity=\"0.4\">\n    <animate attributename=\"d\" dur=\"33.333333333333336s\" repeatcount=\"indefinite\" keytimes=\"0;0.333;0.667;1\" calcmode=\"spline\" keysplines=\"0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1\" begin=\"-16.666666666666668s\" values=\"M0 0L 0 1035.2387187103961Q 336.75 950.8762870384636  673.5 937.1492282274335T 1347 890.4676781255916T 2020.5 792.0597298237054T 2694 756.6360009507027L 2694 0 Z;M0 0L 0 997.4880276883285Q 336.75 1098.523641229865  673.5 1080.0682719980248T 1347 1004.7040575495237T 2020.5 764.1297131861741T 2694 949.4617648663153L 2694 0 Z;M0 0L 0 1039.7713778429084Q 336.75 1093.5179010346897  673.5 1061.707744468759T 1347 1133.479737401332T 2020.5 855.676762036532T 2694 687.8205110794534L 2694 0 Z;M0 0L 0 1035.2387187103961Q 336.75 950.8762870384636  673.5 937.1492282274335T 1347 890.4676781255916T 2020.5 792.0597298237054T 2694 756.6360009507027L 2694 0 Z\"><\/animate><\/path><\/g><\/svg>\n<div id=\"home-spacer\"><div><\/div><\/div>",
         "padding_top": 36,
         "padding_bottom": 36
@@ -39,8 +41,11 @@
     },
     "7981f63f-1b22-4776-a72c-778084c15fac": {
       "type": "featured-collect-carousel",
+      "custom_css": [
+        "h2 {font-size: 28px;}"
+      ],
       "settings": {
-        "title": "Newest Listings",
+        "title": "Newest Batteries",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
@@ -264,7 +269,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/suppliers-with_sizing.webp",
             "title": "Suppliers",
-            "text": "<p>We curate our suppliers and only work with sellers who align with our vision and mission. We are the exclusive marketplace for Nissan North America 4R. Moving forward, we will only allow suppliers who support the second-life industry by providing fair, transparent pricing based on certified state-of-health.<\/p>",
+            "text": "<p>We curate our suppliers and only work with sellers who align with our vision and mission. We are an exclusive marketplace for second-life batteries. Moving forward, we will only allow suppliers who support the second-life industry by providing fair, transparent pricing based on certified state-of-health.<\/p>",
             "link_label": "Get In Touch",
             "link": "\/pages\/contact?contact=supplier"
           }
@@ -274,9 +279,9 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/buyers-with_sizing.webp",
             "title": "Buyers",
-            "text": "<p>We are a facilitation marketplace meaning we do not own the inventory. Therefore, we are not inflating prices. Buyers must provide their business credentials for access to the platform, then, once approved, can view and purchase Nissan's best available inventory. Spend less time sourcing and more time scaling.<\/p>",
+            "text": "<p>We are a facilitation marketplace meaning we do not own the inventory. Therefore, we are not inflating prices. Buyers must provide their business credentials for access to the platform, then, once approved, can view and purchase the best available inventory. Spend less time sourcing and more time scaling.<\/p>",
             "link_label": "Register for Access",
-            "link": "\/pages\/contact?contact=buyer"
+            "link": "\/pages\/contact?contact=supplier"
           }
         }
       },
@@ -314,16 +319,16 @@
     "8ff2f10c-e22f-461a-9ea3-64d6d7025199": {
       "type": "featured-multi-blog",
       "custom_css": [
-        ".blog.color-inverse ul {\/* display: flex; grid-gap: 15px; *\/}"
+        ".blog.color-inverse ul {display: flex; grid-gap: 15px;}"
       ],
       "settings": {
         "heading": "",
         "heading_size": "h1",
         "blog1": "news",
-        "blog2": "press-releases-1",
+        "blog2": "",
         "blog3": "articles",
-        "post_limit": 3,
-        "columns_desktop": 3,
+        "post_limit": 2,
+        "columns_desktop": 2,
         "color_scheme": "inverse",
         "show_image": true,
         "show_date": true,

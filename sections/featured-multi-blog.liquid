@@ -103,10 +103,9 @@
 
 
 <script>
-  
   window.onload = function() {
-    const list = document.querySelector('#featured-multi-blog ul');
-    const items = Array.from(list.getElementsByTagName('li'));
+    var list = document.querySelector('ul');
+    var items = Array.from(list.getElementsByTagName('li'));
 
     items.sort(function(a, b) {
       return new Date(b.getAttribute('data-date')) - new Date(a.getAttribute('data-date'));

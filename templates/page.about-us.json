@@ -171,7 +171,7 @@
           "settings": {
             "heading": "Work hard, have fun, and make history",
             "icon": "none",
-            "row_content": "<p>Let's do this<\/p>",
+            "row_content": "<p>Let's do this.<\/p>",
             "page": ""
           }
         }
@@ -264,7 +264,7 @@
       "type": "open-jobs",
       "settings": {
         "heading": "Blog posts",
-        "blog1": "news",
+        "blog1": "",
         "post_limit": 1,
         "columns_desktop": 3,
         "show_image": true,
@@ -454,7 +454,7 @@
         "head": "Register for Access",
         "message": "Provide your business’ information, receive your login credentials, and gain access to the highest quality and fairest priced inventory in the market today. It’s as simple as that.",
         "button_text": "Register for Access",
-        "button_url": "\/pages\/contact?contact=buyer",
+        "button_url": "\/pages\/contact?contact=supplier",
         "background_color": "#efe2d4",
         "border_radius": 20,
         "padding_top": 36,

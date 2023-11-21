@@ -1,24 +1,36 @@
 
-<div class="hero-home-container">
+<div class="hero-home-container {% if customer %} signed-in {% endif %}">
   <div class="hero-home page-width">
       <div class="content">
         <div class="row">
-          <div class="col1">
-            <h1>{{ section.settings.heading }}</h1>
-            <h4>{{ section.settings.subheading }}</h4>
-          
+          <div class="col1 ">
+            {% if customer %}
+              <h4>Hey, {{ customer.first_name }}!</h4>
+              <h1>{{ section.settings.loggedin-heading }}</h1>
+              <h4 class="hero-home-mb"> {{ section.settings.loggedin-subheading }}</h4>
+            {% else %}
+              <h1>{{ section.settings.heading }}</h1>
+              <h4>{{ section.settings.subheading }}</h4>
+            {% endif %}
             <div class="buttons">
-              {% unless customer %}
-                <a href="/pages/contact?contact=buyer" class="btn primary">Register for Access</a>
+              {% if customer %}
+                <a href="/collections/battery-packs" class="btn primary">Marketplace</a>
+                <a href="/pages/how-to-buy" class="btn tertiary">How to Buy</a>
+              {% else %}
+                <a href="/pages/contact?contact=supplier" class="btn primary">Register for Access</a>
                 <a href="#whyweexist" class="btn tertiary">Learn More</a>
-              {% endunless %}
+              {% endif %}
             </div>
         </div>
           <div class="col2">
-            <img src="https://cdn.shopify.com/s/files/1/0719/5269/5597/files/hero-combined.webp?v=1691103532">
+            {% if customer %}
+              <img src="https://cdn.shopify.com/s/files/1/0713/1312/9756/files/nissan-page.png?v=1697754375" />
+              {% else %}
+              <img src="https://cdn.shopify.com/s/files/1/0719/5269/5597/files/hero-combined.webp?v=1691103532" />
+            {% endif %}
           </div>
         </div>
-        <p class="hide">Exclusive marketplace for: <img src="https://cdn.shopify.com/s/files/1/0719/5269/5597/files/nissan-logo-north-america-4R.webp?v=1692224535" id="nissan-logo"></p>
+        <p class="hide">Exclusive marketplace for: <img src="https://cdn.shopify.com/s/files/1/0719/5269/5597/files/nissan_4r.webp?v=1689980626" id="nissan-logo"></p>
       </div>
   </div>
   {{ section.settings.svg }}
@@ -43,6 +55,18 @@
       "type": "text",
       "id": "subheading",
       "default": "Currents is a B2B marketplace for a second-life batteries intentionally designed for energy storage customers. The future of sourcing begins now.",
+      "label": "Sub Heading"
+    },
+    {
+      "type": "text",
+      "id": "loggedin-heading",
+      "default": "You're in.",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "loggedin-subheading",
+      "default": "Welcome to the future of second-life sourcing. View the best available inventory priced by state-of-health. We’re one step closer to net zero..",
       "label": "Sub Heading"
     },
     {

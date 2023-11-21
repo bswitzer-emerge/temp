@@ -129,7 +129,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/gold_check.png",
         "head": "State of Health",
-        "message": "Batteries are tested using a proprietary, Nissan-approved test by our logistics partner, Spiers New Technologies. The state-of-health is the remaining\/measured capacity as a percentage of new.",
+        "message": "Batteries are tested using a proprietary, Nissan-approved test by  Spiers New Technologies. The state-of-health is the remaining\/measured capacity as a percentage of new.",
         "button_text": "Contact Us",
         "padding_top": 16,
         "padding_bottom": 24
@@ -195,7 +195,7 @@
       "type": "simple-text",
       "settings": {
         "content_alignment": "left",
-        "body": "<p>Our shipping and logistics partner, SNT, strictly follows guidelines set by 49 CFR, DOT, IMDG and IATA to ensure that shipping standards and regulatory documentation for advanced battery systems are met for each battery shipment. All shipping and handling is completed by employees who are certified in shipping of hazardous materials with a focus on lithium-ion battery shipping.<\/p><p><br\/><\/p><p>We will select the best carrier and shipping method based on transit time and cost, and will remain in contact with carriers to ensure shipments are consistent and meet transit time requirements. Please allow for <strong>1-3 business days for a shipping quote<\/strong> to be delivered.<\/p>",
+        "body": "<p>We strictly follow guidelines set by 49 CFR, DOT, IMDG and IATA to ensure that shipping standards and regulatory documentation for advanced battery systems are met for each battery shipment. All shipping and handling is completed by employees who are certified in shipping of hazardous materials with a focus on lithium-ion battery shipping.<\/p><p><\/p><p>We will select the best carrier and shipping method based on transit time and cost, and will remain in contact with carriers to ensure shipments are consistent and meet transit time requirements. Please allow for <strong>1-3 business days for a shipping quote<\/strong> to be delivered.<\/p>",
         "text_style": "paragraph",
         "padding_top": 24,
         "padding_bottom": 24
