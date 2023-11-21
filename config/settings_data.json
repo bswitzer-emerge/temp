@@ -141,7 +141,7 @@
           "announcement-bar-0"
         ],
         "custom_css": [
-          "div {display: none;}"
+
         ],
         "settings": {
         }
