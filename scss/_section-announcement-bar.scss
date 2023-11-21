@@ -9,18 +9,18 @@
   .announcement-bar {
     padding-bottom: 22px;
   }
-  .announcement-bar p {
-    background-color: #f9f7f4;
+  .announcement-bar div p {
+    background-color: #ff730c40;
     border-radius: 22px;
+    padding: 1rem 0;
   }
   .announcement-bar__link {
     display: block;
     width: 100%;
-    padding: 1rem 0;
     text-decoration: none;
   }
   
-  .announcement-bar__link:hover {
+  .announcement-bar__link:hover div p {
     color: rgb(var(--color-foreground));
     background-color: rgba(var(--color-card-hover), 0.06);
   }
@@ -31,10 +31,6 @@
     margin-left: 0.8rem;
     vertical-align: middle;
     margin-bottom: 0.2rem;
-  }
-  
-  .announcement-bar__link .announcement-bar__message {
-    padding: 0;
   }
   
   .announcement-bar__message {
