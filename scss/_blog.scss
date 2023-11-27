@@ -46,6 +46,9 @@
         background-color: #1C1B19;
         border-radius: 20px;
     }
+    .card__inner .card__media {
+        top: -2px;
+    }
     .card.article-card {
         display: flex;
         flex-direction: row-reverse;

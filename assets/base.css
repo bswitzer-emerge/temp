@@ -3506,6 +3506,9 @@ body.index .shopify-section-header-sticky .header-wrapper {
   background-color: #1C1B19;
   border-radius: 20px;
 }
+.blog.color-inverse .card__inner .card__media {
+  top: -2px;
+}
 .blog.color-inverse .card.article-card {
   display: flex;
   flex-direction: row-reverse;
