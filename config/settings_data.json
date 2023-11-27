@@ -128,6 +128,7 @@
         "blocks": {
           "announcement-bar-0": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "Nissan signs supply agreement with Currents to maximize battery repurposing. Read More...",
               "text_alignment": "center",
