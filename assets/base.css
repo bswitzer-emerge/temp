@@ -3492,7 +3492,6 @@ body.index .shopify-section-header-sticky .header-wrapper {
   background-color: #2F2926;
   border-radius: 20px;
   width: 100%;
-  min-width: 100%;
   grid-column: span 1;
 }
 .blog.color-inverse li:first-child {
