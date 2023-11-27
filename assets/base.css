@@ -3083,7 +3083,7 @@ details-disclosure > details {
   position: relative;
   z-index: 2;
   text-align: center;
-  padding-top: 8em;
+  padding-top: 6em;
   padding-bottom: 8em;
   display: flex;
   -webkit-font-smoothing: antialiased;
@@ -3117,11 +3117,6 @@ details-disclosure > details {
 .hero-home img {
   width: 100%;
   max-width: 650px;
-}
-@media screen and (min-width: 990px) {
-  .hero-home img {
-    margin-top: 1.5em;
-  }
 }
 .hero-home > div {
   max-width: 1024px;
