@@ -3497,6 +3497,7 @@ body.index .shopify-section-header-sticky .header-wrapper {
 .blog.color-inverse li:first-child {
   /* Three column */
   grid-column: 1/-1;
+  min-width: 100%;
 }
 .blog.color-inverse li:first-child .card__content {
   flex: 2;
