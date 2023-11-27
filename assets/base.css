@@ -2292,7 +2292,6 @@ input[type=checkbox] {
 
 /* section-announcement-bar */
 #shopify-section-announcement-bar {
-  z-index: 4;
   display: none;
 }
 .index #shopify-section-announcement-bar {
@@ -3562,7 +3561,6 @@ body.index .shopify-section-header-sticky .header-wrapper {
 
 /* section-announcement-bar */
 #shopify-section-announcement-bar {
-  z-index: 4;
   display: none;
 }
 .index #shopify-section-announcement-bar {
